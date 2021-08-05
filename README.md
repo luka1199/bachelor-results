@@ -262,7 +262,7 @@ Format: `moduleName - logCode`
 Amount of tests without errors: 396
 Amount of generated run-time info files: 1922
 
-### `results.tar.gz`
+### `results<i>.tar.gz`
 
 Structure:
 ```
