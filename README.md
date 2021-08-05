@@ -34,7 +34,7 @@ Example:
 node utils/logCounter.js ./5_instrumentation/instrument_babel.log
 ```
 Example output:
-```json
+```bash
 { OK: 4530, NOK: 916 }
 ```
 
