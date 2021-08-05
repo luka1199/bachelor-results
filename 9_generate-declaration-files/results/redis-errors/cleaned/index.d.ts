@@ -1,0 +1,4 @@
+export class RedisError {
+	constructor();
+}
+

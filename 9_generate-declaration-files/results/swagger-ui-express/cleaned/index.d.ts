@@ -1,0 +1,1 @@
+export function setup(swaggerDoc: object | null, opts: boolean | object | null, options?: object, customCss?: string, customfavIcon?: null, swaggerUrl?: string, customeSiteTitle?: undefined): Function;

@@ -1,0 +1,2 @@
+export = KoaProxy;
+

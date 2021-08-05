@@ -1,0 +1,15 @@
+export = ParseConflictJson;
+
+declare function ParseConflictJson(req: ParseConflictJson.I__req): Url | void;
+declare namespace ParseConflictJson {
+	export interface I__req {
+		'url'?: string;
+		'_parsedUrl'?: I___parsedUrl | Url;
+	}
+
+	export interface I___parsedUrl {
+		'pathname': string;
+		'_token': number;
+	}
+
+}

@@ -1,0 +1,11 @@
+export function toDecimal(ipString: string): number;
+export function isIp(ip: string | number): boolean;
+export function toString(ipNum: number): string;
+export function isDecimalIp(ipNum: number | string): boolean;
+export function getMask(maskSize: number): number;
+export function getPrefixMask(prefixSize: number): number;
+export function getOptimalRange(ipNum: number, ipEndNum: number): object | null;
+export function getMaskRange(ipNum: number, prefixSize: number): object;
+export function calculateCIDRPrefix(ip: string, subnetMask: string): object;
+export function calculateSubnetMask(ip: string, prefixSize: number): object;
+export function calculate(ipStart: string, ipEnd: string): Array<any> | null;

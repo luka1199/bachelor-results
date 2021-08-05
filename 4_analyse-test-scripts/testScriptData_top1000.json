@@ -1,0 +1,51 @@
+{
+	"Testing frameworks": {
+		"Mocha": 306,
+		"Jest": 121,
+		"Node-Tap": 85,
+		"AVA": 59,
+		"tsd": 44,
+		"Tape": 40,
+		"Karma": 30,
+		"Flow-JS": 11,
+		"Nodeunit": 11,
+		"Vows": 10,
+		"@hapi/lab": 8,
+		"Jasmine": 7,
+		"Zuul": 1,
+		"Zap": 1,
+		"Cypress": 0,
+		"Ocular-dev-tools": 0,
+		"Expresso": 0,
+		"Test’em": 0
+	},
+	"Code analysis tool": {
+		"ESLint": 129,
+		"xo": 68,
+		"StandardJS": 37,
+		"TSLint": 21,
+		"DTSLint": 15,
+		"JSHint": 13,
+		"c8": 8,
+		"Semi-Standard": 4,
+		"CoffeeLint": 0
+	},
+	"Task runner": {
+		"Grunt": 35,
+		"Gulp": 19,
+		"Lerna": 12,
+		"Ember.js": 4,
+		"Wsrun": 1,
+		"nwb": 0,
+		"Aegir": 0
+	},
+	"Build tool": {
+		"Make": 43
+	},
+	"Browser": {
+		"PhantomJS": 3
+	},
+	"other": 102,
+	"undefined": 75,
+	"total": 942
+}

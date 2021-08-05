@@ -1,0 +1,2 @@
+export = S3DownloadStream;
+
