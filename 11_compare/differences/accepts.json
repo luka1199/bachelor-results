@@ -1,0 +1,98 @@
+{
+    "module": "accepts",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "accepts",
+            "exportAssignmentActual": "Accepts"
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "req",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "IncomingMessage",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "req",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__req",
+                                "properties": [
+                                    {
+                                        "name": "headers",
+                                        "type": {
+                                            "kind": "union_type",
+                                            "value": [
+                                                {
+                                                    "kind": "object_keyword",
+                                                    "value": "object"
+                                                },
+                                                {
+                                                    "kind": "type_interface",
+                                                    "value": {
+                                                        "name": "I__headers",
+                                                        "properties": [
+                                                            {
+                                                                "name": "accept",
+                                                                "type": {
+                                                                    "kind": "primitive_keyword",
+                                                                    "value": "string"
+                                                                },
+                                                                "optional": true,
+                                                                "modifiers": [],
+                                                                "dotDotDotToken": false
+                                                            }
+                                                        ],
+                                                        "methods": [],
+                                                        "classes": [],
+                                                        "callSignatures": [],
+                                                        "indexSignatures": [],
+                                                        "typeParameters": []
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        },
+                        {
+                            "kind": "object_keyword",
+                            "value": "object"
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "type-array",
+        "string",
+        "literals",
+        "type-union",
+        "dot-dot-dot-token"
+    ]
+}

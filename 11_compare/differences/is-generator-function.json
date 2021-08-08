@@ -1,0 +1,35 @@
+{
+    "module": "is-generator-function",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "isGenerator",
+            "exportAssignmentActual": "IsGeneratorFunction"
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "fn",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "unknown"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "str",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": []
+}

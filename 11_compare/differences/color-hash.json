@@ -1,0 +1,22 @@
+{
+    "module": "color-hash",
+    "template": "module-class",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-class",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "number",
+        "optional-parameter",
+        "type-tuple",
+        "alias-type",
+        "type-union",
+        "readonly-array",
+        "type-array",
+        "type-function",
+        "string"
+    ]
+}

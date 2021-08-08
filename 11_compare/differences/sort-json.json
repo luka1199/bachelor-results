@@ -1,0 +1,340 @@
+{
+    "module": "sort-json",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "visit",
+            "exportAssignmentActual": "SortJson"
+        },
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "visit",
+            "expectedNumberOfOverloadings": 1,
+            "actualNumberOfOverloadings": 7
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "old",
+                "type": {
+                    "kind": "generic_keyword",
+                    "value": "T"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "old",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "old",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "old",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__old",
+                                "properties": [
+                                    {
+                                        "name": "bar",
+                                        "type": {
+                                            "kind": "union_type",
+                                            "value": [
+                                                {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "number"
+                                                },
+                                                {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "string"
+                                                },
+                                                {
+                                                    "kind": "object_keyword",
+                                                    "value": "object"
+                                                }
+                                            ]
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "hij",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "foo",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "a",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "abc",
+                                        "type": {
+                                            "kind": "object_keyword",
+                                            "value": "object"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "b",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "foo2",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        },
+                        {
+                            "kind": "object_keyword",
+                            "value": "object"
+                        },
+                        {
+                            "kind": "undefined_keyword",
+                            "value": "undefined"
+                        }
+                    ]
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "old",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "old",
+                "type": {
+                    "kind": "undefined_keyword",
+                    "value": "undefined"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "depth",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "ignoreCase",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "boolean"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "level",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "reverse",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "boolean"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "old",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "old",
+                "type": {
+                    "kind": "array_type",
+                    "value": {
+                        "kind": "any_keyword",
+                        "value": "any"
+                    }
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "old",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "old",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "old",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "old",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "null"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "old",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "old",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "boolean"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "depth",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "ignoreCase",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "level",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "reverse",
+                "circular": true
+            }
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "number",
+        "boolean",
+        "type-any",
+        "string",
+        "type-array",
+        "type-union",
+        "generics-function"
+    ]
+}

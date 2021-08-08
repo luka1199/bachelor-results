@@ -1,0 +1,889 @@
+{
+    "module": "color-diff",
+    "template": "module",
+    "differences": [
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "diff",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "parameters": [
+                    {
+                        "name": "c1",
+                        "type": {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "LabColor",
+                                "properties": [
+                                    {
+                                        "name": "L",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "a",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "b",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "c2",
+                        "type": {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "LabColor",
+                                "circular": true
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "closest",
+                "returnType": {
+                    "kind": "type_interface",
+                    "value": {
+                        "name": "RGBColor",
+                        "properties": [
+                            {
+                                "name": "R",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "number"
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "G",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "number"
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "B",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "number"
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "A",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "number"
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "methods": [],
+                        "classes": [],
+                        "callSignatures": [],
+                        "indexSignatures": [],
+                        "typeParameters": []
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "color",
+                        "type": {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "RGBColor",
+                                "circular": true
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "palette",
+                        "type": {
+                            "kind": "array_type",
+                            "value": {
+                                "kind": "type_interface",
+                                "value": {
+                                    "name": "RGBColor",
+                                    "circular": true
+                                }
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "backgroundColor",
+                        "type": {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "RGBColor",
+                                "circular": true
+                            }
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "furthest",
+                "returnType": {
+                    "kind": "type_interface",
+                    "value": {
+                        "name": "RGBColor",
+                        "circular": true
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "color",
+                        "type": {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "RGBColor",
+                                "circular": true
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "palette",
+                        "type": {
+                            "kind": "array_type",
+                            "value": {
+                                "kind": "type_interface",
+                                "value": {
+                                    "name": "RGBColor",
+                                    "circular": true
+                                }
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "backgroundColor",
+                        "type": {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "RGBColor",
+                                "circular": true
+                            }
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "closest_lab",
+                "returnType": {
+                    "kind": "type_interface",
+                    "value": {
+                        "name": "LabColor",
+                        "circular": true
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "color",
+                        "type": {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "LabColor",
+                                "circular": true
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "palette",
+                        "type": {
+                            "kind": "array_type",
+                            "value": {
+                                "kind": "type_interface",
+                                "value": {
+                                    "name": "LabColor",
+                                    "circular": true
+                                }
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "furthest_lab",
+                "returnType": {
+                    "kind": "type_interface",
+                    "value": {
+                        "name": "LabColor",
+                        "circular": true
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "color",
+                        "type": {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "LabColor",
+                                "circular": true
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "palette",
+                        "type": {
+                            "kind": "array_type",
+                            "value": {
+                                "kind": "type_interface",
+                                "value": {
+                                    "name": "LabColor",
+                                    "circular": true
+                                }
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "ciede2000",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "parameters": [
+                    {
+                        "name": "c1",
+                        "type": {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__c1",
+                                "properties": [
+                                    {
+                                        "name": "L",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "a",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "b",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "c2",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "I__c2",
+                                        "properties": [
+                                            {
+                                                "name": "L",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "number"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "a",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "number"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "b",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "number"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [],
+                                        "typeParameters": []
+                                    }
+                                },
+                                {
+                                    "kind": "object_keyword",
+                                    "value": "object"
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "R",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "G",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "B",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "A",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "R",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "G",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "B",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "A",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "R",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "G",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "B",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "A",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "R",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "G",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "B",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "A",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "R",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "G",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "B",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "A",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "R",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "G",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "B",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "A",
+                "circular": true
+            }
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "type",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "literal_type",
+                            "value": "\"closest\""
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "\"furthest\""
+                        },
+                        {
+                            "kind": "undefined_keyword",
+                            "value": "undefined"
+                        }
+                    ]
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "type",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "R",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "G",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "B",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "A",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "R",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "G",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "B",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "A",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "L",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "a",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "b",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "L",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "a",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "b",
+                "circular": true
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "type",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "L",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "a",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "b",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "L",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "a",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "b",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "L",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "a",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "b",
+                "circular": true
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "find_furthest",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "boolean"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "find_furthest",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "boolean"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "number",
+        "optional-parameter",
+        "readonly-array",
+        "type-array",
+        "index-signature",
+        "string",
+        "literals",
+        "type-union",
+        "boolean"
+    ]
+}

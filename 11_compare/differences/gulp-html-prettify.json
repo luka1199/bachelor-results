@@ -1,0 +1,17 @@
+{
+    "module": "gulp-html-prettify",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "string",
+        "number",
+        "call-signature"
+    ]
+}

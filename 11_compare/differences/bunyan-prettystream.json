@@ -1,0 +1,184 @@
+{
+    "module": "bunyan-prettystream",
+    "template": "module-class",
+    "differences": [
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "mode",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "useColor",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "boolean"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "useColor",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "boolean"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "pipe",
+                "returnType": {
+                    "kind": "generic_keyword",
+                    "value": "T",
+                    "constraint": {
+                        "kind": "type_reference",
+                        "value": "NodeJS.WritableStream",
+                        "text": ""
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "destination",
+                        "type": {
+                            "circular": true
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "options",
+                        "type": {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "",
+                                "properties": [
+                                    {
+                                        "name": "end",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "boolean"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [],
+                "typeParameters": [
+                    {
+                        "circular": true
+                    }
+                ],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "formatRecord",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "parameters": [
+                    {
+                        "name": "rec",
+                        "type": {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__rec",
+                                "properties": [
+                                    {
+                                        "name": "req",
+                                        "type": {
+                                            "kind": "undefined_keyword",
+                                            "value": "undefined"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "res",
+                                        "type": {
+                                            "kind": "undefined_keyword",
+                                            "value": "undefined"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "client_req",
+                                        "type": {
+                                            "kind": "undefined_keyword",
+                                            "value": "undefined"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "client_res",
+                                        "type": {
+                                            "kind": "undefined_keyword",
+                                            "value": "undefined"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "string",
+        "boolean",
+        "generics-function"
+    ]
+}

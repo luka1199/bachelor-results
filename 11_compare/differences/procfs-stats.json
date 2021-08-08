@@ -1,0 +1,25 @@
+{
+    "module": "procfs-stats",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "number",
+        "string",
+        "optional-parameter",
+        "boolean",
+        "type-union",
+        "literals",
+        "index-signature",
+        "type-function",
+        "void",
+        "type-any",
+        "generics-function",
+        "alias-type"
+    ]
+}

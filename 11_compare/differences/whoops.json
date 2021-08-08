@@ -1,0 +1,609 @@
+{
+    "module": "whoops",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "createErrorClass",
+            "exportAssignmentActual": "Whoops"
+        },
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "createErrorClass",
+            "expectedNumberOfOverloadings": 7,
+            "actualNumberOfOverloadings": 3
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "className",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "className",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "props",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Record<string, any>",
+                    "text": ""
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "className",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "ErrorClass",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Function",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "props",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "classProps",
+                "type": {
+                    "kind": "object_keyword",
+                    "value": "object"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "className",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "error",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "Error",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__error",
+                                "properties": [
+                                    {
+                                        "name": "message",
+                                        "type": {
+                                            "kind": "union_type",
+                                            "value": [
+                                                {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "string"
+                                                },
+                                                {
+                                                    "kind": "type_reference",
+                                                    "value": "Function",
+                                                    "text": ""
+                                                }
+                                            ]
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "code",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "description",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "props",
+                "circular": true
+            }
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "className",
+                "type": {
+                    "kind": "literal_type",
+                    "value": "'TypeError'"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "className",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "props",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Record<string, any>",
+                    "text": ""
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "className",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "ErrorClass",
+                "circular": true
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "props",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "classProps",
+                "circular": true
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "className",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "error",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "props",
+                "circular": true
+            }
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "className",
+                "type": {
+                    "kind": "literal_type",
+                    "value": "'RangeError'"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "className",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "props",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Record<string, any>",
+                    "text": ""
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "className",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "ErrorClass",
+                "circular": true
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "props",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "classProps",
+                "circular": true
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "className",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "error",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "props",
+                "circular": true
+            }
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "className",
+                "type": {
+                    "kind": "literal_type",
+                    "value": "'EvalError'"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "className",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "props",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Record<string, any>",
+                    "text": ""
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "className",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "ErrorClass",
+                "circular": true
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "props",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "classProps",
+                "circular": true
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "className",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "error",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "props",
+                "circular": true
+            }
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "className",
+                "type": {
+                    "kind": "literal_type",
+                    "value": "'SyntaxError'"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "className",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "props",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Record<string, any>",
+                    "text": ""
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "className",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "ErrorClass",
+                "circular": true
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "props",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "classProps",
+                "circular": true
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "className",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "error",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "props",
+                "circular": true
+            }
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "className",
+                "type": {
+                    "kind": "literal_type",
+                    "value": "'ReferenceError'"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "className",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "props",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Record<string, any>",
+                    "text": ""
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "className",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "ErrorClass",
+                "circular": true
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "props",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "classProps",
+                "circular": true
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "className",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "error",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "props",
+                "circular": true
+            }
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "className",
+                "type": {
+                    "kind": "literal_type",
+                    "value": "'URIError'"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "className",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "props",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Record<string, any>",
+                    "text": ""
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "className",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "ErrorClass",
+                "circular": true
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "props",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "classProps",
+                "circular": true
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "className",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "error",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "props",
+                "circular": true
+            }
+        }
+    ],
+    "tags": [
+        "type-function",
+        "generics-function",
+        "type-any",
+        "type-intersection",
+        "optional-parameter",
+        "string",
+        "type-union",
+        "alias-type",
+        "literals"
+    ]
+}

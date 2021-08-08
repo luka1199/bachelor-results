@@ -1,0 +1,120 @@
+{
+    "module": "string-placeholder",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "template",
+            "exportAssignmentActual": "StringPlaceholder"
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "adjective",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "type",
+                "type": {
+                    "kind": "object_keyword",
+                    "value": "object"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "a",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "b",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "before",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "after",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "escape",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "clean",
+                "type": {
+                    "kind": "undefined_keyword",
+                    "value": "undefined"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "string",
+        "optional-parameter",
+        "boolean"
+    ]
+}

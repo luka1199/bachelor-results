@@ -1,0 +1,53 @@
+{
+    "module": "parse-gitignore",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "gitignore",
+            "exportAssignmentActual": "ParseGitignore"
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "input",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Buffer",
+                            "text": ""
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "input",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Buffer",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "type-array",
+        "string",
+        "type-union",
+        "readonly",
+        "optional-parameter",
+        "call-signature"
+    ]
+}

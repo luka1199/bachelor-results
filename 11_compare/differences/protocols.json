@@ -1,0 +1,74 @@
+{
+    "module": "protocols",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "protocols",
+            "exportAssignmentActual": "Protocols"
+        },
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "protocols",
+            "expectedNumberOfOverloadings": 2,
+            "actualNumberOfOverloadings": 1
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "first",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "literal_type",
+                            "value": "true"
+                        },
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "number"
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "first",
+                "type": {
+                    "kind": "undefined_keyword",
+                    "value": "undefined"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "first",
+                "type": {
+                    "kind": "literal_type",
+                    "value": "false"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "first",
+                "circular": true
+            }
+        }
+    ],
+    "tags": [
+        "string",
+        "literals",
+        "number",
+        "type-union",
+        "type-array",
+        "optional-parameter"
+    ]
+}

@@ -1,0 +1,84 @@
+{
+    "module": "xml-escape",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "escape",
+            "exportAssignmentActual": "XmlEscape"
+        },
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "escape",
+            "expectedNumberOfOverloadings": 1,
+            "actualNumberOfOverloadings": 2
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "string",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "string",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "string",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "string",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "null"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "ignore",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "ignore",
+                "type": {
+                    "kind": "undefined_keyword",
+                    "value": "undefined"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "string",
+        "optional-parameter"
+    ]
+}

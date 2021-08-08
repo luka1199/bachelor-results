@@ -1,0 +1,249 @@
+{
+    "module": "jsonapi-serializer",
+    "template": "module",
+    "differences": [
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "config",
+                "returnType": {
+                    "kind": "void_keyword",
+                    "value": "void"
+                },
+                "parameters": [
+                    {
+                        "name": "o",
+                        "type": {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__o",
+                                "properties": [
+                                    {
+                                        "name": "valueKey",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "attrKey",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "attrPrefix",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "lowerCaseTags",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "boolean"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "trueIsEmpty",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "boolean"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "autoDate",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "boolean"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "ignorePrefixedNodes",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "boolean"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "parseValues",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "boolean"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "stringToJs",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "parameters": [
+                    {
+                        "name": "str",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "stringToXml",
+                "returnType": {
+                    "kind": "void_keyword",
+                    "value": "void"
+                },
+                "parameters": [
+                    {
+                        "name": "xmlStr",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "xmlToJs",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "parameters": [
+                    {
+                        "name": "oXMLParent",
+                        "type": {
+                            "kind": "undefined_keyword",
+                            "value": "undefined"
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "nVerbosity",
+                        "type": {
+                            "kind": "undefined_keyword",
+                            "value": "undefined"
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "bFreeze",
+                        "type": {
+                            "kind": "undefined_keyword",
+                            "value": "undefined"
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "bNesteAttributes",
+                        "type": {
+                            "kind": "undefined_keyword",
+                            "value": "undefined"
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        }
+    ],
+    "tags": [
+        "string",
+        "type-function",
+        "type-any",
+        "alias-type",
+        "type-union",
+        "optional-parameter",
+        "type-array",
+        "boolean",
+        "void",
+        "index-signature",
+        "dot-dot-dot-token",
+        "object",
+        "call-signature",
+        "literals"
+    ]
+}

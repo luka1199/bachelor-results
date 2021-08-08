@@ -1,0 +1,263 @@
+{
+    "module": "promise-poller",
+    "template": "module",
+    "differences": [
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "promisePoller",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "Promise<T>",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "options",
+                        "type": {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "PromisePollerOptions",
+                                "properties": [
+                                    {
+                                        "name": "interval",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "timeout",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "masterTimeout",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "retries",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "strategy",
+                                        "type": {
+                                            "kind": "union_type",
+                                            "value": [
+                                                {
+                                                    "kind": "literal_type",
+                                                    "value": "'fixed-interval'"
+                                                },
+                                                {
+                                                    "kind": "literal_type",
+                                                    "value": "'linear-backoff'"
+                                                },
+                                                {
+                                                    "kind": "literal_type",
+                                                    "value": "'exponential-backoff'"
+                                                }
+                                            ]
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "start",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "increment",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "min",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "max",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "name",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [
+                                    {
+                                        "name": "taskFn",
+                                        "returnType": {
+                                            "kind": "union_type",
+                                            "value": [
+                                                {
+                                                    "kind": "generic_keyword",
+                                                    "value": "T"
+                                                },
+                                                {
+                                                    "kind": "type_reference",
+                                                    "value": "PromiseLike<T>",
+                                                    "text": ""
+                                                }
+                                            ]
+                                        },
+                                        "parameters": [],
+                                        "modifiers": [],
+                                        "typeParameters": [],
+                                        "_isConstructor": false
+                                    },
+                                    {
+                                        "name": "shouldContinue",
+                                        "returnType": {
+                                            "kind": "primitive_keyword",
+                                            "value": "boolean"
+                                        },
+                                        "parameters": [
+                                            {
+                                                "name": "reason",
+                                                "type": {
+                                                    "kind": "any_keyword",
+                                                    "value": "any"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "value",
+                                                "type": {
+                                                    "circular": true
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "modifiers": [],
+                                        "typeParameters": [],
+                                        "_isConstructor": false
+                                    },
+                                    {
+                                        "name": "progressCallback",
+                                        "returnType": {
+                                            "kind": "void_keyword",
+                                            "value": "void"
+                                        },
+                                        "parameters": [
+                                            {
+                                                "name": "retriesRemaining",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "number"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "error",
+                                                "type": {
+                                                    "kind": "any_keyword",
+                                                    "value": "any"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "modifiers": [],
+                                        "typeParameters": [],
+                                        "_isConstructor": false
+                                    }
+                                ],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": [
+                                    {
+                                        "circular": true
+                                    }
+                                ]
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export",
+                    "default"
+                ],
+                "typeParameters": [
+                    {
+                        "kind": "generic_keyword",
+                        "value": "T"
+                    }
+                ],
+                "_isConstructor": false
+            }
+        }
+    ],
+    "tags": [
+        "generics-function",
+        "type-union",
+        "optional-parameter",
+        "number",
+        "boolean",
+        "type-any",
+        "literals",
+        "void",
+        "string",
+        "generics-interface"
+    ]
+}

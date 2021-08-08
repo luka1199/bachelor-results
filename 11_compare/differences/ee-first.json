@@ -1,0 +1,270 @@
+{
+    "module": "ee-first",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "first",
+            "exportAssignmentActual": "EeFirst"
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "eventSpec",
+                "type": {
+                    "kind": "tuple_type",
+                    "value": [
+                        {
+                            "kind": "generic_keyword",
+                            "value": "TEmitter",
+                            "constraint": {
+                                "kind": "type_reference",
+                                "value": "EventEmitter",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "...string[]"
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "stuff",
+                "type": [
+                    {
+                        "kind": "array_type",
+                        "value": {
+                            "kind": "any_keyword",
+                            "value": "any"
+                        }
+                    },
+                    {
+                        "kind": "type_interface",
+                        "value": {
+                            "name": "I__stuff",
+                            "properties": [
+                                {
+                                    "name": "0",
+                                    "type": {
+                                        "kind": "type_interface",
+                                        "value": {
+                                            "name": "I__0",
+                                            "properties": [
+                                                {
+                                                    "name": "0",
+                                                    "type": {
+                                                        "kind": "type_reference",
+                                                        "value": "EventEmitter",
+                                                        "text": ""
+                                                    },
+                                                    "optional": false,
+                                                    "modifiers": [],
+                                                    "dotDotDotToken": false
+                                                },
+                                                {
+                                                    "name": "1",
+                                                    "type": {
+                                                        "kind": "primitive_keyword",
+                                                        "value": "string"
+                                                    },
+                                                    "optional": false,
+                                                    "modifiers": [],
+                                                    "dotDotDotToken": false
+                                                },
+                                                {
+                                                    "name": "2",
+                                                    "type": {
+                                                        "kind": "primitive_keyword",
+                                                        "value": "string"
+                                                    },
+                                                    "optional": false,
+                                                    "modifiers": [],
+                                                    "dotDotDotToken": false
+                                                },
+                                                {
+                                                    "name": "3",
+                                                    "type": {
+                                                        "kind": "primitive_keyword",
+                                                        "value": "string"
+                                                    },
+                                                    "optional": false,
+                                                    "modifiers": [],
+                                                    "dotDotDotToken": false
+                                                },
+                                                {
+                                                    "name": "length",
+                                                    "type": {
+                                                        "kind": "primitive_keyword",
+                                                        "value": "number"
+                                                    },
+                                                    "optional": false,
+                                                    "modifiers": [],
+                                                    "dotDotDotToken": false
+                                                }
+                                            ],
+                                            "methods": [],
+                                            "classes": [],
+                                            "callSignatures": [],
+                                            "indexSignatures": [],
+                                            "typeParameters": []
+                                        }
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                },
+                                {
+                                    "name": "1",
+                                    "type": {
+                                        "kind": "array_type",
+                                        "value": {
+                                            "kind": "any_keyword",
+                                            "value": "any"
+                                        }
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                },
+                                {
+                                    "name": "2",
+                                    "type": {
+                                        "kind": "array_type",
+                                        "value": {
+                                            "kind": "any_keyword",
+                                            "value": "any"
+                                        }
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                },
+                                {
+                                    "name": "length",
+                                    "type": {
+                                        "kind": "primitive_keyword",
+                                        "value": "number"
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                }
+                            ],
+                            "methods": [],
+                            "classes": [],
+                            "callSignatures": [],
+                            "indexSignatures": [],
+                            "typeParameters": []
+                        }
+                    }
+                ],
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "listener",
+                "type": {
+                    "kind": "function_type",
+                    "value": {
+                        "name": "",
+                        "returnType": {
+                            "kind": "void_keyword",
+                            "value": "void"
+                        },
+                        "parameters": [
+                            {
+                                "name": "err",
+                                "type": {
+                                    "kind": "any_keyword",
+                                    "value": "any"
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "ee",
+                                "type": {
+                                    "kind": "generic_keyword",
+                                    "value": "TEmitter",
+                                    "constraint": {
+                                        "kind": "type_reference",
+                                        "value": "EventEmitter",
+                                        "text": ""
+                                    }
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "event",
+                                "type": {
+                                    "kind": "array_type",
+                                    "value": {
+                                        "kind": "primitive_keyword",
+                                        "value": "string"
+                                    }
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "args",
+                                "type": {
+                                    "kind": "array_type",
+                                    "value": {
+                                        "kind": "any_keyword",
+                                        "value": "any"
+                                    }
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "modifiers": [],
+                        "typeParameters": [],
+                        "_isConstructor": false
+                    }
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "done",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Function",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "call-signature",
+        "void",
+        "type-function",
+        "type-any",
+        "generics-function",
+        "type-array",
+        "string",
+        "alias-type",
+        "generics-interface",
+        "type-tuple"
+    ]
+}

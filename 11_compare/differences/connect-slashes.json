@@ -1,0 +1,41 @@
+{
+    "module": "connect-slashes",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "slashes",
+            "exportAssignmentActual": "ConnectSlashes"
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "addTrailingSlashes",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "boolean"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "append",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "boolean"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "boolean",
+        "string",
+        "number",
+        "index-signature"
+    ]
+}

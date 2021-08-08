@@ -1,0 +1,842 @@
+{
+    "module": "node-dir",
+    "template": "module",
+    "differences": [
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "readFiles",
+            "expectedNumberOfOverloadings": 4,
+            "actualNumberOfOverloadings": 1
+        },
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "readFilesStream",
+            "expectedNumberOfOverloadings": 2,
+            "actualNumberOfOverloadings": 1
+        },
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "files",
+            "expectedNumberOfOverloadings": 2,
+            "actualNumberOfOverloadings": 1
+        },
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "paths",
+            "expectedNumberOfOverloadings": 2,
+            "actualNumberOfOverloadings": 1
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "complete",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Function",
+                    "text": ""
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "complete",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "encoding",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "exclude",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "RegExp",
+                            "text": ""
+                        },
+                        {
+                            "kind": "array_type",
+                            "value": {
+                                "kind": "primitive_keyword",
+                                "value": "string"
+                            }
+                        }
+                    ]
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "excludeDir",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "RegExp",
+                            "text": ""
+                        },
+                        {
+                            "kind": "array_type",
+                            "value": {
+                                "kind": "primitive_keyword",
+                                "value": "string"
+                            }
+                        }
+                    ]
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "match",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "RegExp",
+                            "text": ""
+                        },
+                        {
+                            "kind": "array_type",
+                            "value": {
+                                "kind": "primitive_keyword",
+                                "value": "string"
+                            }
+                        }
+                    ]
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "matchDir",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "RegExp",
+                            "text": ""
+                        },
+                        {
+                            "kind": "array_type",
+                            "value": {
+                                "kind": "primitive_keyword",
+                                "value": "string"
+                            }
+                        }
+                    ]
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "recursive",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "boolean"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "reverse",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "boolean"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "shortName",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "boolean"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "sort",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "boolean"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "doneOnErr",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "boolean"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "encoding",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "exclude",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "excludeDir",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "match",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "matchDir",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "recursive",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "reverse",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "shortName",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "sort",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "doneOnErr",
+                "circular": true
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "complete",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Function",
+                    "text": ""
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "encoding",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "exclude",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "excludeDir",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "match",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "matchDir",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "recursive",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "reverse",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "shortName",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "sort",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "doneOnErr",
+                "circular": true
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "callback",
+                "type": {
+                    "kind": "function_type",
+                    "value": {
+                        "name": "",
+                        "returnType": {
+                            "kind": "void_keyword",
+                            "value": "void"
+                        },
+                        "parameters": [
+                            {
+                                "name": "error",
+                                "type": {
+                                    "kind": "any_keyword",
+                                    "value": "any"
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "files",
+                                "type": {
+                                    "kind": "array_type",
+                                    "value": {
+                                        "kind": "primitive_keyword",
+                                        "value": "string"
+                                    }
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "modifiers": [],
+                        "typeParameters": [],
+                        "_isConstructor": false
+                    }
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "type",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Function",
+                            "text": ""
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "callback",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Function",
+                    "text": ""
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "options",
+                "type": {
+                    "kind": "type_interface",
+                    "value": {
+                        "name": "I__options",
+                        "properties": [
+                            {
+                                "name": "sync",
+                                "type": {
+                                    "kind": "undefined_keyword",
+                                    "value": "undefined"
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "methods": [],
+                        "classes": [],
+                        "callSignatures": [],
+                        "indexSignatures": [],
+                        "typeParameters": []
+                    }
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "sync",
+                "type": {
+                    "kind": "literal_type",
+                    "value": "true"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "callback",
+                "circular": true
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "options",
+                "circular": true
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "type",
+                "type": {
+                    "kind": "undefined_keyword",
+                    "value": "undefined"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "options",
+                "type": {
+                    "kind": "undefined_keyword",
+                    "value": "undefined"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "callback",
+                "type": {
+                    "kind": "function_type",
+                    "value": {
+                        "name": "",
+                        "returnType": {
+                            "kind": "void_keyword",
+                            "value": "void"
+                        },
+                        "parameters": [
+                            {
+                                "name": "error",
+                                "type": {
+                                    "kind": "any_keyword",
+                                    "value": "any"
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "subdirs",
+                                "type": {
+                                    "kind": "array_type",
+                                    "value": {
+                                        "kind": "primitive_keyword",
+                                        "value": "string"
+                                    }
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "modifiers": [],
+                        "typeParameters": [],
+                        "_isConstructor": false
+                    }
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "callback",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Function",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "type",
+                "type": {
+                    "kind": "undefined_keyword",
+                    "value": "undefined"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "options",
+                "type": {
+                    "kind": "undefined_keyword",
+                    "value": "undefined"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "callback",
+                "type": {
+                    "kind": "function_type",
+                    "value": {
+                        "name": "",
+                        "returnType": {
+                            "kind": "void_keyword",
+                            "value": "void"
+                        },
+                        "parameters": [
+                            {
+                                "name": "error",
+                                "type": {
+                                    "kind": "any_keyword",
+                                    "value": "any"
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "paths",
+                                "type": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "PathsResult",
+                                        "properties": [
+                                            {
+                                                "name": "files",
+                                                "type": {
+                                                    "kind": "array_type",
+                                                    "value": {
+                                                        "kind": "primitive_keyword",
+                                                        "value": "string"
+                                                    }
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "dirs",
+                                                "type": {
+                                                    "kind": "array_type",
+                                                    "value": {
+                                                        "kind": "primitive_keyword",
+                                                        "value": "string"
+                                                    }
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [],
+                                        "typeParameters": []
+                                    }
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "modifiers": [],
+                        "typeParameters": [],
+                        "_isConstructor": false
+                    }
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "combine",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "Function",
+                            "text": ""
+                        },
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "boolean"
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "callback",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Function",
+                    "text": ""
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "combine",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "boolean"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "combine",
+                "circular": true
+            }
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "callback",
+                "type": {
+                    "kind": "function_type",
+                    "value": {
+                        "name": "",
+                        "returnType": {
+                            "kind": "void_keyword",
+                            "value": "void"
+                        },
+                        "parameters": [
+                            {
+                                "name": "error",
+                                "type": {
+                                    "kind": "any_keyword",
+                                    "value": "any"
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "paths",
+                                "type": {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "array_type",
+                                            "value": {
+                                                "kind": "primitive_keyword",
+                                                "value": "string"
+                                            }
+                                        },
+                                        {
+                                            "kind": "type_interface",
+                                            "value": {
+                                                "name": "PathsResult",
+                                                "circular": true
+                                            }
+                                        }
+                                    ]
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "modifiers": [],
+                        "typeParameters": [],
+                        "_isConstructor": false
+                    }
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "callback",
+                "circular": true
+            }
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "string",
+        "type-array",
+        "type-union",
+        "boolean",
+        "call-signature",
+        "void",
+        "type-any",
+        "type-function",
+        "literals"
+    ]
+}

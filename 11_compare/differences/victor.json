@@ -1,0 +1,1881 @@
+{
+    "module": "victor",
+    "template": "module-class",
+    "differences": [
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "fromArray",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "Victor",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "arr",
+                        "type": {
+                            "kind": "array_type",
+                            "value": {
+                                "kind": "primitive_keyword",
+                                "value": "number"
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "static"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "fromObject",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "Victor",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "obj",
+                        "type": {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "VictorCoordinates",
+                                "properties": [
+                                    {
+                                        "name": "x",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "y",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "static"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "copyX",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "Victor",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "vector",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Victor",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "copyY",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "Victor",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "vector",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Victor",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "copy",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "Victor",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "vector",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Victor",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "toString",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "parameters": [],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "invertX",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "Victor",
+                    "text": ""
+                },
+                "parameters": [],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "invertY",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "Victor",
+                    "text": ""
+                },
+                "parameters": [],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "invert",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "Victor",
+                    "text": ""
+                },
+                "parameters": [],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "normalize",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "Victor",
+                    "text": ""
+                },
+                "parameters": [],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "toFixed",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "Victor",
+                    "text": ""
+                },
+                "parameters": [],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "cross",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "parameters": [
+                    {
+                        "name": "vector",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Victor",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "magnitude",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "parameters": [],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "absDistanceX",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "parameters": [
+                    {
+                        "name": "vector",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Victor",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "absDistanceY",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "parameters": [
+                    {
+                        "name": "vector",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Victor",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "distance",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "parameters": [
+                    {
+                        "name": "vector",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Victor",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "distanceSq",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "parameters": [
+                    {
+                        "name": "vector",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Victor",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "angle",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "parameters": [],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "direction",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "parameters": [],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "horizontalAngleDeg",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "parameters": [],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "verticalAngle",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "parameters": [],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "verticalAngleDeg",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "parameters": [],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "f",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "parameters": [],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "rotateTo",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "Victor",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "rotation",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "number"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "rotateToDeg",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "Victor",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "rotation",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "number"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "vector",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Victor",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "vec",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "Victor",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__vec",
+                                "properties": [
+                                    {
+                                        "name": "x",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "vector",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Victor",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "vec",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "Victor",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__vec__1",
+                                "properties": [
+                                    {
+                                        "name": "y",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "vector",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Victor",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "vec",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "Victor",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__vec__2",
+                                "properties": [
+                                    {
+                                        "name": "x",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "y",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "vector",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Victor",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "vec",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "Victor",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__vec__3",
+                                "properties": [
+                                    {
+                                        "name": "x",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "vector",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Victor",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "vec",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "Victor",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__vec__4",
+                                "properties": [
+                                    {
+                                        "name": "y",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "vector",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Victor",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "vec",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "Victor",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__vec__5",
+                                "properties": [
+                                    {
+                                        "name": "x",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "y",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "vector",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Victor",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "vector",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "Victor",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__vector__8",
+                                "properties": [
+                                    {
+                                        "name": "x",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "vector",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Victor",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "vector",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "Victor",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__vector__9",
+                                "properties": [
+                                    {
+                                        "name": "y",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "vector",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Victor",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "vector",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "Victor",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__vector__10",
+                                "properties": [
+                                    {
+                                        "name": "x",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "y",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "vector",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Victor",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "vector",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "Victor",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__vector",
+                                "properties": [
+                                    {
+                                        "name": "x",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "vector",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Victor",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "vector",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "Victor",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__vector__6",
+                                "properties": [
+                                    {
+                                        "name": "y",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "scalar",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Victor",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "vector",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "Victor",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__vector__7",
+                                "properties": [
+                                    {
+                                        "name": "x",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "y",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        },
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__vector",
+                                "circular": true
+                            }
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "vector",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Victor",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "vec",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "Victor",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__vec__13",
+                                "properties": [
+                                    {
+                                        "name": "x",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        },
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__vec",
+                                "circular": true
+                            }
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "vector",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Victor",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "vec",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "Victor",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__vec__14",
+                                "properties": [
+                                    {
+                                        "name": "y",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        },
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__vec",
+                                "circular": true
+                            }
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "topLeft",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Victor",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "topLeft",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "Victor",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__topLeft",
+                                "properties": [
+                                    {
+                                        "name": "x",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "bottomRight",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Victor",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "bottomRight",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "Victor",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__bottomRight",
+                                "properties": [
+                                    {
+                                        "name": "x",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "topLeft",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Victor",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "topLeft",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "Victor",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__topLeft__11",
+                                "properties": [
+                                    {
+                                        "name": "y",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        },
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__topLeft",
+                                "circular": true
+                            }
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "bottomRight",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Victor",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "bottomRight",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "Victor",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__bottomRight__12",
+                                "properties": [
+                                    {
+                                        "name": "y",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        },
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__bottomRight",
+                                "circular": true
+                            }
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "vector",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Victor",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "vec2",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "Victor",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__vec2",
+                                "properties": [
+                                    {
+                                        "name": "x",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "y",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "vector",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Victor",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "vec2",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "Victor",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__vec2__15",
+                                "properties": [
+                                    {
+                                        "name": "x",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "y",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "vector",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Victor",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "vec",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "Victor",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__vec__16",
+                                "properties": [
+                                    {
+                                        "name": "x",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "vector",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Victor",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "vec",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "Victor",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__vec__17",
+                                "properties": [
+                                    {
+                                        "name": "y",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "vector",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Victor",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "vec2",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "Victor",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__vec2__18",
+                                "properties": [
+                                    {
+                                        "name": "x",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "y",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        },
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__vec2",
+                                "circular": true
+                            }
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "number",
+        "type-array",
+        "string",
+        "boolean"
+    ]
+}

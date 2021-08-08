@@ -1,0 +1,54 @@
+{
+    "module": "round",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "round",
+            "exportAssignmentActual": "Round"
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "direction",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "literal_type",
+                            "value": "'up'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'down'"
+                        },
+                        {
+                            "kind": "undefined_keyword",
+                            "value": "undefined"
+                        }
+                    ]
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "direction",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "number",
+        "optional-parameter",
+        "literals",
+        "type-union",
+        "alias-type"
+    ]
+}

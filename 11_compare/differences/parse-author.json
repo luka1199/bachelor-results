@@ -1,0 +1,15 @@
+{
+    "module": "parse-author",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "parse",
+            "exportAssignmentActual": "ParseAuthor"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "string"
+    ]
+}

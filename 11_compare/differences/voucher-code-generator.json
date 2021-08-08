@@ -1,0 +1,19 @@
+{
+    "module": "voucher-code-generator",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "string",
+        "literals",
+        "type-union",
+        "type-array",
+        "optional-parameter",
+        "number"
+    ]
+}

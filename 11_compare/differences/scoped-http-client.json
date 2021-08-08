@@ -1,0 +1,282 @@
+{
+    "module": "scoped-http-client",
+    "template": "module",
+    "differences": [
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "create",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "ScopedClient",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "options",
+                        "type": {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "Options",
+                                "properties": [
+                                    {
+                                        "name": "encoding",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "httpAgent",
+                                        "type": {
+                                            "kind": "union_type",
+                                            "value": [
+                                                {
+                                                    "kind": "type_reference",
+                                                    "value": "Agent",
+                                                    "text": ""
+                                                },
+                                                {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "boolean"
+                                                }
+                                            ]
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "httpsAgent",
+                                        "type": {
+                                            "kind": "union_type",
+                                            "value": [
+                                                {
+                                                    "kind": "type_reference",
+                                                    "value": "Agent",
+                                                    "text": ""
+                                                },
+                                                {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "boolean"
+                                                }
+                                            ]
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "query",
+                                        "type": {
+                                            "kind": "any_keyword",
+                                            "value": "any"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "pathname",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "slashes",
+                                        "type": {
+                                            "kind": "any_keyword",
+                                            "value": "any"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "hash",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "create",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "ScopedClient",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "url",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "options",
+                        "type": {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "Options",
+                                "circular": true
+                            }
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "maxSatisfying",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "parameters": [
+                    {
+                        "name": "versions",
+                        "type": {
+                            "kind": "array_type",
+                            "value": {
+                                "kind": "any_keyword",
+                                "value": "any"
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "range",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "is",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "boolean"
+                },
+                "parameters": [
+                    {
+                        "name": "version",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "max",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "parameters": [
+                    {
+                        "name": "versions",
+                        "type": {
+                            "kind": "array_type",
+                            "value": {
+                                "kind": "any_keyword",
+                                "value": "any"
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "string",
+        "boolean",
+        "type-union",
+        "type-any",
+        "type-function",
+        "void",
+        "alias-type",
+        "number"
+    ]
+}

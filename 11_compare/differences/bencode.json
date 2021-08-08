@@ -1,0 +1,17 @@
+{
+    "module": "bencode",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "number",
+        "type-any",
+        "optional-parameter",
+        "string"
+    ]
+}

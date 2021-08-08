@@ -1,0 +1,59 @@
+{
+    "module": "content-disposition",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "contentDisposition",
+            "exportAssignmentActual": "ContentDisposition"
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "type",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "literal_type",
+                            "value": "'attachment'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'inline'"
+                        },
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        {
+                            "kind": "undefined_keyword",
+                            "value": "undefined"
+                        }
+                    ]
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "type",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "literals",
+        "string",
+        "type-union",
+        "type-any",
+        "optional-parameter",
+        "boolean"
+    ]
+}

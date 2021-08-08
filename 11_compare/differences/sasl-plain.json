@@ -1,0 +1,49 @@
+{
+    "module": "sasl-plain",
+    "template": "module-class",
+    "differences": [
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "constructor",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": ""
+                },
+                "parameters": [],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": true
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "chal",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "chal",
+                "type": {
+                    "kind": "undefined_keyword",
+                    "value": "undefined"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "static",
+        "literals",
+        "string",
+        "optional-parameter"
+    ]
+}

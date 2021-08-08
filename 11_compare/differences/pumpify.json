@@ -1,0 +1,18 @@
+{
+    "module": "pumpify",
+    "template": "module-class",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-class",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "type-array",
+        "dot-dot-dot-token",
+        "void",
+        "boolean",
+        "number"
+    ]
+}

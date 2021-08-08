@@ -1,0 +1,19 @@
+{
+    "module": "uid-safe",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "call-signature",
+        "void",
+        "number",
+        "type-function",
+        "type-any",
+        "string"
+    ]
+}

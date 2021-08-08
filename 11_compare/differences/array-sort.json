@@ -1,0 +1,196 @@
+{
+    "module": "array-sort",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "arraySort",
+            "exportAssignmentActual": "ArraySort"
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "arr",
+                "type": {
+                    "kind": "generic_keyword",
+                    "value": "T"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "arr",
+                "type": [
+                    {
+                        "kind": "primitive_keyword",
+                        "value": "null"
+                    },
+                    {
+                        "kind": "array_type",
+                        "value": {
+                            "kind": "any_keyword",
+                            "value": "any"
+                        }
+                    },
+                    {
+                        "kind": "type_interface",
+                        "value": {
+                            "name": "I__arr",
+                            "properties": [
+                                {
+                                    "name": "should",
+                                    "type": {
+                                        "kind": "type_reference",
+                                        "value": "Assertion",
+                                        "text": ""
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                }
+                            ],
+                            "methods": [],
+                            "classes": [],
+                            "callSignatures": [],
+                            "indexSignatures": [],
+                            "typeParameters": []
+                        }
+                    },
+                    {
+                        "kind": "undefined_keyword",
+                        "value": "undefined"
+                    }
+                ],
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "props",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                },
+                                {
+                                    "kind": "function_type",
+                                    "value": {
+                                        "name": "",
+                                        "returnType": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "parameters": [
+                                            {
+                                                "name": "a",
+                                                "type": {
+                                                    "kind": "generic_keyword",
+                                                    "value": "T"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "b",
+                                                "type": {
+                                                    "circular": true
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "modifiers": [],
+                                        "typeParameters": [],
+                                        "_isConstructor": false
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "kind": "array_type",
+                            "value": {
+                                "circular": true
+                            }
+                        },
+                        {
+                            "kind": "undefined_keyword",
+                            "value": "undefined"
+                        }
+                    ]
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "props",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        {
+                            "kind": "array_type",
+                            "value": {
+                                "kind": "any_keyword",
+                                "value": "any"
+                            }
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Function",
+                            "text": ""
+                        },
+                        {
+                            "kind": "undefined_keyword",
+                            "value": "undefined"
+                        }
+                    ]
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "reverse",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "boolean"
+                },
+                "optional": false,
+                "modifiers": [
+                    "readonly"
+                ],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "boolean",
+        "readonly",
+        "type-array",
+        "generics-function",
+        "optional-parameter",
+        "string",
+        "type-function",
+        "number",
+        "alias-type",
+        "type-union"
+    ]
+}

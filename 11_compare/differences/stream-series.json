@@ -1,0 +1,69 @@
+{
+    "module": "stream-series",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "series",
+            "exportAssignmentActual": "StreamSeries"
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "streams",
+                "type": {
+                    "kind": "generic_keyword",
+                    "value": "T",
+                    "constraint": {
+                        "kind": "type_reference",
+                        "value": "NodeJS.ReadableStream",
+                        "text": ""
+                    }
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "stream",
+                "type": "DestroyableTransform",
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "fn",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Function",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "cb",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Function",
+                    "text": ""
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "type-array",
+        "generics-function",
+        "dot-dot-dot-token"
+    ]
+}

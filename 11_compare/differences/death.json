@@ -1,0 +1,21 @@
+{
+    "module": "death",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "type-function",
+        "void",
+        "literals",
+        "type-union",
+        "alias-type",
+        "optional-parameter",
+        "boolean",
+        "string"
+    ]
+}

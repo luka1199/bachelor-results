@@ -1,0 +1,184 @@
+{
+    "module": "buffer-from",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "bufferFrom",
+            "exportAssignmentActual": "BufferFrom"
+        },
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "bufferFrom",
+            "expectedNumberOfOverloadings": 3,
+            "actualNumberOfOverloadings": 1
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "arrayBuffer",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "ArrayBuffer",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "value",
+                "type": {
+                    "kind": "array_type",
+                    "value": {
+                        "kind": "any_keyword",
+                        "value": "any"
+                    }
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "byteOffset",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "encodingOrOffset",
+                "type": {
+                    "kind": "undefined_keyword",
+                    "value": "undefined"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "length",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "length",
+                "type": {
+                    "kind": "undefined_keyword",
+                    "value": "undefined"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "str",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "value",
+                "circular": true
+            }
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "encoding",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "encodingOrOffset",
+                "circular": true
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "length",
+                "circular": true
+            }
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "data",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "array_type",
+                            "value": {
+                                "kind": "any_keyword",
+                                "value": "any"
+                            }
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Buffer",
+                            "text": ""
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "value",
+                "circular": true
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "encodingOrOffset",
+                "circular": true
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "length",
+                "circular": true
+            }
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "number",
+        "string",
+        "readonly-array",
+        "type-array",
+        "type-any",
+        "type-union"
+    ]
+}

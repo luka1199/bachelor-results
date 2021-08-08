@@ -1,0 +1,508 @@
+{
+    "module": "nodemailer-smtp-transport",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "smtpTransport",
+            "exportAssignmentActual": "NodemailerSmtpTransport"
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "service",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "port",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "host",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "secure",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "boolean"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "auth",
+                "type": {
+                    "kind": "type_interface",
+                    "value": {
+                        "name": "AuthOptions",
+                        "properties": [
+                            {
+                                "name": "user",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "pass",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "type",
+                                "type": {
+                                    "kind": "any_keyword",
+                                    "value": "any"
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "clientId",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "clientSecret",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "refreshToken",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "accessToken",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "expires",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "number"
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "accessUrl",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "serviceClient",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "privateKey",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "methods": [],
+                        "classes": [],
+                        "callSignatures": [],
+                        "indexSignatures": [],
+                        "typeParameters": []
+                    }
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "requireTLS",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "boolean"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "ignoreTLS",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "boolean"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "name",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "localAddress",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "connectionTimeout",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "greetingTimeout",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "socketTimeout",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "debug",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "boolean"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "logger",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "boolean"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "authMethod",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "tls",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "tls.ConnectionOptions",
+                    "text": ""
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "pool",
+                "type": {
+                    "kind": "type_interface",
+                    "value": {
+                        "name": "",
+                        "properties": [
+                            {
+                                "name": "pool",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "boolean"
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "maxConnections",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "boolean"
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "maxMessages",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "boolean"
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "rateDelta",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "boolean"
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "rateLimit",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "boolean"
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "methods": [],
+                        "classes": [],
+                        "callSignatures": [],
+                        "indexSignatures": [],
+                        "typeParameters": []
+                    }
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "disableFileAccess",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "boolean"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "disableUrlAccess",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "boolean"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "proxy",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "shorthands",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "object_keyword",
+                            "value": "object"
+                        },
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "null"
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "args",
+                "type": {
+                    "kind": "array_type",
+                    "value": {
+                        "kind": "any_keyword",
+                        "value": "any"
+                    }
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "slice",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "string",
+        "type-any",
+        "number",
+        "boolean"
+    ]
+}

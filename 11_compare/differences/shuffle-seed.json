@@ -1,0 +1,444 @@
+{
+    "module": "shuffle-seed",
+    "template": "module",
+    "differences": [
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "arr",
+                "type": {
+                    "kind": "generic_keyword",
+                    "value": "T"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "arr",
+                "type": [
+                    {
+                        "kind": "array_type",
+                        "value": {
+                            "kind": "any_keyword",
+                            "value": "any"
+                        }
+                    },
+                    {
+                        "kind": "type_interface",
+                        "value": {
+                            "name": "I__arr",
+                            "properties": [
+                                {
+                                    "name": "0",
+                                    "type": {
+                                        "kind": "primitive_keyword",
+                                        "value": "string"
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                },
+                                {
+                                    "name": "1",
+                                    "type": {
+                                        "kind": "primitive_keyword",
+                                        "value": "string"
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                },
+                                {
+                                    "name": "2",
+                                    "type": {
+                                        "kind": "primitive_keyword",
+                                        "value": "string"
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                },
+                                {
+                                    "name": "3",
+                                    "type": {
+                                        "kind": "primitive_keyword",
+                                        "value": "string"
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                },
+                                {
+                                    "name": "4",
+                                    "type": {
+                                        "kind": "primitive_keyword",
+                                        "value": "string"
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                },
+                                {
+                                    "name": "5",
+                                    "type": {
+                                        "kind": "primitive_keyword",
+                                        "value": "string"
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                },
+                                {
+                                    "name": "6",
+                                    "type": {
+                                        "kind": "primitive_keyword",
+                                        "value": "string"
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                },
+                                {
+                                    "name": "7",
+                                    "type": {
+                                        "kind": "primitive_keyword",
+                                        "value": "string"
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                },
+                                {
+                                    "name": "8",
+                                    "type": {
+                                        "kind": "primitive_keyword",
+                                        "value": "string"
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                },
+                                {
+                                    "name": "9",
+                                    "type": {
+                                        "kind": "primitive_keyword",
+                                        "value": "string"
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                },
+                                {
+                                    "name": "10",
+                                    "type": {
+                                        "kind": "primitive_keyword",
+                                        "value": "string"
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                },
+                                {
+                                    "name": "11",
+                                    "type": {
+                                        "kind": "primitive_keyword",
+                                        "value": "string"
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                },
+                                {
+                                    "name": "12",
+                                    "type": {
+                                        "kind": "primitive_keyword",
+                                        "value": "string"
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                },
+                                {
+                                    "name": "13",
+                                    "type": {
+                                        "kind": "primitive_keyword",
+                                        "value": "string"
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                },
+                                {
+                                    "name": "14",
+                                    "type": {
+                                        "kind": "primitive_keyword",
+                                        "value": "string"
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                },
+                                {
+                                    "name": "15",
+                                    "type": {
+                                        "kind": "primitive_keyword",
+                                        "value": "string"
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                },
+                                {
+                                    "name": "16",
+                                    "type": {
+                                        "kind": "primitive_keyword",
+                                        "value": "string"
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                },
+                                {
+                                    "name": "17",
+                                    "type": {
+                                        "kind": "primitive_keyword",
+                                        "value": "string"
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                },
+                                {
+                                    "name": "18",
+                                    "type": {
+                                        "kind": "primitive_keyword",
+                                        "value": "string"
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                },
+                                {
+                                    "name": "19",
+                                    "type": {
+                                        "kind": "primitive_keyword",
+                                        "value": "string"
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                },
+                                {
+                                    "name": "20",
+                                    "type": {
+                                        "kind": "primitive_keyword",
+                                        "value": "string"
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                },
+                                {
+                                    "name": "21",
+                                    "type": {
+                                        "kind": "primitive_keyword",
+                                        "value": "string"
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                },
+                                {
+                                    "name": "22",
+                                    "type": {
+                                        "kind": "primitive_keyword",
+                                        "value": "string"
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                },
+                                {
+                                    "name": "23",
+                                    "type": {
+                                        "kind": "primitive_keyword",
+                                        "value": "string"
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                },
+                                {
+                                    "name": "24",
+                                    "type": {
+                                        "kind": "primitive_keyword",
+                                        "value": "string"
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                },
+                                {
+                                    "name": "25",
+                                    "type": {
+                                        "kind": "primitive_keyword",
+                                        "value": "string"
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                },
+                                {
+                                    "name": "length",
+                                    "type": {
+                                        "kind": "primitive_keyword",
+                                        "value": "number"
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                }
+                            ],
+                            "methods": [],
+                            "classes": [],
+                            "callSignatures": [],
+                            "indexSignatures": [],
+                            "typeParameters": []
+                        }
+                    }
+                ],
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "seed",
+                "type": {
+                    "kind": "any_keyword",
+                    "value": "any"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "seed",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "number"
+                        },
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "boolean"
+                        },
+                        {
+                            "kind": "object_keyword",
+                            "value": "object"
+                        },
+                        {
+                            "kind": "array_type",
+                            "value": {
+                                "kind": "any_keyword",
+                                "value": "any"
+                            }
+                        },
+                        {
+                            "kind": "undefined_keyword",
+                            "value": "undefined"
+                        }
+                    ]
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "arr",
+                "type": {
+                    "kind": "generic_keyword",
+                    "value": "T"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "arr",
+                "type": {
+                    "kind": "any_keyword",
+                    "value": "any"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "seed",
+                "type": {
+                    "kind": "any_keyword",
+                    "value": "any"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "seed",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "number"
+                        },
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "boolean"
+                        },
+                        {
+                            "kind": "object_keyword",
+                            "value": "object"
+                        },
+                        {
+                            "kind": "array_type",
+                            "value": {
+                                "kind": "any_keyword",
+                                "value": "any"
+                            }
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "type-array",
+        "generics-function",
+        "readonly-array",
+        "type-any"
+    ]
+}

@@ -1,0 +1,991 @@
+{
+    "module": "to-json-schema",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "toJsonSchema",
+            "exportAssignmentActual": "ToJsonSchema"
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "value",
+                "type": {
+                    "kind": "any_keyword",
+                    "value": "any"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "value",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "object_keyword",
+                            "value": "object"
+                        },
+                        {
+                            "kind": "array_type",
+                            "value": {
+                                "kind": "any_keyword",
+                                "value": "any"
+                            }
+                        },
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "boolean"
+                        },
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "number"
+                        },
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Date",
+                            "text": ""
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "required",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "boolean"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "arrays",
+                "type": {
+                    "kind": "type_interface",
+                    "value": {
+                        "name": "",
+                        "properties": [
+                            {
+                                "name": "mode",
+                                "type": {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "literal_type",
+                                            "value": "'all'"
+                                        },
+                                        {
+                                            "kind": "literal_type",
+                                            "value": "'first'"
+                                        },
+                                        {
+                                            "kind": "literal_type",
+                                            "value": "'uniform'"
+                                        },
+                                        {
+                                            "kind": "literal_type",
+                                            "value": "'tuple'"
+                                        }
+                                    ]
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "methods": [],
+                        "classes": [],
+                        "callSignatures": [],
+                        "indexSignatures": [],
+                        "typeParameters": []
+                    }
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "objects",
+                "type": {
+                    "kind": "type_interface",
+                    "value": {
+                        "name": "",
+                        "properties": [
+                            {
+                                "name": "additionalProperties",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "boolean"
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "methods": [
+                            {
+                                "name": "preProcessFnc",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "JSONSchema3or4",
+                                        "properties": [
+                                            {
+                                                "name": "id",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "JSONSchema4['id']"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "$ref",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "JSONSchema4['$ref']"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "$schema",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "JSONSchema4['$schema']"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "title",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "JSONSchema4['title']"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "description",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "JSONSchema4['description']"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "default",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "JSONSchema4['default']"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "multipleOf",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "JSONSchema4['multipleOf']"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "divisibleBy",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "JSONSchema4['multipleOf']"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "maximum",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "JSONSchema4['maximum']"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "exclusiveMaximum",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "JSONSchema4['exclusiveMaximum']"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "minimum",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "JSONSchema4['minimum']"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "exclusiveMinimum",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "JSONSchema4['exclusiveMinimum']"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "maxLength",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "JSONSchema4['maxLength']"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "minLength",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "JSONSchema4['minLength']"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "pattern",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "JSONSchema4['pattern']"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "additionalItems",
+                                                "type": {
+                                                    "kind": "union_type",
+                                                    "value": [
+                                                        {
+                                                            "kind": "primitive_keyword",
+                                                            "value": "boolean"
+                                                        },
+                                                        {
+                                                            "kind": "type_interface",
+                                                            "value": {
+                                                                "name": "JSONSchema3or4",
+                                                                "circular": true
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "items",
+                                                "type": {
+                                                    "kind": "union_type",
+                                                    "value": [
+                                                        {
+                                                            "kind": "type_interface",
+                                                            "value": {
+                                                                "name": "JSONSchema3or4",
+                                                                "circular": true
+                                                            }
+                                                        },
+                                                        {
+                                                            "kind": "array_type",
+                                                            "value": {
+                                                                "kind": "type_interface",
+                                                                "value": {
+                                                                    "name": "JSONSchema3or4",
+                                                                    "circular": true
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "maxItems",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "JSONSchema4['maxItems']"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "minItems",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "JSONSchema4['minItems']"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "uniqueItems",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "JSONSchema4['uniqueItems']"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "maxProperties",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "JSONSchema4['maxProperties']"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "minProperties",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "JSONSchema4['minProperties']"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "required",
+                                                "type": {
+                                                    "kind": "union_type",
+                                                    "value": [
+                                                        {
+                                                            "kind": "primitive_keyword",
+                                                            "value": "boolean"
+                                                        },
+                                                        {
+                                                            "kind": "primitive_keyword",
+                                                            "value": "JSONSchema4['required']"
+                                                        }
+                                                    ]
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "additionalProperties",
+                                                "type": {
+                                                    "kind": "union_type",
+                                                    "value": [
+                                                        {
+                                                            "kind": "primitive_keyword",
+                                                            "value": "boolean"
+                                                        },
+                                                        {
+                                                            "kind": "type_interface",
+                                                            "value": {
+                                                                "name": "JSONSchema3or4",
+                                                                "circular": true
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "definitions",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "JSONSchema4['definitions']"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "properties",
+                                                "type": {
+                                                    "kind": "type_interface",
+                                                    "value": {
+                                                        "name": "",
+                                                        "properties": [],
+                                                        "methods": [],
+                                                        "classes": [],
+                                                        "callSignatures": [],
+                                                        "indexSignatures": [
+                                                            {
+                                                                "parameter": {
+                                                                    "name": "k",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "string"
+                                                                    },
+                                                                    "optional": false,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                "type": {
+                                                                    "kind": "type_interface",
+                                                                    "value": {
+                                                                        "name": "JSONSchema3or4",
+                                                                        "circular": true
+                                                                    }
+                                                                }
+                                                            }
+                                                        ],
+                                                        "typeParameters": []
+                                                    }
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "patternProperties",
+                                                "type": {
+                                                    "kind": "type_interface",
+                                                    "value": {
+                                                        "name": "",
+                                                        "properties": [],
+                                                        "methods": [],
+                                                        "classes": [],
+                                                        "callSignatures": [],
+                                                        "indexSignatures": [
+                                                            {
+                                                                "parameter": {
+                                                                    "name": "k",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "string"
+                                                                    },
+                                                                    "optional": false,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                "type": {
+                                                                    "kind": "type_interface",
+                                                                    "value": {
+                                                                        "name": "JSONSchema3or4",
+                                                                        "circular": true
+                                                                    }
+                                                                }
+                                                            }
+                                                        ],
+                                                        "typeParameters": []
+                                                    }
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "dependencies",
+                                                "type": {
+                                                    "kind": "type_interface",
+                                                    "value": {
+                                                        "name": "",
+                                                        "properties": [],
+                                                        "methods": [],
+                                                        "classes": [],
+                                                        "callSignatures": [],
+                                                        "indexSignatures": [
+                                                            {
+                                                                "parameter": {
+                                                                    "name": "k",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "string"
+                                                                    },
+                                                                    "optional": false,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                "type": {
+                                                                    "kind": "union_type",
+                                                                    "value": [
+                                                                        {
+                                                                            "kind": "type_interface",
+                                                                            "value": {
+                                                                                "name": "JSONSchema3or4",
+                                                                                "circular": true
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "kind": "primitive_keyword",
+                                                                            "value": "string"
+                                                                        },
+                                                                        {
+                                                                            "kind": "array_type",
+                                                                            "value": {
+                                                                                "kind": "primitive_keyword",
+                                                                                "value": "string"
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ],
+                                                        "typeParameters": []
+                                                    }
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "enum",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "JSONSchema4['enum']"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "type",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "JSONSchema4['type']"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "allOf",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "JSONSchema4['allOf']"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "anyOf",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "JSONSchema4['anyOf']"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "oneOf",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "JSONSchema4['oneOf']"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "not",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "JSONSchema4['not']"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "disallow",
+                                                "type": {
+                                                    "kind": "union_type",
+                                                    "value": [
+                                                        {
+                                                            "kind": "primitive_keyword",
+                                                            "value": "string"
+                                                        },
+                                                        {
+                                                            "kind": "array_type",
+                                                            "value": {
+                                                                "kind": "union_type",
+                                                                "value": [
+                                                                    {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "string"
+                                                                    },
+                                                                    {
+                                                                        "kind": "type_interface",
+                                                                        "value": {
+                                                                            "name": "JSONSchema3or4",
+                                                                            "circular": true
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "extends",
+                                                "type": {
+                                                    "kind": "union_type",
+                                                    "value": [
+                                                        {
+                                                            "kind": "type_interface",
+                                                            "value": {
+                                                                "name": "JSONSchema3or4",
+                                                                "circular": true
+                                                            }
+                                                        },
+                                                        {
+                                                            "kind": "array_type",
+                                                            "value": {
+                                                                "kind": "type_interface",
+                                                                "value": {
+                                                                    "name": "JSONSchema3or4",
+                                                                    "circular": true
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "format",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "string"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [
+                                            {
+                                                "parameter": {
+                                                    "name": "k",
+                                                    "type": {
+                                                        "kind": "primitive_keyword",
+                                                        "value": "string"
+                                                    },
+                                                    "optional": false,
+                                                    "modifiers": [],
+                                                    "dotDotDotToken": false
+                                                },
+                                                "type": {
+                                                    "kind": "any_keyword",
+                                                    "value": "any"
+                                                }
+                                            }
+                                        ],
+                                        "typeParameters": []
+                                    }
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "obj",
+                                        "type": {
+                                            "kind": "any_keyword",
+                                            "value": "any"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "defaultFunc",
+                                        "type": {
+                                            "kind": "function_type",
+                                            "value": {
+                                                "name": "",
+                                                "returnType": {
+                                                    "kind": "type_interface",
+                                                    "value": {
+                                                        "name": "JSONSchema3or4",
+                                                        "circular": true
+                                                    }
+                                                },
+                                                "parameters": [
+                                                    {
+                                                        "name": "obj",
+                                                        "type": {
+                                                            "kind": "any_keyword",
+                                                            "value": "any"
+                                                        },
+                                                        "optional": false,
+                                                        "modifiers": [],
+                                                        "dotDotDotToken": false
+                                                    }
+                                                ],
+                                                "modifiers": [],
+                                                "typeParameters": [],
+                                                "_isConstructor": false
+                                            }
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "postProcessFnc",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "JSONSchema3or4",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "schema",
+                                        "type": {
+                                            "kind": "type_interface",
+                                            "value": {
+                                                "name": "JSONSchema3or4",
+                                                "circular": true
+                                            }
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "obj",
+                                        "type": {
+                                            "kind": "any_keyword",
+                                            "value": "any"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "defaultFnc",
+                                        "type": {
+                                            "kind": "function_type",
+                                            "value": {
+                                                "name": "",
+                                                "returnType": {
+                                                    "kind": "type_interface",
+                                                    "value": {
+                                                        "name": "JSONSchema3or4",
+                                                        "circular": true
+                                                    }
+                                                },
+                                                "parameters": [
+                                                    {
+                                                        "name": "schema",
+                                                        "type": {
+                                                            "kind": "type_interface",
+                                                            "value": {
+                                                                "name": "JSONSchema3or4",
+                                                                "circular": true
+                                                            }
+                                                        },
+                                                        "optional": false,
+                                                        "modifiers": [],
+                                                        "dotDotDotToken": false
+                                                    },
+                                                    {
+                                                        "name": "obj",
+                                                        "type": {
+                                                            "kind": "any_keyword",
+                                                            "value": "any"
+                                                        },
+                                                        "optional": false,
+                                                        "modifiers": [],
+                                                        "dotDotDotToken": false
+                                                    }
+                                                ],
+                                                "modifiers": [],
+                                                "typeParameters": [],
+                                                "_isConstructor": false
+                                            }
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            }
+                        ],
+                        "classes": [],
+                        "callSignatures": [],
+                        "indexSignatures": [],
+                        "typeParameters": []
+                    }
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "strings",
+                "type": {
+                    "kind": "type_interface",
+                    "value": {
+                        "name": "",
+                        "properties": [
+                            {
+                                "name": "detectFormat",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "boolean"
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "methods": [
+                            {
+                                "name": "preProcessFnc",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "JSONSchema3or4",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "value",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "defaultFnc",
+                                        "type": {
+                                            "kind": "function_type",
+                                            "value": {
+                                                "name": "",
+                                                "returnType": {
+                                                    "kind": "type_interface",
+                                                    "value": {
+                                                        "name": "JSONSchema3or4",
+                                                        "circular": true
+                                                    }
+                                                },
+                                                "parameters": [
+                                                    {
+                                                        "name": "value",
+                                                        "type": {
+                                                            "kind": "primitive_keyword",
+                                                            "value": "string"
+                                                        },
+                                                        "optional": false,
+                                                        "modifiers": [],
+                                                        "dotDotDotToken": false
+                                                    }
+                                                ],
+                                                "modifiers": [],
+                                                "typeParameters": [],
+                                                "_isConstructor": false
+                                            }
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            }
+                        ],
+                        "classes": [],
+                        "callSignatures": [],
+                        "indexSignatures": [],
+                        "typeParameters": []
+                    }
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "boolean",
+        "type-union",
+        "type-array",
+        "index-signature",
+        "string",
+        "type-any",
+        "type-function",
+        "literals"
+    ]
+}

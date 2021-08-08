@@ -1,0 +1,42 @@
+{
+    "module": "nodemailer-express-handlebars",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "hbs",
+            "exportAssignmentActual": "NodemailerExpressHandlebars"
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "options",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "hbs.NodemailerExpressHandlebarsOptions",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "options",
+                "type": {
+                    "kind": "object_keyword",
+                    "value": "object"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "string",
+        "type-any",
+        "alias-type",
+        "type-union"
+    ]
+}

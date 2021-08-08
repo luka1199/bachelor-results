@@ -1,0 +1,84 @@
+{
+    "module": "mouse-event-offset",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "offset",
+            "exportAssignmentActual": "MouseEventOffset"
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "clientX",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "clientY",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "currentTarget",
+                "type": {
+                    "kind": "object_keyword",
+                    "value": "object"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "target",
+                "type": {
+                    "kind": "object_keyword",
+                    "value": "object"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "out",
+                "type": {
+                    "kind": "array_type",
+                    "value": {
+                        "kind": "any_keyword",
+                        "value": "any"
+                    }
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "number",
+        "type-tuple",
+        "type-union"
+    ]
+}

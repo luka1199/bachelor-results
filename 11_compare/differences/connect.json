@@ -1,0 +1,24 @@
+{
+    "module": "connect",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "createServer",
+            "exportAssignmentActual": "Connect"
+        }
+    ],
+    "tags": [
+        "call-signature",
+        "void",
+        "optional-parameter",
+        "type-reference-function",
+        "type-function",
+        "string",
+        "type-array",
+        "alias-type",
+        "type-any",
+        "type-union",
+        "number"
+    ]
+}

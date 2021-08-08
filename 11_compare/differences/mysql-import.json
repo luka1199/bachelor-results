@@ -1,0 +1,18 @@
+{
+    "module": "mysql-import",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "string",
+        "optional-parameter",
+        "number",
+        "void",
+        "type-any"
+    ]
+}

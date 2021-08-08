@@ -1,0 +1,203 @@
+{
+    "module": "require-from-string",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "requireFromString",
+            "exportAssignmentActual": "RequireFromString"
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "appendPaths",
+                "type": {
+                    "kind": "array_type",
+                    "value": {
+                        "kind": "primitive_keyword",
+                        "value": "string"
+                    }
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "prependPaths",
+                "type": {
+                    "kind": "array_type",
+                    "value": {
+                        "kind": "primitive_keyword",
+                        "value": "string"
+                    }
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "opts",
+                "type": {
+                    "kind": "undefined_keyword",
+                    "value": "undefined"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "appendPaths",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "prependPaths",
+                "circular": true
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "opts",
+                "type": {
+                    "kind": "type_interface",
+                    "value": {
+                        "name": "I__opts",
+                        "properties": [
+                            {
+                                "name": "appendPaths",
+                                "type": {
+                                    "kind": "array_type",
+                                    "value": {
+                                        "kind": "any_keyword",
+                                        "value": "any"
+                                    }
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "prependPaths",
+                                "type": {
+                                    "kind": "array_type",
+                                    "value": {
+                                        "kind": "any_keyword",
+                                        "value": "any"
+                                    }
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "methods": [],
+                        "classes": [],
+                        "callSignatures": [],
+                        "indexSignatures": [],
+                        "typeParameters": []
+                    }
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "filename",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "filename",
+                "type": {
+                    "kind": "undefined_keyword",
+                    "value": "undefined"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "appendPaths",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "prependPaths",
+                "circular": true
+            }
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "appendPaths",
+                "type": {
+                    "circular": true
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "appendPaths",
+                "type": {
+                    "circular": true
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "prependPaths",
+                "type": {
+                    "circular": true
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "prependPaths",
+                "type": {
+                    "circular": true
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "type-any",
+        "string",
+        "optional-parameter",
+        "type-array"
+    ]
+}

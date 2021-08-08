@@ -1,0 +1,21 @@
+{
+    "module": "koa-static-cache",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "index-signature",
+        "string",
+        "optional-parameter",
+        "number",
+        "boolean",
+        "type-function",
+        "type-array",
+        "type-union"
+    ]
+}

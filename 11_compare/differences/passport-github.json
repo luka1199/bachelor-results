@@ -1,0 +1,714 @@
+{
+    "module": "passport-github",
+    "template": "module-class",
+    "differences": [
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "constructor",
+            "expectedNumberOfOverloadings": 4,
+            "actualNumberOfOverloadings": 1
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "passReqToCallback",
+                "type": {
+                    "kind": "literal_type",
+                    "value": "false"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "authorizationURL",
+                "type": {
+                    "kind": "undefined_keyword",
+                    "value": "undefined"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "tokenURL",
+                "type": {
+                    "kind": "undefined_keyword",
+                    "value": "undefined"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "scopeSeparator",
+                "type": {
+                    "kind": "undefined_keyword",
+                    "value": "undefined"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "customHeaders",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__customHeaders",
+                                "properties": [
+                                    {
+                                        "name": "User-Agent",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        },
+                        {
+                            "kind": "object_keyword",
+                            "value": "object"
+                        }
+                    ]
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "userAgent",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "userProfileURL",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "verify",
+                "type": {
+                    "kind": "function_type",
+                    "value": {
+                        "name": "",
+                        "returnType": {
+                            "kind": "void_keyword",
+                            "value": "void"
+                        },
+                        "parameters": [
+                            {
+                                "name": "accessToken",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "refreshToken",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "profile",
+                                "type": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "Profile",
+                                        "properties": [
+                                            {
+                                                "name": "provider",
+                                                "type": {
+                                                    "kind": "literal_type",
+                                                    "value": "\"github\""
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "profileUrl",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "string"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "_raw",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "string"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "_json",
+                                                "type": {
+                                                    "kind": "object_keyword",
+                                                    "value": "object"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [],
+                                        "typeParameters": []
+                                    }
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "done",
+                                "type": {
+                                    "kind": "type_reference",
+                                    "value": "oauth2.VerifyCallback",
+                                    "text": ""
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "modifiers": [],
+                        "typeParameters": [],
+                        "_isConstructor": false
+                    }
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "verify",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Function",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "passReqToCallback",
+                "circular": true
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "authorizationURL",
+                "circular": true
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "tokenURL",
+                "circular": true
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "scopeSeparator",
+                "circular": true
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "customHeaders",
+                "circular": true
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "userAgent",
+                "circular": true
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "userProfileURL",
+                "circular": true
+            }
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "verify",
+                "type": {
+                    "kind": "function_type",
+                    "value": {
+                        "name": "",
+                        "returnType": {
+                            "kind": "void_keyword",
+                            "value": "void"
+                        },
+                        "parameters": [
+                            {
+                                "name": "accessToken",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "refreshToken",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "params",
+                                "type": {
+                                    "kind": "any_keyword",
+                                    "value": "any"
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "profile",
+                                "type": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "Profile",
+                                        "circular": true
+                                    }
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "done",
+                                "type": {
+                                    "kind": "type_reference",
+                                    "value": "oauth2.VerifyCallback",
+                                    "text": ""
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "modifiers": [],
+                        "typeParameters": [],
+                        "_isConstructor": false
+                    }
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "verify",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "passReqToCallback",
+                "type": {
+                    "kind": "literal_type",
+                    "value": "true"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "authorizationURL",
+                "circular": true
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "tokenURL",
+                "circular": true
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "scopeSeparator",
+                "circular": true
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "customHeaders",
+                "circular": true
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "userAgent",
+                "circular": true
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "userProfileURL",
+                "circular": true
+            }
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "verify",
+                "type": {
+                    "kind": "function_type",
+                    "value": {
+                        "name": "",
+                        "returnType": {
+                            "kind": "void_keyword",
+                            "value": "void"
+                        },
+                        "parameters": [
+                            {
+                                "name": "req",
+                                "type": {
+                                    "kind": "type_reference",
+                                    "value": "express.Request",
+                                    "text": ""
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "accessToken",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "refreshToken",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "profile",
+                                "type": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "Profile",
+                                        "circular": true
+                                    }
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "done",
+                                "type": {
+                                    "kind": "type_reference",
+                                    "value": "oauth2.VerifyCallback",
+                                    "text": ""
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "modifiers": [],
+                        "typeParameters": [],
+                        "_isConstructor": false
+                    }
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "verify",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "passReqToCallback",
+                "circular": true
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "authorizationURL",
+                "circular": true
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "tokenURL",
+                "circular": true
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "scopeSeparator",
+                "circular": true
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "customHeaders",
+                "circular": true
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "userAgent",
+                "circular": true
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "userProfileURL",
+                "circular": true
+            }
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "verify",
+                "type": {
+                    "kind": "function_type",
+                    "value": {
+                        "name": "",
+                        "returnType": {
+                            "kind": "void_keyword",
+                            "value": "void"
+                        },
+                        "parameters": [
+                            {
+                                "name": "req",
+                                "type": {
+                                    "kind": "type_reference",
+                                    "value": "express.Request",
+                                    "text": ""
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "accessToken",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "params",
+                                "type": {
+                                    "kind": "any_keyword",
+                                    "value": "any"
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "refreshToken",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "profile",
+                                "type": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "Profile",
+                                        "circular": true
+                                    }
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "done",
+                                "type": {
+                                    "kind": "type_reference",
+                                    "value": "oauth2.VerifyCallback",
+                                    "text": ""
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "modifiers": [],
+                        "typeParameters": [],
+                        "_isConstructor": false
+                    }
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "verify",
+                "circular": true
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "userProfile",
+                "returnType": {
+                    "kind": "void_keyword",
+                    "value": "void"
+                },
+                "parameters": [
+                    {
+                        "name": "accessToken",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "done",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Function",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "literals",
+        "type-function",
+        "void",
+        "string",
+        "object",
+        "type-any",
+        "type-array",
+        "type-union"
+    ]
+}

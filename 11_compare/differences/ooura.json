@@ -1,0 +1,21 @@
+{
+    "module": "ooura",
+    "template": "module-class",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-class",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "literals",
+        "type-union",
+        "number",
+        "call-signature",
+        "void",
+        "optional-parameter",
+        "type-intersection",
+        "type-function"
+    ]
+}

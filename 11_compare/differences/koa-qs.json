@@ -1,0 +1,110 @@
+{
+    "module": "koa-qs",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "koaQs",
+            "exportAssignmentActual": "KoaQs"
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "app",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "koa",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "app",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "Application",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__app",
+                                "properties": [
+                                    {
+                                        "name": "request",
+                                        "type": {
+                                            "kind": "object_keyword",
+                                            "value": "object"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "mode",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "literal_type",
+                            "value": "'extended'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'strict'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'first'"
+                        },
+                        {
+                            "kind": "undefined_keyword",
+                            "value": "undefined"
+                        }
+                    ]
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "mode",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "literals",
+        "type-union",
+        "alias-type"
+    ]
+}

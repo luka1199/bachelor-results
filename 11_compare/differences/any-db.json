@@ -1,0 +1,516 @@
+{
+    "module": "any-db",
+    "template": "module",
+    "differences": [
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "createConnection",
+            "expectedNumberOfOverloadings": 2,
+            "actualNumberOfOverloadings": 1
+        },
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "createPool",
+            "expectedNumberOfOverloadings": 2,
+            "actualNumberOfOverloadings": 1
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "callback",
+                "type": {
+                    "kind": "function_type",
+                    "value": {
+                        "name": "",
+                        "returnType": {
+                            "kind": "void_keyword",
+                            "value": "void"
+                        },
+                        "parameters": [
+                            {
+                                "name": "error",
+                                "type": {
+                                    "kind": "type_reference",
+                                    "value": "Error",
+                                    "text": ""
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "connection",
+                                "type": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "Connection",
+                                        "properties": [],
+                                        "methods": [
+                                            {
+                                                "name": "end",
+                                                "returnType": {
+                                                    "kind": "void_keyword",
+                                                    "value": "void"
+                                                },
+                                                "parameters": [
+                                                    {
+                                                        "name": "callback",
+                                                        "type": {
+                                                            "kind": "function_type",
+                                                            "value": {
+                                                                "name": "",
+                                                                "returnType": {
+                                                                    "kind": "void_keyword",
+                                                                    "value": "void"
+                                                                },
+                                                                "parameters": [
+                                                                    {
+                                                                        "name": "error",
+                                                                        "type": {
+                                                                            "kind": "type_reference",
+                                                                            "value": "Error",
+                                                                            "text": ""
+                                                                        },
+                                                                        "optional": false,
+                                                                        "modifiers": [],
+                                                                        "dotDotDotToken": false
+                                                                    }
+                                                                ],
+                                                                "modifiers": [],
+                                                                "typeParameters": [],
+                                                                "_isConstructor": false
+                                                            }
+                                                        },
+                                                        "optional": true,
+                                                        "modifiers": [],
+                                                        "dotDotDotToken": false
+                                                    }
+                                                ],
+                                                "modifiers": [],
+                                                "typeParameters": [],
+                                                "_isConstructor": false
+                                            }
+                                        ],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [],
+                                        "typeParameters": []
+                                    }
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "modifiers": [],
+                        "typeParameters": [],
+                        "_isConstructor": false
+                    }
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "callback",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Function",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "adapter",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "callback",
+                "type": {
+                    "kind": "function_type",
+                    "value": {
+                        "name": "",
+                        "returnType": {
+                            "kind": "void_keyword",
+                            "value": "void"
+                        },
+                        "parameters": [
+                            {
+                                "name": "error",
+                                "type": {
+                                    "kind": "type_reference",
+                                    "value": "Error",
+                                    "text": ""
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "connection",
+                                "type": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "Connection",
+                                        "circular": true
+                                    }
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "modifiers": [],
+                        "typeParameters": [],
+                        "_isConstructor": false
+                    }
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "callback",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "min",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "max",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "idleTimeout",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "reapInterval",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "refreshIdle",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "boolean"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "onConnect",
+                "type": {
+                    "kind": "function_type",
+                    "value": {
+                        "name": "",
+                        "returnType": {
+                            "kind": "void_keyword",
+                            "value": "void"
+                        },
+                        "parameters": [
+                            {
+                                "name": "connection",
+                                "type": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "Connection",
+                                        "circular": true
+                                    }
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "ready",
+                                "type": {
+                                    "kind": "function_type",
+                                    "value": {
+                                        "name": "",
+                                        "returnType": {
+                                            "kind": "void_keyword",
+                                            "value": "void"
+                                        },
+                                        "parameters": [
+                                            {
+                                                "name": "error",
+                                                "type": {
+                                                    "kind": "type_reference",
+                                                    "value": "Error",
+                                                    "text": ""
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "result",
+                                                "type": {
+                                                    "kind": "type_interface",
+                                                    "value": {
+                                                        "name": "Connection",
+                                                        "circular": true
+                                                    }
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "modifiers": [],
+                                        "typeParameters": [],
+                                        "_isConstructor": false
+                                    }
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "modifiers": [],
+                        "typeParameters": [],
+                        "_isConstructor": false
+                    }
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "reset",
+                "type": {
+                    "kind": "function_type",
+                    "value": {
+                        "name": "",
+                        "returnType": {
+                            "kind": "void_keyword",
+                            "value": "void"
+                        },
+                        "parameters": [
+                            {
+                                "name": "connection",
+                                "type": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "Connection",
+                                        "circular": true
+                                    }
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "done",
+                                "type": {
+                                    "kind": "function_type",
+                                    "value": {
+                                        "name": "",
+                                        "returnType": {
+                                            "kind": "void_keyword",
+                                            "value": "void"
+                                        },
+                                        "parameters": [
+                                            {
+                                                "name": "error",
+                                                "type": {
+                                                    "kind": "type_reference",
+                                                    "value": "Error",
+                                                    "text": ""
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "modifiers": [],
+                                        "typeParameters": [],
+                                        "_isConstructor": false
+                                    }
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "modifiers": [],
+                        "typeParameters": [],
+                        "_isConstructor": false
+                    }
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "shouldDestroyConnection",
+                "type": {
+                    "kind": "function_type",
+                    "value": {
+                        "name": "",
+                        "returnType": {
+                            "kind": "primitive_keyword",
+                            "value": "boolean"
+                        },
+                        "parameters": [
+                            {
+                                "name": "error",
+                                "type": {
+                                    "kind": "type_reference",
+                                    "value": "Error",
+                                    "text": ""
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "modifiers": [],
+                        "typeParameters": [],
+                        "_isConstructor": false
+                    }
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "adapter",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "min",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "max",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "idleTimeout",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "reapInterval",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "refreshIdle",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "onConnect",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "reset",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "shouldDestroyConnection",
+                "circular": true
+            }
+        }
+    ],
+    "tags": [
+        "string",
+        "void",
+        "optional-parameter",
+        "type-function",
+        "type-array",
+        "type-any",
+        "number",
+        "boolean"
+    ]
+}

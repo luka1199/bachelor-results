@@ -1,0 +1,145 @@
+{
+    "module": "ng-facebook",
+    "template": "module",
+    "differences": [
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "spawn",
+                "returnType": {
+                    "kind": "object_keyword",
+                    "value": "object"
+                },
+                "parameters": [
+                    {
+                        "name": "command",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "params",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "array_type",
+                                    "value": {
+                                        "kind": "any_keyword",
+                                        "value": "any"
+                                    }
+                                },
+                                {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "I__params",
+                                        "properties": [
+                                            {
+                                                "name": "cwd",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "string"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "env",
+                                                "type": {
+                                                    "kind": "object_keyword",
+                                                    "value": "object"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "ignoreCase",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "boolean"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "stream",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "string"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "stripColors",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "boolean"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "verbose",
+                                                "type": {
+                                                    "kind": "undefined_keyword",
+                                                    "value": "undefined"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [],
+                                        "typeParameters": []
+                                    }
+                                }
+                            ]
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "options",
+                        "type": {
+                            "kind": "undefined_keyword",
+                            "value": "undefined"
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        }
+    ],
+    "tags": [
+        "string",
+        "type-array",
+        "type-union",
+        "generics-function",
+        "number",
+        "void",
+        "boolean",
+        "optional-parameter",
+        "alias-type"
+    ]
+}

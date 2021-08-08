@@ -1,0 +1,153 @@
+{
+    "module": "duplexer3",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "duplexer3",
+            "exportAssignmentActual": "Duplexer3"
+        },
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "duplexer3",
+            "expectedNumberOfOverloadings": 2,
+            "actualNumberOfOverloadings": 1
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "writableStream",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "NodeJS.WritableStream",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "options",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "Writable",
+                            "text": ""
+                        },
+                        {
+                            "kind": "object_keyword",
+                            "value": "object"
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "readableStream",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "NodeJS.ReadableStream",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "writable",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "Readable",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Writable",
+                            "text": ""
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "readable",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Readable",
+                    "text": ""
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "bubbleErrors",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "boolean"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "writableStream",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "NodeJS.WritableStream",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "writable",
+                "circular": true
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "readableStream",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "NodeJS.ReadableStream",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "readable",
+                "circular": true
+            }
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "boolean"
+    ]
+}

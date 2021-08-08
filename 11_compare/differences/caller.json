@@ -1,0 +1,63 @@
+{
+    "module": "caller",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "caller",
+            "exportAssignmentActual": "Caller"
+        },
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "caller",
+            "expectedNumberOfOverloadings": 1,
+            "actualNumberOfOverloadings": 2
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "depth",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "depth",
+                "type": {
+                    "kind": "undefined_keyword",
+                    "value": "undefined"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "depth",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "caller",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Function",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "string",
+        "optional-parameter",
+        "number"
+    ]
+}

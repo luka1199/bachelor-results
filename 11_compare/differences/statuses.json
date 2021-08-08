@@ -1,0 +1,21 @@
+{
+    "module": "statuses",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "call-signature",
+        "number",
+        "string",
+        "type-union",
+        "type-array",
+        "index-signature",
+        "undefined",
+        "boolean"
+    ]
+}

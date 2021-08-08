@@ -1,0 +1,16 @@
+{
+    "module": "branca",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "branca",
+            "exportAssignmentActual": "Branca"
+        }
+    ],
+    "tags": [
+        "string",
+        "optional-parameter",
+        "number"
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "module": "sendcloud",
+    "template": "module-class",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-class",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "string",
+        "optional-parameter",
+        "readonly",
+        "number",
+        "object",
+        "type-array",
+        "literals"
+    ]
+}

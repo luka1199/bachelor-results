@@ -1,0 +1,24 @@
+{
+    "module": "jfs",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "index-signature",
+        "string",
+        "type-any",
+        "optional-parameter",
+        "literals",
+        "type-union",
+        "boolean",
+        "void",
+        "generics-function",
+        "type-function",
+        "generics-interface"
+    ]
+}

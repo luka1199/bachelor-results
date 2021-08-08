@@ -1,0 +1,15 @@
+{
+    "module": "is-dotdir",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "isDotdir",
+            "exportAssignmentActual": "IsDotdir"
+        }
+    ],
+    "tags": [
+        "boolean",
+        "string"
+    ]
+}

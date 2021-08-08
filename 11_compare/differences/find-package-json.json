@@ -1,0 +1,45 @@
+{
+    "module": "find-package-json",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "find",
+            "exportAssignmentActual": "FindPackageJson"
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "root",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "NodeModule",
+                            "text": ""
+                        }
+                    ]
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "literals",
+        "string",
+        "undefined",
+        "type-union",
+        "alias-type",
+        "optional-parameter",
+        "index-signature",
+        "type-any",
+        "type-array"
+    ]
+}

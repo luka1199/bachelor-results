@@ -1,0 +1,23 @@
+{
+    "module": "noble",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "void",
+        "optional-parameter",
+        "type-function",
+        "type-array",
+        "string",
+        "boolean",
+        "literals",
+        "type-reference-function",
+        "number",
+        "type-union"
+    ]
+}

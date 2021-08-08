@@ -1,0 +1,141 @@
+{
+    "module": "stream-chain",
+    "template": "module-class",
+    "differences": [
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "fns",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "type_reference",
+                                    "value": "Readable",
+                                    "text": ""
+                                },
+                                {
+                                    "kind": "type_reference",
+                                    "value": "Writable",
+                                    "text": ""
+                                },
+                                {
+                                    "kind": "type_reference",
+                                    "value": "Duplex",
+                                    "text": ""
+                                },
+                                {
+                                    "kind": "type_reference",
+                                    "value": "Transform",
+                                    "text": ""
+                                }
+                            ]
+                        },
+                        {
+                            "kind": "function_type",
+                            "value": {
+                                "name": "",
+                                "returnType": {
+                                    "kind": "any_keyword",
+                                    "value": "any"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "chunk",
+                                        "type": {
+                                            "kind": "any_keyword",
+                                            "value": "any"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "encoding",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            }
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "fns",
+                "type": [
+                    {
+                        "kind": "array_type",
+                        "value": {
+                            "kind": "any_keyword",
+                            "value": "any"
+                        }
+                    },
+                    {
+                        "kind": "type_interface",
+                        "value": {
+                            "name": "I__fns",
+                            "properties": [
+                                {
+                                    "name": "length",
+                                    "type": {
+                                        "kind": "primitive_keyword",
+                                        "value": "number"
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                }
+                            ],
+                            "methods": [],
+                            "classes": [],
+                            "callSignatures": [],
+                            "indexSignatures": [],
+                            "typeParameters": []
+                        }
+                    }
+                ],
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "skipEvents",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "boolean"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "type-array",
+        "type-union",
+        "alias-type",
+        "type-function",
+        "type-any",
+        "optional-parameter",
+        "string",
+        "boolean"
+    ]
+}

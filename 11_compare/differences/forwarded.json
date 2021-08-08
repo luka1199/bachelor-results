@@ -1,0 +1,79 @@
+{
+    "module": "forwarded",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "forwarded",
+            "exportAssignmentActual": "Forwarded"
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "headers",
+                "type": {
+                    "kind": "type_interface",
+                    "value": {
+                        "name": "I__headers",
+                        "properties": [
+                            {
+                                "name": "x-forwarded-for",
+                                "type": {
+                                    "kind": "undefined_keyword",
+                                    "value": "undefined"
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "methods": [],
+                        "classes": [],
+                        "callSignatures": [],
+                        "indexSignatures": [],
+                        "typeParameters": []
+                    }
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "connection",
+                "type": {
+                    "kind": "type_interface",
+                    "value": {
+                        "name": "I__connection",
+                        "properties": [
+                            {
+                                "name": "remoteAddress",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "methods": [],
+                        "classes": [],
+                        "callSignatures": [],
+                        "indexSignatures": [],
+                        "typeParameters": []
+                    }
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "type-array",
+        "string"
+    ]
+}

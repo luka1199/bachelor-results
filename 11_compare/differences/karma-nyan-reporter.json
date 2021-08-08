@@ -1,0 +1,28 @@
+{
+    "module": "karma-nyan-reporter",
+    "template": "module",
+    "differences": [
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "getInstance",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "ShellUtility",
+                    "text": ""
+                },
+                "parameters": [],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "boolean",
+        "number"
+    ]
+}

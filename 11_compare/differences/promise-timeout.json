@@ -1,0 +1,34 @@
+{
+    "module": "promise-timeout",
+    "template": "module",
+    "differences": [
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "promise",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Promise<T>",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "promise",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Promise",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "number"
+    ]
+}

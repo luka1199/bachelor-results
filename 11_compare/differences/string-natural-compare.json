@@ -1,0 +1,72 @@
+{
+    "module": "string-natural-compare",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "naturalCompare",
+            "exportAssignmentActual": "StringNaturalCompare"
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "alphabet",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "alphabet",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__alphabet",
+                                "properties": [
+                                    {
+                                        "name": "length",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        },
+                        {
+                            "kind": "undefined_keyword",
+                            "value": "undefined"
+                        }
+                    ]
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "number",
+        "string",
+        "optional-parameter",
+        "boolean"
+    ]
+}

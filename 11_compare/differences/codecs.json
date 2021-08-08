@@ -1,0 +1,22 @@
+{
+    "module": "codecs",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "generics-function",
+        "type-any",
+        "generics-interface",
+        "string",
+        "alias-type",
+        "call-signature",
+        "type-union",
+        "undefined",
+        "optional-parameter"
+    ]
+}

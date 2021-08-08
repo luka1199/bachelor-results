@@ -1,0 +1,22 @@
+{
+    "module": "koa-joi-router-docs",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "string",
+        "type-array",
+        "optional-parameter",
+        "type-function",
+        "void",
+        "object",
+        "type-any",
+        "type-union",
+        "alias-type"
+    ]
+}

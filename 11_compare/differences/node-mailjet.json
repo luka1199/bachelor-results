@@ -1,0 +1,23 @@
+{
+    "module": "node-mailjet",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "number",
+        "string",
+        "optional-parameter",
+        "object",
+        "type-function",
+        "void",
+        "readonly",
+        "readonly-array",
+        "type-array",
+        "boolean"
+    ]
+}

@@ -1,0 +1,383 @@
+{
+    "module": "cjson",
+    "template": "module",
+    "differences": [
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "decomment",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "parameters": [
+                    {
+                        "name": "str",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "replace",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "parameters": [
+                    {
+                        "name": "str",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "data",
+                        "type": {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "",
+                                "properties": [],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [
+                                    {
+                                        "parameter": {
+                                            "name": "key",
+                                            "type": {
+                                                "kind": "primitive_keyword",
+                                                "value": "string"
+                                            },
+                                            "optional": false,
+                                            "modifiers": [],
+                                            "dotDotDotToken": false
+                                        },
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "unknown"
+                                        }
+                                    }
+                                ],
+                                "typeParameters": []
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "extend",
+                "returnType": {
+                    "kind": "intersection_type",
+                    "value": [
+                        {
+                            "kind": "generic_keyword",
+                            "value": "T1",
+                            "constraint": {
+                                "kind": "object_keyword",
+                                "value": "object"
+                            }
+                        },
+                        {
+                            "kind": "generic_keyword",
+                            "value": "T2",
+                            "constraint": {
+                                "kind": "object_keyword",
+                                "value": "object"
+                            }
+                        }
+                    ]
+                },
+                "parameters": [
+                    {
+                        "name": "deep",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "boolean"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "obj1",
+                        "type": {
+                            "circular": true
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "obj2",
+                        "type": {
+                            "circular": true
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    }
+                ],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "extend",
+                "returnType": {
+                    "kind": "intersection_type",
+                    "value": [
+                        {
+                            "kind": "generic_keyword",
+                            "value": "T1",
+                            "constraint": {
+                                "kind": "object_keyword",
+                                "value": "object"
+                            }
+                        },
+                        {
+                            "kind": "generic_keyword",
+                            "value": "T2",
+                            "constraint": {
+                                "kind": "object_keyword",
+                                "value": "object"
+                            }
+                        },
+                        {
+                            "kind": "generic_keyword",
+                            "value": "T3",
+                            "constraint": {
+                                "kind": "object_keyword",
+                                "value": "object"
+                            }
+                        }
+                    ]
+                },
+                "parameters": [
+                    {
+                        "name": "obj1",
+                        "type": {
+                            "circular": true
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "obj2",
+                        "type": {
+                            "circular": true
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "obj3",
+                        "type": {
+                            "circular": true
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    }
+                ],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "freeze",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "Readonly<T>",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "obj",
+                        "type": {
+                            "kind": "generic_keyword",
+                            "value": "T"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [
+                    {
+                        "circular": true
+                    }
+                ],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "path",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        {
+                            "kind": "array_type",
+                            "value": {
+                                "kind": "primitive_keyword",
+                                "value": "string"
+                            }
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "path",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "options",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "boolean"
+                        },
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "",
+                                "properties": [],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [
+                                    {
+                                        "parameter": {
+                                            "name": "key",
+                                            "type": {
+                                                "kind": "primitive_keyword",
+                                                "value": "string"
+                                            },
+                                            "optional": false,
+                                            "modifiers": [],
+                                            "dotDotDotToken": false
+                                        },
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        }
+                                    }
+                                ],
+                                "typeParameters": []
+                            }
+                        },
+                        {
+                            "kind": "undefined_keyword",
+                            "value": "undefined"
+                        }
+                    ]
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "options",
+                "type": {
+                    "kind": "undefined_keyword",
+                    "value": "undefined"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "string",
+        "index-signature",
+        "generics-function",
+        "object",
+        "type-intersection",
+        "boolean",
+        "type-any",
+        "type-array",
+        "type-union",
+        "optional-parameter"
+    ]
+}

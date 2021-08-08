@@ -1,0 +1,15 @@
+{
+    "module": "is-absolute",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "isAbsolute",
+            "exportAssignmentActual": "IsAbsolute"
+        }
+    ],
+    "tags": [
+        "boolean",
+        "string"
+    ]
+}

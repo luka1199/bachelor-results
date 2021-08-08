@@ -1,0 +1,539 @@
+{
+    "module": "nise",
+    "template": "module",
+    "differences": [
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "promiseFiles",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "Promise",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "dir",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "type",
+                        "type": {
+                            "kind": "undefined_keyword",
+                            "value": "undefined"
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "options",
+                        "type": {
+                            "kind": "undefined_keyword",
+                            "value": "undefined"
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "files",
+                "returnType": {
+                    "kind": "void_keyword",
+                    "value": "void"
+                },
+                "parameters": [
+                    {
+                        "name": "dir",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "type",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                },
+                                {
+                                    "kind": "type_reference",
+                                    "value": "Function",
+                                    "text": ""
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "callback",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Function",
+                            "text": ""
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "options",
+                        "type": {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__options",
+                                "properties": [
+                                    {
+                                        "name": "sync",
+                                        "type": {
+                                            "kind": "undefined_keyword",
+                                            "value": "undefined"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "readFiles",
+                "returnType": {
+                    "kind": "void_keyword",
+                    "value": "void"
+                },
+                "parameters": [
+                    {
+                        "name": "dir",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "options",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "type_reference",
+                                    "value": "Function",
+                                    "text": ""
+                                },
+                                {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "I__options__1",
+                                        "properties": [
+                                            {
+                                                "name": "length",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "number"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [],
+                                        "typeParameters": []
+                                    }
+                                },
+                                {
+                                    "kind": "object_keyword",
+                                    "value": "object"
+                                },
+                                {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "I__options",
+                                        "circular": true
+                                    }
+                                },
+                                {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "callback",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "type_reference",
+                                    "value": "Function",
+                                    "text": ""
+                                },
+                                {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "I__callback",
+                                        "properties": [
+                                            {
+                                                "name": "length",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "number"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [],
+                                        "typeParameters": []
+                                    }
+                                }
+                            ]
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "complete",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Function",
+                            "text": ""
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "readFilesStream",
+                "returnType": {
+                    "kind": "void_keyword",
+                    "value": "void"
+                },
+                "parameters": [
+                    {
+                        "name": "dir",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "options",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "type_reference",
+                                    "value": "Function",
+                                    "text": ""
+                                },
+                                {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "I__options__2",
+                                        "properties": [
+                                            {
+                                                "name": "length",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "number"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [],
+                                        "typeParameters": []
+                                    }
+                                },
+                                {
+                                    "kind": "object_keyword",
+                                    "value": "object"
+                                },
+                                {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "I__options",
+                                        "circular": true
+                                    }
+                                },
+                                {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "callback",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "type_reference",
+                                    "value": "Function",
+                                    "text": ""
+                                },
+                                {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "I__callback__3",
+                                        "properties": [
+                                            {
+                                                "name": "length",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "number"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [],
+                                        "typeParameters": []
+                                    }
+                                },
+                                {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "I__callback",
+                                        "circular": true
+                                    }
+                                }
+                            ]
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "complete",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Function",
+                            "text": ""
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "subdirs",
+                "returnType": {
+                    "kind": "void_keyword",
+                    "value": "void"
+                },
+                "parameters": [
+                    {
+                        "name": "dir",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "callback",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Function",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "type",
+                        "type": {
+                            "kind": "undefined_keyword",
+                            "value": "undefined"
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "options",
+                        "type": {
+                            "kind": "undefined_keyword",
+                            "value": "undefined"
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "paths",
+                "returnType": {
+                    "kind": "void_keyword",
+                    "value": "void"
+                },
+                "parameters": [
+                    {
+                        "name": "dir",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "combine",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "type_reference",
+                                    "value": "Function",
+                                    "text": ""
+                                },
+                                {
+                                    "kind": "primitive_keyword",
+                                    "value": "boolean"
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "callback",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Function",
+                            "text": ""
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        }
+    ],
+    "tags": [
+        "type-array",
+        "type-any",
+        "void",
+        "string",
+        "type-function",
+        "number",
+        "boolean",
+        "optional-parameter",
+        "undefined",
+        "type-union",
+        "dot-dot-dot-token"
+    ]
+}

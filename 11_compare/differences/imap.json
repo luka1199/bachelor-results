@@ -1,0 +1,27 @@
+{
+    "module": "imap",
+    "template": "module-class",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-class",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "string",
+        "optional-parameter",
+        "number",
+        "boolean",
+        "type-any",
+        "type-reference-function",
+        "type-function",
+        "type-array",
+        "literals",
+        "void",
+        "type-union",
+        "index-signature",
+        "alias-type",
+        "dot-dot-dot-token"
+    ]
+}

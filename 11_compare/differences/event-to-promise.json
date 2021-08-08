@@ -1,0 +1,54 @@
+{
+    "module": "event-to-promise",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "eventToPromise",
+            "exportAssignmentActual": "EventToPromise"
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "emitter",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "EventEmitter",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "EventTarget",
+                            "text": ""
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "emitter",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "EventEmitter",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "boolean",
+        "string",
+        "type-union",
+        "alias-type",
+        "type-array"
+    ]
+}

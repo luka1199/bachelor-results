@@ -1,0 +1,152 @@
+{
+    "module": "acl",
+    "template": "module",
+    "differences": [
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "Allows",
+                "returnType": {
+                    "kind": "void_keyword",
+                    "value": "void"
+                },
+                "parameters": [],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "Allowance",
+                "returnType": {
+                    "kind": "void_keyword",
+                    "value": "void"
+                },
+                "parameters": [],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "WhatResources",
+                "returnType": {
+                    "kind": "void_keyword",
+                    "value": "void"
+                },
+                "parameters": [],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "PermissionRemoval",
+                "returnType": {
+                    "kind": "void_keyword",
+                    "value": "void"
+                },
+                "parameters": [],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "RoleRemoval",
+                "returnType": {
+                    "kind": "void_keyword",
+                    "value": "void"
+                },
+                "parameters": [],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "ResourceRemoval",
+                "returnType": {
+                    "kind": "void_keyword",
+                    "value": "void"
+                },
+                "parameters": [],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "UserRoleRemoval",
+                "returnType": {
+                    "kind": "void_keyword",
+                    "value": "void"
+                },
+                "parameters": [],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "i32RoleRemoval",
+                "returnType": {
+                    "kind": "void_keyword",
+                    "value": "void"
+                },
+                "parameters": [],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        }
+    ],
+    "tags": [
+        "readonly",
+        "type-function",
+        "type-any",
+        "string",
+        "number",
+        "type-union",
+        "alias-type",
+        "type-array",
+        "optional-parameter",
+        "boolean",
+        "call-signature",
+        "generics-function",
+        "void",
+        "undefined",
+        "generics-interface",
+        "dot-dot-dot-token"
+    ]
+}

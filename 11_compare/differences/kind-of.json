@@ -1,0 +1,934 @@
+{
+    "module": "kind-of",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "kind_of",
+            "exportAssignmentActual": "KindOf"
+        },
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "kind_of",
+            "expectedNumberOfOverloadings": 29,
+            "actualNumberOfOverloadings": 2
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "thing",
+                "type": {
+                    "kind": "undefined_keyword",
+                    "value": "undefined"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "thing",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "val",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "null"
+                        },
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "boolean"
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Boolean",
+                            "text": ""
+                        },
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "number"
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Number",
+                            "text": ""
+                        },
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "String",
+                            "text": ""
+                        },
+                        {
+                            "kind": "object_keyword",
+                            "value": "object"
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Buffer",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Test",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Date",
+                            "text": ""
+                        },
+                        {
+                            "kind": "array_type",
+                            "value": {
+                                "kind": "any_keyword",
+                                "value": "any"
+                            }
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "RegExp",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Function",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Error",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Promise",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Map",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "WeakMap",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Set",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "WeakSet",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Int8Array",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Uint8Array",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Uint8ClampedArray",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Int16Array",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Uint16Array",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Int32Array",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Uint32Array",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Float32Array",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Float64Array",
+                            "text": ""
+                        },
+                        {
+                            "kind": "undefined_keyword",
+                            "value": "undefined"
+                        }
+                    ]
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "thing",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "null"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "thing",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "val",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "thing",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "boolean"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "thing",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "val",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "thing",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Buffer",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "thing",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "val",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "thing",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "thing",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "val",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "thing",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "thing",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "val",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "thing",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "typeof arguments"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "thing",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "val",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "thing",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Date",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "thing",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "val",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "thing",
+                "type": {
+                    "kind": "array_type",
+                    "value": {
+                        "kind": "any_keyword",
+                        "value": "any"
+                    }
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "thing",
+                "type": {
+                    "circular": true
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "val",
+                "type": {
+                    "circular": true
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "thing",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "RegExp",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "thing",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "val",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "thing",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Error",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "thing",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "val",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "thing",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Iterator<any>",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "thing",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "val",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "thing",
+                "type": {
+                    "kind": "function_type",
+                    "value": {
+                        "name": "",
+                        "returnType": {
+                            "kind": "any_keyword",
+                            "value": "any"
+                        },
+                        "parameters": [
+                            {
+                                "name": "args",
+                                "type": {
+                                    "kind": "array_type",
+                                    "value": {
+                                        "kind": "any_keyword",
+                                        "value": "any"
+                                    }
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": true
+                            }
+                        ],
+                        "modifiers": [],
+                        "typeParameters": [],
+                        "_isConstructor": false
+                    }
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "thing",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "val",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "thing",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "symbol"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "thing",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "val",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "thing",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Promise<any>",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "thing",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "val",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "thing",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Map<any, any>",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "thing",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "val",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "thing",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "WeakMap<any, any>",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "thing",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "val",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "thing",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Set<any>",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "thing",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "val",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "thing",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "WeakSet<any>",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "thing",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "val",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "thing",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Int8Array",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "thing",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "val",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "thing",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Uint8Array",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "thing",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "val",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "thing",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Uint8ClampedArray",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "thing",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "val",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "thing",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Int16Array",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "thing",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "val",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "thing",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Uint16Array",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "thing",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "val",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "thing",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Int32Array",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "thing",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "val",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "thing",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Uint32Array",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "thing",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "val",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "thing",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Float32Array",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "thing",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "val",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "thing",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Float64Array",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "thing",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "val",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "thing",
+                "type": {
+                    "kind": "any_keyword",
+                    "value": "any"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "thing",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "val",
+                "circular": true
+            }
+        }
+    ],
+    "tags": [
+        "literals",
+        "undefined",
+        "boolean",
+        "number",
+        "string",
+        "type-array",
+        "type-any",
+        "type-union",
+        "type-function",
+        "dot-dot-dot-token"
+    ]
+}

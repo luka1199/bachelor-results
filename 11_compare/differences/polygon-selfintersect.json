@@ -1,0 +1,17 @@
+{
+    "module": "polygon-selfintersect",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "boolean",
+        "optional-parameter",
+        "type-array",
+        "number"
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "module": "format-duration",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "formatDuration",
+            "exportAssignmentActual": "FormatDuration"
+        }
+    ],
+    "tags": [
+        "string",
+        "number"
+    ]
+}

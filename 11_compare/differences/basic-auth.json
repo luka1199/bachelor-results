@@ -1,0 +1,29 @@
+{
+    "module": "basic-auth",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "auth",
+            "exportAssignmentActual": "BasicAuth"
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "req",
+                "type": {
+                    "kind": "object_keyword",
+                    "value": "object"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "string",
+        "undefined",
+        "type-union"
+    ]
+}

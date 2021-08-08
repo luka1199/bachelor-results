@@ -1,0 +1,16 @@
+{
+    "module": "pick-weight",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "generics-function",
+        "type-array",
+        "number"
+    ]
+}

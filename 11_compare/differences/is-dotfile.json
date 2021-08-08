@@ -1,0 +1,15 @@
+{
+    "module": "is-dotfile",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "isDotfile",
+            "exportAssignmentActual": "IsDotfile"
+        }
+    ],
+    "tags": [
+        "boolean",
+        "string"
+    ]
+}

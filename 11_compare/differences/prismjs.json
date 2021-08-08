@@ -1,0 +1,673 @@
+{
+    "module": "prismjs",
+    "template": "module",
+    "differences": [
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "highlightAll",
+                "returnType": {
+                    "kind": "void_keyword",
+                    "value": "void"
+                },
+                "parameters": [
+                    {
+                        "name": "async",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "boolean"
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "callback",
+                        "type": {
+                            "kind": "function_type",
+                            "value": {
+                                "name": "",
+                                "returnType": {
+                                    "kind": "void_keyword",
+                                    "value": "void"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "element",
+                                        "type": {
+                                            "kind": "type_reference",
+                                            "value": "Element",
+                                            "text": ""
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            }
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "highlightAllUnder",
+                "returnType": {
+                    "kind": "void_keyword",
+                    "value": "void"
+                },
+                "parameters": [
+                    {
+                        "name": "container",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "ParentNode",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "async",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "boolean"
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "callback",
+                        "type": {
+                            "circular": true
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "highlightElement",
+                "returnType": {
+                    "kind": "void_keyword",
+                    "value": "void"
+                },
+                "parameters": [
+                    {
+                        "name": "element",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Element",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "async",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "boolean"
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "callback",
+                        "type": {
+                            "circular": true
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "highlight",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "parameters": [
+                    {
+                        "name": "text",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "grammar",
+                        "type": {
+                            "kind": "intersection_type",
+                            "value": [
+                                {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "GrammarRest",
+                                        "properties": [
+                                            {
+                                                "name": "keyword",
+                                                "type": {
+                                                    "kind": "union_type",
+                                                    "value": [
+                                                        {
+                                                            "kind": "type_reference",
+                                                            "value": "RegExp",
+                                                            "text": ""
+                                                        },
+                                                        {
+                                                            "kind": "type_interface",
+                                                            "value": {
+                                                                "name": "TokenObject",
+                                                                "properties": [
+                                                                    {
+                                                                        "name": "pattern",
+                                                                        "type": {
+                                                                            "kind": "type_reference",
+                                                                            "value": "RegExp",
+                                                                            "text": ""
+                                                                        },
+                                                                        "optional": false,
+                                                                        "modifiers": [],
+                                                                        "dotDotDotToken": false
+                                                                    },
+                                                                    {
+                                                                        "name": "lookbehind",
+                                                                        "type": {
+                                                                            "kind": "primitive_keyword",
+                                                                            "value": "boolean"
+                                                                        },
+                                                                        "optional": true,
+                                                                        "modifiers": [],
+                                                                        "dotDotDotToken": false
+                                                                    },
+                                                                    {
+                                                                        "name": "greedy",
+                                                                        "type": {
+                                                                            "kind": "primitive_keyword",
+                                                                            "value": "boolean"
+                                                                        },
+                                                                        "optional": true,
+                                                                        "modifiers": [],
+                                                                        "dotDotDotToken": false
+                                                                    },
+                                                                    {
+                                                                        "name": "alias",
+                                                                        "type": {
+                                                                            "kind": "union_type",
+                                                                            "value": [
+                                                                                {
+                                                                                    "kind": "primitive_keyword",
+                                                                                    "value": "string"
+                                                                                },
+                                                                                {
+                                                                                    "kind": "array_type",
+                                                                                    "value": {
+                                                                                        "kind": "primitive_keyword",
+                                                                                        "value": "string"
+                                                                                    }
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        "optional": true,
+                                                                        "modifiers": [],
+                                                                        "dotDotDotToken": false
+                                                                    },
+                                                                    {
+                                                                        "name": "inside",
+                                                                        "type": {},
+                                                                        "optional": true,
+                                                                        "modifiers": [],
+                                                                        "dotDotDotToken": false
+                                                                    }
+                                                                ],
+                                                                "methods": [],
+                                                                "classes": [],
+                                                                "callSignatures": [],
+                                                                "indexSignatures": [],
+                                                                "typeParameters": []
+                                                            }
+                                                        },
+                                                        {
+                                                            "kind": "array_type",
+                                                            "value": {
+                                                                "kind": "union_type",
+                                                                "value": [
+                                                                    {
+                                                                        "kind": "type_reference",
+                                                                        "value": "RegExp",
+                                                                        "text": ""
+                                                                    },
+                                                                    {
+                                                                        "kind": "type_interface",
+                                                                        "value": {
+                                                                            "name": "TokenObject",
+                                                                            "circular": true
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "number",
+                                                "type": {
+                                                    "circular": true
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "function",
+                                                "type": {
+                                                    "circular": true
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "string",
+                                                "type": {
+                                                    "circular": true
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "boolean",
+                                                "type": {
+                                                    "circular": true
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "operator",
+                                                "type": {
+                                                    "circular": true
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "punctuation",
+                                                "type": {
+                                                    "circular": true
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "atrule",
+                                                "type": {
+                                                    "circular": true
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "url",
+                                                "type": {
+                                                    "circular": true
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "selector",
+                                                "type": {
+                                                    "circular": true
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "property",
+                                                "type": {
+                                                    "circular": true
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "important",
+                                                "type": {
+                                                    "circular": true
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "style",
+                                                "type": {
+                                                    "circular": true
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "comment",
+                                                "type": {
+                                                    "circular": true
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "class-name",
+                                                "type": {
+                                                    "circular": true
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "rest",
+                                                "type": {
+                                                    "circular": true
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [],
+                                        "typeParameters": []
+                                    }
+                                },
+                                {
+                                    "kind": "type_reference",
+                                    "value": "Record<string, GrammarValue>",
+                                    "text": ""
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "language",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "tokenize",
+                "returnType": {
+                    "kind": "array_type",
+                    "value": {
+                        "kind": "union_type",
+                        "value": [
+                            {
+                                "kind": "primitive_keyword",
+                                "value": "string"
+                            },
+                            {
+                                "kind": "type_reference",
+                                "value": "Token",
+                                "text": ""
+                            }
+                        ]
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "text",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "grammar",
+                        "type": {
+                            "circular": true
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "simplify",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "parameters": [
+                    {
+                        "name": "tokenStream",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "simplify",
+                "returnType": {
+                    "kind": "array_type",
+                    "value": {
+                        "kind": "any_keyword",
+                        "value": "any"
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "tokenStream",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "I__tokenStream",
+                                        "properties": [
+                                            {
+                                                "name": "type",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "string"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "content",
+                                                "type": {
+                                                    "kind": "union_type",
+                                                    "value": [
+                                                        {
+                                                            "kind": "primitive_keyword",
+                                                            "value": "string"
+                                                        },
+                                                        {
+                                                            "kind": "array_type",
+                                                            "value": {
+                                                                "kind": "any_keyword",
+                                                                "value": "any"
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [],
+                                        "typeParameters": []
+                                    }
+                                },
+                                {
+                                    "kind": "array_type",
+                                    "value": {
+                                        "kind": "any_keyword",
+                                        "value": "any"
+                                    }
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "parseLanguageNames",
+                "returnType": {
+                    "kind": "object_keyword",
+                    "value": "object"
+                },
+                "parameters": [
+                    {
+                        "name": "languageIdentifier",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        }
+    ],
+    "tags": [
+        "void",
+        "optional-parameter",
+        "boolean",
+        "type-function",
+        "alias-type",
+        "string",
+        "type-array",
+        "type-union",
+        "type-intersection",
+        "number",
+        "literals",
+        "undefined",
+        "type-reference-function",
+        "type-any",
+        "generics-function",
+        "index-signature"
+    ]
+}

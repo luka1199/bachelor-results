@@ -1,0 +1,235 @@
+{
+    "module": "langs",
+    "template": "module",
+    "differences": [
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "all",
+                "returnType": {
+                    "kind": "array_type",
+                    "value": {
+                        "kind": "any_keyword",
+                        "value": "any"
+                    }
+                },
+                "parameters": [],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "codes",
+                "returnType": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "array_type",
+                            "value": {
+                                "kind": "any_keyword",
+                                "value": "any"
+                            }
+                        },
+                        {
+                            "kind": "void_keyword",
+                            "value": "void"
+                        }
+                    ]
+                },
+                "parameters": [
+                    {
+                        "name": "type",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "codes",
+                "returnType": {
+                    "kind": "array_type",
+                    "value": {
+                        "kind": "any_keyword",
+                        "value": "any"
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "type",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "number"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "names",
+                "returnType": {
+                    "kind": "array_type",
+                    "value": {
+                        "kind": "any_keyword",
+                        "value": "any"
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "local",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "boolean"
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "has",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "boolean"
+                },
+                "parameters": [
+                    {
+                        "name": "crit",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                },
+                                {
+                                    "kind": "primitive_keyword",
+                                    "value": "number"
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "val",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "findBy",
+                "returnType": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "object_keyword",
+                            "value": "object"
+                        },
+                        {
+                            "kind": "void_keyword",
+                            "value": "void"
+                        }
+                    ]
+                },
+                "parameters": [
+                    {
+                        "name": "crit",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                },
+                                {
+                                    "kind": "primitive_keyword",
+                                    "value": "number"
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "val",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        }
+    ],
+    "tags": [
+        "string",
+        "type-function",
+        "type-array",
+        "boolean",
+        "literals",
+        "type-union",
+        "alias-type",
+        "undefined"
+    ]
+}

@@ -1,0 +1,624 @@
+{
+    "module": "passport-auth0",
+    "template": "module-class",
+    "differences": [
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "constructor",
+            "expectedNumberOfOverloadings": 2,
+            "actualNumberOfOverloadings": 1
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "passReqToCallback",
+                "type": {
+                    "kind": "literal_type",
+                    "value": "true"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "domain",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "clientID",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "clientSecret",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "callbackURL",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "verify",
+                "type": {
+                    "kind": "function_type",
+                    "value": {
+                        "name": "",
+                        "returnType": {
+                            "kind": "void_keyword",
+                            "value": "void"
+                        },
+                        "parameters": [
+                            {
+                                "name": "req",
+                                "type": {
+                                    "kind": "type_reference",
+                                    "value": "express.Request",
+                                    "text": ""
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "accessToken",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "refreshToken",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "extraParams",
+                                "type": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "ExtraVerificationParams",
+                                        "properties": [
+                                            {
+                                                "name": "audience",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "string"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "connection",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "string"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "prompt",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "string"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [],
+                                        "typeParameters": []
+                                    }
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "profile",
+                                "type": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "Profile",
+                                        "properties": [
+                                            {
+                                                "name": "id",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "string"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "displayName",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "string"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "gender",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "string"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "ageRange",
+                                                "type": {
+                                                    "kind": "type_interface",
+                                                    "value": {
+                                                        "name": "",
+                                                        "properties": [
+                                                            {
+                                                                "name": "min",
+                                                                "type": {
+                                                                    "kind": "primitive_keyword",
+                                                                    "value": "number"
+                                                                },
+                                                                "optional": false,
+                                                                "modifiers": [],
+                                                                "dotDotDotToken": false
+                                                            },
+                                                            {
+                                                                "name": "max",
+                                                                "type": {
+                                                                    "kind": "primitive_keyword",
+                                                                    "value": "number"
+                                                                },
+                                                                "optional": true,
+                                                                "modifiers": [],
+                                                                "dotDotDotToken": false
+                                                            }
+                                                        ],
+                                                        "methods": [],
+                                                        "classes": [],
+                                                        "callSignatures": [],
+                                                        "indexSignatures": [],
+                                                        "typeParameters": []
+                                                    }
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "profileUrl",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "string"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "username",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "string"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "birthday",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "string"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "_raw",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "string"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "_json",
+                                                "type": {
+                                                    "kind": "any_keyword",
+                                                    "value": "any"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [],
+                                        "typeParameters": []
+                                    }
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "done",
+                                "type": {
+                                    "kind": "function_type",
+                                    "value": {
+                                        "name": "",
+                                        "returnType": {
+                                            "kind": "void_keyword",
+                                            "value": "void"
+                                        },
+                                        "parameters": [
+                                            {
+                                                "name": "error",
+                                                "type": {
+                                                    "kind": "any_keyword",
+                                                    "value": "any"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "user",
+                                                "type": {
+                                                    "kind": "any_keyword",
+                                                    "value": "any"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "info",
+                                                "type": {
+                                                    "kind": "any_keyword",
+                                                    "value": "any"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "modifiers": [],
+                                        "typeParameters": [],
+                                        "_isConstructor": false
+                                    }
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "modifiers": [],
+                        "typeParameters": [],
+                        "_isConstructor": false
+                    }
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "verify",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Function",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "scopeSeparator",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "enableProof",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "boolean"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "profileFields",
+                "type": {
+                    "kind": "array_type",
+                    "value": {
+                        "kind": "primitive_keyword",
+                        "value": "string"
+                    }
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "state",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "boolean"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "verify",
+                "type": {
+                    "kind": "function_type",
+                    "value": {
+                        "name": "",
+                        "returnType": {
+                            "kind": "void_keyword",
+                            "value": "void"
+                        },
+                        "parameters": [
+                            {
+                                "name": "accessToken",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "refreshToken",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "extraParams",
+                                "type": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "ExtraVerificationParams",
+                                        "circular": true
+                                    }
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "profile",
+                                "type": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "Profile",
+                                        "circular": true
+                                    }
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "done",
+                                "type": {
+                                    "kind": "function_type",
+                                    "value": {
+                                        "name": "",
+                                        "returnType": {
+                                            "kind": "void_keyword",
+                                            "value": "void"
+                                        },
+                                        "parameters": [
+                                            {
+                                                "name": "error",
+                                                "type": {
+                                                    "kind": "any_keyword",
+                                                    "value": "any"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "user",
+                                                "type": {
+                                                    "kind": "any_keyword",
+                                                    "value": "any"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "info",
+                                                "type": {
+                                                    "kind": "any_keyword",
+                                                    "value": "any"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "modifiers": [],
+                                        "typeParameters": [],
+                                        "_isConstructor": false
+                                    }
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "modifiers": [],
+                        "typeParameters": [],
+                        "_isConstructor": false
+                    }
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "verify",
+                "circular": true
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "authenticate",
+                "returnType": {
+                    "kind": "void_keyword",
+                    "value": "void"
+                },
+                "parameters": [
+                    {
+                        "name": "req",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "express.Request",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "options",
+                        "type": {
+                            "kind": "object_keyword",
+                            "value": "object"
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "authorizationParams",
+                "returnType": {
+                    "kind": "object_keyword",
+                    "value": "object"
+                },
+                "parameters": [],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        }
+    ],
+    "tags": [
+        "literals",
+        "type-function",
+        "void",
+        "string",
+        "optional-parameter",
+        "number",
+        "type-any",
+        "alias-type",
+        "boolean",
+        "type-array",
+        "object"
+    ]
+}

@@ -1,0 +1,955 @@
+{
+    "module": "sat",
+    "template": "module",
+    "differences": [
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "testCircleCircle",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "boolean"
+                },
+                "parameters": [
+                    {
+                        "name": "a",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "type_reference",
+                                    "value": "Circle",
+                                    "text": ""
+                                },
+                                {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "I__a",
+                                        "properties": [
+                                            {
+                                                "name": "pos",
+                                                "type": {
+                                                    "kind": "type_reference",
+                                                    "value": "Vector",
+                                                    "text": ""
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "offset",
+                                                "type": {
+                                                    "kind": "type_reference",
+                                                    "value": "Vector",
+                                                    "text": ""
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "r",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "number"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [],
+                                        "typeParameters": []
+                                    }
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "b",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "type_reference",
+                                    "value": "Circle",
+                                    "text": ""
+                                },
+                                {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "I__b",
+                                        "properties": [
+                                            {
+                                                "name": "pos",
+                                                "type": {
+                                                    "kind": "type_reference",
+                                                    "value": "Vector",
+                                                    "text": ""
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "offset",
+                                                "type": {
+                                                    "kind": "type_reference",
+                                                    "value": "Vector",
+                                                    "text": ""
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "r",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "number"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [],
+                                        "typeParameters": []
+                                    }
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "response",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "type_reference",
+                                    "value": "Response",
+                                    "text": ""
+                                },
+                                {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "I__response",
+                                        "properties": [
+                                            {
+                                                "name": "overlapN",
+                                                "type": {
+                                                    "kind": "type_reference",
+                                                    "value": "Vector",
+                                                    "text": ""
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "overlapV",
+                                                "type": {
+                                                    "kind": "type_reference",
+                                                    "value": "Vector",
+                                                    "text": ""
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "overlap",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "number"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [],
+                                        "typeParameters": []
+                                    }
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "testPolygonCircle",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "boolean"
+                },
+                "parameters": [
+                    {
+                        "name": "polygon",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "type_reference",
+                                    "value": "Polygon",
+                                    "text": ""
+                                },
+                                {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "I__polygon",
+                                        "properties": [
+                                            {
+                                                "name": "pos",
+                                                "type": {
+                                                    "kind": "type_reference",
+                                                    "value": "Vector",
+                                                    "text": ""
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "calcPoints",
+                                                "type": {
+                                                    "kind": "array_type",
+                                                    "value": {
+                                                        "kind": "any_keyword",
+                                                        "value": "any"
+                                                    }
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "edges",
+                                                "type": {
+                                                    "kind": "array_type",
+                                                    "value": {
+                                                        "kind": "any_keyword",
+                                                        "value": "any"
+                                                    }
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [],
+                                        "typeParameters": []
+                                    }
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "circle",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "type_reference",
+                                    "value": "Circle",
+                                    "text": ""
+                                },
+                                {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "I__circle",
+                                        "properties": [
+                                            {
+                                                "name": "pos",
+                                                "type": {
+                                                    "kind": "type_reference",
+                                                    "value": "Vector",
+                                                    "text": ""
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "offset",
+                                                "type": {
+                                                    "kind": "type_reference",
+                                                    "value": "Vector",
+                                                    "text": ""
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "r",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "number"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [],
+                                        "typeParameters": []
+                                    }
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "response",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "type_reference",
+                                    "value": "Response",
+                                    "text": ""
+                                },
+                                {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "I__response__1",
+                                        "properties": [
+                                            {
+                                                "name": "overlap",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "number"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "overlapN",
+                                                "type": {
+                                                    "kind": "type_reference",
+                                                    "value": "Vector",
+                                                    "text": ""
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "overlapV",
+                                                "type": {
+                                                    "kind": "type_reference",
+                                                    "value": "Vector",
+                                                    "text": ""
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [],
+                                        "typeParameters": []
+                                    }
+                                },
+                                {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "I__response",
+                                        "circular": true
+                                    }
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "testPolygonPolygon",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "boolean"
+                },
+                "parameters": [
+                    {
+                        "name": "a",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "type_reference",
+                                    "value": "Polygon",
+                                    "text": ""
+                                },
+                                {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "I__a__2",
+                                        "properties": [
+                                            {
+                                                "name": "calcPoints",
+                                                "type": {
+                                                    "kind": "array_type",
+                                                    "value": {
+                                                        "kind": "any_keyword",
+                                                        "value": "any"
+                                                    }
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "pos",
+                                                "type": {
+                                                    "kind": "type_reference",
+                                                    "value": "Vector",
+                                                    "text": ""
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "normals",
+                                                "type": {
+                                                    "kind": "array_type",
+                                                    "value": {
+                                                        "kind": "any_keyword",
+                                                        "value": "any"
+                                                    }
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [],
+                                        "typeParameters": []
+                                    }
+                                },
+                                {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "I__a",
+                                        "circular": true
+                                    }
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "b",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "type_reference",
+                                    "value": "Polygon",
+                                    "text": ""
+                                },
+                                {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "I__b__3",
+                                        "properties": [
+                                            {
+                                                "name": "calcPoints",
+                                                "type": {
+                                                    "kind": "array_type",
+                                                    "value": {
+                                                        "kind": "any_keyword",
+                                                        "value": "any"
+                                                    }
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "pos",
+                                                "type": {
+                                                    "kind": "type_reference",
+                                                    "value": "Vector",
+                                                    "text": ""
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "normals",
+                                                "type": {
+                                                    "kind": "array_type",
+                                                    "value": {
+                                                        "kind": "any_keyword",
+                                                        "value": "any"
+                                                    }
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [],
+                                        "typeParameters": []
+                                    }
+                                },
+                                {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "I__b",
+                                        "circular": true
+                                    }
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "response",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "type_reference",
+                                    "value": "Response",
+                                    "text": ""
+                                },
+                                {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "I__response__4",
+                                        "properties": [
+                                            {
+                                                "name": "overlapV",
+                                                "type": {
+                                                    "kind": "type_reference",
+                                                    "value": "Vector",
+                                                    "text": ""
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "overlapN",
+                                                "type": {
+                                                    "kind": "type_reference",
+                                                    "value": "Vector",
+                                                    "text": ""
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "overlap",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "number"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [],
+                                        "typeParameters": []
+                                    }
+                                },
+                                {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "I__response",
+                                        "circular": true
+                                    }
+                                }
+                            ]
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "isSeparatingAxis",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "boolean"
+                },
+                "parameters": [
+                    {
+                        "name": "aPos",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Vector",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "bPos",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Vector",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "aPoints",
+                        "type": {
+                            "kind": "array_type",
+                            "value": {
+                                "kind": "any_keyword",
+                                "value": "any"
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "bPoints",
+                        "type": {
+                            "kind": "array_type",
+                            "value": {
+                                "kind": "any_keyword",
+                                "value": "any"
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "axis",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Vector",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "response",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "type_reference",
+                                    "value": "Response",
+                                    "text": ""
+                                },
+                                {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "I__response__5",
+                                        "properties": [
+                                            {
+                                                "name": "overlap",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "number"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "overlapN",
+                                                "type": {
+                                                    "kind": "union_type",
+                                                    "value": [
+                                                        {
+                                                            "kind": "type_reference",
+                                                            "value": "Vector",
+                                                            "text": ""
+                                                        },
+                                                        {
+                                                            "kind": "type_interface",
+                                                            "value": {
+                                                                "name": "I__overlapN",
+                                                                "properties": [
+                                                                    {
+                                                                        "name": "x",
+                                                                        "type": {
+                                                                            "kind": "primitive_keyword",
+                                                                            "value": "number"
+                                                                        },
+                                                                        "optional": false,
+                                                                        "modifiers": [],
+                                                                        "dotDotDotToken": false
+                                                                    },
+                                                                    {
+                                                                        "name": "y",
+                                                                        "type": {
+                                                                            "kind": "primitive_keyword",
+                                                                            "value": "number"
+                                                                        },
+                                                                        "optional": false,
+                                                                        "modifiers": [],
+                                                                        "dotDotDotToken": false
+                                                                    }
+                                                                ],
+                                                                "methods": [],
+                                                                "classes": [],
+                                                                "callSignatures": [],
+                                                                "indexSignatures": [],
+                                                                "typeParameters": []
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [],
+                                        "typeParameters": []
+                                    }
+                                },
+                                {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "I__response",
+                                        "circular": true
+                                    }
+                                }
+                            ]
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "pointInCircle",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "boolean"
+                },
+                "parameters": [
+                    {
+                        "name": "p",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Vector",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "c",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "type_reference",
+                                    "value": "Circle",
+                                    "text": ""
+                                },
+                                {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "I__c",
+                                        "properties": [
+                                            {
+                                                "name": "pos",
+                                                "type": {
+                                                    "kind": "type_reference",
+                                                    "value": "Vector",
+                                                    "text": ""
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "offset",
+                                                "type": {
+                                                    "kind": "type_reference",
+                                                    "value": "Vector",
+                                                    "text": ""
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "r",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "number"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [],
+                                        "typeParameters": []
+                                    }
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "pointInPolygon",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "boolean"
+                },
+                "parameters": [
+                    {
+                        "name": "p",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Vector",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "poly",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Polygon",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "number",
+        "type-array",
+        "type-any",
+        "boolean"
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "module": "uuid-with-v6",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "boolean",
+        "string",
+        "optional-parameter"
+    ]
+}

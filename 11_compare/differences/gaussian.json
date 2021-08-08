@@ -1,0 +1,15 @@
+{
+    "module": "gaussian",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "gaussian",
+            "exportAssignmentActual": "Gaussian"
+        }
+    ],
+    "tags": [
+        "number",
+        "type-union"
+    ]
+}

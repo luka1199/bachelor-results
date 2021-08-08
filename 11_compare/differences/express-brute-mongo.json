@@ -1,0 +1,102 @@
+{
+    "module": "express-brute-mongo",
+    "template": "module-class",
+    "differences": [
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "getCollection",
+                "type": {
+                    "kind": "function_type",
+                    "value": {
+                        "name": "",
+                        "returnType": {
+                            "kind": "void_keyword",
+                            "value": "void"
+                        },
+                        "parameters": [
+                            {
+                                "name": "collection",
+                                "type": {
+                                    "kind": "function_type",
+                                    "value": {
+                                        "name": "",
+                                        "returnType": {
+                                            "kind": "void_keyword",
+                                            "value": "void"
+                                        },
+                                        "parameters": [
+                                            {
+                                                "name": "c",
+                                                "type": {
+                                                    "kind": "type_reference",
+                                                    "value": "Collection",
+                                                    "text": ""
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "modifiers": [],
+                                        "typeParameters": [],
+                                        "_isConstructor": false
+                                    }
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "modifiers": [],
+                        "typeParameters": [],
+                        "_isConstructor": false
+                    }
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "getCollection",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Function",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "options",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Object",
+                    "text": ""
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "options",
+                "type": {
+                    "kind": "undefined_keyword",
+                    "value": "undefined"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "type-function",
+        "void",
+        "optional-parameter"
+    ]
+}

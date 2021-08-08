@@ -1,0 +1,22 @@
+{
+    "module": "confit",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "index-signature",
+        "string",
+        "type-function",
+        "void",
+        "type-any",
+        "optional-parameter",
+        "generics-function",
+        "type-union",
+        "alias-type"
+    ]
+}

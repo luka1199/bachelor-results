@@ -1,0 +1,561 @@
+{
+    "module": "qr-image",
+    "template": "module",
+    "differences": [
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "image",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "NodeJS.ReadableStream",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "text",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "level",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "literal_type",
+                                    "value": "'L'"
+                                },
+                                {
+                                    "kind": "literal_type",
+                                    "value": "'M'"
+                                },
+                                {
+                                    "kind": "literal_type",
+                                    "value": "'Q'"
+                                },
+                                {
+                                    "kind": "literal_type",
+                                    "value": "'H'"
+                                }
+                            ]
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "image",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "NodeJS.ReadableStream",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "text",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "options",
+                        "type": {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "Options",
+                                "properties": [
+                                    {
+                                        "name": "ec_level",
+                                        "type": {
+                                            "circular": true
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "type",
+                                        "type": {
+                                            "kind": "union_type",
+                                            "value": [
+                                                {
+                                                    "kind": "literal_type",
+                                                    "value": "'png'"
+                                                },
+                                                {
+                                                    "kind": "literal_type",
+                                                    "value": "'svg'"
+                                                },
+                                                {
+                                                    "kind": "literal_type",
+                                                    "value": "'pdf'"
+                                                },
+                                                {
+                                                    "kind": "literal_type",
+                                                    "value": "'eps'"
+                                                }
+                                            ]
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "size",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "margin",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "parse_url",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "boolean"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "customize",
+                                        "type": {
+                                            "kind": "function_type",
+                                            "value": {
+                                                "name": "",
+                                                "returnType": {
+                                                    "kind": "void_keyword",
+                                                    "value": "void"
+                                                },
+                                                "parameters": [
+                                                    {
+                                                        "name": "bitmap",
+                                                        "type": {
+                                                            "kind": "type_interface",
+                                                            "value": {
+                                                                "name": "Bitmap",
+                                                                "properties": [
+                                                                    {
+                                                                        "name": "size",
+                                                                        "type": {
+                                                                            "kind": "primitive_keyword",
+                                                                            "value": "number"
+                                                                        },
+                                                                        "optional": false,
+                                                                        "modifiers": [],
+                                                                        "dotDotDotToken": false
+                                                                    },
+                                                                    {
+                                                                        "name": "data",
+                                                                        "type": {
+                                                                            "kind": "type_reference",
+                                                                            "value": "Buffer",
+                                                                            "text": ""
+                                                                        },
+                                                                        "optional": false,
+                                                                        "modifiers": [],
+                                                                        "dotDotDotToken": false
+                                                                    }
+                                                                ],
+                                                                "methods": [],
+                                                                "classes": [],
+                                                                "callSignatures": [],
+                                                                "indexSignatures": [],
+                                                                "typeParameters": []
+                                                            }
+                                                        },
+                                                        "optional": false,
+                                                        "modifiers": [],
+                                                        "dotDotDotToken": false
+                                                    }
+                                                ],
+                                                "modifiers": [],
+                                                "typeParameters": [],
+                                                "_isConstructor": false
+                                            }
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "imageSync",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "Buffer",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "text",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "level",
+                        "type": {
+                            "circular": true
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "imageSync",
+                "returnType": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Buffer",
+                            "text": ""
+                        }
+                    ]
+                },
+                "parameters": [
+                    {
+                        "name": "text",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "options",
+                        "type": {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "Options",
+                                "circular": true
+                            }
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "svgObject",
+                "returnType": {
+                    "kind": "any_keyword",
+                    "value": "any"
+                },
+                "parameters": [
+                    {
+                        "name": "text",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "level",
+                        "type": {
+                            "circular": true
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "svgObject",
+                "returnType": {
+                    "kind": "any_keyword",
+                    "value": "any"
+                },
+                "parameters": [
+                    {
+                        "name": "text",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "options",
+                        "type": {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "Options",
+                                "circular": true
+                            }
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "matrix",
+                "returnType": {
+                    "kind": "array_type",
+                    "value": {
+                        "kind": "array_type",
+                        "value": {
+                            "kind": "any_keyword",
+                            "value": "any"
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "text",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "level",
+                        "type": {
+                            "circular": true
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "decode",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "parameters": [
+                    {
+                        "name": "input",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "encode",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "parameters": [
+                    {
+                        "name": "input",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "toUnicode",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "parameters": [
+                    {
+                        "name": "input",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "toASCII",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "parameters": [
+                    {
+                        "name": "input",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        }
+    ],
+    "tags": [
+        "number",
+        "optional-parameter",
+        "literals",
+        "type-union",
+        "alias-type",
+        "boolean",
+        "type-function",
+        "void",
+        "string",
+        "type-any",
+        "type-array"
+    ]
+}

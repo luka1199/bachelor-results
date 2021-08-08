@@ -1,0 +1,24 @@
+{
+    "module": "modesl",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "type-array",
+        "type-any",
+        "dot-dot-dot-token",
+        "void",
+        "string",
+        "optional-parameter",
+        "type-function",
+        "literals",
+        "type-union",
+        "static",
+        "readonly"
+    ]
+}

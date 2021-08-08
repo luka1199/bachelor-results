@@ -1,0 +1,21 @@
+{
+    "module": "format-link-header",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "formatLinkHeader",
+            "exportAssignmentActual": "FormatLinkHeader"
+        },
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "formatLinkHeader",
+            "expectedNumberOfOverloadings": 1,
+            "actualNumberOfOverloadings": 4
+        }
+    ],
+    "tags": [
+        "string",
+        "index-signature"
+    ]
+}

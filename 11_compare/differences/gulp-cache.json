@@ -1,0 +1,23 @@
+{
+    "module": "gulp-cache",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "string",
+        "type-function",
+        "type-union",
+        "void",
+        "type-any",
+        "boolean",
+        "generics-function",
+        "alias-type",
+        "call-signature"
+    ]
+}

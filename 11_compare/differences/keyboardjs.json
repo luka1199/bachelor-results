@@ -1,0 +1,22 @@
+{
+    "module": "keyboardjs",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "void",
+        "type-array",
+        "string",
+        "call-signature",
+        "optional-parameter",
+        "type-union",
+        "boolean",
+        "type-function",
+        "number"
+    ]
+}

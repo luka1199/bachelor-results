@@ -1,0 +1,821 @@
+{
+    "module": "jsonfile",
+    "template": "module",
+    "differences": [
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "readFile",
+                "returnType": {
+                    "kind": "void_keyword",
+                    "value": "void"
+                },
+                "parameters": [
+                    {
+                        "name": "file",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "type_reference",
+                                    "value": "PathLike",
+                                    "text": ""
+                                },
+                                {
+                                    "kind": "type_reference",
+                                    "value": "Url",
+                                    "text": ""
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "options",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "",
+                                        "properties": [
+                                            {
+                                                "name": "encoding",
+                                                "type": {
+                                                    "kind": "union_type",
+                                                    "value": [
+                                                        {
+                                                            "kind": "primitive_keyword",
+                                                            "value": "string"
+                                                        },
+                                                        {
+                                                            "kind": "primitive_keyword",
+                                                            "value": "null"
+                                                        }
+                                                    ]
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "flag",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "string"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "throws",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "boolean"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "fs",
+                                                "type": {
+                                                    "kind": "type_interface",
+                                                    "value": {
+                                                        "name": "FS",
+                                                        "properties": [
+                                                            {
+                                                                "name": "readFile",
+                                                                "type": {
+                                                                    "kind": "primitive_keyword",
+                                                                    "value": "typeof fsReadFile"
+                                                                },
+                                                                "optional": false,
+                                                                "modifiers": [],
+                                                                "dotDotDotToken": false
+                                                            },
+                                                            {
+                                                                "name": "readFileSync",
+                                                                "type": {
+                                                                    "kind": "primitive_keyword",
+                                                                    "value": "typeof fsReadFileSync"
+                                                                },
+                                                                "optional": false,
+                                                                "modifiers": [],
+                                                                "dotDotDotToken": false
+                                                            },
+                                                            {
+                                                                "name": "writeFile",
+                                                                "type": {
+                                                                    "kind": "primitive_keyword",
+                                                                    "value": "typeof fsWriteFile"
+                                                                },
+                                                                "optional": false,
+                                                                "modifiers": [],
+                                                                "dotDotDotToken": false
+                                                            },
+                                                            {
+                                                                "name": "writeFileSync",
+                                                                "type": {
+                                                                    "kind": "primitive_keyword",
+                                                                    "value": "typeof fsWriteFileSync"
+                                                                },
+                                                                "optional": false,
+                                                                "modifiers": [],
+                                                                "dotDotDotToken": false
+                                                            }
+                                                        ],
+                                                        "methods": [],
+                                                        "classes": [],
+                                                        "callSignatures": [],
+                                                        "indexSignatures": [],
+                                                        "typeParameters": []
+                                                    }
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "reviver",
+                                                "type": {
+                                                    "kind": "function_type",
+                                                    "value": {
+                                                        "name": "",
+                                                        "returnType": {
+                                                            "kind": "any_keyword",
+                                                            "value": "any"
+                                                        },
+                                                        "parameters": [
+                                                            {
+                                                                "name": "key",
+                                                                "type": {
+                                                                    "kind": "any_keyword",
+                                                                    "value": "any"
+                                                                },
+                                                                "optional": false,
+                                                                "modifiers": [],
+                                                                "dotDotDotToken": false
+                                                            },
+                                                            {
+                                                                "name": "value",
+                                                                "type": {
+                                                                    "kind": "any_keyword",
+                                                                    "value": "any"
+                                                                },
+                                                                "optional": false,
+                                                                "modifiers": [],
+                                                                "dotDotDotToken": false
+                                                            }
+                                                        ],
+                                                        "modifiers": [],
+                                                        "typeParameters": [],
+                                                        "_isConstructor": false
+                                                    }
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [],
+                                        "typeParameters": []
+                                    }
+                                },
+                                {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                },
+                                {
+                                    "kind": "primitive_keyword",
+                                    "value": "null"
+                                },
+                                {
+                                    "kind": "undefined_keyword",
+                                    "value": "undefined"
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "callback",
+                        "type": {
+                            "kind": "function_type",
+                            "value": {
+                                "name": "",
+                                "returnType": {
+                                    "kind": "void_keyword",
+                                    "value": "void"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "err",
+                                        "type": {
+                                            "kind": "union_type",
+                                            "value": [
+                                                {
+                                                    "kind": "type_reference",
+                                                    "value": "NodeJS.ErrnoException",
+                                                    "text": ""
+                                                },
+                                                {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "null"
+                                                }
+                                            ]
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "data",
+                                        "type": {
+                                            "kind": "any_keyword",
+                                            "value": "any"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "readFile",
+                "returnType": {
+                    "kind": "void_keyword",
+                    "value": "void"
+                },
+                "parameters": [
+                    {
+                        "name": "file",
+                        "type": {
+                            "circular": true
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "callback",
+                        "type": {
+                            "circular": true
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "readFile",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "Promise<any>",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "file",
+                        "type": {
+                            "circular": true
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "options",
+                        "type": {
+                            "circular": true
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "writeFile",
+                "returnType": {
+                    "kind": "void_keyword",
+                    "value": "void"
+                },
+                "parameters": [
+                    {
+                        "name": "file",
+                        "type": {
+                            "circular": true
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "obj",
+                        "type": {
+                            "kind": "any_keyword",
+                            "value": "any"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "options",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "",
+                                        "properties": [
+                                            {
+                                                "name": "encoding",
+                                                "type": {
+                                                    "kind": "union_type",
+                                                    "value": [
+                                                        {
+                                                            "kind": "primitive_keyword",
+                                                            "value": "string"
+                                                        },
+                                                        {
+                                                            "kind": "primitive_keyword",
+                                                            "value": "null"
+                                                        }
+                                                    ]
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "mode",
+                                                "type": {
+                                                    "kind": "union_type",
+                                                    "value": [
+                                                        {
+                                                            "kind": "primitive_keyword",
+                                                            "value": "string"
+                                                        },
+                                                        {
+                                                            "kind": "primitive_keyword",
+                                                            "value": "number"
+                                                        }
+                                                    ]
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "flag",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "string"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "fs",
+                                                "type": {
+                                                    "kind": "type_interface",
+                                                    "value": {
+                                                        "name": "FS",
+                                                        "circular": true
+                                                    }
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "EOL",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "string"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "spaces",
+                                                "type": {
+                                                    "kind": "union_type",
+                                                    "value": [
+                                                        {
+                                                            "kind": "primitive_keyword",
+                                                            "value": "string"
+                                                        },
+                                                        {
+                                                            "kind": "primitive_keyword",
+                                                            "value": "number"
+                                                        }
+                                                    ]
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "replacer",
+                                                "type": {
+                                                    "kind": "function_type",
+                                                    "value": {
+                                                        "name": "",
+                                                        "returnType": {
+                                                            "kind": "any_keyword",
+                                                            "value": "any"
+                                                        },
+                                                        "parameters": [
+                                                            {
+                                                                "name": "key",
+                                                                "type": {
+                                                                    "kind": "primitive_keyword",
+                                                                    "value": "string"
+                                                                },
+                                                                "optional": false,
+                                                                "modifiers": [],
+                                                                "dotDotDotToken": false
+                                                            },
+                                                            {
+                                                                "name": "value",
+                                                                "type": {
+                                                                    "kind": "any_keyword",
+                                                                    "value": "any"
+                                                                },
+                                                                "optional": false,
+                                                                "modifiers": [],
+                                                                "dotDotDotToken": false
+                                                            }
+                                                        ],
+                                                        "modifiers": [],
+                                                        "typeParameters": [],
+                                                        "_isConstructor": false
+                                                    }
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [],
+                                        "typeParameters": []
+                                    }
+                                },
+                                {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                },
+                                {
+                                    "kind": "primitive_keyword",
+                                    "value": "null"
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "callback",
+                        "type": {
+                            "kind": "function_type",
+                            "value": {
+                                "name": "",
+                                "returnType": {
+                                    "kind": "void_keyword",
+                                    "value": "void"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "err",
+                                        "type": {
+                                            "kind": "type_reference",
+                                            "value": "NodeJS.ErrnoException",
+                                            "text": ""
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "writeFile",
+                "returnType": {
+                    "kind": "void_keyword",
+                    "value": "void"
+                },
+                "parameters": [
+                    {
+                        "name": "file",
+                        "type": {
+                            "circular": true
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "obj",
+                        "type": {
+                            "kind": "any_keyword",
+                            "value": "any"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "callback",
+                        "type": {
+                            "circular": true
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "writeFile",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "Promise<void>",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "file",
+                        "type": {
+                            "circular": true
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "obj",
+                        "type": {
+                            "kind": "any_keyword",
+                            "value": "any"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "options",
+                        "type": {
+                            "circular": true
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "stripBom",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "parameters": [
+                    {
+                        "name": "content",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Buffer",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "stringify",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "parameters": [
+                    {
+                        "name": "obj",
+                        "type": {
+                            "kind": "object_keyword",
+                            "value": "object"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "file",
+                "type": {
+                    "circular": true
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "file",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "options",
+                "type": {
+                    "circular": true
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "file",
+                "type": {
+                    "circular": true
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "file",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "obj",
+                "type": {
+                    "kind": "any_keyword",
+                    "value": "any"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "obj",
+                "type": {
+                    "kind": "object_keyword",
+                    "value": "object"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "options",
+                "type": {
+                    "circular": true
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "void",
+        "type-union",
+        "alias-type",
+        "optional-parameter",
+        "string",
+        "boolean",
+        "type-function",
+        "type-any",
+        "undefined",
+        "number"
+    ]
+}

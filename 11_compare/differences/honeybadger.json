@@ -1,0 +1,23 @@
+{
+    "module": "honeybadger",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "string",
+        "optional-parameter",
+        "readonly-array",
+        "type-array",
+        "object",
+        "type-any",
+        "type-function",
+        "void",
+        "type-union",
+        "alias-type"
+    ]
+}

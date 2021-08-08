@@ -1,0 +1,510 @@
+{
+    "module": "hashmap",
+    "template": "module-class",
+    "differences": [
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "constructor",
+            "expectedNumberOfOverloadings": 3,
+            "actualNumberOfOverloadings": 1
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "other",
+                "type": {
+                    "kind": "undefined_keyword",
+                    "value": "undefined"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "data",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "HashMap<TKey, TValue>",
+                            "text": ""
+                        },
+                        {
+                            "kind": "array_type",
+                            "value": {
+                                "kind": "tuple_type",
+                                "value": [
+                                    {
+                                        "kind": "generic_keyword",
+                                        "value": "TKey"
+                                    },
+                                    {
+                                        "kind": "generic_keyword",
+                                        "value": "TValue"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "other",
+                "circular": true
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "keysAndValues",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "circular": true
+                        },
+                        {
+                            "circular": true
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "other",
+                "type": "undefined",
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "get",
+                "returnType": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "circular": true
+                        },
+                        {
+                            "kind": "undefined_keyword",
+                            "value": "undefined"
+                        }
+                    ]
+                },
+                "parameters": [
+                    {
+                        "name": "key",
+                        "type": {
+                            "circular": true
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "set",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "HashMap<TKey, TValue>",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "key",
+                        "type": {
+                            "circular": true
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "value",
+                        "type": {
+                            "circular": true
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "multi",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "HashMap<TKey, TValue>",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "keysAndValues",
+                        "type": {
+                            "kind": "array_type",
+                            "value": {
+                                "kind": "union_type",
+                                "value": [
+                                    {
+                                        "circular": true
+                                    },
+                                    {
+                                        "circular": true
+                                    }
+                                ]
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": true
+                    }
+                ],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "copy",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "HashMap<TKey, TValue>",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "map",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "HashMap<TKey, TValue>",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "has",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "boolean"
+                },
+                "parameters": [
+                    {
+                        "name": "key",
+                        "type": {
+                            "circular": true
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "search",
+                "returnType": {
+                    "circular": true
+                },
+                "parameters": [
+                    {
+                        "name": "value",
+                        "type": {
+                            "circular": true
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "delete",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "HashMap<TKey, TValue>",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "key",
+                        "type": {
+                            "circular": true
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "remove",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "HashMap<TKey, TValue>",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "key",
+                        "type": {
+                            "circular": true
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "keys",
+                "returnType": {
+                    "kind": "array_type",
+                    "value": {
+                        "circular": true
+                    }
+                },
+                "parameters": [],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "values",
+                "returnType": {
+                    "kind": "array_type",
+                    "value": {
+                        "circular": true
+                    }
+                },
+                "parameters": [],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "entries",
+                "returnType": {
+                    "kind": "array_type",
+                    "value": {
+                        "kind": "tuple_type",
+                        "value": [
+                            {
+                                "circular": true
+                            },
+                            {
+                                "circular": true
+                            }
+                        ]
+                    }
+                },
+                "parameters": [],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "count",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "parameters": [],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "clear",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "HashMap<TKey, TValue>",
+                    "text": ""
+                },
+                "parameters": [],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "clone",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "HashMap<TKey, TValue>",
+                    "text": ""
+                },
+                "parameters": [],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "forEach",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "HashMap<TKey, TValue>",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "callback",
+                        "type": {
+                            "kind": "function_type",
+                            "value": {
+                                "name": "",
+                                "returnType": {
+                                    "kind": "void_keyword",
+                                    "value": "void"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "value",
+                                        "type": {
+                                            "circular": true
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "key",
+                                        "type": {
+                                            "circular": true
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "type",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "parameters": [
+                    {
+                        "name": "key",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "null"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        }
+    ],
+    "tags": [
+        "type-array",
+        "generics-function",
+        "type-tuple",
+        "type-union",
+        "dot-dot-dot-token",
+        "undefined",
+        "boolean",
+        "number",
+        "type-function",
+        "void",
+        "generics-class"
+    ]
+}

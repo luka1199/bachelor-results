@@ -1,0 +1,14 @@
+{
+    "module": "expand-tilde",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "expandTilde",
+            "exportAssignmentActual": "ExpandTilde"
+        }
+    ],
+    "tags": [
+        "string"
+    ]
+}

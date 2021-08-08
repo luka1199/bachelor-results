@@ -1,0 +1,25 @@
+{
+    "module": "event-kit",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "void",
+        "boolean",
+        "object",
+        "optional-parameter",
+        "type-function",
+        "type-array",
+        "dot-dot-dot-token",
+        "generics-function",
+        "generics-class",
+        "index-signature",
+        "string",
+        "type-any"
+    ]
+}

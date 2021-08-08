@@ -1,0 +1,76 @@
+{
+    "module": "merkle",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "merkle",
+            "exportAssignmentActual": "Merkle"
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "hashname",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "literal_type",
+                            "value": "\"sha512\""
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "\"sha256\""
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "\"sha1\""
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "\"md5\""
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "\"ripemd160\""
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "\"whirlpool\""
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "\"none\""
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "hashFuncName",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "literals",
+        "type-union",
+        "optional-parameter",
+        "boolean",
+        "type-array",
+        "type-any",
+        "void",
+        "type-function",
+        "string",
+        "number",
+        "undefined"
+    ]
+}

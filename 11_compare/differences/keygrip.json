@@ -1,0 +1,21 @@
+{
+    "module": "keygrip",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "string",
+        "type-any",
+        "boolean",
+        "number",
+        "call-signature",
+        "readonly-array",
+        "type-array",
+        "optional-parameter"
+    ]
+}

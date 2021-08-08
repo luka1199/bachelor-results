@@ -1,0 +1,152 @@
+{
+    "module": "gulp-mustache",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "view",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "Hash",
+                                "properties": [],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [
+                                    {
+                                        "parameter": {
+                                            "name": "key",
+                                            "type": {
+                                                "kind": "primitive_keyword",
+                                                "value": "string"
+                                            },
+                                            "optional": false,
+                                            "modifiers": [],
+                                            "dotDotDotToken": false
+                                        },
+                                        "type": {
+                                            "kind": "any_keyword",
+                                            "value": "any"
+                                        }
+                                    }
+                                ],
+                                "typeParameters": []
+                            }
+                        },
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        {
+                            "kind": "undefined_keyword",
+                            "value": "undefined"
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "view",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "object_keyword",
+                            "value": "object"
+                        },
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "tags",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "tags",
+                "type": [
+                    {
+                        "kind": "type_interface",
+                        "value": {
+                            "name": "I__tags",
+                            "properties": [
+                                {
+                                    "name": "0",
+                                    "type": {
+                                        "kind": "primitive_keyword",
+                                        "value": "string"
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                },
+                                {
+                                    "name": "1",
+                                    "type": {
+                                        "kind": "primitive_keyword",
+                                        "value": "string"
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                }
+                            ],
+                            "methods": [],
+                            "classes": [],
+                            "callSignatures": [],
+                            "indexSignatures": [],
+                            "typeParameters": []
+                        }
+                    },
+                    {
+                        "kind": "array_type",
+                        "value": {
+                            "kind": "any_keyword",
+                            "value": "any"
+                        }
+                    },
+                    {
+                        "kind": "undefined_keyword",
+                        "value": "undefined"
+                    }
+                ],
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "index-signature",
+        "string",
+        "type-any",
+        "optional-parameter",
+        "readonly-array",
+        "type-array",
+        "undefined",
+        "type-union",
+        "alias-type"
+    ]
+}

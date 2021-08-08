@@ -1,0 +1,15 @@
+{
+    "module": "bases",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "string",
+        "number"
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "module": "parse-color",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "parseColor",
+            "exportAssignmentActual": "ParseColor"
+        }
+    ],
+    "tags": [
+        "number",
+        "type-tuple",
+        "string"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "module": "depd",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "call-signature",
+        "void",
+        "string",
+        "generics-function",
+        "type-reference-function",
+        "type-function",
+        "optional-parameter",
+        "object",
+        "literals",
+        "readonly",
+        "boolean",
+        "type-array"
+    ]
+}

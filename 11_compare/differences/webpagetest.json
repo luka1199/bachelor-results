@@ -1,0 +1,30 @@
+{
+    "module": "webpagetest",
+    "template": "module-class",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-class",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "generics-function",
+        "number",
+        "string",
+        "generics-interface",
+        "optional-parameter",
+        "boolean",
+        "index-signature",
+        "literals",
+        "type-any",
+        "static",
+        "type-array",
+        "type-union",
+        "alias-type",
+        "void",
+        "type-intersection",
+        "type-function",
+        "undefined"
+    ]
+}

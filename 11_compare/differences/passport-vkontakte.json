@@ -1,0 +1,23 @@
+{
+    "module": "passport-vkontakte",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "string",
+        "type-any",
+        "type-array",
+        "number",
+        "type-function",
+        "void",
+        "alias-type",
+        "type-union",
+        "object"
+    ]
+}

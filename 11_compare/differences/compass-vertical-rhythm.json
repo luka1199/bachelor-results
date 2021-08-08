@@ -1,0 +1,19 @@
+{
+    "module": "compass-vertical-rhythm",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "string",
+        "number",
+        "type-union",
+        "literals",
+        "boolean"
+    ]
+}

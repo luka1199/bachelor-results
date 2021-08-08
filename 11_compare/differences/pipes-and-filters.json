@@ -1,0 +1,170 @@
+{
+    "module": "pipes-and-filters",
+    "template": "module",
+    "differences": [
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "breakIf",
+                "returnType": {
+                    "kind": "function_type",
+                    "value": {
+                        "name": "",
+                        "returnType": {
+                            "kind": "void_keyword",
+                            "value": "void"
+                        },
+                        "parameters": [
+                            {
+                                "name": "input",
+                                "type": {
+                                    "kind": "generic_keyword",
+                                    "value": "TInput",
+                                    "defaultValue": {
+                                        "kind": "any_keyword",
+                                        "value": "any"
+                                    }
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "next",
+                                "type": {
+                                    "kind": "function_type",
+                                    "value": {
+                                        "name": "",
+                                        "returnType": {
+                                            "kind": "void_keyword",
+                                            "value": "void"
+                                        },
+                                        "parameters": [
+                                            {
+                                                "name": "err",
+                                                "type": {
+                                                    "kind": "union_type",
+                                                    "value": [
+                                                        {
+                                                            "kind": "type_reference",
+                                                            "value": "Error",
+                                                            "text": ""
+                                                        },
+                                                        {
+                                                            "kind": "primitive_keyword",
+                                                            "value": "null"
+                                                        }
+                                                    ]
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "result",
+                                                "type": {
+                                                    "kind": "generic_keyword",
+                                                    "value": "TOutput"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "modifiers": [],
+                                        "typeParameters": [],
+                                        "_isConstructor": false
+                                    }
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "modifiers": [],
+                        "typeParameters": [],
+                        "_isConstructor": false
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "predicate",
+                        "type": {
+                            "kind": "function_type",
+                            "value": {
+                                "name": "",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "boolean"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "input",
+                                        "type": {
+                                            "kind": "generic_keyword",
+                                            "value": "TInput",
+                                            "defaultValue": {
+                                                "kind": "any_keyword",
+                                                "value": "any"
+                                            }
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "name",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "name",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "type-any",
+        "static",
+        "type-function",
+        "void",
+        "generics-function",
+        "optional-parameter",
+        "type-union",
+        "alias-type",
+        "boolean",
+        "generics-class",
+        "string"
+    ]
+}

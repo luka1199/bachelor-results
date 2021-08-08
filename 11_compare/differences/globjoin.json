@@ -1,0 +1,17 @@
+{
+    "module": "globjoin",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "string",
+        "type-array",
+        "dot-dot-dot-token",
+        "type-union"
+    ]
+}

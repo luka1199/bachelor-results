@@ -1,0 +1,22 @@
+{
+    "module": "command-shell-lib",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "type-array",
+        "string",
+        "type-function",
+        "void",
+        "index-signature",
+        "optional-parameter",
+        "type-any",
+        "dot-dot-dot-token",
+        "readonly-array"
+    ]
+}

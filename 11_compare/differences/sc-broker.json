@@ -1,0 +1,26 @@
+{
+    "module": "sc-broker",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "string",
+        "boolean",
+        "number",
+        "type-union",
+        "literals",
+        "type-function",
+        "void",
+        "type-any",
+        "alias-type",
+        "type-array",
+        "readonly",
+        "object"
+    ]
+}

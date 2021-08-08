@@ -1,0 +1,21 @@
+{
+    "module": "xml-encryption",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "literals",
+        "type-union",
+        "alias-type",
+        "optional-parameter",
+        "boolean",
+        "string",
+        "void",
+        "type-function"
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "module": "connect-flash",
+    "template": "module",
+    "differences": [],
+    "tags": [
+        "index-signature",
+        "string",
+        "type-array",
+        "number",
+        "type-union",
+        "type-any",
+        "dot-dot-dot-token",
+        "optional-parameter",
+        "boolean"
+    ]
+}

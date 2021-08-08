@@ -1,0 +1,26 @@
+{
+    "module": "blueimp-load-image",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "index-signature",
+        "number",
+        "string",
+        "type-array",
+        "type-union",
+        "alias-type",
+        "type-function",
+        "literals",
+        "optional-parameter",
+        "boolean",
+        "call-signature",
+        "void",
+        "type-intersection"
+    ]
+}

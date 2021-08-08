@@ -1,0 +1,134 @@
+{
+    "module": "capitalize",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "capitalize",
+            "exportAssignmentActual": "Capitalize"
+        },
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "capitalize",
+            "expectedNumberOfOverloadings": 1,
+            "actualNumberOfOverloadings": 4
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "input",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "obj",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "preserve",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "boolean"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "input",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "obj",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Date",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "preserve",
+                "circular": true
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "input",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "obj",
+                "type": {
+                    "kind": "object_keyword",
+                    "value": "object"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "preserve",
+                "circular": true
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "input",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "obj",
+                "type": {
+                    "kind": "array_type",
+                    "value": {
+                        "kind": "any_keyword",
+                        "value": "any"
+                    }
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "preserve",
+                "circular": true
+            }
+        }
+    ],
+    "tags": [
+        "string",
+        "optional-parameter",
+        "boolean"
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "module": "is-odd",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "isOdd",
+            "exportAssignmentActual": "IsOdd"
+        }
+    ],
+    "tags": [
+        "boolean",
+        "number",
+        "string",
+        "type-union"
+    ]
+}

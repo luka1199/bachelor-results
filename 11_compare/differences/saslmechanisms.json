@@ -1,0 +1,289 @@
+{
+    "module": "saslmechanisms",
+    "template": "module-class",
+    "differences": [
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "constructor",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": ""
+                },
+                "parameters": [],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": true
+            }
+        },
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "use",
+            "expectedNumberOfOverloadings": 2,
+            "actualNumberOfOverloadings": 1
+        },
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "create",
+            "expectedNumberOfOverloadings": 1,
+            "actualNumberOfOverloadings": 2
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "name",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "name",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "Function",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__name",
+                                "properties": [
+                                    {
+                                        "name": "prototype",
+                                        "type": {
+                                            "kind": "union_type",
+                                            "value": [
+                                                {
+                                                    "kind": "type_interface",
+                                                    "value": {
+                                                        "name": "I__prototype",
+                                                        "properties": [
+                                                            {
+                                                                "name": "name",
+                                                                "type": {
+                                                                    "kind": "primitive_keyword",
+                                                                    "value": "string"
+                                                                },
+                                                                "optional": false,
+                                                                "modifiers": [],
+                                                                "dotDotDotToken": false
+                                                            }
+                                                        ],
+                                                        "methods": [],
+                                                        "classes": [],
+                                                        "callSignatures": [],
+                                                        "indexSignatures": [],
+                                                        "typeParameters": []
+                                                    }
+                                                },
+                                                {
+                                                    "kind": "type_reference",
+                                                    "value": "BarMechanism",
+                                                    "text": ""
+                                                }
+                                            ]
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        },
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "prototype",
+                "type": {
+                    "kind": "type_interface",
+                    "value": {
+                        "name": "",
+                        "properties": [
+                            {
+                                "name": "name",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "methods": [],
+                        "classes": [],
+                        "callSignatures": [],
+                        "indexSignatures": [
+                            {
+                                "parameter": {
+                                    "name": "key",
+                                    "type": {
+                                        "kind": "primitive_keyword",
+                                        "value": "string"
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                },
+                                "type": {
+                                    "kind": "any_keyword",
+                                    "value": "any"
+                                }
+                            }
+                        ],
+                        "typeParameters": []
+                    }
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "prototype",
+                "circular": true
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "mech",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Function",
+                    "text": ""
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "mechanisms",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "mechs",
+                "type": {
+                    "kind": "any_keyword",
+                    "value": "any"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "mechanisms",
+                "type": {
+                    "circular": true
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "mechs",
+                "type": [
+                    {
+                        "kind": "array_type",
+                        "value": {
+                            "kind": "any_keyword",
+                            "value": "any"
+                        }
+                    },
+                    {
+                        "kind": "type_interface",
+                        "value": {
+                            "name": "I__mechs",
+                            "properties": [
+                                {
+                                    "name": "0",
+                                    "type": {
+                                        "kind": "primitive_keyword",
+                                        "value": "string"
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                },
+                                {
+                                    "name": "1",
+                                    "type": {
+                                        "kind": "primitive_keyword",
+                                        "value": "string"
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                },
+                                {
+                                    "name": "length",
+                                    "type": {
+                                        "kind": "primitive_keyword",
+                                        "value": "number"
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                }
+                            ],
+                            "methods": [],
+                            "classes": [],
+                            "callSignatures": [],
+                            "indexSignatures": [],
+                            "typeParameters": []
+                        }
+                    }
+                ],
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "static",
+        "string",
+        "index-signature",
+        "type-any",
+        "void",
+        "type-union",
+        "type-array"
+    ]
+}

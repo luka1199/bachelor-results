@@ -1,0 +1,19 @@
+{
+    "module": "defer-promise",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "void",
+        "generics-function",
+        "type-union",
+        "optional-parameter",
+        "type-any",
+        "generics-interface"
+    ]
+}

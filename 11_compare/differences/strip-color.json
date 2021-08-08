@@ -1,0 +1,14 @@
+{
+    "module": "strip-color",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "stripColor",
+            "exportAssignmentActual": "StripColor"
+        }
+    ],
+    "tags": [
+        "string"
+    ]
+}

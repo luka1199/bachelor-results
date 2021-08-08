@@ -1,0 +1,21 @@
+{
+    "module": "redis-rate-limiter",
+    "template": "module-class",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-class",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "type-function",
+        "void",
+        "string",
+        "number",
+        "boolean",
+        "literals",
+        "type-union",
+        "optional-parameter"
+    ]
+}

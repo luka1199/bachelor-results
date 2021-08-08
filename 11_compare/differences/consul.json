@@ -1,0 +1,145 @@
+{
+    "module": "consul",
+    "template": "module",
+    "differences": [
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "format",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "parameters": [
+                    {
+                        "name": "obj",
+                        "type": {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__obj",
+                                "properties": [
+                                    {
+                                        "name": "parameters",
+                                        "type": {
+                                            "kind": "type_interface",
+                                            "value": {
+                                                "name": "I__parameters",
+                                                "properties": [
+                                                    {
+                                                        "name": "charset",
+                                                        "type": {
+                                                            "kind": "primitive_keyword",
+                                                            "value": "string"
+                                                        },
+                                                        "optional": false,
+                                                        "modifiers": [],
+                                                        "dotDotDotToken": false
+                                                    },
+                                                    {
+                                                        "name": "foo",
+                                                        "type": {
+                                                            "kind": "primitive_keyword",
+                                                            "value": "string"
+                                                        },
+                                                        "optional": false,
+                                                        "modifiers": [],
+                                                        "dotDotDotToken": false
+                                                    },
+                                                    {
+                                                        "name": "bar",
+                                                        "type": {
+                                                            "kind": "primitive_keyword",
+                                                            "value": "string"
+                                                        },
+                                                        "optional": false,
+                                                        "modifiers": [],
+                                                        "dotDotDotToken": false
+                                                    }
+                                                ],
+                                                "methods": [],
+                                                "classes": [],
+                                                "callSignatures": [],
+                                                "indexSignatures": [],
+                                                "typeParameters": []
+                                            }
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "type",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "parse",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "ContentType",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "string",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "type-function",
+        "generics-function",
+        "type-union",
+        "type-any",
+        "void",
+        "generics-interface",
+        "boolean",
+        "string",
+        "number",
+        "call-signature",
+        "type-array",
+        "type-reference-function",
+        "type-intersection"
+    ]
+}

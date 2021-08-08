@@ -1,0 +1,22 @@
+{
+    "module": "vmap",
+    "template": "module-class",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-class",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "string",
+        "literals",
+        "type-union",
+        "optional-parameter",
+        "type-array",
+        "type-any",
+        "boolean",
+        "type-function",
+        "void"
+    ]
+}

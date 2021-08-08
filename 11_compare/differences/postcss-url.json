@@ -1,0 +1,22 @@
+{
+    "module": "postcss-url",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "literals",
+        "type-function",
+        "string",
+        "alias-type",
+        "type-union",
+        "number",
+        "boolean",
+        "type-array"
+    ]
+}

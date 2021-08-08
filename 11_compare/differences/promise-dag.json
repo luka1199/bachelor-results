@@ -1,0 +1,508 @@
+{
+    "module": "promise-dag",
+    "template": "module",
+    "differences": [
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "implement",
+                "returnType": {
+                    "kind": "function_type",
+                    "value": {
+                        "name": "",
+                        "returnType": {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "",
+                                "properties": [],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [
+                                    {
+                                        "parameter": {
+                                            "name": "name",
+                                            "type": {
+                                                "kind": "primitive_keyword",
+                                                "value": "string"
+                                            },
+                                            "optional": false,
+                                            "modifiers": [],
+                                            "dotDotDotToken": false
+                                        },
+                                        "type": {
+                                            "kind": "generic_keyword",
+                                            "value": "P",
+                                            "constraint": {
+                                                "kind": "type_reference",
+                                                "value": "PromiseLike<any>",
+                                                "text": ""
+                                            }
+                                        }
+                                    }
+                                ],
+                                "typeParameters": []
+                            }
+                        },
+                        "parameters": [
+                            {
+                                "name": "steps",
+                                "type": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "",
+                                        "properties": [],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [
+                                            {
+                                                "parameter": {
+                                                    "name": "name",
+                                                    "type": {
+                                                        "kind": "primitive_keyword",
+                                                        "value": "string"
+                                                    },
+                                                    "optional": false,
+                                                    "modifiers": [],
+                                                    "dotDotDotToken": false
+                                                },
+                                                "type": {
+                                                    "kind": "array_type",
+                                                    "value": {
+                                                        "kind": "union_type",
+                                                        "value": [
+                                                            {
+                                                                "kind": "primitive_keyword",
+                                                                "value": "string"
+                                                            },
+                                                            {
+                                                                "kind": "function_type",
+                                                                "value": {
+                                                                    "name": "",
+                                                                    "returnType": {
+                                                                        "kind": "type_reference",
+                                                                        "value": "PromiseLike<any>",
+                                                                        "text": ""
+                                                                    },
+                                                                    "parameters": [
+                                                                        {
+                                                                            "name": "args",
+                                                                            "type": {
+                                                                                "kind": "array_type",
+                                                                                "value": {
+                                                                                    "kind": "any_keyword",
+                                                                                    "value": "any"
+                                                                                }
+                                                                            },
+                                                                            "optional": false,
+                                                                            "modifiers": [],
+                                                                            "dotDotDotToken": true
+                                                                        }
+                                                                    ],
+                                                                    "modifiers": [],
+                                                                    "typeParameters": [],
+                                                                    "_isConstructor": false
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "typeParameters": []
+                                    }
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "required",
+                                "type": {
+                                    "kind": "array_type",
+                                    "value": {
+                                        "kind": "primitive_keyword",
+                                        "value": "string"
+                                    }
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "modifiers": [],
+                        "typeParameters": [],
+                        "_isConstructor": false
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "implementation",
+                        "type": {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "PromiseImplementation",
+                                "properties": [],
+                                "methods": [
+                                    {
+                                        "name": "resolve",
+                                        "returnType": {
+                                            "kind": "generic_keyword",
+                                            "value": "P",
+                                            "constraint": {
+                                                "kind": "type_reference",
+                                                "value": "PromiseLike<any>",
+                                                "text": ""
+                                            }
+                                        },
+                                        "parameters": [
+                                            {
+                                                "name": "value",
+                                                "type": {
+                                                    "kind": "any_keyword",
+                                                    "value": "any"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "modifiers": [],
+                                        "typeParameters": [],
+                                        "_isConstructor": false
+                                    },
+                                    {
+                                        "name": "reject",
+                                        "returnType": {
+                                            "circular": true
+                                        },
+                                        "parameters": [
+                                            {
+                                                "name": "value",
+                                                "type": {
+                                                    "kind": "any_keyword",
+                                                    "value": "any"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "modifiers": [],
+                                        "typeParameters": [],
+                                        "_isConstructor": false
+                                    },
+                                    {
+                                        "name": "all",
+                                        "returnType": {
+                                            "circular": true
+                                        },
+                                        "parameters": [
+                                            {
+                                                "name": "values",
+                                                "type": {
+                                                    "kind": "array_type",
+                                                    "value": {
+                                                        "kind": "any_keyword",
+                                                        "value": "any"
+                                                    }
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "modifiers": [],
+                                        "typeParameters": [],
+                                        "_isConstructor": false
+                                    }
+                                ],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": [
+                                    {
+                                        "circular": true
+                                    }
+                                ]
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [
+                    {
+                        "kind": "generic_keyword",
+                        "value": "P",
+                        "constraint": {
+                            "kind": "type_reference",
+                            "value": "PromiseLike<any>",
+                            "text": ""
+                        }
+                    }
+                ],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "source",
+                "returnType": {
+                    "kind": "array_type",
+                    "value": {
+                        "kind": "any_keyword",
+                        "value": "any"
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "v",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "primitive_keyword",
+                                    "value": "number"
+                                },
+                                {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "run",
+                "returnType": {
+                    "kind": "object_keyword",
+                    "value": "object"
+                },
+                "parameters": [
+                    {
+                        "name": "steps",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "I__steps",
+                                        "properties": [
+                                            {
+                                                "name": "0",
+                                                "type": {
+                                                    "kind": "array_type",
+                                                    "value": {
+                                                        "kind": "any_keyword",
+                                                        "value": "any"
+                                                    }
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "1",
+                                                "type": {
+                                                    "kind": "array_type",
+                                                    "value": {
+                                                        "kind": "any_keyword",
+                                                        "value": "any"
+                                                    }
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "2",
+                                                "type": {
+                                                    "kind": "array_type",
+                                                    "value": {
+                                                        "kind": "any_keyword",
+                                                        "value": "any"
+                                                    }
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "z",
+                                                "type": {
+                                                    "kind": "array_type",
+                                                    "value": {
+                                                        "kind": "any_keyword",
+                                                        "value": "any"
+                                                    }
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "x",
+                                                "type": {
+                                                    "kind": "array_type",
+                                                    "value": {
+                                                        "kind": "any_keyword",
+                                                        "value": "any"
+                                                    }
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "y",
+                                                "type": {
+                                                    "kind": "array_type",
+                                                    "value": {
+                                                        "kind": "any_keyword",
+                                                        "value": "any"
+                                                    }
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "hasOwnProperty%%PROXY_METHOD%%",
+                                                "type": {
+                                                    "kind": "type_interface",
+                                                    "value": {
+                                                        "name": "I__hasOwnProperty",
+                                                        "properties": [],
+                                                        "methods": [],
+                                                        "classes": [],
+                                                        "callSignatures": [],
+                                                        "indexSignatures": [],
+                                                        "typeParameters": []
+                                                    }
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [],
+                                        "typeParameters": []
+                                    }
+                                },
+                                {
+                                    "kind": "object_keyword",
+                                    "value": "object"
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "required",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "array_type",
+                                    "value": {
+                                        "kind": "any_keyword",
+                                        "value": "any"
+                                    }
+                                },
+                                {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "I__required",
+                                        "properties": [
+                                            {
+                                                "name": "0",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "string"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "1",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "string"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "length",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "number"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [],
+                                        "typeParameters": []
+                                    }
+                                }
+                            ]
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        }
+    ],
+    "tags": [
+        "generics-function",
+        "type-any",
+        "type-array",
+        "generics-interface",
+        "type-function",
+        "index-signature",
+        "string",
+        "dot-dot-dot-token",
+        "type-union",
+        "alias-type",
+        "optional-parameter"
+    ]
+}

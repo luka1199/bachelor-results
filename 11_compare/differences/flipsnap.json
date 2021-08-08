@@ -1,0 +1,22 @@
+{
+    "module": "flipsnap",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "boolean",
+        "void",
+        "optional-parameter",
+        "number",
+        "literals",
+        "type-function",
+        "type-any",
+        "call-signature",
+        "string"
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "module": "sass-graph",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "type-array",
+        "string",
+        "index-signature",
+        "alias-type",
+        "void",
+        "type-function",
+        "type-any"
+    ]
+}

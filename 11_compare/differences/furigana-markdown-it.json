@@ -1,0 +1,94 @@
+{
+    "module": "furigana-markdown-it",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "furigana",
+            "exportAssignmentActual": "FuriganaMarkdownIt"
+        },
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "furigana",
+            "expectedNumberOfOverloadings": 1,
+            "actualNumberOfOverloadings": 2
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "fallbackParens",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "extraSeparators",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "extraCombinators",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "options",
+                "type": {
+                    "kind": "type_interface",
+                    "value": {
+                        "name": "Options",
+                        "properties": [
+                            {
+                                "name": "fallbackParens",
+                                "circular": true
+                            },
+                            {
+                                "name": "extraSeparators",
+                                "circular": true
+                            },
+                            {
+                                "name": "extraCombinators",
+                                "circular": true
+                            }
+                        ],
+                        "methods": [],
+                        "classes": [],
+                        "callSignatures": [],
+                        "indexSignatures": [],
+                        "typeParameters": []
+                    }
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "string"
+    ]
+}

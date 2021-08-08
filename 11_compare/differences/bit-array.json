@@ -1,0 +1,18 @@
+{
+    "module": "bit-array",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "number",
+        "optional-parameter",
+        "string",
+        "boolean",
+        "type-array"
+    ]
+}

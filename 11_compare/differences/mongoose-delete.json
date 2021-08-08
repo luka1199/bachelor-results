@@ -1,0 +1,26 @@
+{
+    "module": "mongoose-delete",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "call-signature",
+        "void",
+        "generics-function",
+        "type-any",
+        "generics-interface",
+        "type-intersection",
+        "optional-parameter",
+        "string",
+        "type-union",
+        "boolean",
+        "literals",
+        "type-array",
+        "alias-type"
+    ]
+}

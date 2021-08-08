@@ -1,0 +1,22 @@
+{
+    "module": "qrcode-svg",
+    "template": "module-class",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-class",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "string",
+        "optional-parameter",
+        "number",
+        "literals",
+        "type-union",
+        "boolean",
+        "type-array",
+        "void",
+        "type-function"
+    ]
+}

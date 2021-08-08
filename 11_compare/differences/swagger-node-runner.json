@@ -1,0 +1,27 @@
+{
+    "module": "swagger-node-runner",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "string",
+        "optional-parameter",
+        "boolean",
+        "type-array",
+        "index-signature",
+        "type-function",
+        "void",
+        "type-any",
+        "number",
+        "type-union",
+        "alias-type",
+        "dot-dot-dot-token",
+        "undefined",
+        "call-signature"
+    ]
+}

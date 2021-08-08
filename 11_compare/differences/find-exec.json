@@ -1,0 +1,55 @@
+{
+    "module": "find-exec",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "findExec",
+            "exportAssignmentActual": "FindExec"
+        },
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "findExec",
+            "expectedNumberOfOverloadings": 2,
+            "actualNumberOfOverloadings": 1
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "execs",
+                "type": {
+                    "kind": "array_type",
+                    "value": {
+                        "kind": "primitive_keyword",
+                        "value": "string"
+                    }
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "args",
+                "type": {
+                    "kind": "array_type",
+                    "value": {
+                        "kind": "primitive_keyword",
+                        "value": "string"
+                    }
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": true
+            }
+        }
+    ],
+    "tags": [
+        "string",
+        "type-union",
+        "type-array",
+        "dot-dot-dot-token"
+    ]
+}

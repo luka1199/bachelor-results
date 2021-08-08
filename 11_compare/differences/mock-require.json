@@ -1,0 +1,23 @@
+{
+    "module": "mock-require",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "call-signature",
+        "void",
+        "string",
+        "object",
+        "type-function",
+        "type-any",
+        "type-array",
+        "dot-dot-dot-token",
+        "alias-type",
+        "type-union"
+    ]
+}

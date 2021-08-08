@@ -1,0 +1,23 @@
+{
+    "module": "forever-monitor",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "type-array",
+        "number",
+        "boolean",
+        "optional-parameter",
+        "string",
+        "type-union",
+        "void",
+        "type-function",
+        "type-any",
+        "literals"
+    ]
+}

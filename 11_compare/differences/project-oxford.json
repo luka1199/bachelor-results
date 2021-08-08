@@ -1,0 +1,15 @@
+{
+    "module": "project-oxford",
+    "template": "module",
+    "differences": [],
+    "tags": [
+        "string",
+        "private",
+        "public",
+        "optional-parameter",
+        "boolean",
+        "type-array",
+        "number",
+        "type-tuple"
+    ]
+}

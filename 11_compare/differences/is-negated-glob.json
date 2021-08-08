@@ -1,0 +1,15 @@
+{
+    "module": "is-negated-glob",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "isNegatedGlob",
+            "exportAssignmentActual": "IsNegatedGlob"
+        }
+    ],
+    "tags": [
+        "boolean",
+        "string"
+    ]
+}

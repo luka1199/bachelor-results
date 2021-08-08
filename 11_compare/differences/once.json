@@ -1,0 +1,26 @@
+{
+    "module": "once",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "void",
+        "call-signature",
+        "type-function",
+        "generics-function",
+        "boolean",
+        "undefined",
+        "type-union",
+        "generics-interface",
+        "type-intersection",
+        "type-array",
+        "type-any",
+        "dot-dot-dot-token",
+        "type-reference-function"
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "module": "whitelist-object",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "index-signature",
+        "string",
+        "type-any",
+        "readonly-array",
+        "type-array",
+        "optional-parameter",
+        "boolean"
+    ]
+}

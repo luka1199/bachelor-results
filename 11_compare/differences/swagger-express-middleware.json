@@ -1,0 +1,25 @@
+{
+    "module": "swagger-express-middleware",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "call-signature",
+        "optional-parameter",
+        "type-union",
+        "boolean",
+        "string",
+        "type-array",
+        "type-any",
+        "number",
+        "type-function",
+        "void",
+        "index-signature",
+        "alias-type"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "module": "braintree",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "string",
+        "type-union",
+        "alias-type",
+        "type-any",
+        "optional-parameter",
+        "boolean",
+        "type-array",
+        "number",
+        "literals",
+        "generics-interface",
+        "type-function",
+        "static"
+    ]
+}

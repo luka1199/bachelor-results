@@ -1,0 +1,17 @@
+{
+    "module": "add-zero",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "addZero",
+            "exportAssignmentActual": "AddZero"
+        }
+    ],
+    "tags": [
+        "string",
+        "number",
+        "type-union",
+        "optional-parameter"
+    ]
+}

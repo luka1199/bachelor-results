@@ -1,0 +1,129 @@
+{
+    "module": "superagent-proxy",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "superagentProxy",
+            "exportAssignmentActual": "SuperagentProxy"
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "s",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "typeof superagent"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "superagent",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "Function",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__superagent",
+                                "properties": [
+                                    {
+                                        "name": "Request",
+                                        "type": {
+                                            "kind": "type_interface",
+                                            "value": {
+                                                "name": "I__Request",
+                                                "properties": [
+                                                    {
+                                                        "name": "prototype",
+                                                        "type": {
+                                                            "kind": "union_type",
+                                                            "value": [
+                                                                {
+                                                                    "kind": "type_reference",
+                                                                    "value": "Request",
+                                                                    "text": ""
+                                                                },
+                                                                {
+                                                                    "kind": "type_interface",
+                                                                    "value": {
+                                                                        "name": "I__prototype",
+                                                                        "properties": [
+                                                                            {
+                                                                                "name": "proxy",
+                                                                                "type": {
+                                                                                    "kind": "type_reference",
+                                                                                    "value": "Function",
+                                                                                    "text": ""
+                                                                                },
+                                                                                "optional": false,
+                                                                                "modifiers": [],
+                                                                                "dotDotDotToken": false
+                                                                            }
+                                                                        ],
+                                                                        "methods": [],
+                                                                        "classes": [],
+                                                                        "callSignatures": [],
+                                                                        "indexSignatures": [],
+                                                                        "typeParameters": []
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        "optional": false,
+                                                        "modifiers": [],
+                                                        "dotDotDotToken": false
+                                                    }
+                                                ],
+                                                "methods": [],
+                                                "classes": [],
+                                                "callSignatures": [],
+                                                "indexSignatures": [],
+                                                "typeParameters": []
+                                            }
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "uri",
+                "type": {
+                    "kind": "undefined_keyword",
+                    "value": "undefined"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "string",
+        "void"
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "module": "hooker",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "void",
+        "type-any",
+        "string",
+        "type-array",
+        "type-union",
+        "optional-parameter",
+        "type-function",
+        "dot-dot-dot-token",
+        "alias-type",
+        "boolean",
+        "type-reference-function"
+    ]
+}

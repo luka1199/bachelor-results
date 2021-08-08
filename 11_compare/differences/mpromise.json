@@ -1,0 +1,515 @@
+{
+    "module": "mpromise",
+    "template": "module-class",
+    "differences": [
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "reject",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "Promise<F, R>",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "reason",
+                        "type": {
+                            "kind": "generic_keyword",
+                            "value": "R"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "resolve",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "Promise<F, R>",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "reason",
+                        "type": {
+                            "circular": true
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "args",
+                        "type": {
+                            "kind": "array_type",
+                            "value": {
+                                "kind": "generic_keyword",
+                                "value": "F"
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": true
+                    }
+                ],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "resolve",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "Promise<F, R>",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "reason",
+                        "type": {
+                            "circular": true
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "arg",
+                        "type": {
+                            "circular": true
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "onFulfill",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "Promise<F, R>",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "callback",
+                        "type": {
+                            "kind": "function_type",
+                            "value": {
+                                "name": "",
+                                "returnType": {
+                                    "kind": "void_keyword",
+                                    "value": "void"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "args",
+                                        "type": {
+                                            "kind": "array_type",
+                                            "value": {
+                                                "circular": true
+                                            }
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": true
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "onReject",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "Promise<F, R>",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "callback",
+                        "type": {
+                            "kind": "function_type",
+                            "value": {
+                                "name": "",
+                                "returnType": {
+                                    "kind": "void_keyword",
+                                    "value": "void"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "err",
+                                        "type": {
+                                            "circular": true
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "onResolve",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "Promise<F, R>",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "callback",
+                        "type": {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "IResolveFunction",
+                                "properties": [],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [
+                                    {
+                                        "name": "",
+                                        "returnType": {
+                                            "kind": "void_keyword",
+                                            "value": "void"
+                                        },
+                                        "parameters": [
+                                            {
+                                                "name": "err",
+                                                "type": {
+                                                    "kind": "generic_keyword",
+                                                    "value": "R"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "args",
+                                                "type": {
+                                                    "kind": "array_type",
+                                                    "value": {
+                                                        "kind": "generic_keyword",
+                                                        "value": "F"
+                                                    }
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": true
+                                            }
+                                        ],
+                                        "modifiers": [],
+                                        "typeParameters": [],
+                                        "_isConstructor": false
+                                    },
+                                    {
+                                        "name": "",
+                                        "returnType": {
+                                            "kind": "void_keyword",
+                                            "value": "void"
+                                        },
+                                        "parameters": [
+                                            {
+                                                "name": "err",
+                                                "type": {
+                                                    "circular": true
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "arg",
+                                                "type": {
+                                                    "circular": true
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "modifiers": [],
+                                        "typeParameters": [],
+                                        "_isConstructor": false
+                                    }
+                                ],
+                                "indexSignatures": [],
+                                "typeParameters": [
+                                    {
+                                        "circular": true
+                                    },
+                                    {
+                                        "circular": true
+                                    }
+                                ]
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "then",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "Promise<TRes, R>",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "onFulfilled",
+                        "type": {
+                            "kind": "function_type",
+                            "value": {
+                                "name": "",
+                                "returnType": {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "TRes"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<TRes>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "values",
+                                        "type": {
+                                            "kind": "array_type",
+                                            "value": {
+                                                "circular": true
+                                            }
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": true
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "onRejected",
+                        "type": {
+                            "kind": "function_type",
+                            "value": {
+                                "name": "",
+                                "returnType": {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "circular": true
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<TRes>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "err",
+                                        "type": {
+                                            "circular": true
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            }
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [],
+                "typeParameters": [
+                    {
+                        "circular": true
+                    }
+                ],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "end",
+                "returnType": {
+                    "kind": "void_keyword",
+                    "value": "void"
+                },
+                "parameters": [],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "chain",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "Promise<F, R>",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "promise",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Promise<F, R>",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "on",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "Promise",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "event",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "callback",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Function",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "args",
+                "type": {
+                    "kind": "array_type",
+                    "value": {
+                        "circular": true
+                    }
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": true
+            }
+        }
+    ],
+    "tags": [
+        "call-signature",
+        "void",
+        "generics-function",
+        "type-array",
+        "dot-dot-dot-token",
+        "generics-interface",
+        "optional-parameter",
+        "string",
+        "static",
+        "type-function",
+        "type-union",
+        "generics-class"
+    ]
+}

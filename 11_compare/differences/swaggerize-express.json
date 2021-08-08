@@ -1,0 +1,1507 @@
+{
+    "module": "swaggerize-express",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "swaggerize",
+            "exportAssignmentActual": "SwaggerizeExpress"
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "api",
+                "type": {
+                    "kind": "type_interface",
+                    "value": {
+                        "name": "ApiDefinition",
+                        "properties": [
+                            {
+                                "name": "swagger",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "info",
+                                "type": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "InfoObject",
+                                        "properties": [
+                                            {
+                                                "name": "title",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "string"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "description",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "string"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "termsOfService",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "string"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "contact",
+                                                "type": {
+                                                    "kind": "type_interface",
+                                                    "value": {
+                                                        "name": "ContactObject",
+                                                        "properties": [
+                                                            {
+                                                                "name": "name",
+                                                                "type": {
+                                                                    "kind": "primitive_keyword",
+                                                                    "value": "string"
+                                                                },
+                                                                "optional": true,
+                                                                "modifiers": [],
+                                                                "dotDotDotToken": false
+                                                            },
+                                                            {
+                                                                "name": "url",
+                                                                "type": {
+                                                                    "kind": "primitive_keyword",
+                                                                    "value": "string"
+                                                                },
+                                                                "optional": true,
+                                                                "modifiers": [],
+                                                                "dotDotDotToken": false
+                                                            },
+                                                            {
+                                                                "name": "email",
+                                                                "type": {
+                                                                    "kind": "primitive_keyword",
+                                                                    "value": "string"
+                                                                },
+                                                                "optional": true,
+                                                                "modifiers": [],
+                                                                "dotDotDotToken": false
+                                                            }
+                                                        ],
+                                                        "methods": [],
+                                                        "classes": [],
+                                                        "callSignatures": [],
+                                                        "indexSignatures": [],
+                                                        "typeParameters": []
+                                                    }
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "license",
+                                                "type": {
+                                                    "kind": "type_interface",
+                                                    "value": {
+                                                        "name": "LicenseObject",
+                                                        "properties": [
+                                                            {
+                                                                "name": "name",
+                                                                "type": {
+                                                                    "kind": "primitive_keyword",
+                                                                    "value": "string"
+                                                                },
+                                                                "optional": false,
+                                                                "modifiers": [],
+                                                                "dotDotDotToken": false
+                                                            },
+                                                            {
+                                                                "name": "url",
+                                                                "type": {
+                                                                    "kind": "primitive_keyword",
+                                                                    "value": "string"
+                                                                },
+                                                                "optional": true,
+                                                                "modifiers": [],
+                                                                "dotDotDotToken": false
+                                                            }
+                                                        ],
+                                                        "methods": [],
+                                                        "classes": [],
+                                                        "callSignatures": [],
+                                                        "indexSignatures": [],
+                                                        "typeParameters": []
+                                                    }
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "version",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "string"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [],
+                                        "typeParameters": []
+                                    }
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "host",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "basePath",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "schemes",
+                                "type": {
+                                    "kind": "array_type",
+                                    "value": {
+                                        "kind": "primitive_keyword",
+                                        "value": "string"
+                                    }
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "consumes",
+                                "type": {
+                                    "kind": "array_type",
+                                    "value": {
+                                        "kind": "primitive_keyword",
+                                        "value": "string"
+                                    }
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "produces",
+                                "type": {
+                                    "circular": true
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "paths",
+                                "type": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "PathsObject",
+                                        "properties": [],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [
+                                            {
+                                                "parameter": {
+                                                    "name": "index",
+                                                    "type": {
+                                                        "kind": "primitive_keyword",
+                                                        "value": "string"
+                                                    },
+                                                    "optional": false,
+                                                    "modifiers": [],
+                                                    "dotDotDotToken": false
+                                                },
+                                                "type": {
+                                                    "kind": "union_type",
+                                                    "value": [
+                                                        {
+                                                            "kind": "type_interface",
+                                                            "value": {
+                                                                "name": "PathItemObject",
+                                                                "properties": [
+                                                                    {
+                                                                        "name": "$ref",
+                                                                        "type": {
+                                                                            "kind": "primitive_keyword",
+                                                                            "value": "string"
+                                                                        },
+                                                                        "optional": true,
+                                                                        "modifiers": [],
+                                                                        "dotDotDotToken": false
+                                                                    },
+                                                                    {
+                                                                        "name": "get",
+                                                                        "type": {
+                                                                            "kind": "type_interface",
+                                                                            "value": {
+                                                                                "name": "OperationObject",
+                                                                                "properties": [
+                                                                                    {
+                                                                                        "name": "tags",
+                                                                                        "type": {
+                                                                                            "kind": "array_type",
+                                                                                            "value": {
+                                                                                                "kind": "primitive_keyword",
+                                                                                                "value": "string"
+                                                                                            }
+                                                                                        },
+                                                                                        "optional": true,
+                                                                                        "modifiers": [],
+                                                                                        "dotDotDotToken": false
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "summary",
+                                                                                        "type": {
+                                                                                            "kind": "primitive_keyword",
+                                                                                            "value": "string"
+                                                                                        },
+                                                                                        "optional": true,
+                                                                                        "modifiers": [],
+                                                                                        "dotDotDotToken": false
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "description",
+                                                                                        "type": {
+                                                                                            "kind": "primitive_keyword",
+                                                                                            "value": "string"
+                                                                                        },
+                                                                                        "optional": true,
+                                                                                        "modifiers": [],
+                                                                                        "dotDotDotToken": false
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "externalDocs",
+                                                                                        "type": {
+                                                                                            "kind": "type_interface",
+                                                                                            "value": {
+                                                                                                "name": "ExternalDocumentationObject",
+                                                                                                "properties": [
+                                                                                                    {
+                                                                                                        "name": "description",
+                                                                                                        "type": {
+                                                                                                            "kind": "primitive_keyword",
+                                                                                                            "value": "string"
+                                                                                                        },
+                                                                                                        "optional": true,
+                                                                                                        "modifiers": [],
+                                                                                                        "dotDotDotToken": false
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "name": "url",
+                                                                                                        "type": {
+                                                                                                            "kind": "primitive_keyword",
+                                                                                                            "value": "string"
+                                                                                                        },
+                                                                                                        "optional": false,
+                                                                                                        "modifiers": [],
+                                                                                                        "dotDotDotToken": false
+                                                                                                    }
+                                                                                                ],
+                                                                                                "methods": [],
+                                                                                                "classes": [],
+                                                                                                "callSignatures": [],
+                                                                                                "indexSignatures": [
+                                                                                                    {
+                                                                                                        "parameter": {
+                                                                                                            "name": "index",
+                                                                                                            "type": {
+                                                                                                                "kind": "primitive_keyword",
+                                                                                                                "value": "string"
+                                                                                                            },
+                                                                                                            "optional": false,
+                                                                                                            "modifiers": [],
+                                                                                                            "dotDotDotToken": false
+                                                                                                        },
+                                                                                                        "type": {
+                                                                                                            "kind": "any_keyword",
+                                                                                                            "value": "any"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "typeParameters": []
+                                                                                            }
+                                                                                        },
+                                                                                        "optional": true,
+                                                                                        "modifiers": [],
+                                                                                        "dotDotDotToken": false
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "operationId",
+                                                                                        "type": {
+                                                                                            "kind": "primitive_keyword",
+                                                                                            "value": "string"
+                                                                                        },
+                                                                                        "optional": true,
+                                                                                        "modifiers": [],
+                                                                                        "dotDotDotToken": false
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "consumes",
+                                                                                        "type": {
+                                                                                            "circular": true
+                                                                                        },
+                                                                                        "optional": true,
+                                                                                        "modifiers": [],
+                                                                                        "dotDotDotToken": false
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "produces",
+                                                                                        "type": {
+                                                                                            "circular": true
+                                                                                        },
+                                                                                        "optional": true,
+                                                                                        "modifiers": [],
+                                                                                        "dotDotDotToken": false
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "parameters",
+                                                                                        "type": {
+                                                                                            "kind": "array_type",
+                                                                                            "value": {
+                                                                                                "kind": "union_type",
+                                                                                                "value": [
+                                                                                                    {
+                                                                                                        "kind": "type_interface",
+                                                                                                        "value": {
+                                                                                                            "name": "ParameterObject",
+                                                                                                            "properties": [
+                                                                                                                {
+                                                                                                                    "name": "name",
+                                                                                                                    "type": {
+                                                                                                                        "kind": "primitive_keyword",
+                                                                                                                        "value": "string"
+                                                                                                                    },
+                                                                                                                    "optional": false,
+                                                                                                                    "modifiers": [],
+                                                                                                                    "dotDotDotToken": false
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "name": "in",
+                                                                                                                    "type": {
+                                                                                                                        "kind": "primitive_keyword",
+                                                                                                                        "value": "string"
+                                                                                                                    },
+                                                                                                                    "optional": false,
+                                                                                                                    "modifiers": [],
+                                                                                                                    "dotDotDotToken": false
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "name": "description",
+                                                                                                                    "type": {
+                                                                                                                        "kind": "primitive_keyword",
+                                                                                                                        "value": "string"
+                                                                                                                    },
+                                                                                                                    "optional": true,
+                                                                                                                    "modifiers": [],
+                                                                                                                    "dotDotDotToken": false
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "name": "required",
+                                                                                                                    "type": {
+                                                                                                                        "kind": "primitive_keyword",
+                                                                                                                        "value": "boolean"
+                                                                                                                    },
+                                                                                                                    "optional": true,
+                                                                                                                    "modifiers": [],
+                                                                                                                    "dotDotDotToken": false
+                                                                                                                }
+                                                                                                            ],
+                                                                                                            "methods": [],
+                                                                                                            "classes": [],
+                                                                                                            "callSignatures": [],
+                                                                                                            "indexSignatures": [],
+                                                                                                            "typeParameters": []
+                                                                                                        }
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "kind": "type_interface",
+                                                                                                        "value": {
+                                                                                                            "name": "ReferenceObject",
+                                                                                                            "properties": [
+                                                                                                                {
+                                                                                                                    "name": "$ref",
+                                                                                                                    "type": {
+                                                                                                                        "kind": "primitive_keyword",
+                                                                                                                        "value": "string"
+                                                                                                                    },
+                                                                                                                    "optional": false,
+                                                                                                                    "modifiers": [],
+                                                                                                                    "dotDotDotToken": false
+                                                                                                                }
+                                                                                                            ],
+                                                                                                            "methods": [],
+                                                                                                            "classes": [],
+                                                                                                            "callSignatures": [],
+                                                                                                            "indexSignatures": [],
+                                                                                                            "typeParameters": []
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        },
+                                                                                        "optional": true,
+                                                                                        "modifiers": [],
+                                                                                        "dotDotDotToken": false
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "responses",
+                                                                                        "type": {
+                                                                                            "kind": "type_interface",
+                                                                                            "value": {
+                                                                                                "name": "ResponsesObject",
+                                                                                                "properties": [
+                                                                                                    {
+                                                                                                        "name": "default",
+                                                                                                        "type": {
+                                                                                                            "kind": "union_type",
+                                                                                                            "value": [
+                                                                                                                {
+                                                                                                                    "kind": "type_interface",
+                                                                                                                    "value": {
+                                                                                                                        "name": "ResponseObject",
+                                                                                                                        "properties": [
+                                                                                                                            {
+                                                                                                                                "name": "description",
+                                                                                                                                "type": {
+                                                                                                                                    "kind": "primitive_keyword",
+                                                                                                                                    "value": "string"
+                                                                                                                                },
+                                                                                                                                "optional": false,
+                                                                                                                                "modifiers": [],
+                                                                                                                                "dotDotDotToken": false
+                                                                                                                            },
+                                                                                                                            {
+                                                                                                                                "name": "schema",
+                                                                                                                                "type": {
+                                                                                                                                    "kind": "type_interface",
+                                                                                                                                    "value": {
+                                                                                                                                        "name": "SchemaObject",
+                                                                                                                                        "properties": [
+                                                                                                                                            {
+                                                                                                                                                "name": "discriminator",
+                                                                                                                                                "type": {
+                                                                                                                                                    "kind": "primitive_keyword",
+                                                                                                                                                    "value": "string"
+                                                                                                                                                },
+                                                                                                                                                "optional": true,
+                                                                                                                                                "modifiers": [],
+                                                                                                                                                "dotDotDotToken": false
+                                                                                                                                            },
+                                                                                                                                            {
+                                                                                                                                                "name": "readOnly",
+                                                                                                                                                "type": {
+                                                                                                                                                    "kind": "primitive_keyword",
+                                                                                                                                                    "value": "boolean"
+                                                                                                                                                },
+                                                                                                                                                "optional": true,
+                                                                                                                                                "modifiers": [],
+                                                                                                                                                "dotDotDotToken": false
+                                                                                                                                            },
+                                                                                                                                            {
+                                                                                                                                                "name": "xml",
+                                                                                                                                                "type": {
+                                                                                                                                                    "kind": "type_interface",
+                                                                                                                                                    "value": {
+                                                                                                                                                        "name": "XMLObject",
+                                                                                                                                                        "properties": [
+                                                                                                                                                            {
+                                                                                                                                                                "name": "name",
+                                                                                                                                                                "type": {
+                                                                                                                                                                    "kind": "primitive_keyword",
+                                                                                                                                                                    "value": "string"
+                                                                                                                                                                },
+                                                                                                                                                                "optional": true,
+                                                                                                                                                                "modifiers": [],
+                                                                                                                                                                "dotDotDotToken": false
+                                                                                                                                                            },
+                                                                                                                                                            {
+                                                                                                                                                                "name": "namespace",
+                                                                                                                                                                "type": {
+                                                                                                                                                                    "kind": "primitive_keyword",
+                                                                                                                                                                    "value": "string"
+                                                                                                                                                                },
+                                                                                                                                                                "optional": true,
+                                                                                                                                                                "modifiers": [],
+                                                                                                                                                                "dotDotDotToken": false
+                                                                                                                                                            },
+                                                                                                                                                            {
+                                                                                                                                                                "name": "prefix",
+                                                                                                                                                                "type": {
+                                                                                                                                                                    "kind": "primitive_keyword",
+                                                                                                                                                                    "value": "string"
+                                                                                                                                                                },
+                                                                                                                                                                "optional": true,
+                                                                                                                                                                "modifiers": [],
+                                                                                                                                                                "dotDotDotToken": false
+                                                                                                                                                            },
+                                                                                                                                                            {
+                                                                                                                                                                "name": "attribute",
+                                                                                                                                                                "type": {
+                                                                                                                                                                    "kind": "primitive_keyword",
+                                                                                                                                                                    "value": "boolean"
+                                                                                                                                                                },
+                                                                                                                                                                "optional": true,
+                                                                                                                                                                "modifiers": [],
+                                                                                                                                                                "dotDotDotToken": false
+                                                                                                                                                            },
+                                                                                                                                                            {
+                                                                                                                                                                "name": "wrapped",
+                                                                                                                                                                "type": {
+                                                                                                                                                                    "kind": "primitive_keyword",
+                                                                                                                                                                    "value": "boolean"
+                                                                                                                                                                },
+                                                                                                                                                                "optional": true,
+                                                                                                                                                                "modifiers": [],
+                                                                                                                                                                "dotDotDotToken": false
+                                                                                                                                                            }
+                                                                                                                                                        ],
+                                                                                                                                                        "methods": [],
+                                                                                                                                                        "classes": [],
+                                                                                                                                                        "callSignatures": [],
+                                                                                                                                                        "indexSignatures": [
+                                                                                                                                                            {
+                                                                                                                                                                "parameter": {
+                                                                                                                                                                    "name": "index",
+                                                                                                                                                                    "type": {
+                                                                                                                                                                        "kind": "primitive_keyword",
+                                                                                                                                                                        "value": "string"
+                                                                                                                                                                    },
+                                                                                                                                                                    "optional": false,
+                                                                                                                                                                    "modifiers": [],
+                                                                                                                                                                    "dotDotDotToken": false
+                                                                                                                                                                },
+                                                                                                                                                                "type": {
+                                                                                                                                                                    "kind": "any_keyword",
+                                                                                                                                                                    "value": "any"
+                                                                                                                                                                }
+                                                                                                                                                            }
+                                                                                                                                                        ],
+                                                                                                                                                        "typeParameters": []
+                                                                                                                                                    }
+                                                                                                                                                },
+                                                                                                                                                "optional": true,
+                                                                                                                                                "modifiers": [],
+                                                                                                                                                "dotDotDotToken": false
+                                                                                                                                            },
+                                                                                                                                            {
+                                                                                                                                                "name": "externalDocs",
+                                                                                                                                                "type": {
+                                                                                                                                                    "kind": "type_interface",
+                                                                                                                                                    "value": {
+                                                                                                                                                        "name": "ExternalDocumentationObject",
+                                                                                                                                                        "circular": true
+                                                                                                                                                    }
+                                                                                                                                                },
+                                                                                                                                                "optional": false,
+                                                                                                                                                "modifiers": [],
+                                                                                                                                                "dotDotDotToken": false
+                                                                                                                                            },
+                                                                                                                                            {
+                                                                                                                                                "name": "example",
+                                                                                                                                                "type": {
+                                                                                                                                                    "kind": "any_keyword",
+                                                                                                                                                    "value": "any"
+                                                                                                                                                },
+                                                                                                                                                "optional": false,
+                                                                                                                                                "modifiers": [],
+                                                                                                                                                "dotDotDotToken": false
+                                                                                                                                            }
+                                                                                                                                        ],
+                                                                                                                                        "methods": [],
+                                                                                                                                        "classes": [],
+                                                                                                                                        "callSignatures": [],
+                                                                                                                                        "indexSignatures": [
+                                                                                                                                            {
+                                                                                                                                                "parameter": {
+                                                                                                                                                    "name": "index",
+                                                                                                                                                    "type": {
+                                                                                                                                                        "kind": "primitive_keyword",
+                                                                                                                                                        "value": "string"
+                                                                                                                                                    },
+                                                                                                                                                    "optional": false,
+                                                                                                                                                    "modifiers": [],
+                                                                                                                                                    "dotDotDotToken": false
+                                                                                                                                                },
+                                                                                                                                                "type": {
+                                                                                                                                                    "kind": "any_keyword",
+                                                                                                                                                    "value": "any"
+                                                                                                                                                }
+                                                                                                                                            }
+                                                                                                                                        ],
+                                                                                                                                        "typeParameters": []
+                                                                                                                                    }
+                                                                                                                                },
+                                                                                                                                "optional": true,
+                                                                                                                                "modifiers": [],
+                                                                                                                                "dotDotDotToken": false
+                                                                                                                            },
+                                                                                                                            {
+                                                                                                                                "name": "headers",
+                                                                                                                                "type": {
+                                                                                                                                    "kind": "type_interface",
+                                                                                                                                    "value": {
+                                                                                                                                        "name": "HeadersObject",
+                                                                                                                                        "properties": [],
+                                                                                                                                        "methods": [],
+                                                                                                                                        "classes": [],
+                                                                                                                                        "callSignatures": [],
+                                                                                                                                        "indexSignatures": [
+                                                                                                                                            {
+                                                                                                                                                "parameter": {
+                                                                                                                                                    "name": "index",
+                                                                                                                                                    "type": {
+                                                                                                                                                        "kind": "primitive_keyword",
+                                                                                                                                                        "value": "string"
+                                                                                                                                                    },
+                                                                                                                                                    "optional": false,
+                                                                                                                                                    "modifiers": [],
+                                                                                                                                                    "dotDotDotToken": false
+                                                                                                                                                },
+                                                                                                                                                "type": {
+                                                                                                                                                    "kind": "type_interface",
+                                                                                                                                                    "value": {
+                                                                                                                                                        "name": "HeaderObject",
+                                                                                                                                                        "properties": [],
+                                                                                                                                                        "methods": [],
+                                                                                                                                                        "classes": [],
+                                                                                                                                                        "callSignatures": [],
+                                                                                                                                                        "indexSignatures": [],
+                                                                                                                                                        "typeParameters": []
+                                                                                                                                                    }
+                                                                                                                                                }
+                                                                                                                                            }
+                                                                                                                                        ],
+                                                                                                                                        "typeParameters": []
+                                                                                                                                    }
+                                                                                                                                },
+                                                                                                                                "optional": true,
+                                                                                                                                "modifiers": [],
+                                                                                                                                "dotDotDotToken": false
+                                                                                                                            },
+                                                                                                                            {
+                                                                                                                                "name": "examples",
+                                                                                                                                "type": {
+                                                                                                                                    "kind": "type_interface",
+                                                                                                                                    "value": {
+                                                                                                                                        "name": "ExampleObject",
+                                                                                                                                        "properties": [],
+                                                                                                                                        "methods": [],
+                                                                                                                                        "classes": [],
+                                                                                                                                        "callSignatures": [],
+                                                                                                                                        "indexSignatures": [
+                                                                                                                                            {
+                                                                                                                                                "parameter": {
+                                                                                                                                                    "name": "index",
+                                                                                                                                                    "type": {
+                                                                                                                                                        "kind": "primitive_keyword",
+                                                                                                                                                        "value": "string"
+                                                                                                                                                    },
+                                                                                                                                                    "optional": false,
+                                                                                                                                                    "modifiers": [],
+                                                                                                                                                    "dotDotDotToken": false
+                                                                                                                                                },
+                                                                                                                                                "type": {
+                                                                                                                                                    "kind": "any_keyword",
+                                                                                                                                                    "value": "any"
+                                                                                                                                                }
+                                                                                                                                            }
+                                                                                                                                        ],
+                                                                                                                                        "typeParameters": []
+                                                                                                                                    }
+                                                                                                                                },
+                                                                                                                                "optional": true,
+                                                                                                                                "modifiers": [],
+                                                                                                                                "dotDotDotToken": false
+                                                                                                                            }
+                                                                                                                        ],
+                                                                                                                        "methods": [],
+                                                                                                                        "classes": [],
+                                                                                                                        "callSignatures": [],
+                                                                                                                        "indexSignatures": [],
+                                                                                                                        "typeParameters": []
+                                                                                                                    }
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "kind": "type_interface",
+                                                                                                                    "value": {
+                                                                                                                        "name": "ReferenceObject",
+                                                                                                                        "circular": true
+                                                                                                                    }
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        "optional": false,
+                                                                                                        "modifiers": [],
+                                                                                                        "dotDotDotToken": false
+                                                                                                    }
+                                                                                                ],
+                                                                                                "methods": [],
+                                                                                                "classes": [],
+                                                                                                "callSignatures": [],
+                                                                                                "indexSignatures": [
+                                                                                                    {
+                                                                                                        "parameter": {
+                                                                                                            "name": "index",
+                                                                                                            "type": {
+                                                                                                                "kind": "primitive_keyword",
+                                                                                                                "value": "string"
+                                                                                                            },
+                                                                                                            "optional": false,
+                                                                                                            "modifiers": [],
+                                                                                                            "dotDotDotToken": false
+                                                                                                        },
+                                                                                                        "type": {
+                                                                                                            "kind": "union_type",
+                                                                                                            "value": [
+                                                                                                                {
+                                                                                                                    "circular": true
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "kind": "any_keyword",
+                                                                                                                    "value": "any"
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "typeParameters": []
+                                                                                            }
+                                                                                        },
+                                                                                        "optional": false,
+                                                                                        "modifiers": [],
+                                                                                        "dotDotDotToken": false
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "schemes",
+                                                                                        "type": {
+                                                                                            "kind": "array_type",
+                                                                                            "value": {
+                                                                                                "kind": "primitive_keyword",
+                                                                                                "value": "string"
+                                                                                            }
+                                                                                        },
+                                                                                        "optional": true,
+                                                                                        "modifiers": [],
+                                                                                        "dotDotDotToken": false
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "deprecated",
+                                                                                        "type": {
+                                                                                            "kind": "primitive_keyword",
+                                                                                            "value": "boolean"
+                                                                                        },
+                                                                                        "optional": true,
+                                                                                        "modifiers": [],
+                                                                                        "dotDotDotToken": false
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "security",
+                                                                                        "type": {
+                                                                                            "kind": "array_type",
+                                                                                            "value": {
+                                                                                                "kind": "type_interface",
+                                                                                                "value": {
+                                                                                                    "name": "SecurityRequirementObject",
+                                                                                                    "properties": [],
+                                                                                                    "methods": [],
+                                                                                                    "classes": [],
+                                                                                                    "callSignatures": [],
+                                                                                                    "indexSignatures": [
+                                                                                                        {
+                                                                                                            "parameter": {
+                                                                                                                "name": "index",
+                                                                                                                "type": {
+                                                                                                                    "kind": "primitive_keyword",
+                                                                                                                    "value": "string"
+                                                                                                                },
+                                                                                                                "optional": false,
+                                                                                                                "modifiers": [],
+                                                                                                                "dotDotDotToken": false
+                                                                                                            },
+                                                                                                            "type": {
+                                                                                                                "kind": "array_type",
+                                                                                                                "value": {
+                                                                                                                    "kind": "primitive_keyword",
+                                                                                                                    "value": "string"
+                                                                                                                }
+                                                                                                            }
+                                                                                                        }
+                                                                                                    ],
+                                                                                                    "typeParameters": []
+                                                                                                }
+                                                                                            }
+                                                                                        },
+                                                                                        "optional": true,
+                                                                                        "modifiers": [],
+                                                                                        "dotDotDotToken": false
+                                                                                    }
+                                                                                ],
+                                                                                "methods": [],
+                                                                                "classes": [],
+                                                                                "callSignatures": [],
+                                                                                "indexSignatures": [],
+                                                                                "typeParameters": []
+                                                                            }
+                                                                        },
+                                                                        "optional": true,
+                                                                        "modifiers": [],
+                                                                        "dotDotDotToken": false
+                                                                    },
+                                                                    {
+                                                                        "name": "put",
+                                                                        "type": {
+                                                                            "kind": "type_interface",
+                                                                            "value": {
+                                                                                "name": "OperationObject",
+                                                                                "circular": true
+                                                                            }
+                                                                        },
+                                                                        "optional": true,
+                                                                        "modifiers": [],
+                                                                        "dotDotDotToken": false
+                                                                    },
+                                                                    {
+                                                                        "name": "post",
+                                                                        "type": {
+                                                                            "kind": "type_interface",
+                                                                            "value": {
+                                                                                "name": "OperationObject",
+                                                                                "circular": true
+                                                                            }
+                                                                        },
+                                                                        "optional": true,
+                                                                        "modifiers": [],
+                                                                        "dotDotDotToken": false
+                                                                    },
+                                                                    {
+                                                                        "name": "delete",
+                                                                        "type": {
+                                                                            "kind": "type_interface",
+                                                                            "value": {
+                                                                                "name": "OperationObject",
+                                                                                "circular": true
+                                                                            }
+                                                                        },
+                                                                        "optional": true,
+                                                                        "modifiers": [],
+                                                                        "dotDotDotToken": false
+                                                                    },
+                                                                    {
+                                                                        "name": "options",
+                                                                        "type": {
+                                                                            "kind": "type_interface",
+                                                                            "value": {
+                                                                                "name": "OperationObject",
+                                                                                "circular": true
+                                                                            }
+                                                                        },
+                                                                        "optional": true,
+                                                                        "modifiers": [],
+                                                                        "dotDotDotToken": false
+                                                                    },
+                                                                    {
+                                                                        "name": "head",
+                                                                        "type": {
+                                                                            "kind": "type_interface",
+                                                                            "value": {
+                                                                                "name": "OperationObject",
+                                                                                "circular": true
+                                                                            }
+                                                                        },
+                                                                        "optional": true,
+                                                                        "modifiers": [],
+                                                                        "dotDotDotToken": false
+                                                                    },
+                                                                    {
+                                                                        "name": "patch",
+                                                                        "type": {
+                                                                            "kind": "type_interface",
+                                                                            "value": {
+                                                                                "name": "OperationObject",
+                                                                                "circular": true
+                                                                            }
+                                                                        },
+                                                                        "optional": true,
+                                                                        "modifiers": [],
+                                                                        "dotDotDotToken": false
+                                                                    },
+                                                                    {
+                                                                        "name": "parameters",
+                                                                        "type": {
+                                                                            "circular": true
+                                                                        },
+                                                                        "optional": true,
+                                                                        "modifiers": [],
+                                                                        "dotDotDotToken": false
+                                                                    }
+                                                                ],
+                                                                "methods": [],
+                                                                "classes": [],
+                                                                "callSignatures": [],
+                                                                "indexSignatures": [],
+                                                                "typeParameters": []
+                                                            }
+                                                        },
+                                                        {
+                                                            "kind": "any_keyword",
+                                                            "value": "any"
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ],
+                                        "typeParameters": []
+                                    }
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "definitions",
+                                "type": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "DefinitionsObject",
+                                        "properties": [],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [
+                                            {
+                                                "parameter": {
+                                                    "name": "index",
+                                                    "type": {
+                                                        "kind": "primitive_keyword",
+                                                        "value": "string"
+                                                    },
+                                                    "optional": false,
+                                                    "modifiers": [],
+                                                    "dotDotDotToken": false
+                                                },
+                                                "type": {
+                                                    "kind": "type_interface",
+                                                    "value": {
+                                                        "name": "SchemaObject",
+                                                        "circular": true
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "typeParameters": []
+                                    }
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "parameters",
+                                "type": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "ParametersDefinitionsObject",
+                                        "properties": [],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [
+                                            {
+                                                "parameter": {
+                                                    "name": "index",
+                                                    "type": {
+                                                        "kind": "primitive_keyword",
+                                                        "value": "string"
+                                                    },
+                                                    "optional": false,
+                                                    "modifiers": [],
+                                                    "dotDotDotToken": false
+                                                },
+                                                "type": {
+                                                    "kind": "type_interface",
+                                                    "value": {
+                                                        "name": "ParameterObject",
+                                                        "circular": true
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "typeParameters": []
+                                    }
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "responses",
+                                "type": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "ResponsesDefinitionsObject",
+                                        "properties": [],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [
+                                            {
+                                                "parameter": {
+                                                    "name": "index",
+                                                    "type": {
+                                                        "kind": "primitive_keyword",
+                                                        "value": "string"
+                                                    },
+                                                    "optional": false,
+                                                    "modifiers": [],
+                                                    "dotDotDotToken": false
+                                                },
+                                                "type": {
+                                                    "kind": "type_interface",
+                                                    "value": {
+                                                        "name": "ResponseObject",
+                                                        "circular": true
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "typeParameters": []
+                                    }
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "securityDefinitions",
+                                "type": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "SecurityDefinitionsObject",
+                                        "properties": [],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [
+                                            {
+                                                "parameter": {
+                                                    "name": "index",
+                                                    "type": {
+                                                        "kind": "primitive_keyword",
+                                                        "value": "string"
+                                                    },
+                                                    "optional": false,
+                                                    "modifiers": [],
+                                                    "dotDotDotToken": false
+                                                },
+                                                "type": {
+                                                    "kind": "type_interface",
+                                                    "value": {
+                                                        "name": "SecuritySchemeObject",
+                                                        "properties": [
+                                                            {
+                                                                "name": "type",
+                                                                "type": {
+                                                                    "kind": "primitive_keyword",
+                                                                    "value": "string"
+                                                                },
+                                                                "optional": false,
+                                                                "modifiers": [],
+                                                                "dotDotDotToken": false
+                                                            },
+                                                            {
+                                                                "name": "description",
+                                                                "type": {
+                                                                    "kind": "primitive_keyword",
+                                                                    "value": "string"
+                                                                },
+                                                                "optional": true,
+                                                                "modifiers": [],
+                                                                "dotDotDotToken": false
+                                                            },
+                                                            {
+                                                                "name": "name",
+                                                                "type": {
+                                                                    "kind": "primitive_keyword",
+                                                                    "value": "string"
+                                                                },
+                                                                "optional": false,
+                                                                "modifiers": [],
+                                                                "dotDotDotToken": false
+                                                            },
+                                                            {
+                                                                "name": "in",
+                                                                "type": {
+                                                                    "kind": "primitive_keyword",
+                                                                    "value": "string"
+                                                                },
+                                                                "optional": false,
+                                                                "modifiers": [],
+                                                                "dotDotDotToken": false
+                                                            },
+                                                            {
+                                                                "name": "flow",
+                                                                "type": {
+                                                                    "kind": "primitive_keyword",
+                                                                    "value": "string"
+                                                                },
+                                                                "optional": false,
+                                                                "modifiers": [],
+                                                                "dotDotDotToken": false
+                                                            },
+                                                            {
+                                                                "name": "authorizationUrl",
+                                                                "type": {
+                                                                    "kind": "primitive_keyword",
+                                                                    "value": "string"
+                                                                },
+                                                                "optional": false,
+                                                                "modifiers": [],
+                                                                "dotDotDotToken": false
+                                                            },
+                                                            {
+                                                                "name": "tokenUrl",
+                                                                "type": {
+                                                                    "kind": "primitive_keyword",
+                                                                    "value": "string"
+                                                                },
+                                                                "optional": false,
+                                                                "modifiers": [],
+                                                                "dotDotDotToken": false
+                                                            },
+                                                            {
+                                                                "name": "scopes",
+                                                                "type": {
+                                                                    "kind": "type_interface",
+                                                                    "value": {
+                                                                        "name": "ScopesObject",
+                                                                        "properties": [],
+                                                                        "methods": [],
+                                                                        "classes": [],
+                                                                        "callSignatures": [],
+                                                                        "indexSignatures": [
+                                                                            {
+                                                                                "parameter": {
+                                                                                    "name": "index",
+                                                                                    "type": {
+                                                                                        "kind": "primitive_keyword",
+                                                                                        "value": "string"
+                                                                                    },
+                                                                                    "optional": false,
+                                                                                    "modifiers": [],
+                                                                                    "dotDotDotToken": false
+                                                                                },
+                                                                                "type": {
+                                                                                    "kind": "any_keyword",
+                                                                                    "value": "any"
+                                                                                }
+                                                                            }
+                                                                        ],
+                                                                        "typeParameters": []
+                                                                    }
+                                                                },
+                                                                "optional": false,
+                                                                "modifiers": [],
+                                                                "dotDotDotToken": false
+                                                            }
+                                                        ],
+                                                        "methods": [],
+                                                        "classes": [],
+                                                        "callSignatures": [],
+                                                        "indexSignatures": [],
+                                                        "typeParameters": []
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "typeParameters": []
+                                    }
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "security",
+                                "type": {
+                                    "kind": "array_type",
+                                    "value": {
+                                        "kind": "type_interface",
+                                        "value": {
+                                            "name": "SecurityRequirementObject",
+                                            "circular": true
+                                        }
+                                    }
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "tags",
+                                "type": {
+                                    "kind": "array_type",
+                                    "value": {
+                                        "kind": "type_interface",
+                                        "value": {
+                                            "name": "TagObject",
+                                            "properties": [
+                                                {
+                                                    "name": "name",
+                                                    "type": {
+                                                        "kind": "primitive_keyword",
+                                                        "value": "string"
+                                                    },
+                                                    "optional": false,
+                                                    "modifiers": [],
+                                                    "dotDotDotToken": false
+                                                },
+                                                {
+                                                    "name": "description",
+                                                    "type": {
+                                                        "kind": "primitive_keyword",
+                                                        "value": "string"
+                                                    },
+                                                    "optional": true,
+                                                    "modifiers": [],
+                                                    "dotDotDotToken": false
+                                                },
+                                                {
+                                                    "name": "externalDocs",
+                                                    "type": {
+                                                        "kind": "type_interface",
+                                                        "value": {
+                                                            "name": "ExternalDocumentationObject",
+                                                            "circular": true
+                                                        }
+                                                    },
+                                                    "optional": true,
+                                                    "modifiers": [],
+                                                    "dotDotDotToken": false
+                                                }
+                                            ],
+                                            "methods": [],
+                                            "classes": [],
+                                            "callSignatures": [],
+                                            "indexSignatures": [],
+                                            "typeParameters": []
+                                        }
+                                    }
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "externalDocs",
+                                "type": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "ExternalDocumentationObject",
+                                        "circular": true
+                                    }
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "methods": [],
+                        "classes": [],
+                        "callSignatures": [],
+                        "indexSignatures": [],
+                        "typeParameters": []
+                    }
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "docspath",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "handlers",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "RouteSegment",
+                                "properties": [],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [
+                                    {
+                                        "parameter": {
+                                            "name": "urlSegment",
+                                            "type": {
+                                                "kind": "primitive_keyword",
+                                                "value": "string"
+                                            },
+                                            "optional": false,
+                                            "modifiers": [],
+                                            "dotDotDotToken": false
+                                        },
+                                        "type": {
+                                            "kind": "union_type",
+                                            "value": [
+                                                {
+                                                    "kind": "type_interface",
+                                                    "value": {
+                                                        "name": "RouteSegment",
+                                                        "circular": true
+                                                    }
+                                                },
+                                                {
+                                                    "kind": "type_reference",
+                                                    "value": "express.RequestHandler",
+                                                    "text": ""
+                                                },
+                                                {
+                                                    "kind": "array_type",
+                                                    "value": {
+                                                        "kind": "type_reference",
+                                                        "value": "express.RequestHandler",
+                                                        "text": ""
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "typeParameters": []
+                            }
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "options",
+                "type": {
+                    "kind": "type_interface",
+                    "value": {
+                        "name": "I__options",
+                        "properties": [
+                            {
+                                "name": "routes",
+                                "type": {
+                                    "kind": "array_type",
+                                    "value": {
+                                        "kind": "any_keyword",
+                                        "value": "any"
+                                    }
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "docspath",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "api",
+                                "type": {
+                                    "kind": "object_keyword",
+                                    "value": "object"
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "methods": [],
+                        "classes": [],
+                        "callSignatures": [],
+                        "indexSignatures": [],
+                        "typeParameters": []
+                    }
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "string",
+        "optional-parameter",
+        "type-array",
+        "alias-type",
+        "index-signature",
+        "type-any",
+        "boolean",
+        "type-union",
+        "number"
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "module": "tarantool-driver",
+    "template": "module-class",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-class",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "string",
+        "number",
+        "type-array",
+        "type-function",
+        "boolean",
+        "void",
+        "type-union",
+        "type-any",
+        "dot-dot-dot-token"
+    ]
+}

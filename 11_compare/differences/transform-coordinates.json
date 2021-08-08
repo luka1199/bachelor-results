@@ -1,0 +1,14 @@
+{
+    "module": "transform-coordinates",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "transformation",
+            "exportAssignmentActual": "TransformCoordinates"
+        }
+    ],
+    "tags": [
+        "string"
+    ]
+}

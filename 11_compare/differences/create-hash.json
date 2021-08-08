@@ -1,0 +1,93 @@
+{
+    "module": "create-hash",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "createHash",
+            "exportAssignmentActual": "CreateHash"
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "algorithm",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "literal_type",
+                            "value": "'md5'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'rmd160'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'ripemd160'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'sha'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'sha1'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'sha224'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'sha256'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'sha384'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'sha512'"
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "alg",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "options",
+                "type": {
+                    "kind": "any_keyword",
+                    "value": "any"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "string",
+        "literals",
+        "type-union",
+        "alias-type",
+        "optional-parameter",
+        "void",
+        "type-any"
+    ]
+}

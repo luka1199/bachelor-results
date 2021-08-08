@@ -1,0 +1,585 @@
+{
+    "module": "topojson-simplify",
+    "template": "module",
+    "differences": [
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "presimplify",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "Topology<T>",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "topology",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Topology<T>",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "weight",
+                        "type": {
+                            "kind": "function_type",
+                            "value": {
+                                "name": "",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "number"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "triangle",
+                                        "type": {
+                                            "kind": "tuple_type",
+                                            "value": [
+                                                {
+                                                    "kind": "tuple_type",
+                                                    "value": [
+                                                        {
+                                                            "kind": "primitive_keyword",
+                                                            "value": "number"
+                                                        },
+                                                        {
+                                                            "kind": "primitive_keyword",
+                                                            "value": "number"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "kind": "tuple_type",
+                                                    "value": [
+                                                        {
+                                                            "kind": "primitive_keyword",
+                                                            "value": "number"
+                                                        },
+                                                        {
+                                                            "kind": "primitive_keyword",
+                                                            "value": "number"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "kind": "tuple_type",
+                                                    "value": [
+                                                        {
+                                                            "kind": "primitive_keyword",
+                                                            "value": "number"
+                                                        },
+                                                        {
+                                                            "kind": "primitive_keyword",
+                                                            "value": "number"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            }
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [
+                    {
+                        "kind": "generic_keyword",
+                        "value": "T",
+                        "constraint": {
+                            "kind": "type_reference",
+                            "value": "Objects",
+                            "text": ""
+                        }
+                    }
+                ],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "simplify",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "Topology<T>",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "topology",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Topology<T>",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "minWeight",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "number"
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [
+                    {
+                        "kind": "generic_keyword",
+                        "value": "T",
+                        "constraint": {
+                            "kind": "type_reference",
+                            "value": "Objects",
+                            "text": ""
+                        }
+                    }
+                ],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "quantile",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "parameters": [
+                    {
+                        "name": "topology",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Topology",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "p",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "number"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "filter",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "Topology<OrNull<K>>",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "topology",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Topology<K>",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "filter",
+                        "type": {
+                            "kind": "function_type",
+                            "value": {
+                                "name": "",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "boolean"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "ring",
+                                        "type": {
+                                            "kind": "array_type",
+                                            "value": {
+                                                "kind": "tuple_type",
+                                                "value": [
+                                                    {
+                                                        "kind": "primitive_keyword",
+                                                        "value": "number"
+                                                    },
+                                                    {
+                                                        "kind": "primitive_keyword",
+                                                        "value": "number"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "interior",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "boolean"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [
+                    {
+                        "kind": "generic_keyword",
+                        "value": "K",
+                        "constraint": {
+                            "kind": "type_reference",
+                            "value": "Objects",
+                            "text": ""
+                        }
+                    }
+                ],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "filterAttached",
+                "returnType": {
+                    "circular": true
+                },
+                "parameters": [
+                    {
+                        "name": "topology",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Topology",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "filterAttachedWeight",
+                "returnType": {
+                    "circular": true
+                },
+                "parameters": [
+                    {
+                        "name": "topology",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Topology",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "minWeight",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "number"
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "weight",
+                        "type": {
+                            "kind": "function_type",
+                            "value": {
+                                "name": "",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "number"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "triangle",
+                                        "type": {
+                                            "circular": true
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            }
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "filterWeight",
+                "returnType": {
+                    "circular": true
+                },
+                "parameters": [
+                    {
+                        "name": "topology",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Topology",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "minWeight",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "number"
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "weight",
+                        "type": {
+                            "circular": true
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "planarRingArea",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "parameters": [
+                    {
+                        "name": "ring",
+                        "type": {
+                            "circular": true
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "planarTriangleArea",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "parameters": [
+                    {
+                        "name": "triangle",
+                        "type": {
+                            "circular": true
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "sphericalRingArea",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "parameters": [
+                    {
+                        "name": "ring",
+                        "type": {
+                            "circular": true
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "interior",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "boolean"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "sphericalTriangleArea",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "parameters": [
+                    {
+                        "name": "triangle",
+                        "type": {
+                            "circular": true
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "readJsonConfig",
+                "returnType": {
+                    "kind": "object_keyword",
+                    "value": "object"
+                },
+                "parameters": [
+                    {
+                        "name": "path",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "type-function",
+        "number",
+        "type-tuple",
+        "alias-type",
+        "boolean",
+        "type-array"
+    ]
+}

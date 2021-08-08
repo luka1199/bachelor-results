@@ -1,0 +1,16 @@
+{
+    "module": "normalize-path",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "normalizePath",
+            "exportAssignmentActual": "NormalizePath"
+        }
+    ],
+    "tags": [
+        "string",
+        "optional-parameter",
+        "boolean"
+    ]
+}

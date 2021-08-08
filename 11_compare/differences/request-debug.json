@@ -1,0 +1,46 @@
+{
+    "module": "request-debug",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "request_debug",
+            "exportAssignmentActual": "RequestDebug"
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "request",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "RequestAPI<TRequest, TOptions, TUriUrlOptions>",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "_x",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Function",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "number",
+        "string",
+        "optional-parameter",
+        "type-any",
+        "call-signature",
+        "void",
+        "literals",
+        "generics-interface"
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "module": "bunyan-format",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "index-signature",
+        "number",
+        "string",
+        "optional-parameter",
+        "literals",
+        "type-union",
+        "boolean",
+        "call-signature"
+    ]
+}

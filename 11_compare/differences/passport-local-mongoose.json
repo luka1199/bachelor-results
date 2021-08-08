@@ -1,0 +1,19 @@
+{
+    "module": "passport-local-mongoose",
+    "template": "module",
+    "differences": [],
+    "tags": [
+        "type-any",
+        "string",
+        "void",
+        "type-function",
+        "call-signature",
+        "generics-function",
+        "boolean",
+        "type-union",
+        "generics-interface",
+        "optional-parameter",
+        "number",
+        "type-array"
+    ]
+}

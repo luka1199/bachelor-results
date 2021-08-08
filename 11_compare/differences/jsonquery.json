@@ -1,0 +1,171 @@
+{
+    "module": "jsonquery",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "jsonquery",
+            "exportAssignmentActual": "Jsonquery"
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "query",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "OrQueryCondition",
+                                        "properties": [
+                                            {
+                                                "name": "$or",
+                                                "type": {
+                                                    "kind": "array_type",
+                                                    "value": {}
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [],
+                                        "typeParameters": [
+                                            {
+                                                "kind": "generic_keyword",
+                                                "value": "T"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "AndQueryCondition",
+                                        "properties": [
+                                            {
+                                                "name": "$and",
+                                                "type": {
+                                                    "kind": "array_type",
+                                                    "value": {
+                                                        "circular": true
+                                                    }
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [],
+                                        "typeParameters": [
+                                            {
+                                                "kind": "generic_keyword",
+                                                "value": "T"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "{\r\n        [P in keyof T]?: T[P] | BaseCondition<T[P]>;\r\n    }"
+                        },
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "PathQuery",
+                                "properties": [],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [
+                                    {
+                                        "parameter": {
+                                            "name": "path",
+                                            "type": {
+                                                "kind": "primitive_keyword",
+                                                "value": "string"
+                                            },
+                                            "optional": false,
+                                            "modifiers": [],
+                                            "dotDotDotToken": false
+                                        },
+                                        "type": {
+                                            "kind": "any_keyword",
+                                            "value": "any"
+                                        }
+                                    }
+                                ],
+                                "typeParameters": []
+                            }
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "html",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "helpers",
+                "type": {
+                    "kind": "undefined_keyword",
+                    "value": "undefined"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "data",
+                "type": {
+                    "kind": "undefined_keyword",
+                    "value": "undefined"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "readonly-array",
+        "type-array",
+        "alias-type",
+        "generics-interface",
+        "type-union",
+        "index-signature",
+        "string",
+        "type-any",
+        "boolean",
+        "generics-function",
+        "number",
+        "type-tuple"
+    ]
+}

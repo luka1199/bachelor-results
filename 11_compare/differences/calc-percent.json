@@ -1,0 +1,16 @@
+{
+    "module": "calc-percent",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "calc",
+            "exportAssignmentActual": "CalcPercent"
+        }
+    ],
+    "tags": [
+        "string",
+        "number",
+        "optional-parameter"
+    ]
+}

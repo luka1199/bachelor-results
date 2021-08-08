@@ -1,0 +1,90 @@
+{
+    "module": "node-openload",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "openload",
+            "exportAssignmentActual": "NodeOpenload"
+        },
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "openload",
+            "expectedNumberOfOverloadings": 1,
+            "actualNumberOfOverloadings": 2
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "api_key",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "api_login",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "api_version",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "api_key",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "api_login",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "api_version",
+                "circular": true
+            }
+        }
+    ],
+    "tags": [
+        "string",
+        "optional-parameter",
+        "number",
+        "index-signature",
+        "type-union",
+        "boolean",
+        "type-tuple",
+        "private",
+        "type-array",
+        "type-function",
+        "void"
+    ]
+}

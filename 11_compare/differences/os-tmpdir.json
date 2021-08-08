@@ -1,0 +1,14 @@
+{
+    "module": "os-tmpdir",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "os_tmpdir",
+            "exportAssignmentActual": "OsTmpdir"
+        }
+    ],
+    "tags": [
+        "string"
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "module": "triple-beam",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "index-signature",
+        "string",
+        "number",
+        "readonly"
+    ]
+}

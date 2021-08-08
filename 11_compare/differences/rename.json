@@ -1,0 +1,343 @@
+{
+    "module": "rename",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "rename",
+            "exportAssignmentActual": "Rename"
+        },
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "rename",
+            "expectedNumberOfOverloadings": 1,
+            "actualNumberOfOverloadings": 2
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "filepath",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "FileObject",
+                                "properties": [
+                                    {
+                                        "name": "dirname",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "basename",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "extname",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "path",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "hash",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "origin",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "code",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "transformer",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "function_type",
+                            "value": {
+                                "name": "",
+                                "returnType": {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        {
+                                            "kind": "type_interface",
+                                            "value": {
+                                                "name": "Specification",
+                                                "properties": [
+                                                    {
+                                                        "name": "dirname",
+                                                        "type": {
+                                                            "kind": "primitive_keyword",
+                                                            "value": "string"
+                                                        },
+                                                        "optional": true,
+                                                        "modifiers": [],
+                                                        "dotDotDotToken": false
+                                                    },
+                                                    {
+                                                        "name": "prefix",
+                                                        "type": {
+                                                            "kind": "primitive_keyword",
+                                                            "value": "string"
+                                                        },
+                                                        "optional": true,
+                                                        "modifiers": [],
+                                                        "dotDotDotToken": false
+                                                    },
+                                                    {
+                                                        "name": "basename",
+                                                        "type": {
+                                                            "kind": "primitive_keyword",
+                                                            "value": "string"
+                                                        },
+                                                        "optional": true,
+                                                        "modifiers": [],
+                                                        "dotDotDotToken": false
+                                                    },
+                                                    {
+                                                        "name": "suffix",
+                                                        "type": {
+                                                            "kind": "primitive_keyword",
+                                                            "value": "string"
+                                                        },
+                                                        "optional": true,
+                                                        "modifiers": [],
+                                                        "dotDotDotToken": false
+                                                    },
+                                                    {
+                                                        "name": "extname",
+                                                        "type": {
+                                                            "kind": "primitive_keyword",
+                                                            "value": "string"
+                                                        },
+                                                        "optional": true,
+                                                        "modifiers": [],
+                                                        "dotDotDotToken": false
+                                                    }
+                                                ],
+                                                "methods": [],
+                                                "classes": [],
+                                                "callSignatures": [],
+                                                "indexSignatures": [],
+                                                "typeParameters": []
+                                            }
+                                        }
+                                    ]
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "spec",
+                                        "type": {
+                                            "kind": "type_interface",
+                                            "value": {
+                                                "name": "FileObject",
+                                                "circular": true
+                                            }
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            }
+                        },
+                        {
+                            "circular": true
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "filename",
+                "type": {
+                    "kind": "undefined_keyword",
+                    "value": "undefined"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "opts",
+                "type": {
+                    "kind": "undefined_keyword",
+                    "value": "undefined"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "filepath",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "code",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "transformer",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "filename",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "opts",
+                "type": {
+                    "kind": "type_interface",
+                    "value": {
+                        "name": "I__opts",
+                        "properties": [
+                            {
+                                "name": "appendPaths",
+                                "type": {
+                                    "kind": "array_type",
+                                    "value": {
+                                        "kind": "any_keyword",
+                                        "value": "any"
+                                    }
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "prependPaths",
+                                "type": {
+                                    "kind": "array_type",
+                                    "value": {
+                                        "kind": "any_keyword",
+                                        "value": "any"
+                                    }
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "methods": [],
+                        "classes": [],
+                        "callSignatures": [],
+                        "indexSignatures": [],
+                        "typeParameters": []
+                    }
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "string",
+        "optional-parameter",
+        "type-union",
+        "alias-type",
+        "type-function"
+    ]
+}

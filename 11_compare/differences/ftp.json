@@ -1,0 +1,21 @@
+{
+    "module": "ftp",
+    "template": "module-class",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-class",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "string",
+        "number",
+        "boolean",
+        "type-union",
+        "type-function",
+        "void",
+        "type-array"
+    ]
+}

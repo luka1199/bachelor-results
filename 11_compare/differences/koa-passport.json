@@ -1,0 +1,23 @@
+{
+    "module": "koa-passport",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "type-any",
+        "optional-parameter",
+        "void",
+        "boolean",
+        "string",
+        "type-array",
+        "type-union",
+        "type-function",
+        "dot-dot-dot-token",
+        "object"
+    ]
+}

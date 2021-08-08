@@ -1,0 +1,173 @@
+{
+    "module": "save-pixels",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "savePixels",
+            "exportAssignmentActual": "SavePixels"
+        },
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "savePixels",
+            "expectedNumberOfOverloadings": 3,
+            "actualNumberOfOverloadings": 1
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "array",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "NdArray",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "spy",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Function",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "type",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "literal_type",
+                            "value": "\"png\""
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "\"gif\""
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "array",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "NdArray",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "spy",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "type",
+                "type": {
+                    "kind": "literal_type",
+                    "value": "\"canvas\""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "array",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "NdArray",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "spy",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "type",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "literal_type",
+                            "value": "\"jpeg\""
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "\"jpg\""
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "options",
+                "type": {
+                    "kind": "type_interface",
+                    "value": {
+                        "name": "",
+                        "properties": [
+                            {
+                                "name": "quality",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "number"
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "methods": [],
+                        "classes": [],
+                        "callSignatures": [],
+                        "indexSignatures": [],
+                        "typeParameters": []
+                    }
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "literals",
+        "type-union",
+        "optional-parameter",
+        "number"
+    ]
+}

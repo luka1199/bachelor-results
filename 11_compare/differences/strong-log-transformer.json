@@ -1,0 +1,19 @@
+{
+    "module": "strong-log-transformer",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "string",
+        "boolean",
+        "call-signature",
+        "optional-parameter",
+        "void",
+        "type-array"
+    ]
+}

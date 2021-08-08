@@ -1,0 +1,75 @@
+{
+    "module": "inflation",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "inflate",
+            "exportAssignmentActual": "Inflation"
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "req",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Readable",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "options",
+                "type": {
+                    "kind": "type_interface",
+                    "value": {
+                        "name": "Options",
+                        "properties": [
+                            {
+                                "name": "gzip",
+                                "type": {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "literal_type",
+                                            "value": "'deflate'"
+                                        },
+                                        {
+                                            "kind": "literal_type",
+                                            "value": "'gzip'"
+                                        },
+                                        {
+                                            "kind": "literal_type",
+                                            "value": "'identity'"
+                                        }
+                                    ]
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "methods": [],
+                        "classes": [],
+                        "callSignatures": [],
+                        "indexSignatures": [],
+                        "typeParameters": []
+                    }
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "literals",
+        "type-union"
+    ]
+}

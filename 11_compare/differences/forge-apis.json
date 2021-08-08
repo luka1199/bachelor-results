@@ -1,0 +1,19 @@
+{
+    "module": "forge-apis",
+    "template": "module",
+    "differences": [],
+    "tags": [
+        "type-any",
+        "index-signature",
+        "string",
+        "number",
+        "object",
+        "optional-parameter",
+        "literals",
+        "type-union",
+        "alias-type",
+        "type-array",
+        "boolean",
+        "void"
+    ]
+}

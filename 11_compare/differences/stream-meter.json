@@ -1,0 +1,15 @@
+{
+    "module": "stream-meter",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "m",
+            "exportAssignmentActual": "StreamMeter"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "number"
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "module": "retry-as-promised",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "number",
+        "type-array",
+        "string",
+        "type-union",
+        "alias-type",
+        "type-function",
+        "void",
+        "type-any"
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "module": "redis-errors",
+    "template": "module",
+    "differences": [],
+    "tags": [
+        "string",
+        "number",
+        "optional-parameter",
+        "type-array",
+        "type-any"
+    ]
+}

@@ -1,0 +1,411 @@
+{
+    "module": "wink-tokenizer",
+    "template": "module-class",
+    "differences": [
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "opts",
+                "type": {
+                    "kind": "type_interface",
+                    "value": {
+                        "name": "I__opts",
+                        "properties": [
+                            {
+                                "name": "max",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "number"
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "maxWaiting",
+                                "type": {
+                                    "kind": "undefined_keyword",
+                                    "value": "undefined"
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "methods": [],
+                        "classes": [],
+                        "callSignatures": [],
+                        "indexSignatures": [],
+                        "typeParameters": []
+                    }
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "tokenize",
+                "returnType": {
+                    "kind": "array_type",
+                    "value": {
+                        "kind": "type_interface",
+                        "value": {
+                            "name": "Token",
+                            "properties": [
+                                {
+                                    "name": "value",
+                                    "type": {
+                                        "kind": "primitive_keyword",
+                                        "value": "string"
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                },
+                                {
+                                    "name": "tag",
+                                    "type": {
+                                        "kind": "union_type",
+                                        "value": [
+                                            {
+                                                "kind": "literal_type",
+                                                "value": "\"word\""
+                                            },
+                                            {
+                                                "kind": "literal_type",
+                                                "value": "\"email\""
+                                            },
+                                            {
+                                                "kind": "literal_type",
+                                                "value": "\"emoji\""
+                                            },
+                                            {
+                                                "kind": "literal_type",
+                                                "value": "\"punctuation\""
+                                            },
+                                            {
+                                                "kind": "literal_type",
+                                                "value": "\"number\""
+                                            },
+                                            {
+                                                "kind": "literal_type",
+                                                "value": "\"time\""
+                                            },
+                                            {
+                                                "kind": "literal_type",
+                                                "value": "\"hashtag\""
+                                            },
+                                            {
+                                                "kind": "literal_type",
+                                                "value": "\"mention\""
+                                            },
+                                            {
+                                                "kind": "literal_type",
+                                                "value": "\"emoticon\""
+                                            },
+                                            {
+                                                "kind": "literal_type",
+                                                "value": "\"ordinal\""
+                                            },
+                                            {
+                                                "kind": "literal_type",
+                                                "value": "\"quoted_phrase\""
+                                            },
+                                            {
+                                                "kind": "literal_type",
+                                                "value": "\"url\""
+                                            },
+                                            {
+                                                "kind": "literal_type",
+                                                "value": "\"symbol\""
+                                            },
+                                            {
+                                                "kind": "literal_type",
+                                                "value": "\"currency\""
+                                            },
+                                            {
+                                                "kind": "literal_type",
+                                                "value": "\"alien\""
+                                            }
+                                        ]
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                }
+                            ],
+                            "methods": [],
+                            "classes": [],
+                            "callSignatures": [],
+                            "indexSignatures": [],
+                            "typeParameters": []
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "sentence",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "defineConfig",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "parameters": [
+                    {
+                        "name": "config",
+                        "type": {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "Config",
+                                "properties": [
+                                    {
+                                        "name": "currency",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "boolean"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "email",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "boolean"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "emoji",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "boolean"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "emoticon",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "boolean"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "hashtag",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "boolean"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "number",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "boolean"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "ordinal",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "boolean"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "punctuation",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "boolean"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "quoted_phrase",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "boolean"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "symbol",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "boolean"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "time",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "boolean"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "mention",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "boolean"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "url",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "boolean"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "word",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "boolean"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "getTokensFP",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "parameters": [],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "addRegex",
+                "returnType": {
+                    "kind": "void_keyword",
+                    "value": "void"
+                },
+                "parameters": [
+                    {
+                        "name": "regex",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "RegExp",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "tag",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "fingerprintCode",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        }
+    ],
+    "tags": [
+        "type-array",
+        "string",
+        "literals",
+        "type-union",
+        "alias-type",
+        "number",
+        "optional-parameter",
+        "boolean",
+        "void"
+    ]
+}

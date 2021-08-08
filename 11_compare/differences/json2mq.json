@@ -1,0 +1,130 @@
+{
+    "module": "json2mq",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "json2mq",
+            "exportAssignmentActual": "Json2mq"
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "query",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "QueryObject",
+                                "properties": [],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [
+                                    {
+                                        "parameter": {
+                                            "name": "property",
+                                            "type": {
+                                                "kind": "primitive_keyword",
+                                                "value": "string"
+                                            },
+                                            "optional": false,
+                                            "modifiers": [],
+                                            "dotDotDotToken": false
+                                        },
+                                        "type": {
+                                            "kind": "union_type",
+                                            "value": [
+                                                {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "string"
+                                                },
+                                                {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "number"
+                                                },
+                                                {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "boolean"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "typeParameters": []
+                            }
+                        },
+                        {
+                            "kind": "array_type",
+                            "value": {
+                                "kind": "type_interface",
+                                "value": {
+                                    "name": "QueryObject",
+                                    "circular": true
+                                }
+                            }
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "query",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "object_keyword",
+                            "value": "object"
+                        },
+                        {
+                            "kind": "array_type",
+                            "value": {
+                                "kind": "any_keyword",
+                                "value": "any"
+                            }
+                        },
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__query",
+                                "properties": [
+                                    {
+                                        "name": "length",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "string",
+        "index-signature",
+        "number",
+        "boolean",
+        "type-union",
+        "type-array"
+    ]
+}

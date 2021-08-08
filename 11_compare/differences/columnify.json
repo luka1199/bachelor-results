@@ -1,0 +1,383 @@
+{
+    "module": "columnify",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "columnify",
+            "exportAssignmentActual": "Columnify"
+        },
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "columnify",
+            "expectedNumberOfOverloadings": 1,
+            "actualNumberOfOverloadings": 2
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "data",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "Record<string, any>",
+                            "text": ""
+                        },
+                        {
+                            "kind": "array_type",
+                            "value": {
+                                "kind": "any_keyword",
+                                "value": "any"
+                            }
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "map",
+                "type": {
+                    "kind": "object_keyword",
+                    "value": "object"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "options",
+                "type": {
+                    "kind": "type_interface",
+                    "value": {
+                        "name": "GlobalOptions",
+                        "properties": [
+                            {
+                                "name": "columns",
+                                "type": {
+                                    "kind": "array_type",
+                                    "value": {
+                                        "kind": "primitive_keyword",
+                                        "value": "string"
+                                    }
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "columnSplitter",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "config",
+                                "type": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "",
+                                        "properties": [],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [
+                                            {
+                                                "parameter": {
+                                                    "name": "columnName",
+                                                    "type": {
+                                                        "kind": "primitive_keyword",
+                                                        "value": "string"
+                                                    },
+                                                    "optional": false,
+                                                    "modifiers": [],
+                                                    "dotDotDotToken": false
+                                                },
+                                                "type": {
+                                                    "kind": "type_interface",
+                                                    "value": {
+                                                        "name": "Options",
+                                                        "properties": [
+                                                            {
+                                                                "name": "align",
+                                                                "type": {
+                                                                    "kind": "union_type",
+                                                                    "value": [
+                                                                        {
+                                                                            "kind": "literal_type",
+                                                                            "value": "'left'"
+                                                                        },
+                                                                        {
+                                                                            "kind": "literal_type",
+                                                                            "value": "'center'"
+                                                                        },
+                                                                        {
+                                                                            "kind": "literal_type",
+                                                                            "value": "'centre'"
+                                                                        },
+                                                                        {
+                                                                            "kind": "literal_type",
+                                                                            "value": "'right'"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "optional": true,
+                                                                "modifiers": [],
+                                                                "dotDotDotToken": false
+                                                            },
+                                                            {
+                                                                "name": "dataTransform",
+                                                                "type": {
+                                                                    "kind": "function_type",
+                                                                    "value": {
+                                                                        "name": "",
+                                                                        "returnType": {
+                                                                            "kind": "primitive_keyword",
+                                                                            "value": "string"
+                                                                        },
+                                                                        "parameters": [
+                                                                            {
+                                                                                "name": "data",
+                                                                                "type": {
+                                                                                    "kind": "primitive_keyword",
+                                                                                    "value": "string"
+                                                                                },
+                                                                                "optional": false,
+                                                                                "modifiers": [],
+                                                                                "dotDotDotToken": false
+                                                                            }
+                                                                        ],
+                                                                        "modifiers": [],
+                                                                        "typeParameters": [],
+                                                                        "_isConstructor": false
+                                                                    }
+                                                                },
+                                                                "optional": true,
+                                                                "modifiers": [],
+                                                                "dotDotDotToken": false
+                                                            },
+                                                            {
+                                                                "name": "headingTransform",
+                                                                "type": {
+                                                                    "kind": "function_type",
+                                                                    "value": {
+                                                                        "name": "",
+                                                                        "returnType": {
+                                                                            "kind": "primitive_keyword",
+                                                                            "value": "string"
+                                                                        },
+                                                                        "parameters": [
+                                                                            {
+                                                                                "name": "data",
+                                                                                "type": {
+                                                                                    "kind": "primitive_keyword",
+                                                                                    "value": "string"
+                                                                                },
+                                                                                "optional": false,
+                                                                                "modifiers": [],
+                                                                                "dotDotDotToken": false
+                                                                            }
+                                                                        ],
+                                                                        "modifiers": [],
+                                                                        "typeParameters": [],
+                                                                        "_isConstructor": false
+                                                                    }
+                                                                },
+                                                                "optional": true,
+                                                                "modifiers": [],
+                                                                "dotDotDotToken": false
+                                                            },
+                                                            {
+                                                                "name": "minWidth",
+                                                                "type": {
+                                                                    "kind": "primitive_keyword",
+                                                                    "value": "number"
+                                                                },
+                                                                "optional": true,
+                                                                "modifiers": [],
+                                                                "dotDotDotToken": false
+                                                            },
+                                                            {
+                                                                "name": "maxWidth",
+                                                                "type": {
+                                                                    "kind": "primitive_keyword",
+                                                                    "value": "number"
+                                                                },
+                                                                "optional": true,
+                                                                "modifiers": [],
+                                                                "dotDotDotToken": false
+                                                            },
+                                                            {
+                                                                "name": "paddingChr",
+                                                                "type": {
+                                                                    "kind": "primitive_keyword",
+                                                                    "value": "string"
+                                                                },
+                                                                "optional": true,
+                                                                "modifiers": [],
+                                                                "dotDotDotToken": false
+                                                            },
+                                                            {
+                                                                "name": "preserveNewLines",
+                                                                "type": {
+                                                                    "kind": "primitive_keyword",
+                                                                    "value": "boolean"
+                                                                },
+                                                                "optional": true,
+                                                                "modifiers": [],
+                                                                "dotDotDotToken": false
+                                                            },
+                                                            {
+                                                                "name": "showHeaders",
+                                                                "type": {
+                                                                    "kind": "primitive_keyword",
+                                                                    "value": "boolean"
+                                                                },
+                                                                "optional": true,
+                                                                "modifiers": [],
+                                                                "dotDotDotToken": false
+                                                            },
+                                                            {
+                                                                "name": "truncateMarker",
+                                                                "type": {
+                                                                    "kind": "primitive_keyword",
+                                                                    "value": "string"
+                                                                },
+                                                                "optional": true,
+                                                                "modifiers": [],
+                                                                "dotDotDotToken": false
+                                                            }
+                                                        ],
+                                                        "methods": [],
+                                                        "classes": [],
+                                                        "callSignatures": [],
+                                                        "indexSignatures": [],
+                                                        "typeParameters": []
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "typeParameters": []
+                                    }
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "maxLineWidth",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "number"
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "truncate",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "boolean"
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "widths",
+                                "type": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "",
+                                        "properties": [],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [
+                                            {
+                                                "parameter": {
+                                                    "name": "columnName",
+                                                    "type": {
+                                                        "kind": "primitive_keyword",
+                                                        "value": "string"
+                                                    },
+                                                    "optional": false,
+                                                    "modifiers": [],
+                                                    "dotDotDotToken": false
+                                                },
+                                                "type": {
+                                                    "kind": "type_reference",
+                                                    "value": "Pick<Options, 'minWidth' | 'maxWidth'>",
+                                                    "text": ""
+                                                }
+                                            }
+                                        ],
+                                        "typeParameters": []
+                                    }
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "methods": [],
+                        "classes": [],
+                        "callSignatures": [],
+                        "indexSignatures": [],
+                        "typeParameters": []
+                    }
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "data",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "path",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "options",
+                "circular": true
+            }
+        }
+    ],
+    "tags": [
+        "string",
+        "type-array",
+        "type-any",
+        "type-union",
+        "optional-parameter",
+        "index-signature",
+        "literals",
+        "type-function",
+        "number",
+        "boolean"
+    ]
+}

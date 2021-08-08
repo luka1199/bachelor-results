@@ -1,0 +1,23 @@
+{
+    "module": "saml",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "index-signature",
+        "string",
+        "optional-parameter",
+        "type-array",
+        "type-union",
+        "boolean",
+        "number",
+        "type-any",
+        "type-function",
+        "void"
+    ]
+}

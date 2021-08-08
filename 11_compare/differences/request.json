@@ -1,0 +1,32 @@
+{
+    "module": "request",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "generics-function",
+        "optional-parameter",
+        "string",
+        "type-function",
+        "void",
+        "type-any",
+        "number",
+        "boolean",
+        "literals",
+        "type-array",
+        "dot-dot-dot-token",
+        "object",
+        "index-signature",
+        "type-union",
+        "alias-type",
+        "type-intersection",
+        "call-signature",
+        "generics-interface",
+        "undefined"
+    ]
+}

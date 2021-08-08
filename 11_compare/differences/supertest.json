@@ -1,0 +1,46 @@
+{
+    "module": "supertest",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "supertest",
+            "exportAssignmentActual": "Supertest"
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "app",
+                "type": {
+                    "kind": "any_keyword",
+                    "value": "any"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "path",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "generics-function",
+        "string",
+        "generics-interface",
+        "type-any",
+        "optional-parameter",
+        "number",
+        "type-function",
+        "void",
+        "alias-type",
+        "type-intersection"
+    ]
+}

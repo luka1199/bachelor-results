@@ -1,0 +1,35 @@
+{
+    "module": "gulp-bump",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "type",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "quiet",
+                "type": {
+                    "kind": "undefined_keyword",
+                    "value": "undefined"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "optional-parameter"
+    ]
+}

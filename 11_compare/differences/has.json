@@ -1,0 +1,42 @@
+{
+    "module": "has",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "hasOwnProperty",
+            "exportAssignmentActual": "Has"
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "property",
+                "type": {
+                    "kind": "generic_keyword",
+                    "value": "P",
+                    "constraint": {
+                        "kind": "type_reference",
+                        "value": "PropertyKey",
+                        "text": ""
+                    }
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "property",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "generics-function"
+    ]
+}

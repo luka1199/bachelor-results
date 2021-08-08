@@ -1,0 +1,31 @@
+{
+    "module": "breeze",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "call-signature",
+        "void",
+        "boolean",
+        "type-any",
+        "string",
+        "type-array",
+        "optional-parameter",
+        "type-reference-function",
+        "type-function",
+        "number",
+        "dot-dot-dot-token",
+        "type-union",
+        "static",
+        "generics-function",
+        "index-signature",
+        "literals",
+        "generics-interface",
+        "private"
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "module": "through2-concurrent",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "number"
+    ]
+}

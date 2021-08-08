@@ -1,0 +1,26 @@
+{
+    "module": "nodemon",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "index-signature",
+        "string",
+        "boolean",
+        "number",
+        "type-union",
+        "readonly-array",
+        "type-array",
+        "type-any",
+        "void",
+        "type-function",
+        "dot-dot-dot-token",
+        "literals"
+    ]
+}

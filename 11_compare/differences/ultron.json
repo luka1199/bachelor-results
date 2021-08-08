@@ -1,0 +1,23 @@
+{
+    "module": "ultron",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "void",
+        "string",
+        "type-union",
+        "type-function",
+        "type-array",
+        "type-any",
+        "dot-dot-dot-token",
+        "alias-type",
+        "optional-parameter",
+        "boolean"
+    ]
+}

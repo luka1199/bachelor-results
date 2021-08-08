@@ -1,0 +1,25 @@
+{
+    "module": "rest",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "string",
+        "optional-parameter",
+        "type-any",
+        "boolean",
+        "type-function",
+        "void",
+        "call-signature",
+        "generics-function",
+        "generics-interface",
+        "number",
+        "index-signature",
+        "type-union"
+    ]
+}

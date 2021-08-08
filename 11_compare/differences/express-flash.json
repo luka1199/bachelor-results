@@ -1,0 +1,19 @@
+{
+    "module": "express-flash",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "flash",
+            "exportAssignmentActual": "ExpressFlash"
+        }
+    ],
+    "tags": [
+        "index-signature",
+        "string",
+        "type-array",
+        "optional-parameter",
+        "type-any",
+        "type-union"
+    ]
+}

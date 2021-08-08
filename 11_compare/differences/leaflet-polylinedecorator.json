@@ -1,0 +1,21 @@
+{
+    "module": "leaflet-polylinedecorator",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "number",
+        "void",
+        "type-array",
+        "boolean",
+        "type-union",
+        "type-any",
+        "string"
+    ]
+}

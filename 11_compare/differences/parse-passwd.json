@@ -1,0 +1,15 @@
+{
+    "module": "parse-passwd",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "parsePasswd",
+            "exportAssignmentActual": "ParsePasswd"
+        }
+    ],
+    "tags": [
+        "type-array",
+        "string"
+    ]
+}

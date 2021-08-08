@@ -1,0 +1,66 @@
+{
+    "module": "destroy",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "destroy",
+            "exportAssignmentActual": "Destroy"
+        },
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "destroy",
+            "expectedNumberOfOverloadings": 1,
+            "actualNumberOfOverloadings": 2
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "stream",
+                "type": {
+                    "kind": "generic_keyword",
+                    "value": "T",
+                    "constraint": {
+                        "kind": "type_reference",
+                        "value": "Stream",
+                        "text": ""
+                    }
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "stream",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "ReadStream",
+                    "text": ""
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "stream",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "stream",
+                "type": {
+                    "kind": "undefined_keyword",
+                    "value": "undefined"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "generics-function"
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "module": "flot",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "type-array",
+        "type-any",
+        "string",
+        "boolean",
+        "number",
+        "type-function",
+        "call-signature",
+        "void"
+    ]
+}

@@ -1,0 +1,84 @@
+{
+    "module": "byline",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "bl",
+            "exportAssignmentActual": "Byline"
+        },
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "bl",
+            "expectedNumberOfOverloadings": 2,
+            "actualNumberOfOverloadings": 1
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "dict",
+                "type": {
+                    "kind": "object_keyword",
+                    "value": "object"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "stream",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "NodeJS.ReadableStream",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "dict",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "options",
+                "type": {
+                    "kind": "type_interface",
+                    "value": {
+                        "name": "LineStreamOptions",
+                        "properties": [
+                            {
+                                "name": "keepEmptyLines",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "boolean"
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "methods": [],
+                        "classes": [],
+                        "callSignatures": [],
+                        "indexSignatures": [],
+                        "typeParameters": []
+                    }
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "boolean"
+    ]
+}

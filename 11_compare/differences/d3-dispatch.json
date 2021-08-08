@@ -1,0 +1,465 @@
+{
+    "module": "d3-dispatch",
+    "template": "module",
+    "differences": [
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "dispatch",
+                "returnType": {
+                    "kind": "type_interface",
+                    "value": {
+                        "name": "Dispatch",
+                        "properties": [],
+                        "methods": [
+                            {
+                                "name": "apply",
+                                "returnType": {
+                                    "kind": "void_keyword",
+                                    "value": "void"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "type",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "that",
+                                        "type": {
+                                            "kind": "generic_keyword",
+                                            "value": "T",
+                                            "constraint": {
+                                                "kind": "object_keyword",
+                                                "value": "object"
+                                            }
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "args",
+                                        "type": {
+                                            "kind": "array_type",
+                                            "value": {
+                                                "kind": "any_keyword",
+                                                "value": "any"
+                                            }
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "call",
+                                "returnType": {
+                                    "kind": "void_keyword",
+                                    "value": "void"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "type",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "that",
+                                        "type": {
+                                            "circular": true
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "args",
+                                        "type": {
+                                            "kind": "array_type",
+                                            "value": {
+                                                "kind": "any_keyword",
+                                                "value": "any"
+                                            }
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": true
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "copy",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "Dispatch",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "on",
+                                "returnType": {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "function_type",
+                                            "value": {
+                                                "name": "",
+                                                "returnType": {
+                                                    "kind": "void_keyword",
+                                                    "value": "void"
+                                                },
+                                                "parameters": [
+                                                    {
+                                                        "name": "this",
+                                                        "type": {
+                                                            "circular": true
+                                                        },
+                                                        "optional": false,
+                                                        "modifiers": [],
+                                                        "dotDotDotToken": false
+                                                    },
+                                                    {
+                                                        "name": "args",
+                                                        "type": {
+                                                            "kind": "array_type",
+                                                            "value": {
+                                                                "kind": "any_keyword",
+                                                                "value": "any"
+                                                            }
+                                                        },
+                                                        "optional": false,
+                                                        "modifiers": [],
+                                                        "dotDotDotToken": true
+                                                    }
+                                                ],
+                                                "modifiers": [],
+                                                "typeParameters": [],
+                                                "_isConstructor": false
+                                            }
+                                        },
+                                        {
+                                            "kind": "undefined_keyword",
+                                            "value": "undefined"
+                                        }
+                                    ]
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "typenames",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "on",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "this"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "typenames",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "callback",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "null"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "on",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "this"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "typenames",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "callback",
+                                        "type": {
+                                            "kind": "function_type",
+                                            "value": {
+                                                "name": "",
+                                                "returnType": {
+                                                    "kind": "void_keyword",
+                                                    "value": "void"
+                                                },
+                                                "parameters": [
+                                                    {
+                                                        "name": "this",
+                                                        "type": {
+                                                            "circular": true
+                                                        },
+                                                        "optional": false,
+                                                        "modifiers": [],
+                                                        "dotDotDotToken": false
+                                                    },
+                                                    {
+                                                        "name": "args",
+                                                        "type": {
+                                                            "kind": "array_type",
+                                                            "value": {
+                                                                "kind": "any_keyword",
+                                                                "value": "any"
+                                                            }
+                                                        },
+                                                        "optional": false,
+                                                        "modifiers": [],
+                                                        "dotDotDotToken": true
+                                                    }
+                                                ],
+                                                "modifiers": [],
+                                                "typeParameters": [],
+                                                "_isConstructor": false
+                                            }
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            }
+                        ],
+                        "classes": [],
+                        "callSignatures": [],
+                        "indexSignatures": [],
+                        "typeParameters": [
+                            {
+                                "circular": true
+                            }
+                        ]
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "types",
+                        "type": {
+                            "kind": "array_type",
+                            "value": {
+                                "kind": "primitive_keyword",
+                                "value": "string"
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": true
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [
+                    {
+                        "kind": "generic_keyword",
+                        "value": "T",
+                        "constraint": {
+                            "kind": "object_keyword",
+                            "value": "object"
+                        }
+                    }
+                ],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "roll",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "parameters": [
+                    {
+                        "name": "dice",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "primitive_keyword",
+                                    "value": "number"
+                                },
+                                {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "verbose",
+                        "type": {
+                            "kind": "undefined_keyword",
+                            "value": "undefined"
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "roll",
+                "returnType": {
+                    "kind": "array_type",
+                    "value": {
+                        "kind": "any_keyword",
+                        "value": "any"
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "dice",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "verbose",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "boolean"
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "verboseRoll",
+                "returnType": {
+                    "kind": "array_type",
+                    "value": {
+                        "kind": "any_keyword",
+                        "value": "any"
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "dice",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "primitive_keyword",
+                                    "value": "number"
+                                },
+                                {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        }
+    ],
+    "tags": [
+        "void",
+        "string",
+        "optional-parameter",
+        "generics-function",
+        "object",
+        "type-array",
+        "type-any",
+        "dot-dot-dot-token",
+        "type-function",
+        "undefined",
+        "type-union",
+        "generics-interface"
+    ]
+}

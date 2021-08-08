@@ -1,0 +1,18 @@
+{
+    "module": "wav",
+    "template": "module",
+    "differences": [],
+    "tags": [
+        "number",
+        "literals",
+        "type-union",
+        "boolean",
+        "string",
+        "type-any",
+        "optional-parameter",
+        "type-function",
+        "void",
+        "type-array",
+        "dot-dot-dot-token"
+    ]
+}

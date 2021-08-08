@@ -1,0 +1,20 @@
+{
+    "module": "qrcode-terminal",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "void",
+        "string",
+        "optional-parameter",
+        "boolean",
+        "type-function",
+        "literals",
+        "type-union"
+    ]
+}

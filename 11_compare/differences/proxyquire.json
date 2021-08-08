@@ -1,0 +1,28 @@
+{
+    "module": "proxyquire",
+    "template": "module",
+    "differences": [
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "incFooRequires",
+                "returnType": {
+                    "kind": "void_keyword",
+                    "value": "void"
+                },
+                "parameters": [],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        }
+    ],
+    "tags": [
+        "call-signature",
+        "type-any",
+        "string",
+        "generics-function"
+    ]
+}

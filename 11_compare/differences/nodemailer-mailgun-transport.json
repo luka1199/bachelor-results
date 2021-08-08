@@ -1,0 +1,22 @@
+{
+    "module": "nodemailer-mailgun-transport",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "string",
+        "optional-parameter",
+        "type-union",
+        "boolean",
+        "number",
+        "void",
+        "type-function",
+        "object",
+        "alias-type"
+    ]
+}

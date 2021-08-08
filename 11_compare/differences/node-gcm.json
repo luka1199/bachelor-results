@@ -1,0 +1,23 @@
+{
+    "module": "node-gcm",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "string",
+        "optional-parameter",
+        "boolean",
+        "number",
+        "index-signature",
+        "void",
+        "type-any",
+        "type-array",
+        "type-union",
+        "type-function"
+    ]
+}

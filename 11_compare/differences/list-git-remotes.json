@@ -1,0 +1,20 @@
+{
+    "module": "list-git-remotes",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "void",
+        "type-function",
+        "type-union",
+        "index-signature",
+        "string",
+        "optional-parameter",
+        "alias-type"
+    ]
+}

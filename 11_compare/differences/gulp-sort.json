@@ -1,0 +1,23 @@
+{
+    "module": "gulp-sort",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "gulpSort",
+            "exportAssignmentActual": "GulpSort"
+        },
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "gulpSort",
+            "expectedNumberOfOverloadings": 3,
+            "actualNumberOfOverloadings": 1
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "call-signature",
+        "number",
+        "boolean"
+    ]
+}

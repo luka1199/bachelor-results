@@ -1,0 +1,88 @@
+{
+    "module": "connect-mongodb-session",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "ConnectMongoDBSession",
+            "exportAssignmentActual": "ConnectMongodbSession"
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "Store",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Function",
+                    "text": ""
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "session",
+                "type": {
+                    "kind": "type_interface",
+                    "value": {
+                        "name": "I__session",
+                        "properties": [
+                            {
+                                "name": "Store",
+                                "type": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "I__Store",
+                                        "properties": [
+                                            {
+                                                "name": "prototype",
+                                                "type": {
+                                                    "kind": "type_reference",
+                                                    "value": "f",
+                                                    "text": ""
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [],
+                                        "typeParameters": []
+                                    }
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "methods": [],
+                        "classes": [],
+                        "callSignatures": [],
+                        "indexSignatures": [],
+                        "typeParameters": []
+                    }
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "string",
+        "number",
+        "type-function",
+        "void",
+        "type-any",
+        "type-union",
+        "type-array",
+        "index-signature"
+    ]
+}

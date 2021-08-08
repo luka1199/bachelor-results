@@ -1,0 +1,254 @@
+{
+    "module": "ansi-escape-sequences",
+    "template": "module",
+    "differences": [
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "styles",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "literal_type",
+                                    "value": "'reset'"
+                                },
+                                {
+                                    "kind": "literal_type",
+                                    "value": "'bold'"
+                                },
+                                {
+                                    "kind": "literal_type",
+                                    "value": "'italic'"
+                                },
+                                {
+                                    "kind": "literal_type",
+                                    "value": "'underline'"
+                                },
+                                {
+                                    "kind": "literal_type",
+                                    "value": "'fontDefault'"
+                                },
+                                {
+                                    "kind": "literal_type",
+                                    "value": "'font2'"
+                                },
+                                {
+                                    "kind": "literal_type",
+                                    "value": "'font3'"
+                                },
+                                {
+                                    "kind": "literal_type",
+                                    "value": "'font4'"
+                                },
+                                {
+                                    "kind": "literal_type",
+                                    "value": "'font5'"
+                                },
+                                {
+                                    "kind": "literal_type",
+                                    "value": "'font6'"
+                                },
+                                {
+                                    "kind": "literal_type",
+                                    "value": "'imageNegative'"
+                                },
+                                {
+                                    "kind": "literal_type",
+                                    "value": "'imagePositive'"
+                                },
+                                {
+                                    "kind": "literal_type",
+                                    "value": "'black'"
+                                },
+                                {
+                                    "kind": "literal_type",
+                                    "value": "'red'"
+                                },
+                                {
+                                    "kind": "literal_type",
+                                    "value": "'green'"
+                                },
+                                {
+                                    "kind": "literal_type",
+                                    "value": "'yellow'"
+                                },
+                                {
+                                    "kind": "literal_type",
+                                    "value": "'blue'"
+                                },
+                                {
+                                    "kind": "literal_type",
+                                    "value": "'magenta'"
+                                },
+                                {
+                                    "kind": "literal_type",
+                                    "value": "'cyan'"
+                                },
+                                {
+                                    "kind": "literal_type",
+                                    "value": "'white'"
+                                },
+                                {
+                                    "kind": "literal_type",
+                                    "value": "'grey'"
+                                },
+                                {
+                                    "kind": "literal_type",
+                                    "value": "'gray'"
+                                },
+                                {
+                                    "kind": "literal_type",
+                                    "value": "'bg-black'"
+                                },
+                                {
+                                    "kind": "literal_type",
+                                    "value": "'bg-red'"
+                                },
+                                {
+                                    "kind": "literal_type",
+                                    "value": "'bg-green'"
+                                },
+                                {
+                                    "kind": "literal_type",
+                                    "value": "'bg-yellow'"
+                                },
+                                {
+                                    "kind": "literal_type",
+                                    "value": "'bg-blue'"
+                                },
+                                {
+                                    "kind": "literal_type",
+                                    "value": "'bg-magenta'"
+                                },
+                                {
+                                    "kind": "literal_type",
+                                    "value": "'bg-cyan'"
+                                },
+                                {
+                                    "kind": "literal_type",
+                                    "value": "'bg-white'"
+                                },
+                                {
+                                    "kind": "literal_type",
+                                    "value": "'bg-grey'"
+                                },
+                                {
+                                    "kind": "literal_type",
+                                    "value": "'bg-gray'"
+                                }
+                            ]
+                        },
+                        {
+                            "kind": "array_type",
+                            "value": {
+                                "circular": true
+                            }
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "effectArray",
+                "type": {
+                    "kind": "array_type",
+                    "value": {
+                        "kind": "any_keyword",
+                        "value": "any"
+                    }
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "styles",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "circular": true
+                        },
+                        {
+                            "kind": "array_type",
+                            "value": {
+                                "circular": true
+                            }
+                        },
+                        {
+                            "kind": "undefined_keyword",
+                            "value": "undefined"
+                        }
+                    ]
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "styleArray",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "array_type",
+                            "value": {
+                                "kind": "any_keyword",
+                                "value": "any"
+                            }
+                        },
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__styleArray",
+                                "properties": [
+                                    {
+                                        "name": "length",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        },
+                        {
+                            "kind": "undefined_keyword",
+                            "value": "undefined"
+                        }
+                    ]
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "string",
+        "literals",
+        "type-union",
+        "alias-type",
+        "readonly-array",
+        "type-array",
+        "optional-parameter",
+        "number"
+    ]
+}

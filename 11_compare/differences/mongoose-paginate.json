@@ -1,0 +1,18 @@
+{
+    "module": "mongoose-paginate",
+    "template": "module",
+    "differences": [],
+    "tags": [
+        "optional-parameter",
+        "string",
+        "type-union",
+        "type-array",
+        "type-any",
+        "boolean",
+        "number",
+        "generics-function",
+        "generics-interface",
+        "type-function",
+        "void"
+    ]
+}

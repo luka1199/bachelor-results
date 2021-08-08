@@ -1,0 +1,16 @@
+{
+    "module": "unixify",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "unixify",
+            "exportAssignmentActual": "Unixify"
+        }
+    ],
+    "tags": [
+        "string",
+        "optional-parameter",
+        "boolean"
+    ]
+}

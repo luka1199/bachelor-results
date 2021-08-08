@@ -1,0 +1,22 @@
+{
+    "module": "passport-jwt",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "string",
+        "type-union",
+        "call-signature",
+        "void",
+        "type-any",
+        "type-function",
+        "type-array",
+        "boolean"
+    ]
+}

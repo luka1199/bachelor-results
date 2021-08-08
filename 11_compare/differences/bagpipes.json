@@ -1,0 +1,254 @@
+{
+    "module": "bagpipes",
+    "template": "module",
+    "differences": [
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "create",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "Bagpipes",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "pipesDefs",
+                        "type": {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "PipeDefMap",
+                                "properties": [],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [
+                                    {
+                                        "parameter": {
+                                            "name": "name",
+                                            "type": {
+                                                "kind": "primitive_keyword",
+                                                "value": "string"
+                                            },
+                                            "optional": false,
+                                            "modifiers": [],
+                                            "dotDotDotToken": false
+                                        },
+                                        "type": {
+                                            "kind": "union_type",
+                                            "value": [
+                                                {
+                                                    "kind": "array_type",
+                                                    "value": {
+                                                        "kind": "any_keyword",
+                                                        "value": "any"
+                                                    }
+                                                },
+                                                {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "string"
+                                                },
+                                                {
+                                                    "kind": "type_interface",
+                                                    "value": {
+                                                        "name": "FittingDef",
+                                                        "properties": [
+                                                            {
+                                                                "name": "type",
+                                                                "type": {
+                                                                    "kind": "union_type",
+                                                                    "value": [
+                                                                        {
+                                                                            "kind": "literal_type",
+                                                                            "value": "\"system\""
+                                                                        },
+                                                                        {
+                                                                            "kind": "literal_type",
+                                                                            "value": "\"user\""
+                                                                        },
+                                                                        {
+                                                                            "kind": "primitive_keyword",
+                                                                            "value": "string"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "optional": true,
+                                                                "modifiers": [],
+                                                                "dotDotDotToken": false
+                                                            },
+                                                            {
+                                                                "name": "name",
+                                                                "type": {
+                                                                    "kind": "primitive_keyword",
+                                                                    "value": "string"
+                                                                },
+                                                                "optional": true,
+                                                                "modifiers": [],
+                                                                "dotDotDotToken": false
+                                                            },
+                                                            {
+                                                                "name": "config",
+                                                                "type": {
+                                                                    "kind": "any_keyword",
+                                                                    "value": "any"
+                                                                },
+                                                                "optional": true,
+                                                                "modifiers": [],
+                                                                "dotDotDotToken": false
+                                                            },
+                                                            {
+                                                                "name": "input",
+                                                                "type": {
+                                                                    "kind": "any_keyword",
+                                                                    "value": "any"
+                                                                },
+                                                                "optional": true,
+                                                                "modifiers": [],
+                                                                "dotDotDotToken": false
+                                                            },
+                                                            {
+                                                                "name": "output",
+                                                                "type": {
+                                                                    "kind": "any_keyword",
+                                                                    "value": "any"
+                                                                },
+                                                                "optional": true,
+                                                                "modifiers": [],
+                                                                "dotDotDotToken": false
+                                                            }
+                                                        ],
+                                                        "methods": [],
+                                                        "classes": [],
+                                                        "callSignatures": [],
+                                                        "indexSignatures": [
+                                                            {
+                                                                "parameter": {
+                                                                    "name": "prop",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "string"
+                                                                    },
+                                                                    "optional": false,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                "type": {
+                                                                    "kind": "any_keyword",
+                                                                    "value": "any"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "typeParameters": []
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "typeParameters": []
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "conf",
+                        "type": {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "Config",
+                                "properties": [
+                                    {
+                                        "name": "connectMiddlewareDirs",
+                                        "type": {
+                                            "kind": "array_type",
+                                            "value": {
+                                                "kind": "primitive_keyword",
+                                                "value": "string"
+                                            }
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "userFittingsDirs",
+                                        "type": {
+                                            "kind": "array_type",
+                                            "value": {
+                                                "kind": "primitive_keyword",
+                                                "value": "string"
+                                            }
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "userViewsDirs",
+                                        "type": {
+                                            "kind": "array_type",
+                                            "value": {
+                                                "kind": "primitive_keyword",
+                                                "value": "string"
+                                            }
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [
+                                    {
+                                        "parameter": {
+                                            "name": "name",
+                                            "type": {
+                                                "kind": "primitive_keyword",
+                                                "value": "string"
+                                            },
+                                            "optional": false,
+                                            "modifiers": [],
+                                            "dotDotDotToken": false
+                                        },
+                                        "type": {
+                                            "kind": "any_keyword",
+                                            "value": "any"
+                                        }
+                                    }
+                                ],
+                                "typeParameters": []
+                            }
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        }
+    ],
+    "tags": [
+        "type-any",
+        "index-signature",
+        "string",
+        "optional-parameter",
+        "literals",
+        "type-union",
+        "alias-type",
+        "type-function",
+        "void",
+        "call-signature",
+        "undefined",
+        "type-array",
+        "dot-dot-dot-token"
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "module": "firebase-client",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "string",
+        "generics-function"
+    ]
+}

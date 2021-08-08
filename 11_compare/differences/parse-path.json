@@ -1,0 +1,19 @@
+{
+    "module": "parse-path",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "parsePath",
+            "exportAssignmentActual": "ParsePath"
+        }
+    ],
+    "tags": [
+        "string",
+        "number",
+        "type-union",
+        "literals",
+        "alias-type",
+        "type-array"
+    ]
+}

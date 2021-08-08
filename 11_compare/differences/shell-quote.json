@@ -1,0 +1,25 @@
+{
+    "module": "shell-quote",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "string",
+        "readonly-array",
+        "type-array",
+        "literals",
+        "type-union",
+        "alias-type",
+        "index-signature",
+        "undefined",
+        "generics-function",
+        "object",
+        "type-function"
+    ]
+}

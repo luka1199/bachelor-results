@@ -1,0 +1,26 @@
+{
+    "module": "square-connect",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "type-array",
+        "string",
+        "literals",
+        "type-union",
+        "alias-type",
+        "boolean",
+        "number",
+        "readonly",
+        "index-signature",
+        "static",
+        "type-any",
+        "dot-dot-dot-token"
+    ]
+}

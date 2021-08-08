@@ -1,0 +1,1142 @@
+{
+    "module": "xml-crypto",
+    "template": "module",
+    "differences": [
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "xpath",
+                "returnType": {
+                    "kind": "array_type",
+                    "value": {
+                        "kind": "type_reference",
+                        "value": "SelectedValue",
+                        "text": ""
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "node",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Node",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "xpath",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "findChilds",
+                "returnType": {
+                    "kind": "array_type",
+                    "value": {
+                        "kind": "any_keyword",
+                        "value": "any"
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "node",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "type_reference",
+                                    "value": "Element",
+                                    "text": ""
+                                },
+                                {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "I__node",
+                                        "properties": [
+                                            {
+                                                "name": "documentElement",
+                                                "type": {
+                                                    "kind": "undefined_keyword",
+                                                    "value": "undefined"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "childNodes",
+                                                "type": {
+                                                    "kind": "union_type",
+                                                    "value": [
+                                                        {
+                                                            "kind": "type_interface",
+                                                            "value": {
+                                                                "name": "I__childNodes",
+                                                                "properties": [
+                                                                    {
+                                                                        "name": "0",
+                                                                        "type": {
+                                                                            "kind": "union_type",
+                                                                            "value": [
+                                                                                {
+                                                                                    "kind": "type_interface",
+                                                                                    "value": {
+                                                                                        "name": "I__0",
+                                                                                        "properties": [
+                                                                                            {
+                                                                                                "name": "localName",
+                                                                                                "type": {
+                                                                                                    "kind": "union_type",
+                                                                                                    "value": [
+                                                                                                        {
+                                                                                                            "kind": "primitive_keyword",
+                                                                                                            "value": "string"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "kind": "primitive_keyword",
+                                                                                                            "value": "null"
+                                                                                                        }
+                                                                                                    ]
+                                                                                                },
+                                                                                                "optional": false,
+                                                                                                "modifiers": [],
+                                                                                                "dotDotDotToken": false
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "namespaceURI",
+                                                                                                "type": {
+                                                                                                    "kind": "primitive_keyword",
+                                                                                                    "value": "string"
+                                                                                                },
+                                                                                                "optional": true,
+                                                                                                "modifiers": [],
+                                                                                                "dotDotDotToken": false
+                                                                                            }
+                                                                                        ],
+                                                                                        "methods": [],
+                                                                                        "classes": [],
+                                                                                        "callSignatures": [],
+                                                                                        "indexSignatures": [],
+                                                                                        "typeParameters": []
+                                                                                    }
+                                                                                },
+                                                                                {
+                                                                                    "kind": "type_reference",
+                                                                                    "value": "Element",
+                                                                                    "text": ""
+                                                                                },
+                                                                                {
+                                                                                    "kind": "type_reference",
+                                                                                    "value": "Comment",
+                                                                                    "text": ""
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        "optional": false,
+                                                                        "modifiers": [],
+                                                                        "dotDotDotToken": false
+                                                                    },
+                                                                    {
+                                                                        "name": "1",
+                                                                        "type": {
+                                                                            "kind": "union_type",
+                                                                            "value": [
+                                                                                {
+                                                                                    "kind": "type_reference",
+                                                                                    "value": "Element",
+                                                                                    "text": ""
+                                                                                },
+                                                                                {
+                                                                                    "kind": "type_interface",
+                                                                                    "value": {
+                                                                                        "name": "I__1",
+                                                                                        "properties": [
+                                                                                            {
+                                                                                                "name": "localName",
+                                                                                                "type": {
+                                                                                                    "kind": "primitive_keyword",
+                                                                                                    "value": "string"
+                                                                                                },
+                                                                                                "optional": false,
+                                                                                                "modifiers": [],
+                                                                                                "dotDotDotToken": false
+                                                                                            }
+                                                                                        ],
+                                                                                        "methods": [],
+                                                                                        "classes": [],
+                                                                                        "callSignatures": [],
+                                                                                        "indexSignatures": [],
+                                                                                        "typeParameters": []
+                                                                                    }
+                                                                                },
+                                                                                {
+                                                                                    "kind": "type_reference",
+                                                                                    "value": "Text",
+                                                                                    "text": ""
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        "optional": false,
+                                                                        "modifiers": [],
+                                                                        "dotDotDotToken": false
+                                                                    },
+                                                                    {
+                                                                        "name": "2",
+                                                                        "type": {
+                                                                            "kind": "union_type",
+                                                                            "value": [
+                                                                                {
+                                                                                    "kind": "type_interface",
+                                                                                    "value": {
+                                                                                        "name": "I__2",
+                                                                                        "properties": [
+                                                                                            {
+                                                                                                "name": "localName",
+                                                                                                "type": {
+                                                                                                    "kind": "primitive_keyword",
+                                                                                                    "value": "string"
+                                                                                                },
+                                                                                                "optional": false,
+                                                                                                "modifiers": [],
+                                                                                                "dotDotDotToken": false
+                                                                                            }
+                                                                                        ],
+                                                                                        "methods": [],
+                                                                                        "classes": [],
+                                                                                        "callSignatures": [],
+                                                                                        "indexSignatures": [],
+                                                                                        "typeParameters": []
+                                                                                    }
+                                                                                },
+                                                                                {
+                                                                                    "kind": "type_reference",
+                                                                                    "value": "Text",
+                                                                                    "text": ""
+                                                                                },
+                                                                                {
+                                                                                    "kind": "type_reference",
+                                                                                    "value": "Element",
+                                                                                    "text": ""
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        "optional": false,
+                                                                        "modifiers": [],
+                                                                        "dotDotDotToken": false
+                                                                    },
+                                                                    {
+                                                                        "name": "3",
+                                                                        "type": {
+                                                                            "kind": "type_reference",
+                                                                            "value": "Element",
+                                                                            "text": ""
+                                                                        },
+                                                                        "optional": false,
+                                                                        "modifiers": [],
+                                                                        "dotDotDotToken": false
+                                                                    },
+                                                                    {
+                                                                        "name": "4",
+                                                                        "type": {
+                                                                            "kind": "type_reference",
+                                                                            "value": "Element",
+                                                                            "text": ""
+                                                                        },
+                                                                        "optional": false,
+                                                                        "modifiers": [],
+                                                                        "dotDotDotToken": false
+                                                                    },
+                                                                    {
+                                                                        "name": "5",
+                                                                        "type": {
+                                                                            "kind": "type_reference",
+                                                                            "value": "Element",
+                                                                            "text": ""
+                                                                        },
+                                                                        "optional": false,
+                                                                        "modifiers": [],
+                                                                        "dotDotDotToken": false
+                                                                    },
+                                                                    {
+                                                                        "name": "6",
+                                                                        "type": {
+                                                                            "kind": "type_reference",
+                                                                            "value": "Element",
+                                                                            "text": ""
+                                                                        },
+                                                                        "optional": false,
+                                                                        "modifiers": [],
+                                                                        "dotDotDotToken": false
+                                                                    },
+                                                                    {
+                                                                        "name": "7",
+                                                                        "type": {
+                                                                            "kind": "type_reference",
+                                                                            "value": "Element",
+                                                                            "text": ""
+                                                                        },
+                                                                        "optional": false,
+                                                                        "modifiers": [],
+                                                                        "dotDotDotToken": false
+                                                                    },
+                                                                    {
+                                                                        "name": "length",
+                                                                        "type": {
+                                                                            "kind": "primitive_keyword",
+                                                                            "value": "number"
+                                                                        },
+                                                                        "optional": false,
+                                                                        "modifiers": [],
+                                                                        "dotDotDotToken": false
+                                                                    }
+                                                                ],
+                                                                "methods": [],
+                                                                "classes": [],
+                                                                "callSignatures": [],
+                                                                "indexSignatures": [],
+                                                                "typeParameters": []
+                                                            }
+                                                        },
+                                                        {
+                                                            "kind": "object_keyword",
+                                                            "value": "object"
+                                                        }
+                                                    ]
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [],
+                                        "typeParameters": []
+                                    }
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "localName",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "namespace",
+                        "type": {
+                            "kind": "undefined_keyword",
+                            "value": "undefined"
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "encodeSpecialCharactersInText",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "parameters": [
+                    {
+                        "name": "text",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "encodeSpecialCharactersInAttribute",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "parameters": [
+                    {
+                        "name": "attributeValue",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "findAttr",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "null"
+                },
+                "parameters": [
+                    {
+                        "name": "node",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "type_reference",
+                                    "value": "Element",
+                                    "text": ""
+                                },
+                                {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "I__node__18",
+                                        "properties": [
+                                            {
+                                                "name": "attributes",
+                                                "type": {
+                                                    "kind": "union_type",
+                                                    "value": [
+                                                        {
+                                                            "kind": "type_interface",
+                                                            "value": {
+                                                                "name": "I__attributes__17",
+                                                                "properties": [
+                                                                    {
+                                                                        "name": "0",
+                                                                        "type": {
+                                                                            "kind": "type_reference",
+                                                                            "value": "Attr",
+                                                                            "text": ""
+                                                                        },
+                                                                        "optional": false,
+                                                                        "modifiers": [],
+                                                                        "dotDotDotToken": false
+                                                                    },
+                                                                    {
+                                                                        "name": "1",
+                                                                        "type": {
+                                                                            "kind": "type_reference",
+                                                                            "value": "Attr",
+                                                                            "text": ""
+                                                                        },
+                                                                        "optional": false,
+                                                                        "modifiers": [],
+                                                                        "dotDotDotToken": false
+                                                                    },
+                                                                    {
+                                                                        "name": "length",
+                                                                        "type": {
+                                                                            "kind": "primitive_keyword",
+                                                                            "value": "number"
+                                                                        },
+                                                                        "optional": false,
+                                                                        "modifiers": [],
+                                                                        "dotDotDotToken": false
+                                                                    }
+                                                                ],
+                                                                "methods": [],
+                                                                "classes": [],
+                                                                "callSignatures": [],
+                                                                "indexSignatures": [],
+                                                                "typeParameters": []
+                                                            }
+                                                        },
+                                                        {
+                                                            "kind": "type_interface",
+                                                            "value": {
+                                                                "name": "I__attributes",
+                                                                "properties": [
+                                                                    {
+                                                                        "name": "0",
+                                                                        "type": {
+                                                                            "kind": "union_type",
+                                                                            "value": [
+                                                                                {
+                                                                                    "kind": "type_interface",
+                                                                                    "value": {
+                                                                                        "name": "I__0__4",
+                                                                                        "properties": [
+                                                                                            {
+                                                                                                "name": "prefix",
+                                                                                                "type": {
+                                                                                                    "kind": "union_type",
+                                                                                                    "value": [
+                                                                                                        {
+                                                                                                            "kind": "primitive_keyword",
+                                                                                                            "value": "string"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "kind": "primitive_keyword",
+                                                                                                            "value": "null"
+                                                                                                        }
+                                                                                                    ]
+                                                                                                },
+                                                                                                "optional": false,
+                                                                                                "modifiers": [],
+                                                                                                "dotDotDotToken": false
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "localName",
+                                                                                                "type": {
+                                                                                                    "kind": "primitive_keyword",
+                                                                                                    "value": "string"
+                                                                                                },
+                                                                                                "optional": false,
+                                                                                                "modifiers": [],
+                                                                                                "dotDotDotToken": false
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "value",
+                                                                                                "type": {
+                                                                                                    "kind": "primitive_keyword",
+                                                                                                    "value": "string"
+                                                                                                },
+                                                                                                "optional": false,
+                                                                                                "modifiers": [],
+                                                                                                "dotDotDotToken": false
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "namespaceURI",
+                                                                                                "type": {
+                                                                                                    "kind": "primitive_keyword",
+                                                                                                    "value": "string"
+                                                                                                },
+                                                                                                "optional": false,
+                                                                                                "modifiers": [],
+                                                                                                "dotDotDotToken": false
+                                                                                            }
+                                                                                        ],
+                                                                                        "methods": [],
+                                                                                        "classes": [],
+                                                                                        "callSignatures": [],
+                                                                                        "indexSignatures": [],
+                                                                                        "typeParameters": []
+                                                                                    }
+                                                                                },
+                                                                                {
+                                                                                    "kind": "type_interface",
+                                                                                    "value": {
+                                                                                        "name": "I__0",
+                                                                                        "circular": true
+                                                                                    }
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        "optional": false,
+                                                                        "modifiers": [],
+                                                                        "dotDotDotToken": false
+                                                                    },
+                                                                    {
+                                                                        "name": "1",
+                                                                        "type": {
+                                                                            "kind": "union_type",
+                                                                            "value": [
+                                                                                {
+                                                                                    "kind": "type_interface",
+                                                                                    "value": {
+                                                                                        "name": "I__1__5",
+                                                                                        "properties": [
+                                                                                            {
+                                                                                                "name": "localName",
+                                                                                                "type": {
+                                                                                                    "kind": "primitive_keyword",
+                                                                                                    "value": "string"
+                                                                                                },
+                                                                                                "optional": false,
+                                                                                                "modifiers": [],
+                                                                                                "dotDotDotToken": false
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "value",
+                                                                                                "type": {
+                                                                                                    "kind": "primitive_keyword",
+                                                                                                    "value": "string"
+                                                                                                },
+                                                                                                "optional": false,
+                                                                                                "modifiers": [],
+                                                                                                "dotDotDotToken": false
+                                                                                            }
+                                                                                        ],
+                                                                                        "methods": [],
+                                                                                        "classes": [],
+                                                                                        "callSignatures": [],
+                                                                                        "indexSignatures": [],
+                                                                                        "typeParameters": []
+                                                                                    }
+                                                                                },
+                                                                                {
+                                                                                    "kind": "type_reference",
+                                                                                    "value": "Attr",
+                                                                                    "text": ""
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        "optional": false,
+                                                                        "modifiers": [],
+                                                                        "dotDotDotToken": false
+                                                                    },
+                                                                    {
+                                                                        "name": "2",
+                                                                        "type": {
+                                                                            "kind": "union_type",
+                                                                            "value": [
+                                                                                {
+                                                                                    "kind": "type_interface",
+                                                                                    "value": {
+                                                                                        "name": "I__2__6",
+                                                                                        "properties": [
+                                                                                            {
+                                                                                                "name": "prefix",
+                                                                                                "type": {
+                                                                                                    "kind": "primitive_keyword",
+                                                                                                    "value": "string"
+                                                                                                },
+                                                                                                "optional": false,
+                                                                                                "modifiers": [],
+                                                                                                "dotDotDotToken": false
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "localName",
+                                                                                                "type": {
+                                                                                                    "kind": "primitive_keyword",
+                                                                                                    "value": "string"
+                                                                                                },
+                                                                                                "optional": false,
+                                                                                                "modifiers": [],
+                                                                                                "dotDotDotToken": false
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "value",
+                                                                                                "type": {
+                                                                                                    "kind": "primitive_keyword",
+                                                                                                    "value": "string"
+                                                                                                },
+                                                                                                "optional": false,
+                                                                                                "modifiers": [],
+                                                                                                "dotDotDotToken": false
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "namespaceURI",
+                                                                                                "type": {
+                                                                                                    "kind": "primitive_keyword",
+                                                                                                    "value": "string"
+                                                                                                },
+                                                                                                "optional": false,
+                                                                                                "modifiers": [],
+                                                                                                "dotDotDotToken": false
+                                                                                            }
+                                                                                        ],
+                                                                                        "methods": [],
+                                                                                        "classes": [],
+                                                                                        "callSignatures": [],
+                                                                                        "indexSignatures": [],
+                                                                                        "typeParameters": []
+                                                                                    }
+                                                                                },
+                                                                                {
+                                                                                    "kind": "type_reference",
+                                                                                    "value": "Attr",
+                                                                                    "text": ""
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        "optional": false,
+                                                                        "modifiers": [],
+                                                                        "dotDotDotToken": false
+                                                                    },
+                                                                    {
+                                                                        "name": "3",
+                                                                        "type": {
+                                                                            "kind": "type_interface",
+                                                                            "value": {
+                                                                                "name": "I__3",
+                                                                                "properties": [
+                                                                                    {
+                                                                                        "name": "localName",
+                                                                                        "type": {
+                                                                                            "kind": "primitive_keyword",
+                                                                                            "value": "string"
+                                                                                        },
+                                                                                        "optional": false,
+                                                                                        "modifiers": [],
+                                                                                        "dotDotDotToken": false
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "namespaceURI",
+                                                                                        "type": {
+                                                                                            "kind": "primitive_keyword",
+                                                                                            "value": "string"
+                                                                                        },
+                                                                                        "optional": false,
+                                                                                        "modifiers": [],
+                                                                                        "dotDotDotToken": false
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "prefix",
+                                                                                        "type": {
+                                                                                            "kind": "primitive_keyword",
+                                                                                            "value": "string"
+                                                                                        },
+                                                                                        "optional": false,
+                                                                                        "modifiers": [],
+                                                                                        "dotDotDotToken": false
+                                                                                    }
+                                                                                ],
+                                                                                "methods": [],
+                                                                                "classes": [],
+                                                                                "callSignatures": [],
+                                                                                "indexSignatures": [],
+                                                                                "typeParameters": []
+                                                                            }
+                                                                        },
+                                                                        "optional": false,
+                                                                        "modifiers": [],
+                                                                        "dotDotDotToken": false
+                                                                    },
+                                                                    {
+                                                                        "name": "4",
+                                                                        "type": {
+                                                                            "kind": "union_type",
+                                                                            "value": [
+                                                                                {
+                                                                                    "kind": "type_reference",
+                                                                                    "value": "Attr",
+                                                                                    "text": ""
+                                                                                },
+                                                                                {
+                                                                                    "kind": "type_interface",
+                                                                                    "value": {
+                                                                                        "name": "I__4",
+                                                                                        "properties": [
+                                                                                            {
+                                                                                                "name": "prefix",
+                                                                                                "type": {
+                                                                                                    "kind": "primitive_keyword",
+                                                                                                    "value": "string"
+                                                                                                },
+                                                                                                "optional": false,
+                                                                                                "modifiers": [],
+                                                                                                "dotDotDotToken": false
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "namespaceURI",
+                                                                                                "type": {
+                                                                                                    "kind": "primitive_keyword",
+                                                                                                    "value": "string"
+                                                                                                },
+                                                                                                "optional": false,
+                                                                                                "modifiers": [],
+                                                                                                "dotDotDotToken": false
+                                                                                            }
+                                                                                        ],
+                                                                                        "methods": [],
+                                                                                        "classes": [],
+                                                                                        "callSignatures": [],
+                                                                                        "indexSignatures": [],
+                                                                                        "typeParameters": []
+                                                                                    }
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        "optional": false,
+                                                                        "modifiers": [],
+                                                                        "dotDotDotToken": false
+                                                                    },
+                                                                    {
+                                                                        "name": "5",
+                                                                        "type": {
+                                                                            "kind": "type_interface",
+                                                                            "value": {
+                                                                                "name": "I__5",
+                                                                                "properties": [
+                                                                                    {
+                                                                                        "name": "value",
+                                                                                        "type": {
+                                                                                            "kind": "primitive_keyword",
+                                                                                            "value": "string"
+                                                                                        },
+                                                                                        "optional": false,
+                                                                                        "modifiers": [],
+                                                                                        "dotDotDotToken": false
+                                                                                    }
+                                                                                ],
+                                                                                "methods": [],
+                                                                                "classes": [],
+                                                                                "callSignatures": [],
+                                                                                "indexSignatures": [],
+                                                                                "typeParameters": []
+                                                                            }
+                                                                        },
+                                                                        "optional": false,
+                                                                        "modifiers": [],
+                                                                        "dotDotDotToken": false
+                                                                    },
+                                                                    {
+                                                                        "name": "6",
+                                                                        "type": {
+                                                                            "kind": "type_reference",
+                                                                            "value": "Attr",
+                                                                            "text": ""
+                                                                        },
+                                                                        "optional": false,
+                                                                        "modifiers": [],
+                                                                        "dotDotDotToken": false
+                                                                    },
+                                                                    {
+                                                                        "name": "7",
+                                                                        "type": {
+                                                                            "kind": "type_interface",
+                                                                            "value": {
+                                                                                "name": "I__7",
+                                                                                "properties": [
+                                                                                    {
+                                                                                        "name": "localName",
+                                                                                        "type": {
+                                                                                            "kind": "primitive_keyword",
+                                                                                            "value": "string"
+                                                                                        },
+                                                                                        "optional": false,
+                                                                                        "modifiers": [],
+                                                                                        "dotDotDotToken": false
+                                                                                    }
+                                                                                ],
+                                                                                "methods": [],
+                                                                                "classes": [],
+                                                                                "callSignatures": [],
+                                                                                "indexSignatures": [],
+                                                                                "typeParameters": []
+                                                                            }
+                                                                        },
+                                                                        "optional": false,
+                                                                        "modifiers": [],
+                                                                        "dotDotDotToken": false
+                                                                    },
+                                                                    {
+                                                                        "name": "length",
+                                                                        "type": {
+                                                                            "kind": "primitive_keyword",
+                                                                            "value": "number"
+                                                                        },
+                                                                        "optional": false,
+                                                                        "modifiers": [],
+                                                                        "dotDotDotToken": false
+                                                                    }
+                                                                ],
+                                                                "methods": [],
+                                                                "classes": [],
+                                                                "callSignatures": [],
+                                                                "indexSignatures": [],
+                                                                "typeParameters": []
+                                                            }
+                                                        },
+                                                        {
+                                                            "kind": "object_keyword",
+                                                            "value": "object"
+                                                        }
+                                                    ]
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [],
+                                        "typeParameters": []
+                                    }
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "localName",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "namespace",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "findAttr",
+                "returnType": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "Attr",
+                            "text": ""
+                        },
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "null"
+                        }
+                    ]
+                },
+                "parameters": [
+                    {
+                        "name": "node",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "type_reference",
+                                    "value": "Element",
+                                    "text": ""
+                                },
+                                {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "I__node",
+                                        "circular": true
+                                    }
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "localName",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "namespace",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "null"
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "findAttr",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "Attr",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "node",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "type_reference",
+                                    "value": "Element",
+                                    "text": ""
+                                },
+                                {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "I__node",
+                                        "circular": true
+                                    }
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "localName",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "namespace",
+                        "type": {
+                            "kind": "undefined_keyword",
+                            "value": "undefined"
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "findFirst",
+                "returnType": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "Attr",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Text",
+                            "text": ""
+                        }
+                    ]
+                },
+                "parameters": [
+                    {
+                        "name": "doc",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "type_reference",
+                                    "value": "Element",
+                                    "text": ""
+                                },
+                                {
+                                    "kind": "type_reference",
+                                    "value": "Document",
+                                    "text": ""
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "xpath",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        }
+    ],
+    "tags": [
+        "string",
+        "optional-parameter",
+        "readonly-array",
+        "type-array",
+        "boolean",
+        "index-signature",
+        "static",
+        "type-union",
+        "void",
+        "type-any",
+        "literals"
+    ]
+}

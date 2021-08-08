@@ -1,0 +1,143 @@
+{
+    "module": "mudder",
+    "template": "module",
+    "differences": [
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "longLinspace",
+                "returnType": {
+                    "kind": "array_type",
+                    "value": {
+                        "kind": "type_interface",
+                        "value": {
+                            "name": "",
+                            "properties": [
+                                {
+                                    "name": "res",
+                                    "type": {
+                                        "kind": "array_type",
+                                        "value": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        }
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                },
+                                {
+                                    "name": "carry",
+                                    "type": {
+                                        "kind": "primitive_keyword",
+                                        "value": "boolean"
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                },
+                                {
+                                    "name": "rem",
+                                    "type": {
+                                        "kind": "primitive_keyword",
+                                        "value": "number"
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                },
+                                {
+                                    "name": "den",
+                                    "type": {
+                                        "kind": "primitive_keyword",
+                                        "value": "number"
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                }
+                            ],
+                            "methods": [],
+                            "classes": [],
+                            "callSignatures": [],
+                            "indexSignatures": [],
+                            "typeParameters": []
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "a",
+                        "type": {
+                            "kind": "array_type",
+                            "value": {
+                                "kind": "primitive_keyword",
+                                "value": "number"
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "b",
+                        "type": {
+                            "kind": "array_type",
+                            "value": {
+                                "kind": "primitive_keyword",
+                                "value": "number"
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "base",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "number"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "N",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "number"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "M",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "number"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        }
+    ],
+    "tags": [
+        "readonly-array",
+        "type-array",
+        "string",
+        "number",
+        "boolean",
+        "type-union",
+        "optional-parameter"
+    ]
+}

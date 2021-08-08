@@ -1,0 +1,20 @@
+{
+    "module": "ghauth",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "void",
+        "string",
+        "optional-parameter",
+        "boolean",
+        "readonly-array",
+        "type-array",
+        "type-function"
+    ]
+}

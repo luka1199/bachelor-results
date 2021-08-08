@@ -1,0 +1,20 @@
+{
+    "module": "pixelmatch",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "number",
+        "type-union",
+        "optional-parameter",
+        "readonly",
+        "boolean",
+        "type-tuple",
+        "alias-type"
+    ]
+}

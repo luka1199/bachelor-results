@@ -1,0 +1,26 @@
+{
+    "module": "passport-http-bearer",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "string",
+        "type-array",
+        "type-union",
+        "boolean",
+        "call-signature",
+        "void",
+        "type-function",
+        "type-any",
+        "type-intersection",
+        "alias-type",
+        "generics-function",
+        "generics-class"
+    ]
+}

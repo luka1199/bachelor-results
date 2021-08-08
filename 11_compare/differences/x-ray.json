@@ -1,0 +1,28 @@
+{
+    "module": "x-ray",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "XRay",
+            "expectedNumberOfOverloadings": 1,
+            "actualNumberOfOverloadings": 6
+        }
+    ],
+    "tags": [
+        "call-signature",
+        "void",
+        "type-function",
+        "type-any",
+        "alias-type",
+        "string",
+        "boolean",
+        "type-array",
+        "index-signature",
+        "type-union",
+        "number",
+        "optional-parameter",
+        "generics-function",
+        "dot-dot-dot-token"
+    ]
+}

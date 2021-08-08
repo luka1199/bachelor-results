@@ -1,0 +1,19 @@
+{
+    "module": "supports-color",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "number",
+        "boolean",
+        "optional-parameter",
+        "literals",
+        "type-union",
+        "alias-type"
+    ]
+}

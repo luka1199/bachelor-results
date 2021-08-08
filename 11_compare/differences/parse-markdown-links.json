@@ -1,0 +1,15 @@
+{
+    "module": "parse-markdown-links",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "parseMarkdownLinks",
+            "exportAssignmentActual": "ParseMarkdownLinks"
+        }
+    ],
+    "tags": [
+        "type-array",
+        "string"
+    ]
+}

@@ -1,0 +1,1677 @@
+{
+    "module": "promise-abortable",
+    "template": "module-class",
+    "differences": [
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "executor",
+                "type": {
+                    "kind": "function_type",
+                    "value": {
+                        "name": "",
+                        "returnType": {
+                            "kind": "void_keyword",
+                            "value": "void"
+                        },
+                        "parameters": [
+                            {
+                                "name": "resolve",
+                                "type": {
+                                    "kind": "function_type",
+                                    "value": {
+                                        "name": "",
+                                        "returnType": {
+                                            "kind": "void_keyword",
+                                            "value": "void"
+                                        },
+                                        "parameters": [
+                                            {
+                                                "name": "value",
+                                                "type": {
+                                                    "kind": "union_type",
+                                                    "value": [
+                                                        {
+                                                            "kind": "generic_keyword",
+                                                            "value": "T"
+                                                        },
+                                                        {
+                                                            "kind": "type_reference",
+                                                            "value": "PromiseLike<T>",
+                                                            "text": ""
+                                                        }
+                                                    ]
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "modifiers": [],
+                                        "typeParameters": [],
+                                        "_isConstructor": false
+                                    }
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "reject",
+                                "type": {
+                                    "kind": "function_type",
+                                    "value": {
+                                        "name": "",
+                                        "returnType": {
+                                            "kind": "void_keyword",
+                                            "value": "void"
+                                        },
+                                        "parameters": [
+                                            {
+                                                "name": "reason",
+                                                "type": {
+                                                    "kind": "any_keyword",
+                                                    "value": "any"
+                                                },
+                                                "optional": true,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "modifiers": [],
+                                        "typeParameters": [],
+                                        "_isConstructor": false
+                                    }
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "signal",
+                                "type": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "AbortSignal",
+                                        "properties": [
+                                            {
+                                                "name": "aborted",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "boolean"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [
+                                                    "readonly"
+                                                ],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "onabort",
+                                                "type": {
+                                                    "kind": "function_type",
+                                                    "value": {
+                                                        "name": "",
+                                                        "returnType": {
+                                                            "kind": "void_keyword",
+                                                            "value": "void"
+                                                        },
+                                                        "parameters": [
+                                                            {
+                                                                "name": "reason",
+                                                                "type": {
+                                                                    "kind": "any_keyword",
+                                                                    "value": "any"
+                                                                },
+                                                                "optional": false,
+                                                                "modifiers": [],
+                                                                "dotDotDotToken": false
+                                                            }
+                                                        ],
+                                                        "modifiers": [],
+                                                        "typeParameters": [],
+                                                        "_isConstructor": false
+                                                    }
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [],
+                                        "typeParameters": []
+                                    }
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "modifiers": [],
+                        "typeParameters": [],
+                        "_isConstructor": false
+                    }
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "then",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "AbortablePromise<TResult1 | TResult2>",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "onfulfilled",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "function_type",
+                                    "value": {
+                                        "name": "",
+                                        "returnType": {
+                                            "kind": "union_type",
+                                            "value": [
+                                                {
+                                                    "kind": "generic_keyword",
+                                                    "value": "TResult1",
+                                                    "defaultValue": {
+                                                        "kind": "generic_keyword",
+                                                        "value": "T"
+                                                    }
+                                                },
+                                                {
+                                                    "kind": "type_reference",
+                                                    "value": "PromiseLike<TResult1>",
+                                                    "text": ""
+                                                }
+                                            ]
+                                        },
+                                        "parameters": [
+                                            {
+                                                "name": "value",
+                                                "type": {
+                                                    "circular": true
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "modifiers": [],
+                                        "typeParameters": [],
+                                        "_isConstructor": false
+                                    }
+                                },
+                                {
+                                    "kind": "primitive_keyword",
+                                    "value": "null"
+                                }
+                            ]
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "onrejected",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "function_type",
+                                    "value": {
+                                        "name": "",
+                                        "returnType": {
+                                            "kind": "union_type",
+                                            "value": [
+                                                {
+                                                    "kind": "generic_keyword",
+                                                    "value": "TResult2",
+                                                    "defaultValue": {
+                                                        "kind": "primitive_keyword",
+                                                        "value": "never"
+                                                    }
+                                                },
+                                                {
+                                                    "kind": "type_reference",
+                                                    "value": "PromiseLike<TResult2>",
+                                                    "text": ""
+                                                }
+                                            ]
+                                        },
+                                        "parameters": [
+                                            {
+                                                "name": "reason",
+                                                "type": {
+                                                    "kind": "any_keyword",
+                                                    "value": "any"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "modifiers": [],
+                                        "typeParameters": [],
+                                        "_isConstructor": false
+                                    }
+                                },
+                                {
+                                    "kind": "primitive_keyword",
+                                    "value": "null"
+                                }
+                            ]
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [],
+                "typeParameters": [
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    }
+                ],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "catch",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "AbortablePromise<T | TResult>",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "onrejected",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "function_type",
+                                    "value": {
+                                        "name": "",
+                                        "returnType": {
+                                            "kind": "union_type",
+                                            "value": [
+                                                {
+                                                    "kind": "generic_keyword",
+                                                    "value": "TResult",
+                                                    "defaultValue": {
+                                                        "kind": "primitive_keyword",
+                                                        "value": "never"
+                                                    }
+                                                },
+                                                {
+                                                    "kind": "type_reference",
+                                                    "value": "PromiseLike<TResult>",
+                                                    "text": ""
+                                                }
+                                            ]
+                                        },
+                                        "parameters": [
+                                            {
+                                                "name": "reason",
+                                                "type": {
+                                                    "kind": "any_keyword",
+                                                    "value": "any"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "modifiers": [],
+                                        "typeParameters": [],
+                                        "_isConstructor": false
+                                    }
+                                },
+                                {
+                                    "kind": "primitive_keyword",
+                                    "value": "null"
+                                }
+                            ]
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [],
+                "typeParameters": [
+                    {
+                        "circular": true
+                    }
+                ],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "abort",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "AbortablePromise<T>",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "reason",
+                        "type": {
+                            "kind": "any_keyword",
+                            "value": "any"
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "all",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "AbortablePromise<[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10]>",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "values",
+                        "type": {
+                            "kind": "tuple_type",
+                            "value": [
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T1"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T1>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T2"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T2>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T3"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T3>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T4"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T4>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T5"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T5>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T6"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T6>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T7"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T7>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T8"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T8>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T9"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T9>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T10"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T10>",
+                                            "text": ""
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "static"
+                ],
+                "typeParameters": [
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    }
+                ],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "all",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "AbortablePromise<[T1, T2, T3, T4, T5, T6, T7, T8, T9]>",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "values",
+                        "type": {
+                            "kind": "tuple_type",
+                            "value": [
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T1"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T1>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T2"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T2>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T3"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T3>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T4"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T4>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T5"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T5>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T6"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T6>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T7"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T7>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T8"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T8>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T9"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T9>",
+                                            "text": ""
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "static"
+                ],
+                "typeParameters": [
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    }
+                ],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "all",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "AbortablePromise<[T1, T2, T3, T4, T5, T6, T7, T8]>",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "values",
+                        "type": {
+                            "kind": "tuple_type",
+                            "value": [
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T1"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T1>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T2"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T2>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T3"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T3>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T4"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T4>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T5"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T5>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T6"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T6>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T7"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T7>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T8"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T8>",
+                                            "text": ""
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "static"
+                ],
+                "typeParameters": [
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    }
+                ],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "all",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "AbortablePromise<[T1, T2, T3, T4, T5, T6, T7]>",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "values",
+                        "type": {
+                            "kind": "tuple_type",
+                            "value": [
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T1"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T1>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T2"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T2>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T3"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T3>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T4"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T4>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T5"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T5>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T6"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T6>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T7"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T7>",
+                                            "text": ""
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "static"
+                ],
+                "typeParameters": [
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    }
+                ],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "all",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "AbortablePromise<[T1, T2, T3, T4, T5, T6]>",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "values",
+                        "type": {
+                            "kind": "tuple_type",
+                            "value": [
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T1"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T1>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T2"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T2>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T3"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T3>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T4"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T4>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T5"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T5>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T6"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T6>",
+                                            "text": ""
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "static"
+                ],
+                "typeParameters": [
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    }
+                ],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "all",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "AbortablePromise<[T1, T2, T3, T4, T5]>",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "values",
+                        "type": {
+                            "kind": "tuple_type",
+                            "value": [
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T1"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T1>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T2"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T2>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T3"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T3>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T4"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T4>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T5"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T5>",
+                                            "text": ""
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "static"
+                ],
+                "typeParameters": [
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    }
+                ],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "all",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "AbortablePromise<[T1, T2, T3, T4]>",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "values",
+                        "type": {
+                            "kind": "tuple_type",
+                            "value": [
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T1"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T1>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T2"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T2>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T3"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T3>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T4"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T4>",
+                                            "text": ""
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "static"
+                ],
+                "typeParameters": [
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    }
+                ],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "all",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "AbortablePromise<[T1, T2, T3]>",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "values",
+                        "type": {
+                            "kind": "tuple_type",
+                            "value": [
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T1"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T1>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T2"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T2>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T3"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T3>",
+                                            "text": ""
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "static"
+                ],
+                "typeParameters": [
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    }
+                ],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "all",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "AbortablePromise<[T1, T2]>",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "values",
+                        "type": {
+                            "kind": "tuple_type",
+                            "value": [
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T1"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T1>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "generic_keyword",
+                                            "value": "T2"
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "PromiseLike<T2>",
+                                            "text": ""
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "static"
+                ],
+                "typeParameters": [
+                    {
+                        "circular": true
+                    },
+                    {
+                        "circular": true
+                    }
+                ],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "all",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "AbortablePromise<T[]>",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "values",
+                        "type": {
+                            "kind": "array_type",
+                            "value": {
+                                "kind": "union_type",
+                                "value": [
+                                    {
+                                        "kind": "generic_keyword",
+                                        "value": "T"
+                                    },
+                                    {
+                                        "kind": "type_reference",
+                                        "value": "PromiseLike<T>",
+                                        "text": ""
+                                    }
+                                ]
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "static"
+                ],
+                "typeParameters": [
+                    {
+                        "circular": true
+                    }
+                ],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "race",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "AbortablePromise<T extends PromiseLike<infer U> ? U : T>",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "values",
+                        "type": {
+                            "kind": "array_type",
+                            "value": {
+                                "kind": "generic_keyword",
+                                "value": "T"
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "static"
+                ],
+                "typeParameters": [
+                    {
+                        "circular": true
+                    }
+                ],
+                "_isConstructor": false
+            }
+        }
+    ],
+    "tags": [
+        "boolean",
+        "readonly",
+        "type-function",
+        "void",
+        "type-any",
+        "optional-parameter",
+        "generics-function",
+        "type-union",
+        "alias-type",
+        "type-tuple",
+        "readonly-array",
+        "type-array",
+        "generics-class"
+    ]
+}

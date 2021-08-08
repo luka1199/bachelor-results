@@ -1,0 +1,25 @@
+{
+    "module": "passport-facebook",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "string",
+        "optional-parameter",
+        "number",
+        "type-any",
+        "boolean",
+        "type-array",
+        "literals",
+        "type-union",
+        "type-function",
+        "void",
+        "alias-type",
+        "object"
+    ]
+}

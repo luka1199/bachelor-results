@@ -1,0 +1,27 @@
+{
+    "module": "response-time",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "responseTime",
+            "exportAssignmentActual": "ResponseTime"
+        },
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "responseTime",
+            "expectedNumberOfOverloadings": 3,
+            "actualNumberOfOverloadings": 1
+        }
+    ],
+    "tags": [
+        "type-function",
+        "type-any",
+        "void",
+        "optional-parameter",
+        "number",
+        "string",
+        "boolean",
+        "call-signature"
+    ]
+}

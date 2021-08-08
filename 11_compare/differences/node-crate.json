@@ -1,0 +1,21 @@
+{
+    "module": "node-crate",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "type-array",
+        "object",
+        "number",
+        "string",
+        "type-function",
+        "void",
+        "optional-parameter",
+        "type-union"
+    ]
+}

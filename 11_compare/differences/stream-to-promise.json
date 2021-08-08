@@ -1,0 +1,141 @@
+{
+    "module": "stream-to-promise",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "streamToPromise",
+            "exportAssignmentActual": "StreamToPromise"
+        },
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "streamToPromise",
+            "expectedNumberOfOverloadings": 2,
+            "actualNumberOfOverloadings": 1
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "stream",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "NodeJS.ReadableStream",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Stream.Readable",
+                            "text": ""
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "stream",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "Readable",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__stream",
+                                "properties": [
+                                    {
+                                        "name": "readable",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "boolean"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "writable",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "boolean"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "DelayedStream",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Writable",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "ReadStream",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "WriteStream",
+                            "text": ""
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "stream",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "NodeJS.WritableStream",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Stream.Writable",
+                            "text": ""
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "stream",
+                "circular": true
+            }
+        }
+    ],
+    "tags": [
+        "type-union"
+    ]
+}

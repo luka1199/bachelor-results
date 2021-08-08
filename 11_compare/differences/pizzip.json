@@ -1,0 +1,25 @@
+{
+    "module": "pizzip",
+    "template": "module-class",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-class",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "boolean",
+        "static",
+        "index-signature",
+        "string",
+        "number",
+        "type-union",
+        "literals",
+        "alias-type",
+        "type-array",
+        "optional-parameter",
+        "type-function",
+        "type-intersection"
+    ]
+}

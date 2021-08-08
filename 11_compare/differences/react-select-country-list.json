@@ -1,0 +1,16 @@
+{
+    "module": "react-select-country-list",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "countryList",
+            "exportAssignmentActual": "ReactSelectCountryList"
+        }
+    ],
+    "tags": [
+        "string",
+        "index-signature",
+        "type-array"
+    ]
+}

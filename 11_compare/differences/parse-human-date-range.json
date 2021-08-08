@@ -1,0 +1,16 @@
+{
+    "module": "parse-human-date-range",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "parse",
+            "exportAssignmentActual": "ParseHumanDateRange"
+        }
+    ],
+    "tags": [
+        "type-array",
+        "string",
+        "optional-parameter"
+    ]
+}

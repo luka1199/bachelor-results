@@ -1,0 +1,22 @@
+{
+    "module": "express-bunyan-logger",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "string",
+        "type-function",
+        "type-any",
+        "alias-type",
+        "type-union",
+        "boolean",
+        "number",
+        "type-array"
+    ]
+}

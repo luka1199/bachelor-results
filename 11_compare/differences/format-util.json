@@ -1,0 +1,33 @@
+{
+    "module": "format-util",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "format",
+            "exportAssignmentActual": "FormatUtil"
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "optionalParams",
+                "type": {
+                    "kind": "array_type",
+                    "value": {
+                        "kind": "any_keyword",
+                        "value": "any"
+                    }
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": true
+            }
+        }
+    ],
+    "tags": [
+        "string",
+        "type-array",
+        "type-any",
+        "dot-dot-dot-token"
+    ]
+}

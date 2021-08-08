@@ -1,0 +1,29 @@
+{
+    "module": "koa-html-minifier",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "koaHtmlMinifier",
+            "exportAssignmentActual": "KoaHtmlMinifier"
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "options",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "HtmlMinifierOptions",
+                    "text": ""
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "alias-type"
+    ]
+}

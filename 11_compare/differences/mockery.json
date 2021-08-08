@@ -1,0 +1,19 @@
+{
+    "module": "mockery",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "boolean",
+        "void",
+        "string",
+        "type-any",
+        "type-array"
+    ]
+}

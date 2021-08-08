@@ -1,0 +1,106 @@
+{
+    "module": "protractor-browser-logs",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "browserLogs",
+            "exportAssignmentActual": "ProtractorBrowserLogs"
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "browser",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "ProtractorBrowser",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "browser",
+                "type": {
+                    "kind": "object_keyword",
+                    "value": "object"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "options",
+                "type": {
+                    "kind": "type_interface",
+                    "value": {
+                        "name": "BrowserLogOptions",
+                        "properties": [
+                            {
+                                "name": "reporters",
+                                "type": {
+                                    "kind": "array_type",
+                                    "value": {
+                                        "kind": "function_type",
+                                        "value": {
+                                            "name": "",
+                                            "returnType": {
+                                                "kind": "void_keyword",
+                                                "value": "void"
+                                            },
+                                            "parameters": [
+                                                {
+                                                    "name": "entries",
+                                                    "type": {
+                                                        "kind": "array_type",
+                                                        "value": {
+                                                            "kind": "type_reference",
+                                                            "value": "Entry",
+                                                            "text": ""
+                                                        }
+                                                    },
+                                                    "optional": false,
+                                                    "modifiers": [],
+                                                    "dotDotDotToken": false
+                                                }
+                                            ],
+                                            "modifiers": [],
+                                            "typeParameters": [],
+                                            "_isConstructor": false
+                                        }
+                                    }
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "methods": [],
+                        "classes": [],
+                        "callSignatures": [],
+                        "indexSignatures": [],
+                        "typeParameters": []
+                    }
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "type-array",
+        "type-function",
+        "void",
+        "boolean",
+        "alias-type",
+        "string",
+        "type-union",
+        "dot-dot-dot-token"
+    ]
+}

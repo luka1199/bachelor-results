@@ -1,0 +1,68 @@
+{
+    "module": "pause",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "pause",
+            "exportAssignmentActual": "Pause"
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "stream",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "stream.Stream",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "stream",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "Stream",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__stream",
+                                "properties": [
+                                    {
+                                        "name": "emit",
+                                        "type": {
+                                            "kind": "type_reference",
+                                            "value": "Function",
+                                            "text": ""
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "void"
+    ]
+}

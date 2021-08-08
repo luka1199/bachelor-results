@@ -1,0 +1,21 @@
+{
+    "module": "arrive",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "boolean",
+        "type-function",
+        "void",
+        "static",
+        "string",
+        "alias-type",
+        "type-union"
+    ]
+}

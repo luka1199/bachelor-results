@@ -1,0 +1,22 @@
+{
+    "module": "fs-extra-promise",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "type-any",
+        "number",
+        "string",
+        "type-union",
+        "index-signature",
+        "void",
+        "type-function",
+        "boolean"
+    ]
+}

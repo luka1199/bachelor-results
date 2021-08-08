@@ -1,0 +1,21 @@
+{
+    "module": "parsecurrency",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "parsecurrency",
+            "exportAssignmentActual": "Parsecurrency"
+        },
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "parsecurrency",
+            "expectedNumberOfOverloadings": 1,
+            "actualNumberOfOverloadings": 2
+        }
+    ],
+    "tags": [
+        "string",
+        "number"
+    ]
+}

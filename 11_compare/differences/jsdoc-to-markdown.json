@@ -1,0 +1,22 @@
+{
+    "module": "jsdoc-to-markdown",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "type-array",
+        "object",
+        "string",
+        "number",
+        "type-union",
+        "boolean",
+        "literals",
+        "alias-type"
+    ]
+}

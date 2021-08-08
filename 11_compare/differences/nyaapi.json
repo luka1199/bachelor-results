@@ -1,0 +1,24 @@
+{
+    "module": "nyaapi",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "string",
+        "number",
+        "literals",
+        "type-union",
+        "boolean",
+        "alias-type",
+        "type-array",
+        "generics-function",
+        "type-tuple",
+        "generics-interface"
+    ]
+}

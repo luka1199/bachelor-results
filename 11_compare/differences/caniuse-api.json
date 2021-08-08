@@ -1,0 +1,22 @@
+{
+    "module": "caniuse-api",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "index-signature",
+        "string",
+        "optional-parameter",
+        "number",
+        "boolean",
+        "readonly-array",
+        "type-array",
+        "type-union",
+        "void"
+    ]
+}

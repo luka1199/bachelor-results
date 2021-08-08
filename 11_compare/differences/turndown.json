@@ -1,0 +1,24 @@
+{
+    "module": "turndown",
+    "template": "module-class",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-class",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "literals",
+        "type-union",
+        "string",
+        "type-function",
+        "alias-type",
+        "type-array",
+        "boolean",
+        "void",
+        "type-any",
+        "number"
+    ]
+}

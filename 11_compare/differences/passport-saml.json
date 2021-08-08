@@ -1,0 +1,27 @@
+{
+    "module": "passport-saml",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "type-any",
+        "void",
+        "string",
+        "type-union",
+        "type-function",
+        "optional-parameter",
+        "type-array",
+        "alias-type",
+        "literals",
+        "number",
+        "boolean",
+        "object",
+        "index-signature",
+        "type-intersection"
+    ]
+}

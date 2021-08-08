@@ -1,0 +1,18 @@
+{
+    "module": "recharts-scale",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "type-array",
+        "number",
+        "type-tuple",
+        "optional-parameter",
+        "boolean"
+    ]
+}

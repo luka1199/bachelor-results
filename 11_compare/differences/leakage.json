@@ -1,0 +1,20 @@
+{
+    "module": "leakage",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "number",
+        "type-array",
+        "type-any",
+        "void",
+        "string",
+        "type-function"
+    ]
+}

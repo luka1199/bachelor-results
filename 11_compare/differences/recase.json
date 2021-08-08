@@ -1,0 +1,17 @@
+{
+    "module": "recase",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "type-any",
+        "optional-parameter",
+        "index-signature",
+        "string"
+    ]
+}

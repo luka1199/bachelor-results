@@ -1,0 +1,20 @@
+{
+    "module": "parse-mockdb",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "void",
+        "generics-function",
+        "string",
+        "literals",
+        "type-union",
+        "alias-type",
+        "type-function"
+    ]
+}

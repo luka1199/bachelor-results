@@ -1,0 +1,21 @@
+{
+    "module": "saml20",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "string",
+        "type-any",
+        "optional-parameter",
+        "boolean",
+        "void",
+        "type-function",
+        "type-union",
+        "alias-type"
+    ]
+}

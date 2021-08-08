@@ -1,0 +1,23 @@
+{
+    "module": "jackrabbit",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "string",
+        "optional-parameter",
+        "readonly-array",
+        "type-array",
+        "number",
+        "type-intersection",
+        "alias-type",
+        "void",
+        "type-function",
+        "type-any"
+    ]
+}

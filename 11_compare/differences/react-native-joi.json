@@ -1,0 +1,32 @@
+{
+    "module": "react-native-joi",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "boolean",
+        "type-union",
+        "string",
+        "index-signature",
+        "alias-type",
+        "type-intersection",
+        "literals",
+        "type-any",
+        "number",
+        "type-array",
+        "object",
+        "generics-function",
+        "generics-interface",
+        "type-function",
+        "dot-dot-dot-token",
+        "call-signature",
+        "type-reference-function",
+        "void"
+    ]
+}

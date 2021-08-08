@@ -1,0 +1,19 @@
+{
+    "module": "project-name-generator",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "type-array",
+        "string",
+        "number",
+        "type-union",
+        "optional-parameter",
+        "boolean"
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "module": "camelcase-keys-deep",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "camelcaseKeysDeep",
+            "exportAssignmentActual": "CamelcaseKeysDeep"
+        },
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "camelcaseKeysDeep",
+            "expectedNumberOfOverloadings": 1,
+            "actualNumberOfOverloadings": 4
+        }
+    ],
+    "tags": [
+        "object"
+    ]
+}

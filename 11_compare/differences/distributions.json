@@ -1,0 +1,16 @@
+{
+    "module": "distributions",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "type-function",
+        "number",
+        "optional-parameter"
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "module": "koa-conditional-get",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "koaConditionalGet",
+            "exportAssignmentActual": "KoaConditionalGet"
+        }
+    ],
+    "tags": []
+}

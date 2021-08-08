@@ -1,0 +1,23 @@
+{
+    "module": "flatbuffers",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "type-union",
+        "number",
+        "static",
+        "boolean",
+        "type-any",
+        "optional-parameter",
+        "void",
+        "alias-type",
+        "string",
+        "generics-function"
+    ]
+}

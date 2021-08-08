@@ -1,0 +1,23 @@
+{
+    "module": "motion-sensors-polyfill",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "boolean",
+        "readonly",
+        "optional-parameter",
+        "void",
+        "type-function",
+        "alias-type",
+        "number",
+        "literals",
+        "type-union",
+        "type-tuple"
+    ]
+}

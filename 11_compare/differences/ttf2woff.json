@@ -1,0 +1,28 @@
+{
+    "module": "ttf2woff",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "ttf2woff",
+            "exportAssignmentActual": "Ttf2woff"
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "metadata",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "string"
+    ]
+}

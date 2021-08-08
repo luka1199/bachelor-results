@@ -1,0 +1,18 @@
+{
+    "module": "pseudo-audio-param",
+    "template": "module-class",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-class",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "string",
+        "number",
+        "type-array",
+        "optional-parameter",
+        "boolean"
+    ]
+}

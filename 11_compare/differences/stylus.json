@@ -1,0 +1,29 @@
+{
+    "module": "stylus",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "index-signature",
+        "string",
+        "generics-function",
+        "generics-interface",
+        "type-array",
+        "call-signature",
+        "dot-dot-dot-token",
+        "type-any",
+        "void",
+        "boolean",
+        "number",
+        "type-function",
+        "alias-type",
+        "literals",
+        "type-union"
+    ]
+}

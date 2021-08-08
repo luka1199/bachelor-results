@@ -1,0 +1,39 @@
+{
+    "module": "paystack",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "secret_key",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "key",
+                "type": {
+                    "kind": "undefined_keyword",
+                    "value": "undefined"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "type-function",
+        "string",
+        "optional-parameter",
+        "type-any",
+        "number",
+        "type-union",
+        "index-signature",
+        "boolean"
+    ]
+}

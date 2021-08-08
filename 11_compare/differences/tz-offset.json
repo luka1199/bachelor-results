@@ -1,0 +1,598 @@
+{
+    "module": "tz-offset",
+    "template": "module",
+    "differences": [
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "timezone",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "literal_type",
+                            "value": "'Etc/GMT+12'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Pacific/Pago_Pago'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Pacific/Midway'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Pacific/Honolulu'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'America/Juneau'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'America/Los_Angeles'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'America/Tijuana'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'America/Phoenix'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'America/Chihuahua'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'America/Mazatlan'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'America/Denver'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'America/Guatemala'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'America/Chicago'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'America/Mexico_City'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'America/Monterrey'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'America/Regina'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'America/Bogota'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'America/New_York'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'America/Indiana/Indianapolis'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'America/Lima'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'America/Halifax'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'America/Caracas'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'America/Guyana'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'America/La_Paz'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'America/Puerto_Rico'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'America/Santiago'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'America/St_Johns'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'America/Sao_Paulo'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'America/Argentina/Buenos_Aires'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'America/Godthab'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'America/Montevideo'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Atlantic/South_Georgia'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Atlantic/Azores'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Atlantic/Cape_Verde'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Africa/Casablanca'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Europe/London'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Europe/Lisbon'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Africa/Monrovia'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Etc/UTC'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Europe/Amsterdam'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Europe/Belgrade'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Europe/Berlin'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Europe/Zurich'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Europe/Bratislava'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Europe/Brussels'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Europe/Budapest'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Europe/Copenhagen'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Europe/Dublin'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Europe/Ljubljana'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Europe/Madrid'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Europe/Paris'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Europe/Prague'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Europe/Rome'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Europe/Sarajevo'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Europe/Skopje'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Europe/Stockholm'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Europe/Vienna'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Europe/Warsaw'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Africa/Algiers'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Europe/Zagreb'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Europe/Athens'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Europe/Bucharest'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Africa/Cairo'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Africa/Harare'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Europe/Helsinki'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Asia/Jerusalem'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Europe/Kaliningrad'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Europe/Kiev'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Africa/Johannesburg'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Europe/Riga'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Europe/Sofia'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Europe/Tallinn'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Europe/Vilnius'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Asia/Baghdad'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Europe/Istanbul'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Asia/Kuwait'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Europe/Minsk'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Europe/Moscow'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Africa/Nairobi'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Asia/Riyadh'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Europe/Volgograd'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Asia/Tehran'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Asia/Muscat'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Asia/Baku'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Europe/Samara'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Asia/Tbilisi'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Asia/Yerevan'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Asia/Kabul'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Asia/Yekaterinburg'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Asia/Karachi'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Asia/Tashkent'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Asia/Kolkata'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Asia/Colombo'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Asia/Kathmandu'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Asia/Almaty'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Asia/Dhaka'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Asia/Urumqi'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Asia/Rangoon'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Asia/Bangkok'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Asia/Jakarta'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Asia/Krasnoyarsk'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Asia/Novosibirsk'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Asia/Shanghai'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Asia/Chongqing'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Asia/Hong_Kong'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Asia/Irkutsk'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Asia/Kuala_Lumpur'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Australia/Perth'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Asia/Singapore'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Asia/Taipei'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Asia/Ulaanbaatar'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Asia/Tokyo'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Asia/Seoul'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Asia/Yakutsk'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Australia/Adelaide'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Australia/Darwin'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Australia/Brisbane'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Australia/Melbourne'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Pacific/Guam'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Australia/Hobart'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Pacific/Port_Moresby'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Australia/Sydney'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Asia/Vladivostok'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Asia/Magadan'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Pacific/Noumea'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Pacific/Guadalcanal'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Asia/Srednekolymsk'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Pacific/Auckland'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Pacific/Fiji'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Asia/Kamchatka'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Pacific/Majuro'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Pacific/Chatham'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Pacific/Tongatapu'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Pacific/Apia'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'Pacific/Fakaofo'"
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "timezone",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "timezone",
+                "type": {
+                    "circular": true
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "timezone",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "number",
+        "literals",
+        "type-union",
+        "alias-type"
+    ]
+}

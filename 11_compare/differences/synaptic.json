@@ -1,0 +1,25 @@
+{
+    "module": "synaptic",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "number",
+        "optional-parameter",
+        "type-function",
+        "boolean",
+        "alias-type",
+        "void",
+        "type-any",
+        "type-union",
+        "type-array",
+        "string",
+        "dot-dot-dot-token",
+        "type-tuple"
+    ]
+}

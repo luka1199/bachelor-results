@@ -1,0 +1,21 @@
+{
+    "module": "pg-ears",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "string",
+        "type-function",
+        "void",
+        "type-union",
+        "optional-parameter",
+        "type-any",
+        "number",
+        "type-intersection"
+    ]
+}

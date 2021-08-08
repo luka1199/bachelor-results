@@ -1,0 +1,18 @@
+{
+    "module": "localized-countries",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "string",
+        "type-array",
+        "index-signature",
+        "object",
+        "type-union"
+    ]
+}

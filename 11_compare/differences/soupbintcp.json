@@ -1,0 +1,19 @@
+{
+    "module": "soupbintcp",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "number",
+        "string",
+        "optional-parameter",
+        "type-function",
+        "void",
+        "type-any"
+    ]
+}

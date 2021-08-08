@@ -1,0 +1,24 @@
+{
+    "module": "vimeo",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "string",
+        "optional-parameter",
+        "object",
+        "void",
+        "type-union",
+        "type-function",
+        "undefined",
+        "type-any",
+        "number",
+        "alias-type",
+        "type-array"
+    ]
+}

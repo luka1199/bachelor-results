@@ -1,0 +1,29 @@
+{
+    "module": "passport",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "void",
+        "type-function",
+        "type-any",
+        "undefined",
+        "boolean",
+        "string",
+        "type-union",
+        "type-array",
+        "alias-type",
+        "generics-function",
+        "dot-dot-dot-token",
+        "generics-interface",
+        "literals",
+        "object",
+        "number"
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "module": "coinbase",
+    "template": "module",
+    "differences": [],
+    "tags": [
+        "optional-parameter",
+        "string",
+        "type-array",
+        "literals",
+        "boolean",
+        "type-tuple",
+        "number",
+        "type-union",
+        "alias-type",
+        "void",
+        "type-function",
+        "type-any",
+        "index-signature"
+    ]
+}

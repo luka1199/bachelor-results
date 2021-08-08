@@ -1,0 +1,41 @@
+{
+    "module": "server-destroy",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "enableDestroy",
+            "exportAssignmentActual": "ServerDestroy"
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "server",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "net.Server",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "server",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Server",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "void",
+        "optional-parameter",
+        "type-function"
+    ]
+}

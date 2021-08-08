@@ -1,0 +1,18 @@
+{
+    "module": "passport-linkedin-oauth2",
+    "template": "module",
+    "differences": [],
+    "tags": [
+        "string",
+        "type-tuple",
+        "type-any",
+        "optional-parameter",
+        "type-array",
+        "boolean",
+        "literals",
+        "type-function",
+        "void",
+        "alias-type",
+        "object"
+    ]
+}

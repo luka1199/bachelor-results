@@ -1,0 +1,31 @@
+{
+    "module": "elasticlunr",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "type-function",
+        "void",
+        "string",
+        "type-array",
+        "literals",
+        "type-union",
+        "alias-type",
+        "boolean",
+        "generics-interface",
+        "generics-class",
+        "number",
+        "generics-function",
+        "index-signature",
+        "type-any",
+        "dot-dot-dot-token",
+        "type-intersection",
+        "undefined"
+    ]
+}

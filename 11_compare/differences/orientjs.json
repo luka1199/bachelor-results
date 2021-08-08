@@ -1,0 +1,29 @@
+{
+    "module": "orientjs",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "string",
+        "void",
+        "type-any",
+        "optional-parameter",
+        "number",
+        "type-array",
+        "dot-dot-dot-token",
+        "boolean",
+        "type-union",
+        "literals",
+        "alias-type",
+        "type-intersection",
+        "type-function",
+        "generics-function",
+        "generics-interface",
+        "generics-class"
+    ]
+}

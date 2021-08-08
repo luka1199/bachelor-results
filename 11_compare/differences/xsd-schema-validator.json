@@ -1,0 +1,19 @@
+{
+    "module": "xsd-schema-validator",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "void",
+        "string",
+        "type-union",
+        "type-function",
+        "boolean",
+        "type-array"
+    ]
+}

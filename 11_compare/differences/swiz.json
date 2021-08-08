@@ -1,0 +1,1894 @@
+{
+    "module": "swiz",
+    "template": "module",
+    "differences": [
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "Chain",
+                "returnType": {
+                    "kind": "type_interface",
+                    "value": {
+                        "name": "IChain",
+                        "properties": [],
+                        "methods": [
+                            {
+                                "name": "getValidatorPos",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "number"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "name",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "hasValidator",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "number"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "name",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "getValidatorAtPos",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IValidator",
+                                        "properties": [
+                                            {
+                                                "name": "name",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "string"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "help",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "string"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "methods": [
+                                            {
+                                                "name": "func",
+                                                "returnType": {
+                                                    "kind": "void_keyword",
+                                                    "value": "void"
+                                                },
+                                                "parameters": [
+                                                    {
+                                                        "name": "value",
+                                                        "type": {
+                                                            "kind": "any_keyword",
+                                                            "value": "any"
+                                                        },
+                                                        "optional": false,
+                                                        "modifiers": [],
+                                                        "dotDotDotToken": false
+                                                    },
+                                                    {
+                                                        "name": "baton",
+                                                        "type": {
+                                                            "kind": "any_keyword",
+                                                            "value": "any"
+                                                        },
+                                                        "optional": false,
+                                                        "modifiers": [],
+                                                        "dotDotDotToken": false
+                                                    },
+                                                    {
+                                                        "name": "callback",
+                                                        "type": {
+                                                            "kind": "type_reference",
+                                                            "value": "Function",
+                                                            "text": ""
+                                                        },
+                                                        "optional": false,
+                                                        "modifiers": [],
+                                                        "dotDotDotToken": false
+                                                    }
+                                                ],
+                                                "modifiers": [],
+                                                "typeParameters": [],
+                                                "_isConstructor": false
+                                            }
+                                        ],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [],
+                                        "typeParameters": []
+                                    }
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "pos",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "isUnique",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "toUnique",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "notIPBlacklisted",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "isCIDR",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "isEmail",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "isUrl",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "isAddressPair",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "isIP",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "isIPv4",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "isIPv6",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "isHostnameOrIp",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "isAllowedFQDNOrIP",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "blacklist",
+                                        "type": {
+                                            "kind": "array_type",
+                                            "value": {
+                                                "kind": "primitive_keyword",
+                                                "value": "string"
+                                            }
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "isHostname",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "isAlpha",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "isAlphanumeric",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "isNumeric",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "isInt",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "isLowercase",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "isUppercase",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "isDecimal",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "isFloat",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "notNull",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "isNull",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "notEmpty",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "equals",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "arg",
+                                        "type": {
+                                            "kind": "any_keyword",
+                                            "value": "any"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "contains",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "arg",
+                                        "type": {
+                                            "kind": "any_keyword",
+                                            "value": "any"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "notContains",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "arg",
+                                        "type": {
+                                            "kind": "any_keyword",
+                                            "value": "any"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "notIn",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "values",
+                                        "type": {
+                                            "kind": "array_type",
+                                            "value": {
+                                                "kind": "any_keyword",
+                                                "value": "any"
+                                            }
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "caseSensitive",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "boolean"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "regex",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "pattern",
+                                        "type": {
+                                            "kind": "type_reference",
+                                            "value": "RegExp",
+                                            "text": ""
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "regex",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "pattern",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "modifiers",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "is",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "pattern",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "modifiers",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "notRegex",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "pattern",
+                                        "type": {
+                                            "kind": "type_reference",
+                                            "value": "RegExp",
+                                            "text": ""
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "notRegex",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "pattern",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "modifiers",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "not",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "pattern",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "modifiers",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "len",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "min",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "max",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "numItems",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "min",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "max",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "toFloat",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "toInt",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "toBoolean",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "toBooleanStrict",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "entityDecode",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "entityEncode",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "trim",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "chars",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "ltrim",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "chars",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "rtrim",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "chars",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "ifNull",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "replace",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "xss",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "is_image",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "boolean"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "enumerated",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "map",
+                                        "type": {
+                                            "kind": "any_keyword",
+                                            "value": "any"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "inArray",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "array",
+                                        "type": {
+                                            "kind": "array_type",
+                                            "value": {
+                                                "kind": "any_keyword",
+                                                "value": "any"
+                                            }
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "isString",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "isBoolean",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "range",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "min",
+                                        "type": {
+                                            "kind": "any_keyword",
+                                            "value": "any"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "max",
+                                        "type": {
+                                            "kind": "any_keyword",
+                                            "value": "any"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "optional",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "isPort",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "isV1UUID",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "immutable",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "updateRequired",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "isArray",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "chain",
+                                        "type": {
+                                            "kind": "type_interface",
+                                            "value": {
+                                                "name": "IChain",
+                                                "circular": true
+                                            }
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "isHash",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "keyChain",
+                                        "type": {
+                                            "kind": "type_interface",
+                                            "value": {
+                                                "name": "IChain",
+                                                "circular": true
+                                            }
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "valueChain",
+                                        "type": {
+                                            "kind": "type_interface",
+                                            "value": {
+                                                "name": "IChain",
+                                                "circular": true
+                                            }
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "rename",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "target",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "custom",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "IChain",
+                                        "circular": true
+                                    }
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "name",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            }
+                        ],
+                        "classes": [],
+                        "callSignatures": [],
+                        "indexSignatures": [],
+                        "typeParameters": []
+                    }
+                },
+                "parameters": [],
+                "modifiers": [
+                    "export",
+                    "declare"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "chain",
+                "returnType": {
+                    "kind": "type_interface",
+                    "value": {
+                        "name": "IChain",
+                        "circular": true
+                    }
+                },
+                "parameters": [],
+                "modifiers": [
+                    "export",
+                    "declare"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "defToValve",
+                "returnType": {
+                    "kind": "array_type",
+                    "value": {
+                        "kind": "type_interface",
+                        "value": {
+                            "name": "IValveSchema",
+                            "properties": [],
+                            "methods": [],
+                            "classes": [],
+                            "callSignatures": [],
+                            "indexSignatures": [
+                                {
+                                    "parameter": {
+                                        "name": "index",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    "type": {
+                                        "kind": "type_interface",
+                                        "value": {
+                                            "name": "IValveSchemaMember",
+                                            "properties": [],
+                                            "methods": [],
+                                            "classes": [],
+                                            "callSignatures": [],
+                                            "indexSignatures": [],
+                                            "typeParameters": []
+                                        }
+                                    }
+                                }
+                            ],
+                            "typeParameters": []
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "def",
+                        "type": {
+                            "kind": "array_type",
+                            "value": {
+                                "kind": "type_interface",
+                                "value": {
+                                    "name": "IObj",
+                                    "properties": [
+                                        {
+                                            "name": "name",
+                                            "type": {
+                                                "kind": "primitive_keyword",
+                                                "value": "string"
+                                            },
+                                            "optional": false,
+                                            "modifiers": [],
+                                            "dotDotDotToken": false
+                                        },
+                                        {
+                                            "name": "options",
+                                            "type": {
+                                                "kind": "type_interface",
+                                                "value": {
+                                                    "name": "IObjOptions",
+                                                    "properties": [
+                                                        {
+                                                            "name": "singular",
+                                                            "type": {
+                                                                "kind": "primitive_keyword",
+                                                                "value": "string"
+                                                            },
+                                                            "optional": true,
+                                                            "modifiers": [],
+                                                            "dotDotDotToken": false
+                                                        },
+                                                        {
+                                                            "name": "plural",
+                                                            "type": {
+                                                                "kind": "primitive_keyword",
+                                                                "value": "string"
+                                                            },
+                                                            "optional": true,
+                                                            "modifiers": [],
+                                                            "dotDotDotToken": false
+                                                        },
+                                                        {
+                                                            "name": "fields",
+                                                            "type": {
+                                                                "kind": "array_type",
+                                                                "value": {
+                                                                    "kind": "type_interface",
+                                                                    "value": {
+                                                                        "name": "IField",
+                                                                        "properties": [
+                                                                            {
+                                                                                "name": "name",
+                                                                                "type": {
+                                                                                    "kind": "primitive_keyword",
+                                                                                    "value": "string"
+                                                                                },
+                                                                                "optional": false,
+                                                                                "modifiers": [],
+                                                                                "dotDotDotToken": false
+                                                                            },
+                                                                            {
+                                                                                "name": "options",
+                                                                                "type": {
+                                                                                    "kind": "type_interface",
+                                                                                    "value": {
+                                                                                        "name": "IFieldOptions",
+                                                                                        "properties": [
+                                                                                            {
+                                                                                                "name": "src",
+                                                                                                "type": {
+                                                                                                    "kind": "primitive_keyword",
+                                                                                                    "value": "string"
+                                                                                                },
+                                                                                                "optional": true,
+                                                                                                "modifiers": [],
+                                                                                                "dotDotDotToken": false
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "singular",
+                                                                                                "type": {
+                                                                                                    "kind": "primitive_keyword",
+                                                                                                    "value": "string"
+                                                                                                },
+                                                                                                "optional": true,
+                                                                                                "modifiers": [],
+                                                                                                "dotDotDotToken": false
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "plural",
+                                                                                                "type": {
+                                                                                                    "kind": "primitive_keyword",
+                                                                                                    "value": "string"
+                                                                                                },
+                                                                                                "optional": true,
+                                                                                                "modifiers": [],
+                                                                                                "dotDotDotToken": false
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "desc",
+                                                                                                "type": {
+                                                                                                    "kind": "primitive_keyword",
+                                                                                                    "value": "string"
+                                                                                                },
+                                                                                                "optional": true,
+                                                                                                "modifiers": [],
+                                                                                                "dotDotDotToken": false
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "val",
+                                                                                                "type": {
+                                                                                                    "kind": "type_interface",
+                                                                                                    "value": {
+                                                                                                        "name": "IChain",
+                                                                                                        "circular": true
+                                                                                                    }
+                                                                                                },
+                                                                                                "optional": true,
+                                                                                                "modifiers": [],
+                                                                                                "dotDotDotToken": false
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "attribute",
+                                                                                                "type": {
+                                                                                                    "kind": "primitive_keyword",
+                                                                                                    "value": "boolean"
+                                                                                                },
+                                                                                                "optional": true,
+                                                                                                "modifiers": [],
+                                                                                                "dotDotDotToken": false
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "enumerated",
+                                                                                                "type": {
+                                                                                                    "kind": "any_keyword",
+                                                                                                    "value": "any"
+                                                                                                },
+                                                                                                "optional": true,
+                                                                                                "modifiers": [],
+                                                                                                "dotDotDotToken": false
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "ignorePublic",
+                                                                                                "type": {
+                                                                                                    "kind": "primitive_keyword",
+                                                                                                    "value": "boolean"
+                                                                                                },
+                                                                                                "optional": true,
+                                                                                                "modifiers": [],
+                                                                                                "dotDotDotToken": false
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "filterFrom",
+                                                                                                "type": {
+                                                                                                    "kind": "array_type",
+                                                                                                    "value": {
+                                                                                                        "kind": "primitive_keyword",
+                                                                                                        "value": "string"
+                                                                                                    }
+                                                                                                },
+                                                                                                "optional": true,
+                                                                                                "modifiers": [],
+                                                                                                "dotDotDotToken": false
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "coerceTo",
+                                                                                                "type": {
+                                                                                                    "kind": "primitive_keyword",
+                                                                                                    "value": "string"
+                                                                                                },
+                                                                                                "optional": true,
+                                                                                                "modifiers": [],
+                                                                                                "dotDotDotToken": false
+                                                                                            }
+                                                                                        ],
+                                                                                        "methods": [],
+                                                                                        "classes": [],
+                                                                                        "callSignatures": [],
+                                                                                        "indexSignatures": [],
+                                                                                        "typeParameters": []
+                                                                                    }
+                                                                                },
+                                                                                "optional": false,
+                                                                                "modifiers": [],
+                                                                                "dotDotDotToken": false
+                                                                            },
+                                                                            {
+                                                                                "name": "src",
+                                                                                "type": {
+                                                                                    "kind": "primitive_keyword",
+                                                                                    "value": "string"
+                                                                                },
+                                                                                "optional": false,
+                                                                                "modifiers": [],
+                                                                                "dotDotDotToken": false
+                                                                            },
+                                                                            {
+                                                                                "name": "singular",
+                                                                                "type": {
+                                                                                    "kind": "primitive_keyword",
+                                                                                    "value": "string"
+                                                                                },
+                                                                                "optional": false,
+                                                                                "modifiers": [],
+                                                                                "dotDotDotToken": false
+                                                                            },
+                                                                            {
+                                                                                "name": "plural",
+                                                                                "type": {
+                                                                                    "kind": "primitive_keyword",
+                                                                                    "value": "string"
+                                                                                },
+                                                                                "optional": false,
+                                                                                "modifiers": [],
+                                                                                "dotDotDotToken": false
+                                                                            },
+                                                                            {
+                                                                                "name": "desc",
+                                                                                "type": {
+                                                                                    "kind": "primitive_keyword",
+                                                                                    "value": "string"
+                                                                                },
+                                                                                "optional": true,
+                                                                                "modifiers": [],
+                                                                                "dotDotDotToken": false
+                                                                            },
+                                                                            {
+                                                                                "name": "val",
+                                                                                "type": {
+                                                                                    "kind": "type_interface",
+                                                                                    "value": {
+                                                                                        "name": "IChain",
+                                                                                        "circular": true
+                                                                                    }
+                                                                                },
+                                                                                "optional": true,
+                                                                                "modifiers": [],
+                                                                                "dotDotDotToken": false
+                                                                            },
+                                                                            {
+                                                                                "name": "attribute",
+                                                                                "type": {
+                                                                                    "kind": "primitive_keyword",
+                                                                                    "value": "boolean"
+                                                                                },
+                                                                                "optional": false,
+                                                                                "modifiers": [],
+                                                                                "dotDotDotToken": false
+                                                                            },
+                                                                            {
+                                                                                "name": "enumerated",
+                                                                                "type": {
+                                                                                    "kind": "primitive_keyword",
+                                                                                    "value": "boolean"
+                                                                                },
+                                                                                "optional": false,
+                                                                                "modifiers": [],
+                                                                                "dotDotDotToken": false
+                                                                            },
+                                                                            {
+                                                                                "name": "ignorePublic",
+                                                                                "type": {
+                                                                                    "kind": "primitive_keyword",
+                                                                                    "value": "boolean"
+                                                                                },
+                                                                                "optional": false,
+                                                                                "modifiers": [],
+                                                                                "dotDotDotToken": false
+                                                                            },
+                                                                            {
+                                                                                "name": "filterFrom",
+                                                                                "type": {
+                                                                                    "kind": "array_type",
+                                                                                    "value": {
+                                                                                        "kind": "primitive_keyword",
+                                                                                        "value": "string"
+                                                                                    }
+                                                                                },
+                                                                                "optional": false,
+                                                                                "modifiers": [],
+                                                                                "dotDotDotToken": false
+                                                                            },
+                                                                            {
+                                                                                "name": "coerceTo",
+                                                                                "type": {
+                                                                                    "kind": "any_keyword",
+                                                                                    "value": "any"
+                                                                                },
+                                                                                "optional": false,
+                                                                                "modifiers": [],
+                                                                                "dotDotDotToken": false
+                                                                            }
+                                                                        ],
+                                                                        "methods": [],
+                                                                        "classes": [],
+                                                                        "callSignatures": [],
+                                                                        "indexSignatures": [],
+                                                                        "typeParameters": []
+                                                                    }
+                                                                }
+                                                            },
+                                                            "optional": true,
+                                                            "modifiers": [],
+                                                            "dotDotDotToken": false
+                                                        }
+                                                    ],
+                                                    "methods": [],
+                                                    "classes": [],
+                                                    "callSignatures": [],
+                                                    "indexSignatures": [],
+                                                    "typeParameters": []
+                                                }
+                                            },
+                                            "optional": false,
+                                            "modifiers": [],
+                                            "dotDotDotToken": false
+                                        },
+                                        {
+                                            "name": "singular",
+                                            "type": {
+                                                "kind": "primitive_keyword",
+                                                "value": "string"
+                                            },
+                                            "optional": false,
+                                            "modifiers": [],
+                                            "dotDotDotToken": false
+                                        },
+                                        {
+                                            "name": "plural",
+                                            "type": {
+                                                "kind": "primitive_keyword",
+                                                "value": "string"
+                                            },
+                                            "optional": false,
+                                            "modifiers": [],
+                                            "dotDotDotToken": false
+                                        },
+                                        {
+                                            "name": "fields",
+                                            "type": {
+                                                "kind": "array_type",
+                                                "value": {
+                                                    "kind": "type_interface",
+                                                    "value": {
+                                                        "name": "IField",
+                                                        "circular": true
+                                                    }
+                                                }
+                                            },
+                                            "optional": false,
+                                            "modifiers": [],
+                                            "dotDotDotToken": false
+                                        }
+                                    ],
+                                    "methods": [],
+                                    "classes": [],
+                                    "callSignatures": [],
+                                    "indexSignatures": [],
+                                    "typeParameters": []
+                                }
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export",
+                    "declare"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "stripSerializerTypes",
+                "returnType": {
+                    "kind": "any_keyword",
+                    "value": "any"
+                },
+                "parameters": [
+                    {
+                        "name": "obj",
+                        "type": {
+                            "kind": "any_keyword",
+                            "value": "any"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export",
+                    "declare"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        }
+    ],
+    "tags": [
+        "string",
+        "optional-parameter",
+        "boolean",
+        "type-any",
+        "index-signature",
+        "type-function",
+        "void",
+        "number",
+        "type-reference-function",
+        "type-array"
+    ]
+}

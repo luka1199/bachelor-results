@@ -1,0 +1,858 @@
+{
+    "module": "ffprobe",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "getInfo",
+            "exportAssignmentActual": "Ffprobe"
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "cb",
+                "type": {
+                    "kind": "function_type",
+                    "value": {
+                        "name": "",
+                        "returnType": {
+                            "kind": "void_keyword",
+                            "value": "void"
+                        },
+                        "parameters": [
+                            {
+                                "name": "err",
+                                "type": {
+                                    "kind": "type_reference",
+                                    "value": "Error",
+                                    "text": ""
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "info",
+                                "type": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "FFProbeResult",
+                                        "properties": [
+                                            {
+                                                "name": "streams",
+                                                "type": {
+                                                    "kind": "array_type",
+                                                    "value": {
+                                                        "kind": "type_interface",
+                                                        "value": {
+                                                            "name": "FFProbeStream",
+                                                            "properties": [
+                                                                {
+                                                                    "name": "index",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "number"
+                                                                    },
+                                                                    "optional": false,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "codec_name",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "string"
+                                                                    },
+                                                                    "optional": true,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "codec_long_name",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "string"
+                                                                    },
+                                                                    "optional": true,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "profile",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "string"
+                                                                    },
+                                                                    "optional": true,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "codec_type",
+                                                                    "type": {
+                                                                        "kind": "union_type",
+                                                                        "value": [
+                                                                            {
+                                                                                "kind": "literal_type",
+                                                                                "value": "'video'"
+                                                                            },
+                                                                            {
+                                                                                "kind": "literal_type",
+                                                                                "value": "'audio'"
+                                                                            },
+                                                                            {
+                                                                                "kind": "literal_type",
+                                                                                "value": "'images'"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    "optional": true,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "codec_time_base",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "string"
+                                                                    },
+                                                                    "optional": false,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "codec_tag_string",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "string"
+                                                                    },
+                                                                    "optional": false,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "codec_tag",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "string"
+                                                                    },
+                                                                    "optional": false,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "extradata",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "string"
+                                                                    },
+                                                                    "optional": true,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "width",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "number"
+                                                                    },
+                                                                    "optional": true,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "height",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "number"
+                                                                    },
+                                                                    "optional": true,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "coded_width",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "number"
+                                                                    },
+                                                                    "optional": true,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "coded_height",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "number"
+                                                                    },
+                                                                    "optional": true,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "closed_captions",
+                                                                    "type": {
+                                                                        "kind": "union_type",
+                                                                        "value": [
+                                                                            {
+                                                                                "kind": "literal_type",
+                                                                                "value": "'0'"
+                                                                            },
+                                                                            {
+                                                                                "kind": "literal_type",
+                                                                                "value": "'1'"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    "optional": true,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "has_b_frames",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "number"
+                                                                    },
+                                                                    "optional": true,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "sample_aspect_ratio",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "string"
+                                                                    },
+                                                                    "optional": true,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "display_aspect_ratio",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "string"
+                                                                    },
+                                                                    "optional": true,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "pix_fmt",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "string"
+                                                                    },
+                                                                    "optional": true,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "level",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "number"
+                                                                    },
+                                                                    "optional": true,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "color_range",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "string"
+                                                                    },
+                                                                    "optional": true,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "color_space",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "string"
+                                                                    },
+                                                                    "optional": true,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "color_transfer",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "string"
+                                                                    },
+                                                                    "optional": true,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "color_primaries",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "string"
+                                                                    },
+                                                                    "optional": true,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "chroma_location",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "string"
+                                                                    },
+                                                                    "optional": true,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "field_order",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "string"
+                                                                    },
+                                                                    "optional": true,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "timecode",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "string"
+                                                                    },
+                                                                    "optional": true,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "refs",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "number"
+                                                                    },
+                                                                    "optional": true,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "sample_fmt",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "string"
+                                                                    },
+                                                                    "optional": true,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "sample_rate",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "number"
+                                                                    },
+                                                                    "optional": true,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "channels",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "number"
+                                                                    },
+                                                                    "optional": true,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "channel_layout",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "string"
+                                                                    },
+                                                                    "optional": true,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "bits_per_sample",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "number"
+                                                                    },
+                                                                    "optional": true,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "id",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "string"
+                                                                    },
+                                                                    "optional": false,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "r_frame_rate",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "string"
+                                                                    },
+                                                                    "optional": false,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "avg_frame_rate",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "string"
+                                                                    },
+                                                                    "optional": false,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "time_base",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "string"
+                                                                    },
+                                                                    "optional": false,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "start_pts",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "number"
+                                                                    },
+                                                                    "optional": true,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "start_time",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "number"
+                                                                    },
+                                                                    "optional": true,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "duration_ts",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "string"
+                                                                    },
+                                                                    "optional": true,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "duration",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "number"
+                                                                    },
+                                                                    "optional": true,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "bit_rate",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "number"
+                                                                    },
+                                                                    "optional": true,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "max_bit_rate",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "number"
+                                                                    },
+                                                                    "optional": true,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "bits_per_raw_sample",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "number"
+                                                                    },
+                                                                    "optional": true,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "nb_frames",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "number"
+                                                                    },
+                                                                    "optional": true,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "nb_read_frames",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "number"
+                                                                    },
+                                                                    "optional": true,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "nb_read_packets",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "number"
+                                                                    },
+                                                                    "optional": true,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "is_avc",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "number"
+                                                                    },
+                                                                    "optional": true,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "nal_length_size",
+                                                                    "type": {
+                                                                        "kind": "primitive_keyword",
+                                                                        "value": "number"
+                                                                    },
+                                                                    "optional": true,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "disposition",
+                                                                    "type": {
+                                                                        "kind": "type_interface",
+                                                                        "value": {
+                                                                            "name": "",
+                                                                            "properties": [
+                                                                                {
+                                                                                    "name": "default",
+                                                                                    "type": {
+                                                                                        "kind": "primitive_keyword",
+                                                                                        "value": "number"
+                                                                                    },
+                                                                                    "optional": false,
+                                                                                    "modifiers": [],
+                                                                                    "dotDotDotToken": false
+                                                                                },
+                                                                                {
+                                                                                    "name": "dub",
+                                                                                    "type": {
+                                                                                        "kind": "primitive_keyword",
+                                                                                        "value": "number"
+                                                                                    },
+                                                                                    "optional": false,
+                                                                                    "modifiers": [],
+                                                                                    "dotDotDotToken": false
+                                                                                },
+                                                                                {
+                                                                                    "name": "original",
+                                                                                    "type": {
+                                                                                        "kind": "primitive_keyword",
+                                                                                        "value": "number"
+                                                                                    },
+                                                                                    "optional": false,
+                                                                                    "modifiers": [],
+                                                                                    "dotDotDotToken": false
+                                                                                },
+                                                                                {
+                                                                                    "name": "comment",
+                                                                                    "type": {
+                                                                                        "kind": "primitive_keyword",
+                                                                                        "value": "number"
+                                                                                    },
+                                                                                    "optional": false,
+                                                                                    "modifiers": [],
+                                                                                    "dotDotDotToken": false
+                                                                                },
+                                                                                {
+                                                                                    "name": "lyrics",
+                                                                                    "type": {
+                                                                                        "kind": "primitive_keyword",
+                                                                                        "value": "number"
+                                                                                    },
+                                                                                    "optional": false,
+                                                                                    "modifiers": [],
+                                                                                    "dotDotDotToken": false
+                                                                                },
+                                                                                {
+                                                                                    "name": "karaoke",
+                                                                                    "type": {
+                                                                                        "kind": "primitive_keyword",
+                                                                                        "value": "number"
+                                                                                    },
+                                                                                    "optional": false,
+                                                                                    "modifiers": [],
+                                                                                    "dotDotDotToken": false
+                                                                                },
+                                                                                {
+                                                                                    "name": "forced",
+                                                                                    "type": {
+                                                                                        "kind": "primitive_keyword",
+                                                                                        "value": "number"
+                                                                                    },
+                                                                                    "optional": false,
+                                                                                    "modifiers": [],
+                                                                                    "dotDotDotToken": false
+                                                                                },
+                                                                                {
+                                                                                    "name": "hearing_impaired",
+                                                                                    "type": {
+                                                                                        "kind": "primitive_keyword",
+                                                                                        "value": "number"
+                                                                                    },
+                                                                                    "optional": false,
+                                                                                    "modifiers": [],
+                                                                                    "dotDotDotToken": false
+                                                                                },
+                                                                                {
+                                                                                    "name": "visual_impaired",
+                                                                                    "type": {
+                                                                                        "kind": "primitive_keyword",
+                                                                                        "value": "number"
+                                                                                    },
+                                                                                    "optional": false,
+                                                                                    "modifiers": [],
+                                                                                    "dotDotDotToken": false
+                                                                                },
+                                                                                {
+                                                                                    "name": "clean_effects",
+                                                                                    "type": {
+                                                                                        "kind": "primitive_keyword",
+                                                                                        "value": "number"
+                                                                                    },
+                                                                                    "optional": false,
+                                                                                    "modifiers": [],
+                                                                                    "dotDotDotToken": false
+                                                                                },
+                                                                                {
+                                                                                    "name": "attached_pic",
+                                                                                    "type": {
+                                                                                        "kind": "primitive_keyword",
+                                                                                        "value": "number"
+                                                                                    },
+                                                                                    "optional": false,
+                                                                                    "modifiers": [],
+                                                                                    "dotDotDotToken": false
+                                                                                },
+                                                                                {
+                                                                                    "name": "timed_thumbnails",
+                                                                                    "type": {
+                                                                                        "kind": "primitive_keyword",
+                                                                                        "value": "number"
+                                                                                    },
+                                                                                    "optional": true,
+                                                                                    "modifiers": [],
+                                                                                    "dotDotDotToken": false
+                                                                                }
+                                                                            ],
+                                                                            "methods": [],
+                                                                            "classes": [],
+                                                                            "callSignatures": [],
+                                                                            "indexSignatures": [],
+                                                                            "typeParameters": []
+                                                                        }
+                                                                    },
+                                                                    "optional": false,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                },
+                                                                {
+                                                                    "name": "tags",
+                                                                    "type": {
+                                                                        "kind": "type_interface",
+                                                                        "value": {
+                                                                            "name": "",
+                                                                            "properties": [
+                                                                                {
+                                                                                    "name": "language",
+                                                                                    "type": {
+                                                                                        "kind": "primitive_keyword",
+                                                                                        "value": "string"
+                                                                                    },
+                                                                                    "optional": true,
+                                                                                    "modifiers": [],
+                                                                                    "dotDotDotToken": false
+                                                                                },
+                                                                                {
+                                                                                    "name": "handler_name",
+                                                                                    "type": {
+                                                                                        "kind": "primitive_keyword",
+                                                                                        "value": "string"
+                                                                                    },
+                                                                                    "optional": true,
+                                                                                    "modifiers": [],
+                                                                                    "dotDotDotToken": false
+                                                                                },
+                                                                                {
+                                                                                    "name": "creation_time",
+                                                                                    "type": {
+                                                                                        "kind": "primitive_keyword",
+                                                                                        "value": "string"
+                                                                                    },
+                                                                                    "optional": true,
+                                                                                    "modifiers": [],
+                                                                                    "dotDotDotToken": false
+                                                                                }
+                                                                            ],
+                                                                            "methods": [],
+                                                                            "classes": [],
+                                                                            "callSignatures": [],
+                                                                            "indexSignatures": [
+                                                                                {
+                                                                                    "parameter": {
+                                                                                        "name": "tag",
+                                                                                        "type": {
+                                                                                            "kind": "primitive_keyword",
+                                                                                            "value": "string"
+                                                                                        },
+                                                                                        "optional": false,
+                                                                                        "modifiers": [],
+                                                                                        "dotDotDotToken": false
+                                                                                    },
+                                                                                    "type": {
+                                                                                        "kind": "union_type",
+                                                                                        "value": [
+                                                                                            {
+                                                                                                "kind": "primitive_keyword",
+                                                                                                "value": "string"
+                                                                                            },
+                                                                                            {
+                                                                                                "kind": "undefined_keyword",
+                                                                                                "value": "undefined"
+                                                                                            }
+                                                                                        ]
+                                                                                    }
+                                                                                }
+                                                                            ],
+                                                                            "typeParameters": []
+                                                                        }
+                                                                    },
+                                                                    "optional": false,
+                                                                    "modifiers": [],
+                                                                    "dotDotDotToken": false
+                                                                }
+                                                            ],
+                                                            "methods": [],
+                                                            "classes": [],
+                                                            "callSignatures": [],
+                                                            "indexSignatures": [],
+                                                            "typeParameters": []
+                                                        }
+                                                    }
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [],
+                                        "typeParameters": []
+                                    }
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "modifiers": [],
+                        "typeParameters": [],
+                        "_isConstructor": false
+                    }
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "cb",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Function",
+                    "text": ""
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "cb",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "cb",
+                "type": {
+                    "kind": "undefined_keyword",
+                    "value": "undefined"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "cb",
+                "circular": true
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "cb",
+                "circular": true
+            }
+        }
+    ],
+    "tags": [
+        "string",
+        "number",
+        "optional-parameter",
+        "literals",
+        "type-union",
+        "alias-type",
+        "index-signature",
+        "undefined",
+        "type-array",
+        "void",
+        "type-function"
+    ]
+}

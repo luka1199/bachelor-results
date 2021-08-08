@@ -1,0 +1,29 @@
+{
+    "module": "oauth2-server",
+    "template": "module-class",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-class",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "static",
+        "string",
+        "optional-parameter",
+        "type-array",
+        "type-union",
+        "number",
+        "index-signature",
+        "type-any",
+        "type-function",
+        "void",
+        "generics-function",
+        "alias-type",
+        "boolean",
+        "undefined",
+        "literals",
+        "object"
+    ]
+}

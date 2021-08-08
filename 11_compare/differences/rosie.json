@@ -1,0 +1,25 @@
+{
+    "module": "rosie",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "generics-function",
+        "type-function",
+        "type-tuple",
+        "type-array",
+        "type-any",
+        "string",
+        "dot-dot-dot-token",
+        "optional-parameter",
+        "type-union",
+        "number",
+        "void",
+        "generics-interface"
+    ]
+}

@@ -1,0 +1,899 @@
+{
+    "module": "tape-promise",
+    "template": "module",
+    "differences": [
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "tapePromiseFactory",
+                "returnType": {
+                    "kind": "intersection_type",
+                    "value": [
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "AsyncTapeFunction",
+                                "properties": [],
+                                "methods": [
+                                    {
+                                        "name": "skip",
+                                        "returnType": {
+                                            "kind": "void_keyword",
+                                            "value": "void"
+                                        },
+                                        "parameters": [
+                                            {
+                                                "name": "name",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "string"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "cb",
+                                                "type": {
+                                                    "kind": "type_interface",
+                                                    "value": {
+                                                        "name": "TestCase",
+                                                        "properties": [],
+                                                        "methods": [],
+                                                        "classes": [],
+                                                        "callSignatures": [
+                                                            {
+                                                                "name": "",
+                                                                "returnType": {
+                                                                    "kind": "union_type",
+                                                                    "value": [
+                                                                        {
+                                                                            "kind": "void_keyword",
+                                                                            "value": "void"
+                                                                        },
+                                                                        {
+                                                                            "kind": "type_reference",
+                                                                            "value": "PromiseLike<void>",
+                                                                            "text": ""
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "parameters": [
+                                                                    {
+                                                                        "name": "test",
+                                                                        "type": {
+                                                                            "kind": "type_interface",
+                                                                            "value": {
+                                                                                "name": "Test",
+                                                                                "properties": [],
+                                                                                "methods": [
+                                                                                    {
+                                                                                        "name": "test",
+                                                                                        "returnType": {
+                                                                                            "kind": "void_keyword",
+                                                                                            "value": "void"
+                                                                                        },
+                                                                                        "parameters": [
+                                                                                            {
+                                                                                                "name": "name",
+                                                                                                "type": {
+                                                                                                    "kind": "primitive_keyword",
+                                                                                                    "value": "string"
+                                                                                                },
+                                                                                                "optional": false,
+                                                                                                "modifiers": [],
+                                                                                                "dotDotDotToken": false
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "cb",
+                                                                                                "type": {
+                                                                                                    "kind": "type_interface",
+                                                                                                    "value": {
+                                                                                                        "name": "TestCase",
+                                                                                                        "circular": true
+                                                                                                    }
+                                                                                                },
+                                                                                                "optional": false,
+                                                                                                "modifiers": [],
+                                                                                                "dotDotDotToken": false
+                                                                                            }
+                                                                                        ],
+                                                                                        "modifiers": [],
+                                                                                        "typeParameters": [],
+                                                                                        "_isConstructor": false
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "test",
+                                                                                        "returnType": {
+                                                                                            "kind": "void_keyword",
+                                                                                            "value": "void"
+                                                                                        },
+                                                                                        "parameters": [
+                                                                                            {
+                                                                                                "name": "name",
+                                                                                                "type": {
+                                                                                                    "kind": "primitive_keyword",
+                                                                                                    "value": "string"
+                                                                                                },
+                                                                                                "optional": false,
+                                                                                                "modifiers": [],
+                                                                                                "dotDotDotToken": false
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "opts",
+                                                                                                "type": {
+                                                                                                    "kind": "type_reference",
+                                                                                                    "value": "TestOptions",
+                                                                                                    "text": ""
+                                                                                                },
+                                                                                                "optional": false,
+                                                                                                "modifiers": [],
+                                                                                                "dotDotDotToken": false
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "cb",
+                                                                                                "type": {
+                                                                                                    "kind": "type_interface",
+                                                                                                    "value": {
+                                                                                                        "name": "TestCase",
+                                                                                                        "circular": true
+                                                                                                    }
+                                                                                                },
+                                                                                                "optional": false,
+                                                                                                "modifiers": [],
+                                                                                                "dotDotDotToken": false
+                                                                                            }
+                                                                                        ],
+                                                                                        "modifiers": [],
+                                                                                        "typeParameters": [],
+                                                                                        "_isConstructor": false
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "rejects",
+                                                                                        "returnType": {
+                                                                                            "kind": "type_reference",
+                                                                                            "value": "Promise<void>",
+                                                                                            "text": ""
+                                                                                        },
+                                                                                        "parameters": [
+                                                                                            {
+                                                                                                "name": "promise",
+                                                                                                "type": {
+                                                                                                    "kind": "union_type",
+                                                                                                    "value": [
+                                                                                                        {
+                                                                                                            "kind": "type_reference",
+                                                                                                            "value": "PromiseLike<any>",
+                                                                                                            "text": ""
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "kind": "function_type",
+                                                                                                            "value": {
+                                                                                                                "name": "",
+                                                                                                                "returnType": {
+                                                                                                                    "kind": "type_reference",
+                                                                                                                    "value": "PromiseLike<any>",
+                                                                                                                    "text": ""
+                                                                                                                },
+                                                                                                                "parameters": [],
+                                                                                                                "modifiers": [],
+                                                                                                                "typeParameters": [],
+                                                                                                                "_isConstructor": false
+                                                                                                            }
+                                                                                                        }
+                                                                                                    ]
+                                                                                                },
+                                                                                                "optional": false,
+                                                                                                "modifiers": [],
+                                                                                                "dotDotDotToken": false
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "msg",
+                                                                                                "type": {
+                                                                                                    "kind": "primitive_keyword",
+                                                                                                    "value": "string"
+                                                                                                },
+                                                                                                "optional": true,
+                                                                                                "modifiers": [],
+                                                                                                "dotDotDotToken": false
+                                                                                            }
+                                                                                        ],
+                                                                                        "modifiers": [],
+                                                                                        "typeParameters": [],
+                                                                                        "_isConstructor": false
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "rejects",
+                                                                                        "returnType": {
+                                                                                            "kind": "type_reference",
+                                                                                            "value": "Promise<void>",
+                                                                                            "text": ""
+                                                                                        },
+                                                                                        "parameters": [
+                                                                                            {
+                                                                                                "name": "promise",
+                                                                                                "type": {
+                                                                                                    "kind": "union_type",
+                                                                                                    "value": [
+                                                                                                        {
+                                                                                                            "kind": "type_reference",
+                                                                                                            "value": "PromiseLike<any>",
+                                                                                                            "text": ""
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "kind": "function_type",
+                                                                                                            "value": {
+                                                                                                                "name": "",
+                                                                                                                "returnType": {
+                                                                                                                    "kind": "type_reference",
+                                                                                                                    "value": "PromiseLike<any>",
+                                                                                                                    "text": ""
+                                                                                                                },
+                                                                                                                "parameters": [],
+                                                                                                                "modifiers": [],
+                                                                                                                "typeParameters": [],
+                                                                                                                "_isConstructor": false
+                                                                                                            }
+                                                                                                        }
+                                                                                                    ]
+                                                                                                },
+                                                                                                "optional": false,
+                                                                                                "modifiers": [],
+                                                                                                "dotDotDotToken": false
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "expected",
+                                                                                                "type": {
+                                                                                                    "kind": "union_type",
+                                                                                                    "value": [
+                                                                                                        {
+                                                                                                            "kind": "type_reference",
+                                                                                                            "value": "RegExp",
+                                                                                                            "text": ""
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "kind": "type_reference",
+                                                                                                            "value": "Function",
+                                                                                                            "text": ""
+                                                                                                        }
+                                                                                                    ]
+                                                                                                },
+                                                                                                "optional": true,
+                                                                                                "modifiers": [],
+                                                                                                "dotDotDotToken": false
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "msg",
+                                                                                                "type": {
+                                                                                                    "kind": "primitive_keyword",
+                                                                                                    "value": "string"
+                                                                                                },
+                                                                                                "optional": true,
+                                                                                                "modifiers": [],
+                                                                                                "dotDotDotToken": false
+                                                                                            }
+                                                                                        ],
+                                                                                        "modifiers": [],
+                                                                                        "typeParameters": [],
+                                                                                        "_isConstructor": false
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "doesNotReject",
+                                                                                        "returnType": {
+                                                                                            "kind": "type_reference",
+                                                                                            "value": "Promise<void>",
+                                                                                            "text": ""
+                                                                                        },
+                                                                                        "parameters": [
+                                                                                            {
+                                                                                                "name": "promise",
+                                                                                                "type": {
+                                                                                                    "kind": "union_type",
+                                                                                                    "value": [
+                                                                                                        {
+                                                                                                            "kind": "type_reference",
+                                                                                                            "value": "PromiseLike<any>",
+                                                                                                            "text": ""
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "kind": "function_type",
+                                                                                                            "value": {
+                                                                                                                "name": "",
+                                                                                                                "returnType": {
+                                                                                                                    "kind": "type_reference",
+                                                                                                                    "value": "PromiseLike<any>",
+                                                                                                                    "text": ""
+                                                                                                                },
+                                                                                                                "parameters": [],
+                                                                                                                "modifiers": [],
+                                                                                                                "typeParameters": [],
+                                                                                                                "_isConstructor": false
+                                                                                                            }
+                                                                                                        }
+                                                                                                    ]
+                                                                                                },
+                                                                                                "optional": false,
+                                                                                                "modifiers": [],
+                                                                                                "dotDotDotToken": false
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "msg",
+                                                                                                "type": {
+                                                                                                    "kind": "primitive_keyword",
+                                                                                                    "value": "string"
+                                                                                                },
+                                                                                                "optional": true,
+                                                                                                "modifiers": [],
+                                                                                                "dotDotDotToken": false
+                                                                                            }
+                                                                                        ],
+                                                                                        "modifiers": [],
+                                                                                        "typeParameters": [],
+                                                                                        "_isConstructor": false
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "doesNotReject",
+                                                                                        "returnType": {
+                                                                                            "kind": "type_reference",
+                                                                                            "value": "Promise<void>",
+                                                                                            "text": ""
+                                                                                        },
+                                                                                        "parameters": [
+                                                                                            {
+                                                                                                "name": "promise",
+                                                                                                "type": {
+                                                                                                    "kind": "union_type",
+                                                                                                    "value": [
+                                                                                                        {
+                                                                                                            "kind": "type_reference",
+                                                                                                            "value": "PromiseLike<any>",
+                                                                                                            "text": ""
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "kind": "function_type",
+                                                                                                            "value": {
+                                                                                                                "name": "",
+                                                                                                                "returnType": {
+                                                                                                                    "kind": "type_reference",
+                                                                                                                    "value": "PromiseLike<any>",
+                                                                                                                    "text": ""
+                                                                                                                },
+                                                                                                                "parameters": [],
+                                                                                                                "modifiers": [],
+                                                                                                                "typeParameters": [],
+                                                                                                                "_isConstructor": false
+                                                                                                            }
+                                                                                                        }
+                                                                                                    ]
+                                                                                                },
+                                                                                                "optional": false,
+                                                                                                "modifiers": [],
+                                                                                                "dotDotDotToken": false
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "expected",
+                                                                                                "type": {
+                                                                                                    "kind": "union_type",
+                                                                                                    "value": [
+                                                                                                        {
+                                                                                                            "kind": "type_reference",
+                                                                                                            "value": "RegExp",
+                                                                                                            "text": ""
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "kind": "type_reference",
+                                                                                                            "value": "Function",
+                                                                                                            "text": ""
+                                                                                                        }
+                                                                                                    ]
+                                                                                                },
+                                                                                                "optional": true,
+                                                                                                "modifiers": [],
+                                                                                                "dotDotDotToken": false
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "msg",
+                                                                                                "type": {
+                                                                                                    "kind": "primitive_keyword",
+                                                                                                    "value": "string"
+                                                                                                },
+                                                                                                "optional": true,
+                                                                                                "modifiers": [],
+                                                                                                "dotDotDotToken": false
+                                                                                            }
+                                                                                        ],
+                                                                                        "modifiers": [],
+                                                                                        "typeParameters": [],
+                                                                                        "_isConstructor": false
+                                                                                    }
+                                                                                ],
+                                                                                "classes": [],
+                                                                                "callSignatures": [],
+                                                                                "indexSignatures": [],
+                                                                                "typeParameters": []
+                                                                            }
+                                                                        },
+                                                                        "optional": false,
+                                                                        "modifiers": [],
+                                                                        "dotDotDotToken": false
+                                                                    }
+                                                                ],
+                                                                "modifiers": [],
+                                                                "typeParameters": [],
+                                                                "_isConstructor": false
+                                                            }
+                                                        ],
+                                                        "indexSignatures": [],
+                                                        "typeParameters": []
+                                                    }
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "modifiers": [],
+                                        "typeParameters": [],
+                                        "_isConstructor": false
+                                    },
+                                    {
+                                        "name": "skip",
+                                        "returnType": {
+                                            "kind": "void_keyword",
+                                            "value": "void"
+                                        },
+                                        "parameters": [
+                                            {
+                                                "name": "name",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "string"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "opts",
+                                                "type": {
+                                                    "kind": "type_reference",
+                                                    "value": "TestOptions",
+                                                    "text": ""
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "cb",
+                                                "type": {
+                                                    "kind": "type_interface",
+                                                    "value": {
+                                                        "name": "TestCase",
+                                                        "circular": true
+                                                    }
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "modifiers": [],
+                                        "typeParameters": [],
+                                        "_isConstructor": false
+                                    },
+                                    {
+                                        "name": "skip",
+                                        "returnType": {
+                                            "kind": "void_keyword",
+                                            "value": "void"
+                                        },
+                                        "parameters": [
+                                            {
+                                                "name": "cb",
+                                                "type": {
+                                                    "kind": "type_interface",
+                                                    "value": {
+                                                        "name": "TestCase",
+                                                        "circular": true
+                                                    }
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "modifiers": [],
+                                        "typeParameters": [],
+                                        "_isConstructor": false
+                                    },
+                                    {
+                                        "name": "skip",
+                                        "returnType": {
+                                            "kind": "void_keyword",
+                                            "value": "void"
+                                        },
+                                        "parameters": [
+                                            {
+                                                "name": "opts",
+                                                "type": {
+                                                    "kind": "type_reference",
+                                                    "value": "TestOptions",
+                                                    "text": ""
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "cb",
+                                                "type": {
+                                                    "kind": "type_interface",
+                                                    "value": {
+                                                        "name": "TestCase",
+                                                        "circular": true
+                                                    }
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "modifiers": [],
+                                        "typeParameters": [],
+                                        "_isConstructor": false
+                                    },
+                                    {
+                                        "name": "only",
+                                        "returnType": {
+                                            "kind": "void_keyword",
+                                            "value": "void"
+                                        },
+                                        "parameters": [
+                                            {
+                                                "name": "name",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "string"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "cb",
+                                                "type": {
+                                                    "kind": "type_interface",
+                                                    "value": {
+                                                        "name": "TestCase",
+                                                        "circular": true
+                                                    }
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "modifiers": [],
+                                        "typeParameters": [],
+                                        "_isConstructor": false
+                                    },
+                                    {
+                                        "name": "only",
+                                        "returnType": {
+                                            "kind": "void_keyword",
+                                            "value": "void"
+                                        },
+                                        "parameters": [
+                                            {
+                                                "name": "name",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "string"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "opts",
+                                                "type": {
+                                                    "kind": "type_reference",
+                                                    "value": "TestOptions",
+                                                    "text": ""
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "cb",
+                                                "type": {
+                                                    "kind": "type_interface",
+                                                    "value": {
+                                                        "name": "TestCase",
+                                                        "circular": true
+                                                    }
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "modifiers": [],
+                                        "typeParameters": [],
+                                        "_isConstructor": false
+                                    },
+                                    {
+                                        "name": "only",
+                                        "returnType": {
+                                            "kind": "void_keyword",
+                                            "value": "void"
+                                        },
+                                        "parameters": [
+                                            {
+                                                "name": "cb",
+                                                "type": {
+                                                    "kind": "type_interface",
+                                                    "value": {
+                                                        "name": "TestCase",
+                                                        "circular": true
+                                                    }
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "modifiers": [],
+                                        "typeParameters": [],
+                                        "_isConstructor": false
+                                    },
+                                    {
+                                        "name": "only",
+                                        "returnType": {
+                                            "kind": "void_keyword",
+                                            "value": "void"
+                                        },
+                                        "parameters": [
+                                            {
+                                                "name": "opts",
+                                                "type": {
+                                                    "kind": "type_reference",
+                                                    "value": "TestOptions",
+                                                    "text": ""
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "cb",
+                                                "type": {
+                                                    "kind": "type_interface",
+                                                    "value": {
+                                                        "name": "TestCase",
+                                                        "circular": true
+                                                    }
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "modifiers": [],
+                                        "typeParameters": [],
+                                        "_isConstructor": false
+                                    },
+                                    {
+                                        "name": "createHarness",
+                                        "returnType": {
+                                            "kind": "intersection_type",
+                                            "value": [
+                                                {
+                                                    "kind": "type_interface",
+                                                    "value": {
+                                                        "name": "AsyncTapeFunction",
+                                                        "circular": true
+                                                    }
+                                                },
+                                                {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "typeof tape"
+                                                }
+                                            ]
+                                        },
+                                        "parameters": [],
+                                        "modifiers": [],
+                                        "typeParameters": [],
+                                        "_isConstructor": false
+                                    }
+                                ],
+                                "classes": [],
+                                "callSignatures": [
+                                    {
+                                        "name": "",
+                                        "returnType": {
+                                            "kind": "void_keyword",
+                                            "value": "void"
+                                        },
+                                        "parameters": [
+                                            {
+                                                "name": "name",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "string"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "cb",
+                                                "type": {
+                                                    "kind": "type_interface",
+                                                    "value": {
+                                                        "name": "TestCase",
+                                                        "circular": true
+                                                    }
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "modifiers": [],
+                                        "typeParameters": [],
+                                        "_isConstructor": false
+                                    },
+                                    {
+                                        "name": "",
+                                        "returnType": {
+                                            "kind": "void_keyword",
+                                            "value": "void"
+                                        },
+                                        "parameters": [
+                                            {
+                                                "name": "name",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "string"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "opts",
+                                                "type": {
+                                                    "kind": "type_reference",
+                                                    "value": "TestOptions",
+                                                    "text": ""
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "cb",
+                                                "type": {
+                                                    "kind": "type_interface",
+                                                    "value": {
+                                                        "name": "TestCase",
+                                                        "circular": true
+                                                    }
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "modifiers": [],
+                                        "typeParameters": [],
+                                        "_isConstructor": false
+                                    },
+                                    {
+                                        "name": "",
+                                        "returnType": {
+                                            "kind": "void_keyword",
+                                            "value": "void"
+                                        },
+                                        "parameters": [
+                                            {
+                                                "name": "cb",
+                                                "type": {
+                                                    "kind": "type_interface",
+                                                    "value": {
+                                                        "name": "TestCase",
+                                                        "circular": true
+                                                    }
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "modifiers": [],
+                                        "typeParameters": [],
+                                        "_isConstructor": false
+                                    },
+                                    {
+                                        "name": "",
+                                        "returnType": {
+                                            "kind": "void_keyword",
+                                            "value": "void"
+                                        },
+                                        "parameters": [
+                                            {
+                                                "name": "opts",
+                                                "type": {
+                                                    "kind": "type_reference",
+                                                    "value": "TestOptions",
+                                                    "text": ""
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            },
+                                            {
+                                                "name": "cb",
+                                                "type": {
+                                                    "kind": "type_interface",
+                                                    "value": {
+                                                        "name": "TestCase",
+                                                        "circular": true
+                                                    }
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "modifiers": [],
+                                        "typeParameters": [],
+                                        "_isConstructor": false
+                                    }
+                                ],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        },
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "typeof tape"
+                        }
+                    ]
+                },
+                "parameters": [
+                    {
+                        "name": "tapeTest",
+                        "type": {
+                            "kind": "any_keyword",
+                            "value": "any"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export",
+                    "default"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        }
+    ],
+    "tags": [
+        "call-signature",
+        "void",
+        "type-union",
+        "string",
+        "type-function",
+        "optional-parameter",
+        "type-reference-function",
+        "type-intersection",
+        "type-any"
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "module": "ps-node",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "type-array",
+        "string",
+        "number",
+        "optional-parameter",
+        "type-union",
+        "void",
+        "type-function"
+    ]
+}

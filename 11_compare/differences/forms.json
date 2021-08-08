@@ -1,0 +1,28 @@
+{
+    "module": "forms",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "index-signature",
+        "string",
+        "type-union",
+        "optional-parameter",
+        "boolean",
+        "type-function",
+        "void",
+        "alias-type",
+        "generics-function",
+        "type-intersection",
+        "generics-interface",
+        "type-any",
+        "undefined",
+        "type-array",
+        "number"
+    ]
+}

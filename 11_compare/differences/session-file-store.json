@@ -1,0 +1,22 @@
+{
+    "module": "session-file-store",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "type-function",
+        "optional-parameter",
+        "string",
+        "number",
+        "type-any",
+        "boolean",
+        "void",
+        "type-array",
+        "dot-dot-dot-token"
+    ]
+}

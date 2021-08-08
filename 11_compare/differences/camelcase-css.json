@@ -1,0 +1,14 @@
+{
+    "module": "camelcase-css",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "camelCaseCSS",
+            "exportAssignmentActual": "CamelcaseCss"
+        }
+    ],
+    "tags": [
+        "string"
+    ]
+}

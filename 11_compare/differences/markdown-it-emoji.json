@@ -1,0 +1,17 @@
+{
+    "module": "markdown-it-emoji",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "type-array",
+        "string",
+        "alias-type"
+    ]
+}

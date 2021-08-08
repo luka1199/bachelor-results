@@ -1,0 +1,14 @@
+{
+    "module": "os-homedir",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "os_homedir",
+            "exportAssignmentActual": "OsHomedir"
+        }
+    ],
+    "tags": [
+        "string"
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "module": "component-emitter",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "generics-function",
+        "string",
+        "type-reference-function",
+        "type-function",
+        "optional-parameter",
+        "type-array",
+        "type-any",
+        "dot-dot-dot-token",
+        "boolean",
+        "generics-interface"
+    ]
+}

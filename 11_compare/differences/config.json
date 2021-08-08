@@ -1,0 +1,14 @@
+{
+    "module": "config",
+    "template": "module",
+    "differences": [],
+    "tags": [
+        "type-any",
+        "optional-parameter",
+        "number",
+        "boolean",
+        "string",
+        "type-array",
+        "generics-function"
+    ]
+}

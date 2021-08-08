@@ -1,0 +1,22 @@
+{
+    "module": "lyricist",
+    "template": "module-class",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-class",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "string",
+        "number",
+        "optional-parameter",
+        "boolean",
+        "literals",
+        "type-union",
+        "object",
+        "type-any",
+        "type-array"
+    ]
+}

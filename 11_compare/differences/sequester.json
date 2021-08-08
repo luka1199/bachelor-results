@@ -1,0 +1,17 @@
+{
+    "module": "sequester",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "void",
+        "type-function",
+        "alias-type",
+        "number"
+    ]
+}

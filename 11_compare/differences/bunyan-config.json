@@ -1,0 +1,19 @@
+{
+    "module": "bunyan-config",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "string",
+        "optional-parameter",
+        "number",
+        "type-union",
+        "boolean",
+        "type-array"
+    ]
+}

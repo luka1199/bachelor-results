@@ -1,0 +1,26 @@
+{
+    "module": "camo",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "string",
+        "generics-function",
+        "type-array",
+        "type-union",
+        "alias-type",
+        "optional-parameter",
+        "number",
+        "boolean",
+        "generics-interface",
+        "index-signature",
+        "void",
+        "type-any",
+        "generics-class"
+    ]
+}

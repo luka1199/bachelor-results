@@ -1,0 +1,33 @@
+{
+    "module": "pg-escape",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "escape",
+            "exportAssignmentActual": "PgEscape"
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "args",
+                "type": {
+                    "kind": "array_type",
+                    "value": {
+                        "kind": "any_keyword",
+                        "value": "any"
+                    }
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": true
+            }
+        }
+    ],
+    "tags": [
+        "string",
+        "type-array",
+        "type-any",
+        "dot-dot-dot-token"
+    ]
+}

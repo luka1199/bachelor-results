@@ -1,0 +1,27 @@
+{
+    "module": "rbac-a",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "index-signature",
+        "string",
+        "number",
+        "type-union",
+        "type-any",
+        "type-array",
+        "type-function",
+        "object",
+        "alias-type",
+        "protected",
+        "generics-function",
+        "readonly",
+        "optional-parameter",
+        "generics-class"
+    ]
+}

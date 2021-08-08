@@ -1,0 +1,23 @@
+{
+    "module": "optimist",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "string",
+        "type-array",
+        "type-union",
+        "type-any",
+        "number",
+        "call-signature",
+        "index-signature",
+        "type-function",
+        "void"
+    ]
+}

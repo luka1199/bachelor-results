@@ -1,0 +1,17 @@
+{
+    "module": "gulp-if",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "call-signature",
+        "boolean",
+        "optional-parameter",
+        "type-function"
+    ]
+}

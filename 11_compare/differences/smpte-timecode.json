@@ -1,0 +1,13 @@
+{
+    "module": "smpte-timecode",
+    "template": "module",
+    "differences": [],
+    "tags": [
+        "number",
+        "string",
+        "type-union",
+        "alias-type",
+        "optional-parameter",
+        "boolean"
+    ]
+}

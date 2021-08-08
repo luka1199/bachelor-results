@@ -1,0 +1,15 @@
+{
+    "module": "safe-compare",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "safeCompare",
+            "exportAssignmentActual": "SafeCompare"
+        }
+    ],
+    "tags": [
+        "boolean",
+        "string"
+    ]
+}

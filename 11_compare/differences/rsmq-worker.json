@@ -1,0 +1,23 @@
+{
+    "module": "rsmq-worker",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "string",
+        "optional-parameter",
+        "number",
+        "call-signature",
+        "void",
+        "generics-function",
+        "generics-interface",
+        "type-array",
+        "type-union",
+        "boolean"
+    ]
+}

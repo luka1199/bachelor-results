@@ -1,0 +1,23 @@
+{
+    "module": "charset-detector",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "number",
+        "string",
+        "optional-parameter",
+        "boolean",
+        "readonly",
+        "readonly-array",
+        "type-array",
+        "type-function",
+        "type-union",
+        "alias-type"
+    ]
+}

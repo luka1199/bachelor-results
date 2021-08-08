@@ -1,0 +1,17 @@
+{
+    "module": "crc",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "number",
+        "string",
+        "type-union",
+        "optional-parameter"
+    ]
+}

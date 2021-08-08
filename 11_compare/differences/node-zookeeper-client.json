@@ -1,0 +1,24 @@
+{
+    "module": "node-zookeeper-client",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "string",
+        "number",
+        "static",
+        "optional-parameter",
+        "type-array",
+        "type-union",
+        "void",
+        "type-function",
+        "type-any",
+        "literals",
+        "type-reference-function"
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "module": "braces",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "number",
+        "boolean",
+        "type-function",
+        "string",
+        "alias-type",
+        "call-signature",
+        "type-array"
+    ]
+}

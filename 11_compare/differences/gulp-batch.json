@@ -1,0 +1,66 @@
+{
+    "module": "gulp-batch",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "batch",
+            "exportAssignmentActual": "GulpBatch"
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "opts",
+                "type": {
+                    "kind": "any_keyword",
+                    "value": "any"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "options",
+                "type": {
+                    "kind": "undefined_keyword",
+                    "value": "undefined"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "cb",
+                "type": {
+                    "kind": "any_keyword",
+                    "value": "any"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "errorHandler",
+                "type": {
+                    "kind": "any_keyword",
+                    "value": "any"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "type-function",
+        "void",
+        "type-any",
+        "optional-parameter"
+    ]
+}

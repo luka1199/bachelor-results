@@ -1,0 +1,401 @@
+{
+    "module": "klaw-sync",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "klawSync",
+            "exportAssignmentActual": "KlawSync"
+        },
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "klawSync",
+            "expectedNumberOfOverloadings": 1,
+            "actualNumberOfOverloadings": 2
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "root",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "options",
+                "type": {
+                    "kind": "type_interface",
+                    "value": {
+                        "name": "Options",
+                        "properties": [
+                            {
+                                "name": "nodir",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "boolean"
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "nofile",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "boolean"
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "depthLimit",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "number"
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "fs",
+                                "type": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "",
+                                        "properties": [],
+                                        "methods": [
+                                            {
+                                                "name": "readdirSync",
+                                                "returnType": {
+                                                    "kind": "array_type",
+                                                    "value": {
+                                                        "kind": "primitive_keyword",
+                                                        "value": "string"
+                                                    }
+                                                },
+                                                "parameters": [
+                                                    {
+                                                        "name": "path",
+                                                        "type": {
+                                                            "kind": "primitive_keyword",
+                                                            "value": "string"
+                                                        },
+                                                        "optional": false,
+                                                        "modifiers": [],
+                                                        "dotDotDotToken": false
+                                                    }
+                                                ],
+                                                "modifiers": [],
+                                                "typeParameters": [],
+                                                "_isConstructor": false
+                                            },
+                                            {
+                                                "name": "statSync",
+                                                "returnType": {
+                                                    "kind": "type_reference",
+                                                    "value": "fs.Stats",
+                                                    "text": ""
+                                                },
+                                                "parameters": [
+                                                    {
+                                                        "name": "path",
+                                                        "type": {
+                                                            "kind": "primitive_keyword",
+                                                            "value": "string"
+                                                        },
+                                                        "optional": false,
+                                                        "modifiers": [],
+                                                        "dotDotDotToken": false
+                                                    }
+                                                ],
+                                                "modifiers": [],
+                                                "typeParameters": [],
+                                                "_isConstructor": false
+                                            }
+                                        ],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [],
+                                        "typeParameters": []
+                                    }
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "filter",
+                                "type": {
+                                    "kind": "function_type",
+                                    "value": {
+                                        "name": "",
+                                        "returnType": {
+                                            "kind": "primitive_keyword",
+                                            "value": "boolean"
+                                        },
+                                        "parameters": [
+                                            {
+                                                "name": "item",
+                                                "type": {
+                                                    "kind": "type_interface",
+                                                    "value": {
+                                                        "name": "Item",
+                                                        "properties": [
+                                                            {
+                                                                "name": "path",
+                                                                "type": {
+                                                                    "kind": "primitive_keyword",
+                                                                    "value": "string"
+                                                                },
+                                                                "optional": false,
+                                                                "modifiers": [],
+                                                                "dotDotDotToken": false
+                                                            },
+                                                            {
+                                                                "name": "stats",
+                                                                "type": {
+                                                                    "kind": "type_reference",
+                                                                    "value": "fs.Stats",
+                                                                    "text": ""
+                                                                },
+                                                                "optional": false,
+                                                                "modifiers": [],
+                                                                "dotDotDotToken": false
+                                                            }
+                                                        ],
+                                                        "methods": [],
+                                                        "classes": [],
+                                                        "callSignatures": [],
+                                                        "indexSignatures": [],
+                                                        "typeParameters": []
+                                                    }
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "modifiers": [],
+                                        "typeParameters": [],
+                                        "_isConstructor": false
+                                    }
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "traverseAll",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "boolean"
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "methods": [],
+                        "classes": [],
+                        "callSignatures": [],
+                        "indexSignatures": [],
+                        "typeParameters": []
+                    }
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "root",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "val",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "null"
+                        },
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "boolean"
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Boolean",
+                            "text": ""
+                        },
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "number"
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Number",
+                            "text": ""
+                        },
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "String",
+                            "text": ""
+                        },
+                        {
+                            "kind": "object_keyword",
+                            "value": "object"
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Buffer",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Test",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Date",
+                            "text": ""
+                        },
+                        {
+                            "kind": "array_type",
+                            "value": {
+                                "kind": "any_keyword",
+                                "value": "any"
+                            }
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "RegExp",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Function",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Error",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Promise",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Map",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "WeakMap",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Set",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "WeakSet",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Int8Array",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Uint8Array",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Uint8ClampedArray",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Int16Array",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Uint16Array",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Int32Array",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Uint32Array",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Float32Array",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Float64Array",
+                            "text": ""
+                        },
+                        {
+                            "kind": "undefined_keyword",
+                            "value": "undefined"
+                        }
+                    ]
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "options",
+                "circular": true
+            }
+        }
+    ],
+    "tags": [
+        "string",
+        "optional-parameter",
+        "boolean",
+        "number",
+        "type-array",
+        "type-function",
+        "alias-type",
+        "readonly-array"
+    ]
+}

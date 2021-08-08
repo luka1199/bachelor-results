@@ -1,0 +1,19 @@
+{
+    "module": "nano-cache",
+    "template": "module-class",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-class",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "number",
+        "optional-parameter",
+        "boolean",
+        "string",
+        "void",
+        "static"
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "module": "webpack-hot-middleware",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "void",
+        "type-any",
+        "type-intersection",
+        "optional-parameter",
+        "literals",
+        "type-function",
+        "type-array",
+        "dot-dot-dot-token",
+        "alias-type",
+        "type-union",
+        "string",
+        "number",
+        "boolean",
+        "index-signature"
+    ]
+}

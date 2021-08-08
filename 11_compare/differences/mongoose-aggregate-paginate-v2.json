@@ -1,0 +1,27 @@
+{
+    "module": "mongoose-aggregate-paginate-v2",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "string",
+        "object",
+        "type-union",
+        "number",
+        "boolean",
+        "type-any",
+        "type-array",
+        "generics-function",
+        "index-signature",
+        "undefined",
+        "generics-interface",
+        "type-function",
+        "void"
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "module": "fs-plus",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "string",
+        "boolean",
+        "void",
+        "type-function",
+        "number",
+        "type-array",
+        "optional-parameter",
+        "type-union",
+        "type-any",
+        "undefined"
+    ]
+}

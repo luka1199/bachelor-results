@@ -1,0 +1,22 @@
+{
+    "module": "logg",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "type-function",
+        "void",
+        "number",
+        "string",
+        "type-array",
+        "type-reference-function",
+        "type-any",
+        "dot-dot-dot-token",
+        "boolean"
+    ]
+}

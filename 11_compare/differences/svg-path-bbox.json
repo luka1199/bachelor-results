@@ -1,0 +1,17 @@
+{
+    "module": "svg-path-bbox",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "number",
+        "type-tuple",
+        "alias-type",
+        "string"
+    ]
+}

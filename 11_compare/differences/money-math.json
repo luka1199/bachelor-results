@@ -1,0 +1,131 @@
+{
+    "module": "money-math",
+    "template": "module",
+    "differences": [
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "centsToAmount",
+            "expectedNumberOfOverloadings": 1,
+            "actualNumberOfOverloadings": 2
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "value",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "cents",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "value",
+                "circular": true
+            },
+            "parameterActual": {
+                "name": "cents",
+                "type": {
+                    "kind": "undefined_keyword",
+                    "value": "undefined"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "currency",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "literal_type",
+                            "value": "'CHF'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'CNY'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'EUR'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'GBP'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'JPY'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'LTL'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'PLN'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'SEK'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'SKK'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'UAH'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'USD'"
+                        },
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "currency",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "string",
+        "literals",
+        "number",
+        "type-union",
+        "boolean"
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "module": "markdown-it-link-attributes",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": []
+}

@@ -1,0 +1,15 @@
+{
+    "module": "hex-rgba",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "string",
+        "number"
+    ]
+}

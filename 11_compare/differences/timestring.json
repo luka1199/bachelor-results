@@ -1,0 +1,252 @@
+{
+    "module": "timestring",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "timestring",
+            "exportAssignmentActual": "Timestring"
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "returnUnit",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "literal_type",
+                            "value": "'ms'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'milli'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'millisecond'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'milliseconds'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'s'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'sec'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'secs'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'second'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'seconds'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'m'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'min'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'mins'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'minute'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'minutes'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'h'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'hr'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'hrs'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'hour'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'hours'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'d'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'day'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'days'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'w'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'week'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'weeks'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'mon'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'mth'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'mths'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'month'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'months'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'y'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'yr'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'yrs'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'year'"
+                        },
+                        {
+                            "kind": "literal_type",
+                            "value": "'years'"
+                        },
+                        {
+                            "kind": "undefined_keyword",
+                            "value": "undefined"
+                        }
+                    ]
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "returnUnit",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "hoursPerDay",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "daysPerWeek",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "weeksPerMonth",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "monthsPerYear",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "daysPerYear",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "number",
+        "string",
+        "optional-parameter",
+        "literals",
+        "type-union",
+        "alias-type"
+    ]
+}

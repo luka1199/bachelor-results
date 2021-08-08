@@ -1,0 +1,17 @@
+{
+    "module": "creditcardutils",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "boolean",
+        "string",
+        "object",
+        "optional-parameter"
+    ]
+}

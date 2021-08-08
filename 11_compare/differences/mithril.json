@@ -1,0 +1,32 @@
+{
+    "module": "mithril",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "void",
+        "string",
+        "type-any",
+        "alias-type",
+        "optional-parameter",
+        "number",
+        "generics-interface",
+        "type-union",
+        "boolean",
+        "type-function",
+        "generics-function",
+        "undefined",
+        "index-signature",
+        "object",
+        "type-intersection",
+        "literals",
+        "call-signature",
+        "type-array",
+        "dot-dot-dot-token"
+    ]
+}

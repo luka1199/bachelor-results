@@ -1,0 +1,23 @@
+{
+    "module": "regenerate",
+    "template": "module-class",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-class",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "dot-dot-dot-token",
+        "string",
+        "number",
+        "type-union",
+        "alias-type",
+        "boolean",
+        "optional-parameter",
+        "readonly",
+        "type-array",
+        "static"
+    ]
+}

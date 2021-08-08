@@ -1,0 +1,27 @@
+{
+    "module": "morgan",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "index-signature",
+        "string",
+        "type-function",
+        "undefined",
+        "type-union",
+        "generics-function",
+        "optional-parameter",
+        "number",
+        "boolean",
+        "alias-type",
+        "generics-interface",
+        "call-signature",
+        "void",
+        "literals"
+    ]
+}

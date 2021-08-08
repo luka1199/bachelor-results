@@ -1,0 +1,19 @@
+{
+    "module": "chownr",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "void",
+        "string",
+        "type-union",
+        "alias-type",
+        "number",
+        "type-function"
+    ]
+}

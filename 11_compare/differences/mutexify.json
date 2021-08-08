@@ -1,0 +1,21 @@
+{
+    "module": "mutexify",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "mutexify",
+            "exportAssignmentActual": "Mutexify"
+        }
+    ],
+    "tags": [
+        "call-signature",
+        "number",
+        "type-function",
+        "void",
+        "type-any",
+        "optional-parameter",
+        "alias-type",
+        "boolean"
+    ]
+}

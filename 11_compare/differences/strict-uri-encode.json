@@ -1,0 +1,96 @@
+{
+    "module": "strict-uri-encode",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "strict_uri_encode",
+            "exportAssignmentActual": "StrictUriEncode"
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "str",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "stream",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "Readable",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__stream",
+                                "properties": [
+                                    {
+                                        "name": "readable",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "boolean"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "writable",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "boolean"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "DelayedStream",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Writable",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "ReadStream",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "WriteStream",
+                            "text": ""
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "string"
+    ]
+}

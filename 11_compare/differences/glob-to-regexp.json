@@ -1,0 +1,16 @@
+{
+    "module": "glob-to-regexp",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "GlobToRegExp",
+            "exportAssignmentActual": "GlobToRegexp"
+        }
+    ],
+    "tags": [
+        "string",
+        "optional-parameter",
+        "boolean"
+    ]
+}

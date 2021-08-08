@@ -1,0 +1,23 @@
+{
+    "module": "vinyl-fs",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "boolean",
+        "type-any",
+        "optional-parameter",
+        "type-function",
+        "void",
+        "type-union",
+        "string",
+        "number",
+        "literals",
+        "type-array"
+    ]
+}

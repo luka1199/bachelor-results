@@ -1,0 +1,23 @@
+{
+    "module": "gulp-nodemon",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "call-signature",
+        "string",
+        "type-reference-function",
+        "type-function",
+        "type-array",
+        "optional-parameter",
+        "type-union",
+        "index-signature",
+        "boolean",
+        "number"
+    ]
+}

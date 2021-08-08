@@ -1,0 +1,24 @@
+{
+    "module": "make-fetch-happen",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "string",
+        "type-union",
+        "type-array",
+        "boolean",
+        "number",
+        "type-function",
+        "void",
+        "call-signature",
+        "alias-type",
+        "type-intersection"
+    ]
+}

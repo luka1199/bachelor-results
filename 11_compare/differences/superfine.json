@@ -1,0 +1,275 @@
+{
+    "module": "superfine",
+    "template": "module",
+    "differences": [
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "h",
+            "expectedNumberOfOverloadings": 3,
+            "actualNumberOfOverloadings": 1
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "tagName",
+                "type": {
+                    "kind": "literal_type",
+                    "value": "\"svg\""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "name",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "key",
+                "type": {
+                    "kind": "undefined_keyword",
+                    "value": "undefined"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "children",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                },
+                                {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "VNode",
+                                        "properties": [
+                                            {
+                                                "name": "name",
+                                                "type": {
+                                                    "kind": "generic_keyword",
+                                                    "value": "TTagName",
+                                                    "constraint": {
+                                                        "kind": "primitive_keyword",
+                                                        "value": "keyof HtmlOrSvgElementTagNameMap"
+                                                    }
+                                                },
+                                                "optional": false,
+                                                "modifiers": [
+                                                    "readonly"
+                                                ],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [],
+                                        "typeParameters": [
+                                            {
+                                                "circular": true
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "kind": "array_type",
+                            "value": {
+                                "circular": true
+                            }
+                        }
+                    ]
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "tagName",
+                "type": {
+                    "kind": "generic_keyword",
+                    "value": "TTagName",
+                    "constraint": {
+                        "kind": "primitive_keyword",
+                        "value": "keyof HTMLElementTagNameMap"
+                    }
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "name",
+                "circular": true
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "key",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "children",
+                "type": {
+                    "circular": true
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "tagName",
+                "type": {
+                    "kind": "generic_keyword",
+                    "value": "TTagName",
+                    "constraint": {
+                        "kind": "primitive_keyword",
+                        "value": "keyof SVGElementTagNameMap"
+                    }
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "name",
+                "circular": true
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "key",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "children",
+                "type": {
+                    "circular": true
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "rootElement",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "HtmlOrSvgElementTagNameMap[TTagName]"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "node",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "HTMLDivElement",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__node",
+                                "properties": [
+                                    {
+                                        "name": "parentNode",
+                                        "type": {
+                                            "kind": "type_reference",
+                                            "value": "HTMLBodyElement",
+                                            "text": ""
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "vdom",
+                                        "type": {
+                                            "kind": "undefined_keyword",
+                                            "value": "undefined"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "name",
+                "circular": true
+            }
+        }
+    ],
+    "tags": [
+        "generics-function",
+        "readonly",
+        "generics-interface",
+        "literals",
+        "optional-parameter",
+        "number",
+        "string",
+        "type-union",
+        "type-intersection",
+        "alias-type",
+        "readonly-array",
+        "type-array",
+        "void"
+    ]
+}

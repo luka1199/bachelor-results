@@ -1,0 +1,22 @@
+{
+    "module": "shuffle-array",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "boolean",
+        "type-function",
+        "number",
+        "call-signature",
+        "type-array",
+        "generics-function",
+        "type-union",
+        "readonly-array"
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "module": "vcards-js",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "vCardFactory",
+            "exportAssignmentActual": "VcardsJs"
+        }
+    ],
+    "tags": [
+        "string",
+        "type-array",
+        "type-union",
+        "literals",
+        "boolean",
+        "type-function",
+        "void",
+        "index-signature",
+        "number"
+    ]
+}

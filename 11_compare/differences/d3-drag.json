@@ -1,0 +1,29 @@
+{
+    "module": "d3-drag",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "number",
+        "call-signature",
+        "void",
+        "type-array",
+        "type-any",
+        "dot-dot-dot-token",
+        "type-union",
+        "alias-type",
+        "type-function",
+        "boolean",
+        "generics-function",
+        "undefined",
+        "string",
+        "generics-interface",
+        "literals",
+        "optional-parameter"
+    ]
+}

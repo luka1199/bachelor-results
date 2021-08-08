@@ -1,0 +1,21 @@
+{
+    "module": "sql-template",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "string",
+        "optional-parameter",
+        "type-array",
+        "type-any",
+        "dot-dot-dot-token",
+        "object",
+        "literals",
+        "type-union"
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "module": "pretty",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "pretty",
+            "exportAssignmentActual": "Pretty"
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "ocd",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "boolean"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "boolean",
+        "string",
+        "optional-parameter"
+    ]
+}

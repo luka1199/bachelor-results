@@ -1,0 +1,27 @@
+{
+    "module": "mustache-express",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "mustacheExpress",
+            "exportAssignmentActual": "MustacheExpress"
+        },
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "mustacheExpress",
+            "expectedNumberOfOverloadings": 1,
+            "actualNumberOfOverloadings": 2
+        }
+    ],
+    "tags": [
+        "call-signature",
+        "type-any",
+        "string",
+        "type-function",
+        "type-array",
+        "dot-dot-dot-token",
+        "alias-type",
+        "optional-parameter"
+    ]
+}

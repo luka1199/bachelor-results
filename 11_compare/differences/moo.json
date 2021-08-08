@@ -1,0 +1,25 @@
+{
+    "module": "moo",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "literals",
+        "type-function",
+        "string",
+        "alias-type",
+        "index-signature",
+        "type-array",
+        "type-union",
+        "optional-parameter",
+        "number",
+        "boolean",
+        "undefined",
+        "void"
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "module": "gulp-help-doc",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "number",
+        "type-reference-function",
+        "type-function",
+        "string",
+        "call-signature"
+    ]
+}

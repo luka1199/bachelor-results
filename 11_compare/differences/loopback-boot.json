@@ -1,0 +1,21 @@
+{
+    "module": "loopback-boot",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "void",
+        "string",
+        "type-any",
+        "type-array",
+        "boolean",
+        "type-union",
+        "optional-parameter",
+        "type-function"
+    ]
+}

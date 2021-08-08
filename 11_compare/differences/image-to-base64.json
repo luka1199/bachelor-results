@@ -1,0 +1,14 @@
+{
+    "module": "image-to-base64",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "imageToBase64",
+            "exportAssignmentActual": "ImageToBase64"
+        }
+    ],
+    "tags": [
+        "string"
+    ]
+}

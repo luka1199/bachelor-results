@@ -1,0 +1,17 @@
+{
+    "module": "s3-upload-stream",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "void",
+        "number",
+        "optional-parameter",
+        "type-any"
+    ]
+}

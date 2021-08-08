@@ -1,0 +1,28 @@
+{
+    "module": "express-partials",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "expressPartials",
+            "exportAssignmentActual": "ExpressPartials"
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "options",
+                "type": {
+                    "kind": "any_keyword",
+                    "value": "any"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "type-any"
+    ]
+}

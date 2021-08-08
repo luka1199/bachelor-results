@@ -1,0 +1,19 @@
+{
+    "module": "ref-struct",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "call-signature",
+        "type-any",
+        "optional-parameter",
+        "index-signature",
+        "string",
+        "void"
+    ]
+}

@@ -1,0 +1,158 @@
+{
+    "module": "html-tableify",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "tableify",
+            "exportAssignmentActual": "HtmlTableify"
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "data",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "{\r\n        [K in T]?: unknown;\r\n    }"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "data",
+                "type": [
+                    {
+                        "kind": "array_type",
+                        "value": {
+                            "kind": "any_keyword",
+                            "value": "any"
+                        }
+                    },
+                    {
+                        "kind": "type_interface",
+                        "value": {
+                            "name": "I__data",
+                            "properties": [
+                                {
+                                    "name": "0",
+                                    "type": {
+                                        "kind": "object_keyword",
+                                        "value": "object"
+                                    },
+                                    "optional": true,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                }
+                            ],
+                            "methods": [],
+                            "classes": [],
+                            "callSignatures": [],
+                            "indexSignatures": [],
+                            "typeParameters": []
+                        }
+                    }
+                ],
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "headers",
+                "type": {
+                    "kind": "array_type",
+                    "value": {
+                        "kind": "type_interface",
+                        "value": {
+                            "name": "Header",
+                            "properties": [
+                                {
+                                    "name": "name",
+                                    "type": {
+                                        "kind": "generic_keyword",
+                                        "value": "T"
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                },
+                                {
+                                    "name": "align",
+                                    "type": {
+                                        "kind": "union_type",
+                                        "value": [
+                                            {
+                                                "kind": "literal_type",
+                                                "value": "'center'"
+                                            },
+                                            {
+                                                "kind": "literal_type",
+                                                "value": "'left'"
+                                            },
+                                            {
+                                                "kind": "literal_type",
+                                                "value": "'right'"
+                                            }
+                                        ]
+                                    },
+                                    "optional": true,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                },
+                                {
+                                    "name": "title",
+                                    "type": {
+                                        "kind": "primitive_keyword",
+                                        "value": "string"
+                                    },
+                                    "optional": true,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                }
+                            ],
+                            "methods": [],
+                            "classes": [],
+                            "callSignatures": [],
+                            "indexSignatures": [],
+                            "typeParameters": [
+                                {
+                                    "circular": true
+                                }
+                            ]
+                        }
+                    }
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "tidy",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "boolean"
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "string",
+        "type-array",
+        "alias-type",
+        "optional-parameter",
+        "generics-function",
+        "literals",
+        "type-union",
+        "generics-interface",
+        "boolean"
+    ]
+}

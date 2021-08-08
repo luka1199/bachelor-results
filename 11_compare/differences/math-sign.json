@@ -1,0 +1,27 @@
+{
+    "module": "math-sign",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "sign",
+            "exportAssignmentActual": "MathSign"
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "x",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "number"
+    ]
+}

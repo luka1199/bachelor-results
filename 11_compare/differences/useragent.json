@@ -1,0 +1,19 @@
+{
+    "module": "useragent",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "void",
+        "optional-parameter",
+        "boolean",
+        "string",
+        "undefined",
+        "type-union"
+    ]
+}

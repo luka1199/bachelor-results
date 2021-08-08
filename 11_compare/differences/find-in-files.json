@@ -1,0 +1,19 @@
+{
+    "module": "find-in-files",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "index-signature",
+        "string",
+        "type-array",
+        "number",
+        "type-union",
+        "optional-parameter"
+    ]
+}

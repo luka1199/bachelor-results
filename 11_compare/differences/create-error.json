@@ -1,0 +1,25 @@
+{
+    "module": "create-error",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "createError",
+            "exportAssignmentActual": "CreateError"
+        },
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "createError",
+            "expectedNumberOfOverloadings": 3,
+            "actualNumberOfOverloadings": 1
+        }
+    ],
+    "tags": [
+        "generics-interface",
+        "alias-type",
+        "generics-function",
+        "string",
+        "optional-parameter",
+        "type-any"
+    ]
+}

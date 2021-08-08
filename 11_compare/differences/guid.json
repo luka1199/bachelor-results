@@ -1,0 +1,16 @@
+{
+    "module": "guid",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "object",
+        "boolean",
+        "string"
+    ]
+}

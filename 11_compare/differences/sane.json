@@ -1,0 +1,26 @@
+{
+    "module": "sane",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "alias-type",
+        "string",
+        "optional-parameter",
+        "type-array",
+        "type-union",
+        "boolean",
+        "type-function",
+        "dot-dot-dot-token",
+        "readonly",
+        "void",
+        "literals",
+        "type-reference-function",
+        "number"
+    ]
+}

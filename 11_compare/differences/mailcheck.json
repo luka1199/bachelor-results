@@ -1,0 +1,22 @@
+{
+    "module": "mailcheck",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "call-signature",
+        "number",
+        "string",
+        "void",
+        "optional-parameter",
+        "type-array",
+        "type-union",
+        "undefined",
+        "boolean"
+    ]
+}

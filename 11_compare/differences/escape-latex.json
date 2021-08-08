@@ -1,0 +1,14 @@
+{
+    "module": "escape-latex",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "lescape",
+            "exportAssignmentActual": "EscapeLatex"
+        }
+    ],
+    "tags": [
+        "string"
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "module": "pinkyswear",
+    "template": "module",
+    "differences": [],
+    "tags": [
+        "call-signature",
+        "boolean",
+        "type-array",
+        "type-any",
+        "dot-dot-dot-token",
+        "optional-parameter",
+        "type-function",
+        "void",
+        "type-union",
+        "generics-function",
+        "generics-interface"
+    ]
+}

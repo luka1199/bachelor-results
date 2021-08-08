@@ -1,0 +1,26 @@
+{
+    "module": "verror",
+    "template": "module-class",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-class",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "static",
+        "type-union",
+        "index-signature",
+        "string",
+        "type-any",
+        "boolean",
+        "generics-function",
+        "type-array",
+        "void",
+        "type-function",
+        "undefined",
+        "optional-parameter",
+        "dot-dot-dot-token"
+    ]
+}

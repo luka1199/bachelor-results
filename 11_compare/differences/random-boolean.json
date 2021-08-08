@@ -1,0 +1,14 @@
+{
+    "module": "random-boolean",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "randomBoolean",
+            "exportAssignmentActual": "RandomBoolean"
+        }
+    ],
+    "tags": [
+        "boolean"
+    ]
+}

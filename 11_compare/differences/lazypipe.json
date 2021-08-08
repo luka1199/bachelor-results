@@ -1,0 +1,25 @@
+{
+    "module": "lazypipe",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "lazypipe",
+            "exportAssignmentActual": "Lazypipe"
+        },
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "lazypipe",
+            "expectedNumberOfOverloadings": 1,
+            "actualNumberOfOverloadings": 2
+        }
+    ],
+    "tags": [
+        "call-signature",
+        "type-reference-function",
+        "type-function",
+        "type-array",
+        "type-any",
+        "dot-dot-dot-token"
+    ]
+}

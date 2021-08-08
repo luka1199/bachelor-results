@@ -1,0 +1,19 @@
+{
+    "module": "pluralize",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "string",
+        "optional-parameter",
+        "number",
+        "boolean",
+        "void",
+        "type-union"
+    ]
+}

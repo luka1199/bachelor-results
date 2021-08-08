@@ -1,0 +1,27 @@
+{
+    "module": "passport-google-oauth20",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "string",
+        "type-array",
+        "type-union",
+        "literals",
+        "boolean",
+        "type-function",
+        "void",
+        "type-any",
+        "alias-type",
+        "number",
+        "generics-function",
+        "dot-dot-dot-token",
+        "generics-interface"
+    ]
+}

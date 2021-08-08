@@ -1,0 +1,20 @@
+{
+    "module": "gulp-html-replace",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "string",
+        "type-array",
+        "type-union",
+        "index-signature",
+        "optional-parameter",
+        "boolean",
+        "call-signature"
+    ]
+}

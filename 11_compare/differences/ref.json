@@ -1,0 +1,19 @@
+{
+    "module": "ref",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "number",
+        "type-any",
+        "void",
+        "optional-parameter",
+        "string",
+        "boolean"
+    ]
+}

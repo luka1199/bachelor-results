@@ -1,0 +1,24 @@
+{
+    "module": "pacote",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "string",
+        "optional-parameter",
+        "number",
+        "type-array",
+        "literals",
+        "type-union",
+        "index-signature",
+        "type-intersection",
+        "boolean",
+        "alias-type",
+        "type-function"
+    ]
+}

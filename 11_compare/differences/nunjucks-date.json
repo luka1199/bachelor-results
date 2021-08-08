@@ -1,0 +1,17 @@
+{
+    "module": "nunjucks-date",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "void",
+        "string",
+        "type-any",
+        "optional-parameter"
+    ]
+}

@@ -1,0 +1,367 @@
+{
+    "module": "global-tunnel-ng",
+    "template": "module",
+    "differences": [
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "_makeAgent",
+                "returnType": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "OuterHttpsAgent",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "TunnelingAgent",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "OuterHttpAgent",
+                            "text": ""
+                        }
+                    ]
+                },
+                "parameters": [
+                    {
+                        "name": "conf",
+                        "type": {
+                            "kind": "object_keyword",
+                            "value": "object"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "innerProtocol",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "useCONNECT",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "boolean"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "_makeRequest",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "Function",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "httpOrHttps",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "object_keyword",
+                                    "value": "object"
+                                },
+                                {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "I__httpOrHttps",
+                                        "properties": [
+                                            {
+                                                "name": "globalAgent",
+                                                "type": {
+                                                    "kind": "union_type",
+                                                    "value": [
+                                                        {
+                                                            "kind": "type_reference",
+                                                            "value": "OuterHttpAgent",
+                                                            "text": ""
+                                                        },
+                                                        {
+                                                            "kind": "type_reference",
+                                                            "value": "OuterHttpsAgent",
+                                                            "text": ""
+                                                        },
+                                                        {
+                                                            "kind": "type_reference",
+                                                            "value": "TunnelingAgent",
+                                                            "text": ""
+                                                        }
+                                                    ]
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [],
+                                        "typeParameters": []
+                                    }
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "protocol",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "options",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "Options",
+                                "properties": [
+                                    {
+                                        "name": "host",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "port",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "connect",
+                                        "type": {
+                                            "kind": "union_type",
+                                            "value": [
+                                                {
+                                                    "kind": "literal_type",
+                                                    "value": "'neither'"
+                                                },
+                                                {
+                                                    "kind": "literal_type",
+                                                    "value": "'https'"
+                                                },
+                                                {
+                                                    "kind": "literal_type",
+                                                    "value": "'both'"
+                                                }
+                                            ]
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "protocol",
+                                        "type": {
+                                            "kind": "union_type",
+                                            "value": [
+                                                {
+                                                    "kind": "literal_type",
+                                                    "value": "'http:'"
+                                                },
+                                                {
+                                                    "kind": "literal_type",
+                                                    "value": "'https:'"
+                                                }
+                                            ]
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "proxyAuth",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "sockets",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "proxyHttpsOptions",
+                                        "type": {
+                                            "kind": "type_interface",
+                                            "value": {
+                                                "name": "",
+                                                "properties": [],
+                                                "methods": [],
+                                                "classes": [],
+                                                "callSignatures": [],
+                                                "indexSignatures": [
+                                                    {
+                                                        "parameter": {
+                                                            "name": "key",
+                                                            "type": {
+                                                                "kind": "primitive_keyword",
+                                                                "value": "string"
+                                                            },
+                                                            "optional": false,
+                                                            "modifiers": [],
+                                                            "dotDotDotToken": false
+                                                        },
+                                                        "type": {
+                                                            "kind": "any_keyword",
+                                                            "value": "any"
+                                                        }
+                                                    }
+                                                ],
+                                                "typeParameters": []
+                                            }
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "originHttpsOptions",
+                                        "type": {
+                                            "kind": "type_interface",
+                                            "value": {
+                                                "name": "",
+                                                "properties": [],
+                                                "methods": [],
+                                                "classes": [],
+                                                "callSignatures": [],
+                                                "indexSignatures": [
+                                                    {
+                                                        "parameter": {
+                                                            "name": "key",
+                                                            "type": {
+                                                                "kind": "primitive_keyword",
+                                                                "value": "string"
+                                                            },
+                                                            "optional": false,
+                                                            "modifiers": [],
+                                                            "dotDotDotToken": false
+                                                        },
+                                                        "type": {
+                                                            "kind": "any_keyword",
+                                                            "value": "any"
+                                                        }
+                                                    }
+                                                ],
+                                                "typeParameters": []
+                                            }
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        },
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        {
+                            "kind": "undefined_keyword",
+                            "value": "undefined"
+                        }
+                    ]
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "conf",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "object_keyword",
+                            "value": "object"
+                        },
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "null"
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "void",
+        "optional-parameter",
+        "string",
+        "number",
+        "literals",
+        "type-union",
+        "index-signature",
+        "type-any"
+    ]
+}

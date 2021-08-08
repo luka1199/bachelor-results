@@ -1,0 +1,27 @@
+{
+    "module": "docker-modem",
+    "template": "module-class",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-class",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "void",
+        "string",
+        "type-union",
+        "number",
+        "type-array",
+        "literals",
+        "boolean",
+        "object",
+        "type-any",
+        "index-signature",
+        "call-signature",
+        "type-function",
+        "undefined"
+    ]
+}

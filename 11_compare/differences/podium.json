@@ -1,0 +1,19 @@
+{
+    "module": "podium",
+    "template": "module",
+    "differences": [],
+    "tags": [
+        "void",
+        "type-array",
+        "string",
+        "optional-parameter",
+        "type-union",
+        "boolean",
+        "alias-type",
+        "type-any",
+        "type-function",
+        "number",
+        "call-signature",
+        "index-signature"
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "module": "node-ral",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "string",
+        "optional-parameter",
+        "void",
+        "literals",
+        "type-union",
+        "type-array",
+        "number",
+        "boolean",
+        "alias-type",
+        "index-signature",
+        "type-any",
+        "type-function",
+        "static",
+        "dot-dot-dot-token",
+        "call-signature"
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "module": "svg-path-bounding-box",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "svgPathBoundingBox",
+            "exportAssignmentActual": "SvgPathBoundingBox"
+        }
+    ],
+    "tags": [
+        "string",
+        "number",
+        "void",
+        "optional-parameter"
+    ]
+}

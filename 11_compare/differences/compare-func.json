@@ -1,0 +1,127 @@
+{
+    "module": "compare-func",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "compare_func",
+            "exportAssignmentActual": "CompareFunc"
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "prop",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "array_type",
+                            "value": {
+                                "kind": "union_type",
+                                "value": [
+                                    {
+                                        "kind": "primitive_keyword",
+                                        "value": "string"
+                                    },
+                                    {
+                                        "kind": "function_type",
+                                        "value": {
+                                            "name": "",
+                                            "returnType": {
+                                                "kind": "union_type",
+                                                "value": [
+                                                    {
+                                                        "kind": "primitive_keyword",
+                                                        "value": "number"
+                                                    },
+                                                    {
+                                                        "kind": "primitive_keyword",
+                                                        "value": "string"
+                                                    }
+                                                ]
+                                            },
+                                            "parameters": [
+                                                {
+                                                    "name": "e",
+                                                    "type": {
+                                                        "kind": "generic_keyword",
+                                                        "value": "T"
+                                                    },
+                                                    "optional": false,
+                                                    "modifiers": [],
+                                                    "dotDotDotToken": false
+                                                }
+                                            ],
+                                            "modifiers": [],
+                                            "typeParameters": [],
+                                            "_isConstructor": false
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        {
+                            "circular": true
+                        },
+                        {
+                            "kind": "undefined_keyword",
+                            "value": "undefined"
+                        }
+                    ]
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "sign",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "Function",
+                            "text": ""
+                        },
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "number"
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "fn",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Function",
+                    "text": ""
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "type-function",
+        "number",
+        "generics-function",
+        "optional-parameter",
+        "readonly-array",
+        "type-array",
+        "string",
+        "type-union",
+        "alias-type"
+    ]
+}

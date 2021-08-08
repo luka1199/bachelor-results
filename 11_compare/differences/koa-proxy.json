@@ -1,0 +1,22 @@
+{
+    "module": "koa-proxy",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "index-signature",
+        "string",
+        "optional-parameter",
+        "type-function",
+        "alias-type",
+        "type-union",
+        "boolean",
+        "type-array",
+        "type-any"
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "module": "sql-bricks",
+    "template": "module",
+    "differences": [],
+    "tags": [
+        "string",
+        "type-array",
+        "type-any",
+        "optional-parameter",
+        "index-signature",
+        "type-union",
+        "dot-dot-dot-token",
+        "alias-type",
+        "call-signature",
+        "void",
+        "type-function",
+        "number"
+    ]
+}

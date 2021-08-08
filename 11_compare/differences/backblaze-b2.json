@@ -1,0 +1,24 @@
+{
+    "module": "backblaze-b2",
+    "template": "module-class",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-class",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "string",
+        "optional-parameter",
+        "type-any",
+        "literals",
+        "type-union",
+        "alias-type",
+        "call-signature",
+        "void",
+        "number",
+        "type-array",
+        "type-intersection"
+    ]
+}

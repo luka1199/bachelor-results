@@ -1,0 +1,1032 @@
+{
+    "module": "topojson-client",
+    "template": "module",
+    "differences": [
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "feature",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "GeoJSON.Feature<GeoJSON.Point, P>",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "topology",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Topology",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "object",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "type_reference",
+                                    "value": "Point<P>",
+                                    "text": ""
+                                },
+                                {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [
+                    {
+                        "kind": "generic_keyword",
+                        "value": "P",
+                        "defaultValue": {
+                            "kind": "type_reference",
+                            "value": "GeoJSON.GeoJsonProperties",
+                            "text": ""
+                        }
+                    }
+                ],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "feature",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "GeoJSON.Feature<GeoJSON.MultiPoint, P>",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "topology",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Topology",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "object",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "type_reference",
+                                    "value": "MultiPoint<P>",
+                                    "text": ""
+                                },
+                                {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [
+                    {
+                        "kind": "generic_keyword",
+                        "value": "P",
+                        "defaultValue": {
+                            "kind": "type_reference",
+                            "value": "GeoJSON.GeoJsonProperties",
+                            "text": ""
+                        }
+                    }
+                ],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "feature",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "GeoJSON.Feature<GeoJSON.LineString, P>",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "topology",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Topology",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "object",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "type_reference",
+                                    "value": "LineString<P>",
+                                    "text": ""
+                                },
+                                {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [
+                    {
+                        "kind": "generic_keyword",
+                        "value": "P",
+                        "defaultValue": {
+                            "kind": "type_reference",
+                            "value": "GeoJSON.GeoJsonProperties",
+                            "text": ""
+                        }
+                    }
+                ],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "feature",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "GeoJSON.Feature<GeoJSON.MultiLineString, P>",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "topology",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Topology",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "object",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "type_reference",
+                                    "value": "MultiLineString<P>",
+                                    "text": ""
+                                },
+                                {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [
+                    {
+                        "kind": "generic_keyword",
+                        "value": "P",
+                        "defaultValue": {
+                            "kind": "type_reference",
+                            "value": "GeoJSON.GeoJsonProperties",
+                            "text": ""
+                        }
+                    }
+                ],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "feature",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "GeoJSON.Feature<GeoJSON.Polygon, P>",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "topology",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Topology",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "object",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "type_reference",
+                                    "value": "Polygon<P>",
+                                    "text": ""
+                                },
+                                {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [
+                    {
+                        "kind": "generic_keyword",
+                        "value": "P",
+                        "defaultValue": {
+                            "kind": "type_reference",
+                            "value": "GeoJSON.GeoJsonProperties",
+                            "text": ""
+                        }
+                    }
+                ],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "feature",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "GeoJSON.Feature<GeoJSON.MultiPolygon, P>",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "topology",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Topology",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "object",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "type_reference",
+                                    "value": "MultiPolygon<P>",
+                                    "text": ""
+                                },
+                                {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [
+                    {
+                        "kind": "generic_keyword",
+                        "value": "P",
+                        "defaultValue": {
+                            "kind": "type_reference",
+                            "value": "GeoJSON.GeoJsonProperties",
+                            "text": ""
+                        }
+                    }
+                ],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "feature",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "GeoJSON.FeatureCollection<GeoJSON.GeometryObject, P>",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "topology",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Topology",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "object",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "type_reference",
+                                    "value": "GeometryCollection<P>",
+                                    "text": ""
+                                },
+                                {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [
+                    {
+                        "kind": "generic_keyword",
+                        "value": "P",
+                        "defaultValue": {
+                            "kind": "type_reference",
+                            "value": "GeoJSON.GeoJsonProperties",
+                            "text": ""
+                        }
+                    }
+                ],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "feature",
+                "returnType": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "GeoJSON.Feature<GeoJSON.GeometryObject, P>",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "GeoJSON.FeatureCollection<GeoJSON.GeometryObject, P>",
+                            "text": ""
+                        }
+                    ]
+                },
+                "parameters": [
+                    {
+                        "name": "topology",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Topology",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "object",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "type_reference",
+                                    "value": "GeometryObject<P>",
+                                    "text": ""
+                                },
+                                {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [
+                    {
+                        "kind": "generic_keyword",
+                        "value": "P",
+                        "defaultValue": {
+                            "kind": "type_reference",
+                            "value": "GeoJSON.GeoJsonProperties",
+                            "text": ""
+                        }
+                    }
+                ],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "merge",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "GeoJSON.MultiPolygon",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "topology",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Topology",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "objects",
+                        "type": {
+                            "kind": "array_type",
+                            "value": {
+                                "kind": "union_type",
+                                "value": [
+                                    {
+                                        "kind": "type_reference",
+                                        "value": "Polygon",
+                                        "text": ""
+                                    },
+                                    {
+                                        "kind": "type_reference",
+                                        "value": "MultiPolygon",
+                                        "text": ""
+                                    }
+                                ]
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "mergeArcs",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "MultiPolygon",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "topology",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Topology",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "objects",
+                        "type": {
+                            "kind": "array_type",
+                            "value": {
+                                "kind": "union_type",
+                                "value": [
+                                    {
+                                        "kind": "type_reference",
+                                        "value": "Polygon",
+                                        "text": ""
+                                    },
+                                    {
+                                        "kind": "type_reference",
+                                        "value": "MultiPolygon",
+                                        "text": ""
+                                    }
+                                ]
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "mesh",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "GeoJSON.MultiLineString",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "topology",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Topology",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "obj",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "GeometryObject",
+                            "text": ""
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "filter",
+                        "type": {
+                            "kind": "function_type",
+                            "value": {
+                                "name": "",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "boolean"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "a",
+                                        "type": {
+                                            "kind": "type_reference",
+                                            "value": "GeometryObject",
+                                            "text": ""
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "b",
+                                        "type": {
+                                            "kind": "type_reference",
+                                            "value": "GeometryObject",
+                                            "text": ""
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            }
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "meshArcs",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "MultiLineString",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "topology",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Topology",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "obj",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "GeometryObject",
+                            "text": ""
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "filter",
+                        "type": {
+                            "kind": "function_type",
+                            "value": {
+                                "name": "",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "boolean"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "a",
+                                        "type": {
+                                            "kind": "type_reference",
+                                            "value": "GeometryObject",
+                                            "text": ""
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "b",
+                                        "type": {
+                                            "kind": "type_reference",
+                                            "value": "GeometryObject",
+                                            "text": ""
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            }
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "neighbors",
+                "returnType": {
+                    "kind": "array_type",
+                    "value": {
+                        "kind": "array_type",
+                        "value": {
+                            "kind": "primitive_keyword",
+                            "value": "number"
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "objects",
+                        "type": {
+                            "kind": "array_type",
+                            "value": {
+                                "kind": "type_reference",
+                                "value": "GeometryObject",
+                                "text": ""
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "bbox",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "GeoJSON.BBox",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "topology",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Topology",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "quantize",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "Topology<T>",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "topology",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Topology<T>",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "transform",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "type_reference",
+                                    "value": "Transform",
+                                    "text": ""
+                                },
+                                {
+                                    "kind": "primitive_keyword",
+                                    "value": "number"
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [
+                    {
+                        "kind": "generic_keyword",
+                        "value": "T",
+                        "constraint": {
+                            "kind": "type_reference",
+                            "value": "Objects",
+                            "text": ""
+                        }
+                    }
+                ],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "transform",
+                "returnType": {
+                    "kind": "function_type",
+                    "value": {
+                        "name": "",
+                        "returnType": {
+                            "kind": "array_type",
+                            "value": {
+                                "kind": "primitive_keyword",
+                                "value": "number"
+                            }
+                        },
+                        "parameters": [
+                            {
+                                "name": "point",
+                                "type": {
+                                    "kind": "array_type",
+                                    "value": {
+                                        "kind": "primitive_keyword",
+                                        "value": "number"
+                                    }
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "index",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "boolean"
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "modifiers": [],
+                        "typeParameters": [],
+                        "_isConstructor": false
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "transform",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "type_reference",
+                                    "value": "Transform",
+                                    "text": ""
+                                },
+                                {
+                                    "kind": "primitive_keyword",
+                                    "value": "null"
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "untransform",
+                "returnType": {
+                    "circular": true
+                },
+                "parameters": [
+                    {
+                        "name": "transform",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "type_reference",
+                                    "value": "Transform",
+                                    "text": ""
+                                },
+                                {
+                                    "kind": "primitive_keyword",
+                                    "value": "null"
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "readJsonConfig",
+                "returnType": {
+                    "kind": "object_keyword",
+                    "value": "object"
+                },
+                "parameters": [
+                    {
+                        "name": "path",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        }
+    ],
+    "tags": [
+        "string",
+        "type-union",
+        "type-array",
+        "optional-parameter",
+        "type-function",
+        "boolean",
+        "number",
+        "alias-type"
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "module": "metascraper-address",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "getData",
+            "exportAssignmentActual": "MetascraperAddress"
+        }
+    ],
+    "tags": []
+}

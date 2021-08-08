@@ -1,0 +1,26 @@
+{
+    "module": "raphael",
+    "template": "module",
+    "differences": [],
+    "tags": [
+        "generics-function",
+        "alias-type",
+        "generics-interface",
+        "number",
+        "string",
+        "boolean",
+        "type-union",
+        "literals",
+        "type-tuple",
+        "type-array",
+        "optional-parameter",
+        "type-intersection",
+        "type-function",
+        "void",
+        "undefined",
+        "readonly-array",
+        "dot-dot-dot-token",
+        "call-signature",
+        "type-any"
+    ]
+}

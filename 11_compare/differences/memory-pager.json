@@ -1,0 +1,20 @@
+{
+    "module": "memory-pager",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "call-signature",
+        "number",
+        "optional-parameter",
+        "literals",
+        "undefined",
+        "type-union",
+        "void"
+    ]
+}

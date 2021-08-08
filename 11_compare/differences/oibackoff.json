@@ -1,0 +1,25 @@
+{
+    "module": "oibackoff",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "call-signature",
+        "void",
+        "type-function",
+        "generics-function",
+        "type-union",
+        "type-array",
+        "undefined",
+        "boolean",
+        "number",
+        "alias-type",
+        "optional-parameter",
+        "literals"
+    ]
+}

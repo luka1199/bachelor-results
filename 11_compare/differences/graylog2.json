@@ -1,0 +1,24 @@
+{
+    "module": "graylog2",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "string",
+        "literals",
+        "type-union",
+        "alias-type",
+        "number",
+        "readonly-array",
+        "type-array",
+        "void",
+        "undefined",
+        "type-function"
+    ]
+}

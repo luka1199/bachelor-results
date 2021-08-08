@@ -1,0 +1,38 @@
+{
+    "module": "traverse",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "traverse",
+            "exportAssignmentActual": "Traverse"
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "obj",
+                "type": {
+                    "kind": "generic_keyword",
+                    "value": "T"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "type-any",
+        "type-array",
+        "string",
+        "boolean",
+        "type-function",
+        "void",
+        "undefined",
+        "type-union",
+        "number",
+        "optional-parameter",
+        "generics-function",
+        "generics-interface"
+    ]
+}

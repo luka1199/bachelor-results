@@ -1,0 +1,27 @@
+{
+    "module": "oniguruma",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "number",
+        "type-array",
+        "string",
+        "readonly",
+        "type-intersection",
+        "type-any",
+        "void",
+        "type-function",
+        "generics-function",
+        "alias-type",
+        "type-union",
+        "optional-parameter",
+        "boolean",
+        "readonly-array"
+    ]
+}

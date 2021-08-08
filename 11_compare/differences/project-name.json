@@ -1,0 +1,15 @@
+{
+    "module": "project-name",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "index",
+            "exportAssignmentActual": "ProjectName"
+        }
+    ],
+    "tags": [
+        "string",
+        "optional-parameter"
+    ]
+}

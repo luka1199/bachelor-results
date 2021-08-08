@@ -1,0 +1,17 @@
+{
+    "module": "balanced-match",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "balanced",
+            "exportAssignmentActual": "BalancedMatch"
+        }
+    ],
+    "tags": [
+        "number",
+        "string",
+        "void",
+        "type-union"
+    ]
+}

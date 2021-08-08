@@ -1,0 +1,16 @@
+{
+    "module": "parse-numeric-range",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "type-array",
+        "number",
+        "string"
+    ]
+}

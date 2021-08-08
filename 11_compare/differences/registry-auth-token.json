@@ -1,0 +1,20 @@
+{
+    "module": "registry-auth-token",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "boolean",
+        "string",
+        "index-signature",
+        "undefined",
+        "type-union",
+        "literals"
+    ]
+}

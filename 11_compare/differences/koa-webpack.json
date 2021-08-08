@@ -1,0 +1,19 @@
+{
+    "module": "koa-webpack",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "type-union",
+        "boolean",
+        "type-function",
+        "void",
+        "type-any"
+    ]
+}

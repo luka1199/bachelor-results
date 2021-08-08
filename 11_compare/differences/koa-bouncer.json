@@ -1,0 +1,22 @@
+{
+    "module": "koa-bouncer",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "string",
+        "type-any",
+        "optional-parameter",
+        "type-function",
+        "type-array",
+        "number",
+        "void",
+        "type-reference-function",
+        "boolean"
+    ]
+}

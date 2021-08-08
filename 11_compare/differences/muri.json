@@ -1,0 +1,14 @@
+{
+    "module": "muri",
+    "template": "module-function",
+    "differences": [],
+    "tags": [
+        "string",
+        "type-array",
+        "number",
+        "type-union",
+        "alias-type",
+        "type-any",
+        "optional-parameter"
+    ]
+}

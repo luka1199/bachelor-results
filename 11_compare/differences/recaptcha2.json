@@ -1,0 +1,21 @@
+{
+    "module": "recaptcha2",
+    "template": "module-class",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-class",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "string",
+        "optional-parameter",
+        "boolean",
+        "literals",
+        "generics-function",
+        "generics-interface",
+        "object",
+        "type-array"
+    ]
+}

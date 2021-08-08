@@ -1,0 +1,17 @@
+{
+    "module": "is-even",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "isEven",
+            "exportAssignmentActual": "IsEven"
+        }
+    ],
+    "tags": [
+        "boolean",
+        "number",
+        "string",
+        "type-union"
+    ]
+}

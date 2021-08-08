@@ -1,0 +1,25 @@
+{
+    "module": "whatwg-url",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "string",
+        "number",
+        "type-tuple",
+        "alias-type",
+        "type-union",
+        "type-array",
+        "optional-parameter",
+        "boolean",
+        "literals",
+        "readonly",
+        "readonly-array",
+        "void"
+    ]
+}

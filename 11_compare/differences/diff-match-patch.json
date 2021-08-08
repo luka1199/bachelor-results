@@ -1,0 +1,23 @@
+{
+    "module": "diff-match-patch",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "type-array",
+        "number",
+        "string",
+        "type-tuple",
+        "alias-type",
+        "type-union",
+        "optional-parameter",
+        "boolean",
+        "void",
+        "index-signature"
+    ]
+}

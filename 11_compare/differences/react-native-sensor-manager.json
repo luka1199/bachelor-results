@@ -1,0 +1,19 @@
+{
+    "module": "react-native-sensor-manager",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "void",
+        "number",
+        "literals",
+        "type-union",
+        "type-function",
+        "boolean"
+    ]
+}

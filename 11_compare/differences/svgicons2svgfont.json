@@ -1,0 +1,22 @@
+{
+    "module": "svgicons2svgfont",
+    "template": "module-class",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-class",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "string",
+        "boolean",
+        "number",
+        "call-signature",
+        "void",
+        "type-function",
+        "type-any",
+        "type-array"
+    ]
+}

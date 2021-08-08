@@ -1,0 +1,111 @@
+{
+    "module": "pump",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "pump",
+            "exportAssignmentActual": "Pump"
+        },
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "pump",
+            "expectedNumberOfOverloadings": 2,
+            "actualNumberOfOverloadings": 1
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "streams",
+                "type": {
+                    "kind": "array_type",
+                    "value": {
+                        "kind": "union_type",
+                        "value": [
+                            {
+                                "kind": "type_reference",
+                                "value": "NodeJS.ReadableStream",
+                                "text": ""
+                            },
+                            {
+                                "kind": "type_reference",
+                                "value": "NodeJS.WritableStream",
+                                "text": ""
+                            }
+                        ]
+                    }
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "callback",
+                "type": {
+                    "kind": "function_type",
+                    "value": {
+                        "name": "",
+                        "returnType": {
+                            "kind": "any_keyword",
+                            "value": "any"
+                        },
+                        "parameters": [
+                            {
+                                "name": "err",
+                                "type": {
+                                    "kind": "type_reference",
+                                    "value": "Error",
+                                    "text": ""
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "modifiers": [],
+                        "typeParameters": [],
+                        "_isConstructor": false
+                    }
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "streams",
+                "type": {
+                    "kind": "array_type",
+                    "value": {
+                        "kind": "union_type",
+                        "value": [
+                            {
+                                "circular": true
+                            },
+                            {
+                                "circular": true
+                            }
+                        ]
+                    }
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": true
+            }
+        }
+    ],
+    "tags": [
+        "type-union",
+        "alias-type",
+        "type-array",
+        "optional-parameter",
+        "type-function",
+        "type-any",
+        "dot-dot-dot-token"
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "module": "wink-pos-tagger",
+    "template": "module-class",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-class",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "literals",
+        "type-any",
+        "type-array",
+        "string",
+        "type-union",
+        "alias-type",
+        "optional-parameter",
+        "void",
+        "object"
+    ]
+}

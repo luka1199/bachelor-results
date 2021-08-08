@@ -1,0 +1,19 @@
+{
+    "module": "gulp-ng-annotate",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "call-signature",
+        "optional-parameter",
+        "boolean",
+        "string",
+        "type-array",
+        "type-any"
+    ]
+}

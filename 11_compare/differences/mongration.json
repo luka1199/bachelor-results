@@ -1,0 +1,20 @@
+{
+    "module": "mongration",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "string",
+        "literals",
+        "type-union",
+        "type-function",
+        "void",
+        "type-array"
+    ]
+}

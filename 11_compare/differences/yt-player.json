@@ -1,0 +1,23 @@
+{
+    "module": "yt-player",
+    "template": "module-class",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-class",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "number",
+        "boolean",
+        "literals",
+        "string",
+        "type-union",
+        "void",
+        "type-array",
+        "alias-type",
+        "type-function"
+    ]
+}

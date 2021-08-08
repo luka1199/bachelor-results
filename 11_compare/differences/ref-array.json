@@ -1,0 +1,21 @@
+{
+    "module": "ref-array",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "number",
+        "index-signature",
+        "generics-function",
+        "type-array",
+        "string",
+        "call-signature",
+        "optional-parameter",
+        "generics-interface"
+    ]
+}

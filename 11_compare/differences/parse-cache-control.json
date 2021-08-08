@@ -1,0 +1,18 @@
+{
+    "module": "parse-cache-control",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "parseCacheControl",
+            "exportAssignmentActual": "ParseCacheControl"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "number",
+        "boolean",
+        "type-union",
+        "string"
+    ]
+}

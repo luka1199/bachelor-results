@@ -1,0 +1,25 @@
+{
+    "module": "kii-cloud-sdk",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "number",
+        "string",
+        "optional-parameter",
+        "index-signature",
+        "type-any",
+        "type-array",
+        "void",
+        "type-union",
+        "alias-type",
+        "generics-function",
+        "boolean",
+        "dot-dot-dot-token"
+    ]
+}

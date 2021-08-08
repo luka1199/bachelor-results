@@ -1,0 +1,38 @@
+{
+    "module": "is-url",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "isUrl",
+            "exportAssignmentActual": "IsUrl"
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "string",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "pid",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "boolean",
+        "string"
+    ]
+}

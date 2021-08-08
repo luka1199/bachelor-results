@@ -1,0 +1,24 @@
+{
+    "module": "spdx-expression-parse",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "parse",
+            "exportAssignmentActual": "SpdxExpressionParse"
+        },
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "parse",
+            "expectedNumberOfOverloadings": 1,
+            "actualNumberOfOverloadings": 3
+        }
+    ],
+    "tags": [
+        "string",
+        "optional-parameter",
+        "literals",
+        "type-union",
+        "alias-type"
+    ]
+}

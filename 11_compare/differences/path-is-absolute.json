@@ -1,0 +1,15 @@
+{
+    "module": "path-is-absolute",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "boolean",
+        "string"
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "module": "express-routes-versioning",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "routesVersioning",
+            "exportAssignmentActual": "ExpressRoutesVersioning"
+        }
+    ],
+    "tags": [
+        "index-signature",
+        "string",
+        "type-function",
+        "optional-parameter",
+        "alias-type"
+    ]
+}

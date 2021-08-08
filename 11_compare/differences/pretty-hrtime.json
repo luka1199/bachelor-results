@@ -1,0 +1,53 @@
+{
+    "module": "pretty-hrtime",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "prettyHrtime",
+            "exportAssignmentActual": "PrettyHrtime"
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "hrTime",
+                "type": {
+                    "kind": "tuple_type",
+                    "value": [
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "number"
+                        },
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "number"
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "source",
+                "type": {
+                    "kind": "array_type",
+                    "value": {
+                        "kind": "any_keyword",
+                        "value": "any"
+                    }
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "string",
+        "number",
+        "type-tuple",
+        "optional-parameter",
+        "boolean"
+    ]
+}

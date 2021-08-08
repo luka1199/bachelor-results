@@ -1,0 +1,21 @@
+{
+    "module": "bidirectional-map",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "index-signature",
+        "string",
+        "generics-function",
+        "number",
+        "void",
+        "boolean",
+        "generics-class"
+    ]
+}

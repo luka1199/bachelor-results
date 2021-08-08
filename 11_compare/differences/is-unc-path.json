@@ -1,0 +1,15 @@
+{
+    "module": "is-unc-path",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "isUncPath",
+            "exportAssignmentActual": "IsUncPath"
+        }
+    ],
+    "tags": [
+        "boolean",
+        "string"
+    ]
+}

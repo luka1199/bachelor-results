@@ -1,0 +1,23 @@
+{
+    "module": "emissary",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "type-any",
+        "string",
+        "type-reference-function",
+        "type-function",
+        "void",
+        "type-array",
+        "dot-dot-dot-token",
+        "number",
+        "boolean",
+        "optional-parameter"
+    ]
+}

@@ -1,0 +1,262 @@
+{
+    "module": "react-hyperscript",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "h",
+            "exportAssignmentActual": "ReactHyperscript"
+        },
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "h",
+            "expectedNumberOfOverloadings": 3,
+            "actualNumberOfOverloadings": 1
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "children",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "array_type",
+                            "value": {
+                                "kind": "union_type",
+                                "value": [
+                                    {
+                                        "kind": "type_reference",
+                                        "value": "ReactElement",
+                                        "text": ""
+                                    },
+                                    {
+                                        "kind": "primitive_keyword",
+                                        "value": "string"
+                                    },
+                                    {
+                                        "kind": "primitive_keyword",
+                                        "value": "number"
+                                    },
+                                    {
+                                        "kind": "primitive_keyword",
+                                        "value": "null"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "circular": true
+                        },
+                        {
+                            "kind": "undefined_keyword",
+                            "value": "undefined"
+                        }
+                    ]
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "tag",
+                "type": {
+                    "kind": "primitive_keyword",
+                    "value": "string"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "props",
+                "type": {
+                    "kind": "object_keyword",
+                    "value": "object"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "componentOrTag",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "ComponentClass",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "StatelessComponent",
+                            "text": ""
+                        },
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "tag",
+                "circular": true
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "children",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "array_type",
+                            "value": {
+                                "circular": true
+                            }
+                        },
+                        {
+                            "circular": true
+                        },
+                        {
+                            "kind": "undefined_keyword",
+                            "value": "undefined"
+                        }
+                    ]
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "props",
+                "circular": true
+            }
+        },
+        {
+            "code": "type-non-empty-intersection",
+            "parameterExpected": {
+                "name": "componentOrTag",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "ComponentClass<P>",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "StatelessComponent<P>",
+                            "text": ""
+                        },
+                        {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "tag",
+                "circular": true
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "properties",
+                "type": {
+                    "kind": "generic_keyword",
+                    "value": "P",
+                    "constraint": {
+                        "kind": "type_interface",
+                        "value": {
+                            "name": "",
+                            "properties": [],
+                            "methods": [],
+                            "classes": [],
+                            "callSignatures": [],
+                            "indexSignatures": [
+                                {
+                                    "parameter": {
+                                        "name": "attr",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    "type": {
+                                        "kind": "any_keyword",
+                                        "value": "any"
+                                    }
+                                }
+                            ],
+                            "typeParameters": []
+                        }
+                    }
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "props",
+                "circular": true
+            }
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "children",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "array_type",
+                            "value": {
+                                "circular": true
+                            }
+                        },
+                        {
+                            "circular": true
+                        }
+                    ]
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "readonly-array",
+        "type-array",
+        "string",
+        "number",
+        "type-union",
+        "alias-type",
+        "generics-function",
+        "index-signature",
+        "type-any"
+    ]
+}

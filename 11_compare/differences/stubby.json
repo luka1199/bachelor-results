@@ -1,0 +1,25 @@
+{
+    "module": "stubby",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "string",
+        "optional-parameter",
+        "literals",
+        "type-union",
+        "alias-type",
+        "type-array",
+        "index-signature",
+        "number",
+        "boolean",
+        "type-function",
+        "void",
+        "undefined"
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "module": "tsscmp",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "timeSafeCompare",
+            "exportAssignmentActual": "Tsscmp"
+        },
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "timeSafeCompare",
+            "expectedNumberOfOverloadings": 2,
+            "actualNumberOfOverloadings": 1
+        }
+    ],
+    "tags": [
+        "boolean",
+        "number",
+        "string"
+    ]
+}

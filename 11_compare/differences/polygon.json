@@ -1,0 +1,23 @@
+{
+    "module": "polygon",
+    "template": "module-class",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-class",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "type-array",
+        "readonly",
+        "number",
+        "type-union",
+        "type-function",
+        "type-any",
+        "optional-parameter",
+        "boolean",
+        "void",
+        "type-tuple"
+    ]
+}

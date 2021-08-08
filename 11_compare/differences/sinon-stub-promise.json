@@ -1,0 +1,32 @@
+{
+    "module": "sinon-stub-promise",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "sinonStubPromise",
+            "exportAssignmentActual": "SinonStubPromise"
+        },
+        {
+            "code": "extra-parameter",
+            "parameterExtra": {
+                "name": "stub",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Function",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "boolean",
+        "type-any",
+        "type-function",
+        "void",
+        "optional-parameter"
+    ]
+}

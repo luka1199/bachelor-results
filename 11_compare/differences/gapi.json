@@ -1,0 +1,29 @@
+{
+    "module": "gapi",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "string",
+        "optional-parameter",
+        "void",
+        "type-function",
+        "type-array",
+        "type-any",
+        "dot-dot-dot-token",
+        "alias-type",
+        "type-reference-function",
+        "number",
+        "type-union",
+        "boolean",
+        "generics-function",
+        "generics-interface",
+        "undefined",
+        "generics-class"
+    ]
+}

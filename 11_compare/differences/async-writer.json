@@ -1,0 +1,24 @@
+{
+    "module": "async-writer",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "call-signature",
+        "void",
+        "string",
+        "type-reference-function",
+        "type-function",
+        "optional-parameter",
+        "boolean",
+        "number",
+        "type-any",
+        "index-signature",
+        "type-union"
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "module": "object-merge",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "number",
+        "boolean",
+        "type-union",
+        "call-signature",
+        "object",
+        "type-array",
+        "dot-dot-dot-token",
+        "type-function"
+    ]
+}

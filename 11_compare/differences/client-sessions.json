@@ -1,0 +1,22 @@
+{
+    "module": "client-sessions",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "boolean",
+        "string",
+        "number",
+        "type-any",
+        "call-signature",
+        "type-function",
+        "void",
+        "alias-type"
+    ]
+}

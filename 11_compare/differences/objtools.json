@@ -1,0 +1,28 @@
+{
+    "module": "objtools",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "index-signature",
+        "string",
+        "type-array",
+        "boolean",
+        "type-union",
+        "alias-type",
+        "call-signature",
+        "void",
+        "type-any",
+        "literals",
+        "dot-dot-dot-token",
+        "optional-parameter",
+        "type-function",
+        "generics-function",
+        "type-intersection"
+    ]
+}

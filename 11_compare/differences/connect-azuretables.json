@@ -1,0 +1,57 @@
+{
+    "module": "connect-azuretables",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "connectAzureTable",
+            "exportAssignmentActual": "ConnectAzuretables"
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "session",
+                "type": {
+                    "kind": "function_type",
+                    "value": {
+                        "name": "",
+                        "returnType": {
+                            "kind": "type_reference",
+                            "value": "express.RequestHandler",
+                            "text": ""
+                        },
+                        "parameters": [
+                            {
+                                "name": "options",
+                                "type": {
+                                    "kind": "type_reference",
+                                    "value": "session.SessionOptions",
+                                    "text": ""
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "modifiers": [],
+                        "typeParameters": [],
+                        "_isConstructor": false
+                    }
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "void",
+        "literals",
+        "type-union",
+        "string",
+        "optional-parameter",
+        "type-function",
+        "type-any",
+        "number"
+    ]
+}

@@ -1,0 +1,136 @@
+{
+    "module": "deps-sort",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "depsSort",
+            "exportAssignmentActual": "DepsSort"
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "opts",
+                "type": {
+                    "kind": "type_interface",
+                    "value": {
+                        "name": "Options",
+                        "properties": [
+                            {
+                                "name": "index",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "boolean"
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "expose",
+                                "type": {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "array_type",
+                                            "value": {
+                                                "kind": "primitive_keyword",
+                                                "value": "string"
+                                            }
+                                        },
+                                        {
+                                            "kind": "type_interface",
+                                            "value": {
+                                                "name": "",
+                                                "properties": [],
+                                                "methods": [],
+                                                "classes": [],
+                                                "callSignatures": [],
+                                                "indexSignatures": [
+                                                    {
+                                                        "parameter": {
+                                                            "name": "name",
+                                                            "type": {
+                                                                "kind": "primitive_keyword",
+                                                                "value": "string"
+                                                            },
+                                                            "optional": false,
+                                                            "modifiers": [],
+                                                            "dotDotDotToken": false
+                                                        },
+                                                        "type": {
+                                                            "kind": "union_type",
+                                                            "value": [
+                                                                {
+                                                                    "kind": "primitive_keyword",
+                                                                    "value": "boolean"
+                                                                },
+                                                                {
+                                                                    "kind": "primitive_keyword",
+                                                                    "value": "string"
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                ],
+                                                "typeParameters": []
+                                            }
+                                        }
+                                    ]
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "dedupe",
+                                "type": {
+                                    "kind": "primitive_keyword",
+                                    "value": "boolean"
+                                },
+                                "optional": true,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "methods": [],
+                        "classes": [],
+                        "callSignatures": [],
+                        "indexSignatures": [
+                            {
+                                "parameter": {
+                                    "name": "prop",
+                                    "type": {
+                                        "kind": "primitive_keyword",
+                                        "value": "string"
+                                    },
+                                    "optional": false,
+                                    "modifiers": [],
+                                    "dotDotDotToken": false
+                                },
+                                "type": {
+                                    "kind": "any_keyword",
+                                    "value": "any"
+                                }
+                            }
+                        ],
+                        "typeParameters": []
+                    }
+                },
+                "optional": true,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "boolean",
+        "type-array",
+        "string",
+        "index-signature",
+        "type-union",
+        "type-any",
+        "number"
+    ]
+}

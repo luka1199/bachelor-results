@@ -1,0 +1,434 @@
+{
+    "module": "koa-compose",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "compose",
+            "exportAssignmentActual": "KoaCompose"
+        },
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "compose",
+            "expectedNumberOfOverloadings": 8,
+            "actualNumberOfOverloadings": 1
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "middleware",
+                "type": {
+                    "kind": "tuple_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "Koa.Middleware<T1, U1>",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Koa.Middleware<T2, U2>",
+                            "text": ""
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "middleware",
+                "type": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "Function",
+                            "text": ""
+                        },
+                        {
+                            "kind": "array_type",
+                            "value": {
+                                "kind": "any_keyword",
+                                "value": "any"
+                            }
+                        },
+                        {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "I__middleware",
+                                "properties": [
+                                    {
+                                        "name": "0",
+                                        "type": {
+                                            "kind": "type_reference",
+                                            "value": "Function",
+                                            "text": ""
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "length",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "methods": [],
+                                "classes": [],
+                                "callSignatures": [],
+                                "indexSignatures": [],
+                                "typeParameters": []
+                            }
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "middleware",
+                "type": {
+                    "kind": "tuple_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "Koa.Middleware<T1, U1>",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Koa.Middleware<T2, U2>",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Koa.Middleware<T3, U3>",
+                            "text": ""
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "middleware",
+                "circular": true
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "middleware",
+                "type": {
+                    "kind": "tuple_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "Koa.Middleware<T1, U1>",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Koa.Middleware<T2, U2>",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Koa.Middleware<T3, U3>",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Koa.Middleware<T4, U4>",
+                            "text": ""
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "middleware",
+                "circular": true
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "middleware",
+                "type": {
+                    "kind": "tuple_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "Koa.Middleware<T1, U1>",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Koa.Middleware<T2, U2>",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Koa.Middleware<T3, U3>",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Koa.Middleware<T4, U4>",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Koa.Middleware<T5, U5>",
+                            "text": ""
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "middleware",
+                "circular": true
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "middleware",
+                "type": {
+                    "kind": "tuple_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "Koa.Middleware<T1, U1>",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Koa.Middleware<T2, U2>",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Koa.Middleware<T3, U3>",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Koa.Middleware<T4, U4>",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Koa.Middleware<T5, U5>",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Koa.Middleware<T6, U6>",
+                            "text": ""
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "middleware",
+                "circular": true
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "middleware",
+                "type": {
+                    "kind": "tuple_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "Koa.Middleware<T1, U1>",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Koa.Middleware<T2, U2>",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Koa.Middleware<T3, U3>",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Koa.Middleware<T4, U4>",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Koa.Middleware<T5, U5>",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Koa.Middleware<T6, U6>",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Koa.Middleware<T7, U7>",
+                            "text": ""
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "middleware",
+                "circular": true
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "middleware",
+                "type": {
+                    "kind": "tuple_type",
+                    "value": [
+                        {
+                            "kind": "type_reference",
+                            "value": "Koa.Middleware<T1, U1>",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Koa.Middleware<T2, U2>",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Koa.Middleware<T3, U3>",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Koa.Middleware<T4, U4>",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Koa.Middleware<T5, U5>",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Koa.Middleware<T6, U6>",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Koa.Middleware<T7, U7>",
+                            "text": ""
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "Koa.Middleware<T8, U8>",
+                            "text": ""
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "middleware",
+                "circular": true
+            }
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "middleware",
+                "type": {
+                    "kind": "function_type",
+                    "value": {
+                        "name": "",
+                        "returnType": {
+                            "kind": "any_keyword",
+                            "value": "any"
+                        },
+                        "parameters": [
+                            {
+                                "name": "context",
+                                "type": {
+                                    "kind": "generic_keyword",
+                                    "value": "T"
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            },
+                            {
+                                "name": "next",
+                                "type": {
+                                    "kind": "type_reference",
+                                    "value": "Koa.Next",
+                                    "text": ""
+                                },
+                                "optional": false,
+                                "modifiers": [],
+                                "dotDotDotToken": false
+                            }
+                        ],
+                        "modifiers": [],
+                        "typeParameters": [],
+                        "_isConstructor": false
+                    }
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "middleware",
+                "type": {
+                    "circular": true
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "type-tuple",
+        "type-function",
+        "generics-function",
+        "optional-parameter",
+        "alias-type",
+        "type-array",
+        "type-any"
+    ]
+}

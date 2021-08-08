@@ -1,0 +1,26 @@
+{
+    "module": "tableau",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "type-array",
+        "string",
+        "optional-parameter",
+        "boolean",
+        "type-function",
+        "void",
+        "index-signature",
+        "type-any",
+        "generics-function",
+        "alias-type",
+        "type-union",
+        "number",
+        "object"
+    ]
+}

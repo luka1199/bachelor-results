@@ -1,0 +1,160 @@
+{
+    "module": "rechoir",
+    "template": "module",
+    "differences": [
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "prepare",
+                "returnType": {
+                    "kind": "union_type",
+                    "value": [
+                        {
+                            "kind": "literal_type",
+                            "value": "true"
+                        },
+                        {
+                            "kind": "array_type",
+                            "value": {
+                                "kind": "type_interface",
+                                "value": {
+                                    "name": "Attempt",
+                                    "properties": [
+                                        {
+                                            "name": "moduleName",
+                                            "type": {
+                                                "kind": "primitive_keyword",
+                                                "value": "string"
+                                            },
+                                            "optional": false,
+                                            "modifiers": [],
+                                            "dotDotDotToken": false
+                                        },
+                                        {
+                                            "name": "module",
+                                            "type": {
+                                                "kind": "any_keyword",
+                                                "value": "any"
+                                            },
+                                            "optional": false,
+                                            "modifiers": [],
+                                            "dotDotDotToken": false
+                                        },
+                                        {
+                                            "name": "error",
+                                            "type": {
+                                                "kind": "union_type",
+                                                "value": [
+                                                    {
+                                                        "kind": "type_reference",
+                                                        "value": "Error",
+                                                        "text": ""
+                                                    },
+                                                    {
+                                                        "kind": "primitive_keyword",
+                                                        "value": "null"
+                                                    }
+                                                ]
+                                            },
+                                            "optional": false,
+                                            "modifiers": [],
+                                            "dotDotDotToken": false
+                                        }
+                                    ],
+                                    "methods": [],
+                                    "classes": [],
+                                    "callSignatures": [],
+                                    "indexSignatures": [],
+                                    "typeParameters": []
+                                }
+                            }
+                        }
+                    ]
+                },
+                "parameters": [
+                    {
+                        "name": "config",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Extensions",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "filepath",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "requireFrom",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "registerFor",
+                "returnType": {
+                    "kind": "void_keyword",
+                    "value": "void"
+                },
+                "parameters": [
+                    {
+                        "name": "filepath",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "cwd",
+                        "type": {
+                            "kind": "undefined_keyword",
+                            "value": "undefined"
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        }
+    ],
+    "tags": [
+        "literals",
+        "type-array",
+        "string",
+        "type-any",
+        "type-union",
+        "optional-parameter"
+    ]
+}

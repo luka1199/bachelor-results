@@ -1,0 +1,42 @@
+{
+    "module": "yazl",
+    "template": "module",
+    "differences": [
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "dateToDosDateTime",
+                "returnType": {
+                    "kind": "object_keyword",
+                    "value": "object"
+                },
+                "parameters": [
+                    {
+                        "name": "jsDate",
+                        "type": {
+                            "kind": "type_reference",
+                            "value": "Date",
+                            "text": ""
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        }
+    ],
+    "tags": [
+        "number",
+        "boolean",
+        "void",
+        "string",
+        "optional-parameter",
+        "type-function"
+    ]
+}

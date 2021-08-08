@@ -1,0 +1,26 @@
+{
+    "module": "rewire",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "rewire",
+            "exportAssignmentActual": "Rewire"
+        },
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "rewire",
+            "expectedNumberOfOverloadings": 1,
+            "actualNumberOfOverloadings": 2
+        }
+    ],
+    "tags": [
+        "type-function",
+        "void",
+        "index-signature",
+        "string",
+        "type-any",
+        "generics-function",
+        "type-intersection"
+    ]
+}

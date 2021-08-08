@@ -1,0 +1,16 @@
+{
+    "module": "custom-error-generator",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "type-any",
+        "string",
+        "optional-parameter"
+    ]
+}

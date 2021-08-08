@@ -1,0 +1,24 @@
+{
+    "module": "oauth2orize",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "type-any",
+        "string",
+        "boolean",
+        "number",
+        "literals",
+        "type-union",
+        "alias-type",
+        "type-function",
+        "void",
+        "type-array"
+    ]
+}

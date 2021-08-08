@@ -1,0 +1,20 @@
+{
+    "module": "passport-instagram-token",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "string",
+        "type-any",
+        "optional-parameter",
+        "literals",
+        "type-function",
+        "void",
+        "object"
+    ]
+}

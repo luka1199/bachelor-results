@@ -1,0 +1,25 @@
+{
+    "module": "spdy",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "type-union",
+        "type-any",
+        "optional-parameter",
+        "number",
+        "boolean",
+        "string",
+        "type-array",
+        "object",
+        "alias-type",
+        "type-function",
+        "void",
+        "literals"
+    ]
+}

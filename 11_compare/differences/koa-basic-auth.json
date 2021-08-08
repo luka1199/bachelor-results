@@ -1,0 +1,14 @@
+{
+    "module": "koa-basic-auth",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "auth",
+            "exportAssignmentActual": "KoaBasicAuth"
+        }
+    ],
+    "tags": [
+        "string"
+    ]
+}

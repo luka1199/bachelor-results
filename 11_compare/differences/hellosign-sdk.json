@@ -1,0 +1,28 @@
+{
+    "module": "hellosign-sdk",
+    "template": "module-class",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-class",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "string",
+        "type-union",
+        "alias-type",
+        "optional-parameter",
+        "number",
+        "type-array",
+        "boolean",
+        "generics-function",
+        "index-signature",
+        "type-any",
+        "type-intersection",
+        "literals",
+        "generics-interface",
+        "void",
+        "type-function"
+    ]
+}

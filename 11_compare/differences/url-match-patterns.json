@@ -1,0 +1,16 @@
+{
+    "module": "url-match-patterns",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "type-function",
+        "boolean",
+        "string"
+    ]
+}

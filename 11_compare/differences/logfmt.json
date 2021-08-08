@@ -1,0 +1,23 @@
+{
+    "module": "logfmt",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "void",
+        "string",
+        "optional-parameter",
+        "boolean",
+        "call-signature",
+        "type-function",
+        "type-any",
+        "alias-type",
+        "object",
+        "number"
+    ]
+}

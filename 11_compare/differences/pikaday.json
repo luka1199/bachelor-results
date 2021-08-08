@@ -1,0 +1,21 @@
+{
+    "module": "pikaday",
+    "template": "module-class",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-class",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "type-union",
+        "string",
+        "boolean",
+        "number",
+        "type-array",
+        "void",
+        "type-any"
+    ]
+}

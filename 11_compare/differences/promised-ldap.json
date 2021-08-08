@@ -1,0 +1,21 @@
+{
+    "module": "promised-ldap",
+    "template": "module-class",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-class",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "string",
+        "optional-parameter",
+        "type-array",
+        "type-union",
+        "object",
+        "boolean",
+        "void",
+        "type-any"
+    ]
+}

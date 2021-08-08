@@ -1,0 +1,21 @@
+{
+    "module": "bintrees",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "generics-function",
+        "type-union",
+        "generics-class",
+        "number",
+        "void",
+        "type-function",
+        "alias-type",
+        "boolean"
+    ]
+}

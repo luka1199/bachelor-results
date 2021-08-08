@@ -1,0 +1,22 @@
+{
+    "module": "commonmark-react-renderer",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "string",
+        "type-union",
+        "optional-parameter",
+        "boolean",
+        "type-array",
+        "number",
+        "undefined",
+        "type-function",
+        "literals"
+    ]
+}

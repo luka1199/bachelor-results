@@ -1,0 +1,30 @@
+{
+    "module": "director",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "index-signature",
+        "string",
+        "generics-function",
+        "type-union",
+        "alias-type",
+        "generics-interface",
+        "optional-parameter",
+        "literals",
+        "boolean",
+        "type-function",
+        "type-any",
+        "type-array",
+        "dot-dot-dot-token",
+        "void",
+        "generics-class",
+        "undefined",
+        "readonly"
+    ]
+}

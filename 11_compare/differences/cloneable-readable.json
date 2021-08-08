@@ -1,0 +1,17 @@
+{
+    "module": "cloneable-readable",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "call-signature",
+        "generics-function",
+        "alias-type",
+        "type-intersection"
+    ]
+}

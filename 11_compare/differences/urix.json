@@ -1,0 +1,14 @@
+{
+    "module": "urix",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "urix",
+            "exportAssignmentActual": "Urix"
+        }
+    ],
+    "tags": [
+        "string"
+    ]
+}

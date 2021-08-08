@@ -1,0 +1,22 @@
+{
+    "module": "express-fileupload",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "boolean",
+        "type-union",
+        "number",
+        "string",
+        "index-signature",
+        "type-any",
+        "void",
+        "type-function"
+    ]
+}

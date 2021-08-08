@@ -1,0 +1,42 @@
+{
+    "module": "circle-to-polygon",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "circleToPolygon",
+            "exportAssignmentActual": "CircleToPolygon"
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "center",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "GeoJSON.Position",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "center",
+                "type": {
+                    "kind": "array_type",
+                    "value": {
+                        "kind": "any_keyword",
+                        "value": "any"
+                    }
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "number",
+        "optional-parameter"
+    ]
+}

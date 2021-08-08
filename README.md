@@ -354,3 +354,15 @@ Log codes:
 Format: `moduleName - logCode`
 
 Amount of valid run-time info files: 1243
+
+## 11_compare
+
+### `comparison.csv`
+
+Comparison of all generated declaration files with their counter parts of DefinitelyTyped.
+
+Format: `ModuleName,Template,template-is-different,type-solvable-difference,type-unsolvable-difference,extra-parameter,missing-parameter,function-missing,function-extra,function-overloading-difference,export-assignment-is-different`
+
+### `differences/<module>.json`
+
+Comparison of each generated declaration files with its counter part of DefinitelyTyped in JSON format.

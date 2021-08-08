@@ -1,0 +1,22 @@
+{
+    "module": "koa-ejs",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "type-function",
+        "string",
+        "optional-parameter",
+        "index-signature",
+        "type-any",
+        "void",
+        "literals",
+        "type-union",
+        "boolean"
+    ]
+}

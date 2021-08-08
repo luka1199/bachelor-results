@@ -1,0 +1,29 @@
+{
+    "module": "coinbase-commerce-node",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "string",
+        "literals",
+        "type-union",
+        "number",
+        "index-signature",
+        "type-any",
+        "generics-function",
+        "alias-type",
+        "generics-interface",
+        "optional-parameter",
+        "type-tuple",
+        "type-array",
+        "type-function",
+        "void",
+        "generics-class",
+        "type-intersection"
+    ]
+}

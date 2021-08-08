@@ -1,0 +1,20 @@
+{
+    "module": "express-flash-2",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "index-signature",
+        "string",
+        "type-array",
+        "type-any",
+        "void",
+        "type-union"
+    ]
+}

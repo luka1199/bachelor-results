@@ -1,0 +1,19 @@
+{
+    "module": "aws4",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "type-any",
+        "type-array",
+        "string",
+        "boolean",
+        "void"
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "module": "parsimmon",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "literals",
+        "generics-function",
+        "generics-interface",
+        "type-array",
+        "string",
+        "number",
+        "type-union",
+        "alias-type",
+        "type-function",
+        "boolean",
+        "index-signature",
+        "type-any",
+        "optional-parameter",
+        "dot-dot-dot-token",
+        "type-tuple"
+    ]
+}

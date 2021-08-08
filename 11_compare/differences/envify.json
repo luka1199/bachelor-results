@@ -1,0 +1,17 @@
+{
+    "module": "envify",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "type-function",
+        "string",
+        "index-signature",
+        "type-any"
+    ]
+}

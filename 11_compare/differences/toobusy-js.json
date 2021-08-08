@@ -1,0 +1,18 @@
+{
+    "module": "toobusy-js",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "toobusy_js",
+            "exportAssignmentActual": "ToobusyJs"
+        }
+    ],
+    "tags": [
+        "boolean",
+        "number",
+        "optional-parameter",
+        "void",
+        "type-function"
+    ]
+}

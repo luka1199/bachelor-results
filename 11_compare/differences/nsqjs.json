@@ -1,0 +1,26 @@
+{
+    "module": "nsqjs",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "string",
+        "static",
+        "number",
+        "readonly",
+        "boolean",
+        "type-any",
+        "type-union",
+        "optional-parameter",
+        "void",
+        "literals",
+        "type-function",
+        "object",
+        "type-array"
+    ]
+}

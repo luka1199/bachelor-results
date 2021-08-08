@@ -1,0 +1,43 @@
+{
+    "module": "pleasejs",
+    "template": "module",
+    "differences": [
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "create",
+                "returnType": {
+                    "kind": "type_reference",
+                    "value": "Pipeline",
+                    "text": ""
+                },
+                "parameters": [
+                    {
+                        "name": "name",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        }
+    ],
+    "tags": [
+        "type-array",
+        "string",
+        "number",
+        "type-union",
+        "optional-parameter",
+        "boolean",
+        "undefined"
+    ]
+}

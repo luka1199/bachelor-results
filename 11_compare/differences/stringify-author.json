@@ -1,0 +1,38 @@
+{
+    "module": "stringify-author",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "stringify",
+            "exportAssignmentActual": "StringifyAuthor"
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "author",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Author",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "author",
+                "type": {
+                    "kind": "object_keyword",
+                    "value": "object"
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "string"
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "module": "ssb-keys",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "string",
+        "optional-parameter",
+        "void",
+        "type-function",
+        "type-any",
+        "type-union",
+        "generics-function",
+        "object",
+        "type-intersection",
+        "boolean",
+        "number",
+        "readonly-array",
+        "type-array",
+        "undefined"
+    ]
+}

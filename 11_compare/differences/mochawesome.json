@@ -1,0 +1,24 @@
+{
+    "module": "mochawesome",
+    "template": "module-class",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-class",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "boolean",
+        "string",
+        "optional-parameter",
+        "number",
+        "type-array",
+        "type-union",
+        "literals",
+        "type-intersection",
+        "alias-type",
+        "type-function",
+        "void"
+    ]
+}

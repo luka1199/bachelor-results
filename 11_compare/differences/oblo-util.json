@@ -1,0 +1,22 @@
+{
+    "module": "oblo-util",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "boolean",
+        "void",
+        "type-array",
+        "type-any",
+        "dot-dot-dot-token",
+        "number",
+        "generics-function",
+        "string",
+        "optional-parameter"
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "module": "markdown-pdf",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "void",
+        "string",
+        "optional-parameter",
+        "type-function",
+        "type-any",
+        "alias-type",
+        "type-intersection",
+        "type-array",
+        "type-union",
+        "number",
+        "literals"
+    ]
+}

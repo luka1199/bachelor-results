@@ -1,0 +1,27 @@
+{
+    "module": "kue",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "string",
+        "type-any",
+        "type-array",
+        "boolean",
+        "void",
+        "optional-parameter",
+        "static",
+        "number",
+        "type-reference-function",
+        "type-function",
+        "alias-type",
+        "type-union",
+        "public",
+        "private"
+    ]
+}

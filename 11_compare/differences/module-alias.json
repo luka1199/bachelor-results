@@ -1,0 +1,19 @@
+{
+    "module": "module-alias",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "void",
+        "optional-parameter",
+        "string",
+        "type-union",
+        "boolean",
+        "index-signature"
+    ]
+}

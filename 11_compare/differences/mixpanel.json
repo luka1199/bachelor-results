@@ -1,0 +1,25 @@
+{
+    "module": "mixpanel",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "void",
+        "string",
+        "type-any",
+        "optional-parameter",
+        "type-function",
+        "index-signature",
+        "type-array",
+        "type-union",
+        "number",
+        "boolean",
+        "literals",
+        "alias-type"
+    ]
+}

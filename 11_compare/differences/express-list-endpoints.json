@@ -1,0 +1,40 @@
+{
+    "module": "express-list-endpoints",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "listEndpoints",
+            "exportAssignmentActual": "ExpressListEndpoints"
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "app",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "express.Express",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "app",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Function",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "type-array",
+        "string"
+    ]
+}

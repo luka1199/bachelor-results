@@ -1,0 +1,88 @@
+{
+    "module": "saywhen",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "when",
+            "exportAssignmentActual": "Saywhen"
+        },
+        {
+            "code": "type-empty-intersection",
+            "parameterExpected": {
+                "name": "spy",
+                "type": {
+                    "kind": "intersection_type",
+                    "value": [
+                        {
+                            "kind": "generic_keyword",
+                            "value": "T",
+                            "constraint": {
+                                "kind": "function_type",
+                                "value": {
+                                    "name": "",
+                                    "returnType": {
+                                        "kind": "any_keyword",
+                                        "value": "any"
+                                    },
+                                    "parameters": [
+                                        {
+                                            "name": "args",
+                                            "type": {
+                                                "kind": "array_type",
+                                                "value": {
+                                                    "kind": "any_keyword",
+                                                    "value": "any"
+                                                }
+                                            },
+                                            "optional": false,
+                                            "modifiers": [],
+                                            "dotDotDotToken": true
+                                        }
+                                    ],
+                                    "modifiers": [],
+                                    "typeParameters": [],
+                                    "_isConstructor": false
+                                }
+                            }
+                        },
+                        {
+                            "kind": "type_reference",
+                            "value": "jasmine.Spy",
+                            "text": ""
+                        }
+                    ]
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            },
+            "parameterActual": {
+                "name": "spy",
+                "type": {
+                    "kind": "type_reference",
+                    "value": "Function",
+                    "text": ""
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": false
+            }
+        }
+    ],
+    "tags": [
+        "generics-function",
+        "type-function",
+        "type-any",
+        "type-array",
+        "dot-dot-dot-token",
+        "alias-type",
+        "generics-interface",
+        "readonly",
+        "type-intersection",
+        "call-signature",
+        "boolean",
+        "optional-parameter",
+        "void"
+    ]
+}

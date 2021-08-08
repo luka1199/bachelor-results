@@ -1,0 +1,25 @@
+{
+    "module": "express-boom",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "e",
+            "exportAssignmentActual": "ExpressBoom"
+        }
+    ],
+    "tags": [
+        "generics-function",
+        "type-function",
+        "void",
+        "boolean",
+        "string",
+        "number",
+        "index-signature",
+        "optional-parameter",
+        "type-any",
+        "generics-interface",
+        "type-array",
+        "type-union"
+    ]
+}

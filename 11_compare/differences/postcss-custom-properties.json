@@ -1,0 +1,16 @@
+{
+    "module": "postcss-custom-properties",
+    "template": "module",
+    "differences": [],
+    "tags": [
+        "optional-parameter",
+        "index-signature",
+        "string",
+        "boolean",
+        "type-function",
+        "type-union",
+        "alias-type",
+        "type-array",
+        "type-any"
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "module": "jjv",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "jjv",
+            "exportAssignmentActual": "Jjv"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "boolean",
+        "void",
+        "string",
+        "type-function",
+        "type-any",
+        "index-signature"
+    ]
+}

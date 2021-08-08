@@ -1,0 +1,19 @@
+{
+    "module": "fossil-delta",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "type-array",
+        "number",
+        "type-union",
+        "alias-type",
+        "optional-parameter",
+        "boolean"
+    ]
+}

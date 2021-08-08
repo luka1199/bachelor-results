@@ -1,0 +1,17 @@
+{
+    "module": "create-hmac",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "literals",
+        "type-union",
+        "alias-type",
+        "string"
+    ]
+}

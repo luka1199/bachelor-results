@@ -1,0 +1,969 @@
+{
+    "module": "d3-contour",
+    "template": "module",
+    "differences": [
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "contours",
+                "returnType": {
+                    "kind": "type_interface",
+                    "value": {
+                        "name": "Contours",
+                        "properties": [],
+                        "methods": [
+                            {
+                                "name": "contour",
+                                "returnType": {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "ContourMultiPolygon",
+                                        "properties": [
+                                            {
+                                                "name": "value",
+                                                "type": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "number"
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "methods": [],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [],
+                                        "typeParameters": []
+                                    }
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "values",
+                                        "type": {
+                                            "kind": "array_type",
+                                            "value": {
+                                                "kind": "primitive_keyword",
+                                                "value": "number"
+                                            }
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "threshold",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "size",
+                                "returnType": {
+                                    "kind": "tuple_type",
+                                    "value": [
+                                        {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        }
+                                    ]
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "size",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "this"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "size",
+                                        "type": {
+                                            "kind": "tuple_type",
+                                            "value": [
+                                                {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "number"
+                                                },
+                                                {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "number"
+                                                }
+                                            ]
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "smooth",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "boolean"
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "smooth",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "this"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "smooth",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "boolean"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "thresholds",
+                                "returnType": {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "ThresholdCountGenerator<number>",
+                                            "text": ""
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "ThresholdNumberArrayGenerator<number>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "thresholds",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "this"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "count",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "thresholds",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "this"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "thresholds",
+                                        "type": {
+                                            "kind": "array_type",
+                                            "value": {
+                                                "kind": "primitive_keyword",
+                                                "value": "number"
+                                            }
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "thresholds",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "this"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "thresholds",
+                                        "type": {
+                                            "kind": "union_type",
+                                            "value": [
+                                                {
+                                                    "kind": "type_reference",
+                                                    "value": "ThresholdCountGenerator<number>",
+                                                    "text": ""
+                                                },
+                                                {
+                                                    "kind": "type_reference",
+                                                    "value": "ThresholdNumberArrayGenerator<number>",
+                                                    "text": ""
+                                                }
+                                            ]
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            }
+                        ],
+                        "classes": [],
+                        "callSignatures": [
+                            {
+                                "name": "",
+                                "returnType": {
+                                    "kind": "array_type",
+                                    "value": {
+                                        "kind": "type_interface",
+                                        "value": {
+                                            "name": "ContourMultiPolygon",
+                                            "circular": true
+                                        }
+                                    }
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "values",
+                                        "type": {
+                                            "kind": "array_type",
+                                            "value": {
+                                                "kind": "primitive_keyword",
+                                                "value": "number"
+                                            }
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            }
+                        ],
+                        "indexSignatures": [],
+                        "typeParameters": []
+                    }
+                },
+                "parameters": [],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "contourDensity",
+                "returnType": {
+                    "kind": "type_interface",
+                    "value": {
+                        "name": "ContourDensity",
+                        "properties": [],
+                        "methods": [
+                            {
+                                "name": "x",
+                                "returnType": {
+                                    "kind": "function_type",
+                                    "value": {
+                                        "name": "",
+                                        "returnType": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "parameters": [
+                                            {
+                                                "name": "d",
+                                                "type": {
+                                                    "kind": "generic_keyword",
+                                                    "value": "Datum",
+                                                    "defaultValue": {
+                                                        "kind": "tuple_type",
+                                                        "value": [
+                                                            {
+                                                                "kind": "primitive_keyword",
+                                                                "value": "number"
+                                                            },
+                                                            {
+                                                                "kind": "primitive_keyword",
+                                                                "value": "number"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "modifiers": [],
+                                        "typeParameters": [],
+                                        "_isConstructor": false
+                                    }
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "x",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "this"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "x",
+                                        "type": {
+                                            "kind": "function_type",
+                                            "value": {
+                                                "name": "",
+                                                "returnType": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "number"
+                                                },
+                                                "parameters": [
+                                                    {
+                                                        "name": "d",
+                                                        "type": {
+                                                            "circular": true
+                                                        },
+                                                        "optional": false,
+                                                        "modifiers": [],
+                                                        "dotDotDotToken": false
+                                                    }
+                                                ],
+                                                "modifiers": [],
+                                                "typeParameters": [],
+                                                "_isConstructor": false
+                                            }
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "y",
+                                "returnType": {
+                                    "kind": "function_type",
+                                    "value": {
+                                        "name": "",
+                                        "returnType": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "parameters": [
+                                            {
+                                                "name": "d",
+                                                "type": {
+                                                    "circular": true
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "modifiers": [],
+                                        "typeParameters": [],
+                                        "_isConstructor": false
+                                    }
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "y",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "this"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "y",
+                                        "type": {
+                                            "kind": "function_type",
+                                            "value": {
+                                                "name": "",
+                                                "returnType": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "number"
+                                                },
+                                                "parameters": [
+                                                    {
+                                                        "name": "d",
+                                                        "type": {
+                                                            "circular": true
+                                                        },
+                                                        "optional": false,
+                                                        "modifiers": [],
+                                                        "dotDotDotToken": false
+                                                    }
+                                                ],
+                                                "modifiers": [],
+                                                "typeParameters": [],
+                                                "_isConstructor": false
+                                            }
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "weight",
+                                "returnType": {
+                                    "kind": "function_type",
+                                    "value": {
+                                        "name": "",
+                                        "returnType": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "parameters": [
+                                            {
+                                                "name": "d",
+                                                "type": {
+                                                    "circular": true
+                                                },
+                                                "optional": false,
+                                                "modifiers": [],
+                                                "dotDotDotToken": false
+                                            }
+                                        ],
+                                        "modifiers": [],
+                                        "typeParameters": [],
+                                        "_isConstructor": false
+                                    }
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "weight",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "this"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "weight",
+                                        "type": {
+                                            "kind": "function_type",
+                                            "value": {
+                                                "name": "",
+                                                "returnType": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "number"
+                                                },
+                                                "parameters": [
+                                                    {
+                                                        "name": "d",
+                                                        "type": {
+                                                            "circular": true
+                                                        },
+                                                        "optional": false,
+                                                        "modifiers": [],
+                                                        "dotDotDotToken": false
+                                                    }
+                                                ],
+                                                "modifiers": [],
+                                                "typeParameters": [],
+                                                "_isConstructor": false
+                                            }
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "size",
+                                "returnType": {
+                                    "kind": "tuple_type",
+                                    "value": [
+                                        {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        }
+                                    ]
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "size",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "this"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "size",
+                                        "type": {
+                                            "kind": "tuple_type",
+                                            "value": [
+                                                {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "number"
+                                                },
+                                                {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "number"
+                                                }
+                                            ]
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "cellSize",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "number"
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "cellSize",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "this"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "cellSize",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "thresholds",
+                                "returnType": {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "ThresholdCountGenerator<number>",
+                                            "text": ""
+                                        },
+                                        {
+                                            "kind": "type_reference",
+                                            "value": "ThresholdNumberArrayGenerator<number>",
+                                            "text": ""
+                                        }
+                                    ]
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "thresholds",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "this"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "count",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "thresholds",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "this"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "thresholds",
+                                        "type": {
+                                            "kind": "array_type",
+                                            "value": {
+                                                "kind": "primitive_keyword",
+                                                "value": "number"
+                                            }
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "thresholds",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "this"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "thresholds",
+                                        "type": {
+                                            "kind": "union_type",
+                                            "value": [
+                                                {
+                                                    "kind": "type_reference",
+                                                    "value": "ThresholdCountGenerator<number>",
+                                                    "text": ""
+                                                },
+                                                {
+                                                    "kind": "type_reference",
+                                                    "value": "ThresholdNumberArrayGenerator<number>",
+                                                    "text": ""
+                                                }
+                                            ]
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "bandwidth",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "number"
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "bandwidth",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "this"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "bandwidth",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            }
+                        ],
+                        "classes": [],
+                        "callSignatures": [
+                            {
+                                "name": "",
+                                "returnType": {
+                                    "kind": "array_type",
+                                    "value": {
+                                        "kind": "type_interface",
+                                        "value": {
+                                            "name": "ContourMultiPolygon",
+                                            "circular": true
+                                        }
+                                    }
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "data",
+                                        "type": {
+                                            "kind": "array_type",
+                                            "value": {
+                                                "circular": true
+                                            }
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            }
+                        ],
+                        "indexSignatures": [],
+                        "typeParameters": [
+                            {
+                                "circular": true
+                            }
+                        ]
+                    }
+                },
+                "parameters": [],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [
+                    {
+                        "kind": "generic_keyword",
+                        "value": "Datum",
+                        "defaultValue": {
+                            "kind": "tuple_type",
+                            "value": [
+                                {
+                                    "kind": "primitive_keyword",
+                                    "value": "number"
+                                },
+                                {
+                                    "kind": "primitive_keyword",
+                                    "value": "number"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "roll",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "parameters": [
+                    {
+                        "name": "dice",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "primitive_keyword",
+                                    "value": "number"
+                                },
+                                {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "verbose",
+                        "type": {
+                            "kind": "undefined_keyword",
+                            "value": "undefined"
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "roll",
+                "returnType": {
+                    "kind": "array_type",
+                    "value": {
+                        "kind": "any_keyword",
+                        "value": "any"
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "dice",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "verbose",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "boolean"
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "verboseRoll",
+                "returnType": {
+                    "kind": "array_type",
+                    "value": {
+                        "kind": "any_keyword",
+                        "value": "any"
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "dice",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "primitive_keyword",
+                                    "value": "number"
+                                },
+                                {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        }
+    ],
+    "tags": [
+        "number",
+        "call-signature",
+        "type-array",
+        "type-tuple",
+        "boolean",
+        "type-union",
+        "generics-function",
+        "type-function",
+        "generics-interface"
+    ]
+}

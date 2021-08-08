@@ -1,0 +1,1241 @@
+{
+    "module": "d3-axis",
+    "template": "module",
+    "differences": [
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "axisTop",
+                "returnType": {
+                    "kind": "type_interface",
+                    "value": {
+                        "name": "Axis",
+                        "properties": [],
+                        "methods": [
+                            {
+                                "name": "scale",
+                                "returnType": {
+                                    "kind": "generic_keyword",
+                                    "value": "A",
+                                    "constraint": {
+                                        "kind": "type_interface",
+                                        "value": {
+                                            "name": "AxisScale",
+                                            "properties": [],
+                                            "methods": [
+                                                {
+                                                    "name": "domain",
+                                                    "returnType": {
+                                                        "kind": "array_type",
+                                                        "value": {
+                                                            "kind": "generic_keyword",
+                                                            "value": "Domain"
+                                                        }
+                                                    },
+                                                    "parameters": [],
+                                                    "modifiers": [],
+                                                    "typeParameters": [],
+                                                    "_isConstructor": false
+                                                },
+                                                {
+                                                    "name": "range",
+                                                    "returnType": {
+                                                        "kind": "array_type",
+                                                        "value": {
+                                                            "kind": "primitive_keyword",
+                                                            "value": "number"
+                                                        }
+                                                    },
+                                                    "parameters": [],
+                                                    "modifiers": [],
+                                                    "typeParameters": [],
+                                                    "_isConstructor": false
+                                                },
+                                                {
+                                                    "name": "copy",
+                                                    "returnType": {
+                                                        "kind": "primitive_keyword",
+                                                        "value": "this"
+                                                    },
+                                                    "parameters": [],
+                                                    "modifiers": [],
+                                                    "typeParameters": [],
+                                                    "_isConstructor": false
+                                                },
+                                                {
+                                                    "name": "bandwidth",
+                                                    "returnType": {
+                                                        "kind": "primitive_keyword",
+                                                        "value": "number"
+                                                    },
+                                                    "parameters": [],
+                                                    "modifiers": [],
+                                                    "typeParameters": [],
+                                                    "_isConstructor": false
+                                                }
+                                            ],
+                                            "classes": [],
+                                            "callSignatures": [
+                                                {
+                                                    "name": "",
+                                                    "returnType": {
+                                                        "kind": "union_type",
+                                                        "value": [
+                                                            {
+                                                                "kind": "primitive_keyword",
+                                                                "value": "number"
+                                                            },
+                                                            {
+                                                                "kind": "undefined_keyword",
+                                                                "value": "undefined"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "parameters": [
+                                                        {
+                                                            "name": "x",
+                                                            "type": {
+                                                                "circular": true
+                                                            },
+                                                            "optional": false,
+                                                            "modifiers": [],
+                                                            "dotDotDotToken": false
+                                                        }
+                                                    ],
+                                                    "modifiers": [],
+                                                    "typeParameters": [],
+                                                    "_isConstructor": false
+                                                }
+                                            ],
+                                            "indexSignatures": [],
+                                            "typeParameters": [
+                                                {
+                                                    "circular": true
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [
+                                    {
+                                        "circular": true
+                                    }
+                                ],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "scale",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "this"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "scale",
+                                        "type": {
+                                            "kind": "type_interface",
+                                            "value": {
+                                                "name": "AxisScale",
+                                                "circular": true
+                                            }
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "ticks",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "this"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "count",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "specifier",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "ticks",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "this"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "interval",
+                                        "type": {
+                                            "kind": "type_interface",
+                                            "value": {
+                                                "name": "AxisTimeInterval",
+                                                "properties": [],
+                                                "methods": [
+                                                    {
+                                                        "name": "range",
+                                                        "returnType": {
+                                                            "kind": "array_type",
+                                                            "value": {
+                                                                "kind": "type_reference",
+                                                                "value": "Date",
+                                                                "text": ""
+                                                            }
+                                                        },
+                                                        "parameters": [
+                                                            {
+                                                                "name": "start",
+                                                                "type": {
+                                                                    "kind": "type_reference",
+                                                                    "value": "Date",
+                                                                    "text": ""
+                                                                },
+                                                                "optional": false,
+                                                                "modifiers": [],
+                                                                "dotDotDotToken": false
+                                                            },
+                                                            {
+                                                                "name": "stop",
+                                                                "type": {
+                                                                    "kind": "type_reference",
+                                                                    "value": "Date",
+                                                                    "text": ""
+                                                                },
+                                                                "optional": false,
+                                                                "modifiers": [],
+                                                                "dotDotDotToken": false
+                                                            },
+                                                            {
+                                                                "name": "step",
+                                                                "type": {
+                                                                    "kind": "primitive_keyword",
+                                                                    "value": "number"
+                                                                },
+                                                                "optional": true,
+                                                                "modifiers": [],
+                                                                "dotDotDotToken": false
+                                                            }
+                                                        ],
+                                                        "modifiers": [],
+                                                        "typeParameters": [],
+                                                        "_isConstructor": false
+                                                    }
+                                                ],
+                                                "classes": [],
+                                                "callSignatures": [],
+                                                "indexSignatures": [],
+                                                "typeParameters": []
+                                            }
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "specifier",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "string"
+                                        },
+                                        "optional": true,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "ticks",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "this"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "arg0",
+                                        "type": {
+                                            "kind": "any_keyword",
+                                            "value": "any"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    },
+                                    {
+                                        "name": "args",
+                                        "type": {
+                                            "kind": "array_type",
+                                            "value": {
+                                                "kind": "any_keyword",
+                                                "value": "any"
+                                            }
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": true
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "tickArguments",
+                                "returnType": {
+                                    "kind": "array_type",
+                                    "value": {
+                                        "kind": "any_keyword",
+                                        "value": "any"
+                                    }
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "tickArguments",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "this"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "args",
+                                        "type": {
+                                            "kind": "tuple_type",
+                                            "value": [
+                                                {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "number"
+                                                }
+                                            ]
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "tickArguments",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "this"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "args",
+                                        "type": {
+                                            "kind": "tuple_type",
+                                            "value": [
+                                                {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "number"
+                                                },
+                                                {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "string"
+                                                }
+                                            ]
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "tickArguments",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "this"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "args",
+                                        "type": {
+                                            "kind": "tuple_type",
+                                            "value": [
+                                                {
+                                                    "kind": "type_interface",
+                                                    "value": {
+                                                        "name": "AxisTimeInterval",
+                                                        "circular": true
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "tickArguments",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "this"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "args",
+                                        "type": {
+                                            "kind": "tuple_type",
+                                            "value": [
+                                                {
+                                                    "kind": "type_interface",
+                                                    "value": {
+                                                        "name": "AxisTimeInterval",
+                                                        "circular": true
+                                                    }
+                                                },
+                                                {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "string"
+                                                }
+                                            ]
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "tickArguments",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "this"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "args",
+                                        "type": {
+                                            "kind": "array_type",
+                                            "value": {
+                                                "kind": "any_keyword",
+                                                "value": "any"
+                                            }
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "tickValues",
+                                "returnType": {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "array_type",
+                                            "value": {
+                                                "kind": "generic_keyword",
+                                                "value": "Domain"
+                                            }
+                                        },
+                                        {
+                                            "kind": "primitive_keyword",
+                                            "value": "null"
+                                        }
+                                    ]
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "tickValues",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "this"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "values",
+                                        "type": {
+                                            "kind": "array_type",
+                                            "value": {
+                                                "circular": true
+                                            }
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "tickValues",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "this"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "values",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "null"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "tickFormat",
+                                "returnType": {
+                                    "kind": "union_type",
+                                    "value": [
+                                        {
+                                            "kind": "function_type",
+                                            "value": {
+                                                "name": "",
+                                                "returnType": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "string"
+                                                },
+                                                "parameters": [
+                                                    {
+                                                        "name": "domainValue",
+                                                        "type": {
+                                                            "circular": true
+                                                        },
+                                                        "optional": false,
+                                                        "modifiers": [],
+                                                        "dotDotDotToken": false
+                                                    },
+                                                    {
+                                                        "name": "index",
+                                                        "type": {
+                                                            "kind": "primitive_keyword",
+                                                            "value": "number"
+                                                        },
+                                                        "optional": false,
+                                                        "modifiers": [],
+                                                        "dotDotDotToken": false
+                                                    }
+                                                ],
+                                                "modifiers": [],
+                                                "typeParameters": [],
+                                                "_isConstructor": false
+                                            }
+                                        },
+                                        {
+                                            "kind": "primitive_keyword",
+                                            "value": "null"
+                                        }
+                                    ]
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "tickFormat",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "this"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "format",
+                                        "type": {
+                                            "kind": "function_type",
+                                            "value": {
+                                                "name": "",
+                                                "returnType": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "string"
+                                                },
+                                                "parameters": [
+                                                    {
+                                                        "name": "domainValue",
+                                                        "type": {
+                                                            "circular": true
+                                                        },
+                                                        "optional": false,
+                                                        "modifiers": [],
+                                                        "dotDotDotToken": false
+                                                    },
+                                                    {
+                                                        "name": "index",
+                                                        "type": {
+                                                            "kind": "primitive_keyword",
+                                                            "value": "number"
+                                                        },
+                                                        "optional": false,
+                                                        "modifiers": [],
+                                                        "dotDotDotToken": false
+                                                    }
+                                                ],
+                                                "modifiers": [],
+                                                "typeParameters": [],
+                                                "_isConstructor": false
+                                            }
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "tickFormat",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "this"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "format",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "null"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "tickSize",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "number"
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "tickSize",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "this"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "size",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "tickSizeInner",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "number"
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "tickSizeInner",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "this"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "size",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "tickSizeOuter",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "number"
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "tickSizeOuter",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "this"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "size",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "tickPadding",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "number"
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "tickPadding",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "this"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "padding",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "offset",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "number"
+                                },
+                                "parameters": [],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "offset",
+                                "returnType": {
+                                    "kind": "primitive_keyword",
+                                    "value": "this"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "offset",
+                                        "type": {
+                                            "kind": "primitive_keyword",
+                                            "value": "number"
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            }
+                        ],
+                        "classes": [],
+                        "callSignatures": [
+                            {
+                                "name": "",
+                                "returnType": {
+                                    "kind": "void_keyword",
+                                    "value": "void"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "context",
+                                        "type": {
+                                            "kind": "union_type",
+                                            "value": [
+                                                {
+                                                    "kind": "type_reference",
+                                                    "value": "Selection<SVGSVGElement, any, any, any>",
+                                                    "text": ""
+                                                },
+                                                {
+                                                    "kind": "type_reference",
+                                                    "value": "Selection<SVGGElement, any, any, any>",
+                                                    "text": ""
+                                                }
+                                            ]
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            },
+                            {
+                                "name": "",
+                                "returnType": {
+                                    "kind": "void_keyword",
+                                    "value": "void"
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "context",
+                                        "type": {
+                                            "kind": "union_type",
+                                            "value": [
+                                                {
+                                                    "kind": "type_reference",
+                                                    "value": "TransitionLike<SVGSVGElement, any>",
+                                                    "text": ""
+                                                },
+                                                {
+                                                    "kind": "type_reference",
+                                                    "value": "TransitionLike<SVGGElement, any>",
+                                                    "text": ""
+                                                }
+                                            ]
+                                        },
+                                        "optional": false,
+                                        "modifiers": [],
+                                        "dotDotDotToken": false
+                                    }
+                                ],
+                                "modifiers": [],
+                                "typeParameters": [],
+                                "_isConstructor": false
+                            }
+                        ],
+                        "indexSignatures": [],
+                        "typeParameters": [
+                            {
+                                "circular": true
+                            }
+                        ]
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "scale",
+                        "type": {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "AxisScale",
+                                "circular": true
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [
+                    {
+                        "kind": "generic_keyword",
+                        "value": "Domain",
+                        "constraint": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "primitive_keyword",
+                                    "value": "number"
+                                },
+                                {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                },
+                                {
+                                    "kind": "type_reference",
+                                    "value": "Date",
+                                    "text": ""
+                                },
+                                {
+                                    "kind": "type_interface",
+                                    "value": {
+                                        "name": "",
+                                        "properties": [],
+                                        "methods": [
+                                            {
+                                                "name": "valueOf",
+                                                "returnType": {
+                                                    "kind": "primitive_keyword",
+                                                    "value": "number"
+                                                },
+                                                "parameters": [],
+                                                "modifiers": [],
+                                                "typeParameters": [],
+                                                "_isConstructor": false
+                                            }
+                                        ],
+                                        "classes": [],
+                                        "callSignatures": [],
+                                        "indexSignatures": [],
+                                        "typeParameters": []
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "axisRight",
+                "returnType": {
+                    "kind": "type_interface",
+                    "value": {
+                        "name": "Axis",
+                        "circular": true
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "scale",
+                        "type": {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "AxisScale",
+                                "circular": true
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [
+                    {
+                        "kind": "generic_keyword",
+                        "value": "Domain",
+                        "constraint": {
+                            "circular": true
+                        }
+                    }
+                ],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "axisBottom",
+                "returnType": {
+                    "kind": "type_interface",
+                    "value": {
+                        "name": "Axis",
+                        "circular": true
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "scale",
+                        "type": {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "AxisScale",
+                                "circular": true
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [
+                    {
+                        "kind": "generic_keyword",
+                        "value": "Domain",
+                        "constraint": {
+                            "circular": true
+                        }
+                    }
+                ],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-missing",
+            "functionExpected": {
+                "name": "axisLeft",
+                "returnType": {
+                    "kind": "type_interface",
+                    "value": {
+                        "name": "Axis",
+                        "circular": true
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "scale",
+                        "type": {
+                            "kind": "type_interface",
+                            "value": {
+                                "name": "AxisScale",
+                                "circular": true
+                            }
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [
+                    {
+                        "kind": "generic_keyword",
+                        "value": "Domain",
+                        "constraint": {
+                            "circular": true
+                        }
+                    }
+                ],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "roll",
+                "returnType": {
+                    "kind": "primitive_keyword",
+                    "value": "number"
+                },
+                "parameters": [
+                    {
+                        "name": "dice",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "primitive_keyword",
+                                    "value": "number"
+                                },
+                                {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "verbose",
+                        "type": {
+                            "kind": "undefined_keyword",
+                            "value": "undefined"
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "roll",
+                "returnType": {
+                    "kind": "array_type",
+                    "value": {
+                        "kind": "any_keyword",
+                        "value": "any"
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "dice",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "string"
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    },
+                    {
+                        "name": "verbose",
+                        "type": {
+                            "kind": "primitive_keyword",
+                            "value": "boolean"
+                        },
+                        "optional": true,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        },
+        {
+            "code": "function-extra",
+            "functionActual": {
+                "name": "verboseRoll",
+                "returnType": {
+                    "kind": "array_type",
+                    "value": {
+                        "kind": "any_keyword",
+                        "value": "any"
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "dice",
+                        "type": {
+                            "kind": "union_type",
+                            "value": [
+                                {
+                                    "kind": "primitive_keyword",
+                                    "value": "number"
+                                },
+                                {
+                                    "kind": "primitive_keyword",
+                                    "value": "string"
+                                }
+                            ]
+                        },
+                        "optional": false,
+                        "modifiers": [],
+                        "dotDotDotToken": false
+                    }
+                ],
+                "modifiers": [
+                    "export"
+                ],
+                "typeParameters": [],
+                "_isConstructor": false
+            }
+        }
+    ],
+    "tags": [
+        "type-array",
+        "optional-parameter",
+        "number",
+        "call-signature",
+        "undefined",
+        "type-union",
+        "generics-function",
+        "generics-interface",
+        "void",
+        "string",
+        "type-any",
+        "dot-dot-dot-token",
+        "type-tuple",
+        "type-function",
+        "alias-type"
+    ]
+}

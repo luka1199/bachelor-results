@@ -1,0 +1,20 @@
+{
+    "module": "atpl",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "type-function",
+        "string",
+        "type-any",
+        "type-reference-function",
+        "void",
+        "boolean",
+        "optional-parameter"
+    ]
+}

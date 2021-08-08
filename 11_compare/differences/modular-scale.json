@@ -1,0 +1,20 @@
+{
+    "module": "modular-scale",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "number",
+        "string",
+        "type-union",
+        "call-signature",
+        "boolean",
+        "type-array"
+    ]
+}

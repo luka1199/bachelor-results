@@ -1,0 +1,21 @@
+{
+    "module": "passport-github2",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-class"
+        }
+    ],
+    "tags": [
+        "string",
+        "optional-parameter",
+        "type-array",
+        "literals",
+        "void",
+        "type-function",
+        "type-union",
+        "type-any"
+    ]
+}

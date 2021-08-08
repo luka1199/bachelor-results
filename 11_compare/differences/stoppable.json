@@ -1,0 +1,23 @@
+{
+    "module": "stoppable",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "void",
+        "optional-parameter",
+        "type-function",
+        "type-any",
+        "undefined",
+        "type-union",
+        "boolean",
+        "generics-function",
+        "type-intersection",
+        "number"
+    ]
+}

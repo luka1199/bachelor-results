@@ -1,0 +1,12 @@
+{
+    "module": "vue-markdown",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": []
+}

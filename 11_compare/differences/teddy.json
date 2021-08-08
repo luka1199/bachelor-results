@@ -1,0 +1,22 @@
+{
+    "module": "teddy",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "string",
+        "object",
+        "void",
+        "number",
+        "type-union",
+        "boolean",
+        "readonly-array",
+        "type-array",
+        "optional-parameter"
+    ]
+}

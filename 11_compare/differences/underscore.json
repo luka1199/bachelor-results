@@ -1,0 +1,35 @@
+{
+    "module": "underscore",
+    "template": "module",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module",
+            "templateActual": "module-function"
+        }
+    ],
+    "tags": [
+        "optional-parameter",
+        "boolean",
+        "string",
+        "call-signature",
+        "type-any",
+        "index-signature",
+        "number",
+        "generics-function",
+        "generics-interface",
+        "alias-type",
+        "type-union",
+        "void",
+        "type-array",
+        "undefined",
+        "dot-dot-dot-token",
+        "type-tuple",
+        "literals",
+        "type-reference-function",
+        "type-function",
+        "type-intersection",
+        "object",
+        "readonly"
+    ]
+}

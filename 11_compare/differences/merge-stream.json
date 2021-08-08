@@ -1,0 +1,51 @@
+{
+    "module": "merge-stream",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "merge",
+            "exportAssignmentActual": "MergeStream"
+        },
+        {
+            "code": "missing-parameter",
+            "parameterMissing": {
+                "name": "streams",
+                "type": {
+                    "kind": "array_type",
+                    "value": {
+                        "kind": "union_type",
+                        "value": [
+                            {
+                                "kind": "generic_keyword",
+                                "value": "T",
+                                "constraint": {
+                                    "kind": "type_reference",
+                                    "value": "NodeJS.ReadableStream",
+                                    "text": ""
+                                }
+                            },
+                            {
+                                "kind": "array_type",
+                                "value": {
+                                    "circular": true
+                                }
+                            }
+                        ]
+                    }
+                },
+                "optional": false,
+                "modifiers": [],
+                "dotDotDotToken": true
+            }
+        }
+    ],
+    "tags": [
+        "readonly-array",
+        "type-array",
+        "type-union",
+        "boolean",
+        "generics-function",
+        "dot-dot-dot-token"
+    ]
+}

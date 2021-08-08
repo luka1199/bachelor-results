@@ -1,0 +1,14 @@
+{
+    "module": "vinyl-source-stream",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "template-is-different",
+            "templateExpected": "module-function",
+            "templateActual": "module"
+        }
+    ],
+    "tags": [
+        "string"
+    ]
+}

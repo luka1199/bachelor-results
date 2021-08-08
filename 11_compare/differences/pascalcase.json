@@ -1,0 +1,20 @@
+{
+    "module": "pascalcase",
+    "template": "module-function",
+    "differences": [
+        {
+            "code": "export-assignment-is-different",
+            "exportAssignmentExpected": "pascalcase",
+            "exportAssignmentActual": "Pascalcase"
+        },
+        {
+            "code": "function-overloading-difference",
+            "functionIdentifier": "pascalcase",
+            "expectedNumberOfOverloadings": 1,
+            "actualNumberOfOverloadings": 2
+        }
+    ],
+    "tags": [
+        "string"
+    ]
+}
