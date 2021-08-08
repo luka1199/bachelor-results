@@ -1,0 +1,92 @@
+{
+  "templateIsDifferent": {
+    "readmeAverage": 0.156,
+    "testAverage": 0.366,
+    "readmeMedian": 0,
+    "testMedian": 0,
+    "readmeMin": 0,
+    "testMin": 0,
+    "readmeMax": 1,
+    "testMax": 1
+  },
+  "typeSolvableDifference": {
+    "readmeAverage": 0.689,
+    "testAverage": 0.465,
+    "readmeMedian": 0,
+    "testMedian": 0,
+    "readmeMin": 0,
+    "testMin": 0,
+    "readmeMax": 10,
+    "testMax": 20
+  },
+  "typeUnsolvableDifference": {
+    "readmeAverage": 0.324,
+    "testAverage": 0.799,
+    "readmeMedian": 0,
+    "testMedian": 0,
+    "readmeMin": 0,
+    "testMin": 0,
+    "readmeMax": 8,
+    "testMax": 219
+  },
+  "extraParameter": {
+    "readmeAverage": 0.344,
+    "testAverage": 0.565,
+    "readmeMedian": 0,
+    "testMedian": 0,
+    "readmeMin": 0,
+    "testMin": 0,
+    "readmeMax": 11,
+    "testMax": 189
+  },
+  "missingParameter": {
+    "readmeAverage": 0.602,
+    "testAverage": 1.91,
+    "readmeMedian": 0,
+    "testMedian": 0,
+    "readmeMin": 0,
+    "testMin": 0,
+    "readmeMax": 12,
+    "testMax": 354
+  },
+  "functionMissing": {
+    "readmeAverage": 1.648,
+    "testAverage": 0.81,
+    "readmeMedian": 0,
+    "testMedian": 0,
+    "readmeMin": 0,
+    "testMin": 0,
+    "readmeMax": 100,
+    "testMax": 138
+  },
+  "functionExtra": {
+    "readmeAverage": 0.402,
+    "testAverage": 0.623,
+    "readmeMedian": 0,
+    "testMedian": 0,
+    "readmeMin": 0,
+    "testMin": 0,
+    "readmeMax": 12,
+    "testMax": 34
+  },
+  "functionOverloadingDifference": {
+    "readmeAverage": 0.107,
+    "testAverage": 0.171,
+    "readmeMedian": 0,
+    "testMedian": 0,
+    "readmeMin": 0,
+    "testMin": 0,
+    "readmeMax": 3,
+    "testMax": 11
+  },
+  "exportAssignmentIsDifferent": {
+    "readmeAverage": 0.459,
+    "testAverage": 0.348,
+    "readmeMedian": 0,
+    "testMedian": 0,
+    "readmeMin": 0,
+    "testMin": 0,
+    "readmeMax": 1,
+    "testMax": 1
+  }
+}

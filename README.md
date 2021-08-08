@@ -366,3 +366,13 @@ Format: `ModuleName,Template,template-is-different,type-solvable-difference,type
 ### `differences/<module>.json`
 
 Comparison of each generated declaration files with its counter part of DefinitelyTyped in JSON format.
+
+## 12_compare-methods
+
+### `comparisonCommonModules.json`
+
+Comparison of README method and test method comparison files of only common modules.
+
+### `comparisonAllModules.json`
+
+Comparison of README method and test method comparison files of all modules.
