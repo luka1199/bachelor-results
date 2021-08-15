@@ -1,0 +1,3097 @@
+{
+	"accepts": [
+		"mocha"
+	],
+	"acorn": [
+		"node"
+	],
+	"adm-zip": [
+		"mocha"
+	],
+	"ajv": [
+		"eslint",
+		"node"
+	],
+	"@alifd-next": [
+		"node"
+	],
+	"amqplib": [
+		"make"
+	],
+	"angular-animate": [],
+	"@angular-animations": [],
+	"@angular-cdk": [
+		"node"
+	],
+	"@angular-common": [],
+	"@angular-compiler-cli": [],
+	"@angular-compiler": [],
+	"@angular-core": [],
+	"@angular-devkit-core": [],
+	"@angular-devkit-schematics": [],
+	"@angular-forms": [],
+	"@angular-http": [],
+	"@angular-material": [
+		"node"
+	],
+	"angular": [],
+	"@angular-platform-browser-dynamic": [],
+	"@angular-platform-browser": [],
+	"@angular-platform-server": [],
+	"@angular-router": [],
+	"ansi-colors": [
+		"mocha"
+	],
+	"ansi-escapes": [
+		"ava",
+		"tsd",
+		"xo"
+	],
+	"antd": [
+		"jest",
+		"node"
+	],
+	"apollo-cache-inmemory": [
+		"jest"
+	],
+	"apollo-client": [
+		"jest"
+	],
+	"apollo-link-http": [
+		"lerna"
+	],
+	"apollo-link": [
+		"lerna"
+	],
+	"app-root-path": [
+		"mocha"
+	],
+	"archiver": [
+		"mocha"
+	],
+	"argparse": [
+		"mocha",
+		"eslint"
+	],
+	"arrify": [
+		"ava",
+		"tsd",
+		"xo"
+	],
+	"assert": [
+		"node"
+	],
+	"assert-plus": [
+		"tap",
+		"tape",
+		"node"
+	],
+	"async": [
+		"mocha",
+		"karma",
+		"eslint"
+	],
+	"async-validator": [
+		"jest"
+	],
+	"autoprefixer": [
+		"jest",
+		"eslint"
+	],
+	"awesome-typescript-loader": [
+		"mocha"
+	],
+	"aws-sdk": [
+		"node"
+	],
+	"axios": [
+		"grunt"
+	],
+	"@babel-cli": [
+		"make"
+	],
+	"@babel-core": [
+		"make"
+	],
+	"babel-eslint": [
+		"mocha",
+		"eslint"
+	],
+	"babel-helper-vue-jsx-merge-props": [],
+	"babelify": [
+		"tap"
+	],
+	"babel-jest": [
+		"jest"
+	],
+	"babel-loader": [
+		"ava",
+		"eslint"
+	],
+	"@babel-parser": [
+		"make"
+	],
+	"babel-plugin-add-module-exports": [
+		"mocha"
+	],
+	"babel-plugin-dynamic-import-node": [
+		"tap",
+		"tape",
+		"eslint"
+	],
+	"babel-plugin-import": [],
+	"babel-plugin-lodash": [
+		"mocha"
+	],
+	"babel-plugin-module-resolver": [
+		"jest",
+		"eslint"
+	],
+	"babel-plugin-named-asset-import": [
+		"node"
+	],
+	"@babel-plugin-proposal-class-properties": [
+		"make"
+	],
+	"@babel-plugin-proposal-decorators": [
+		"make"
+	],
+	"@babel-plugin-proposal-export-default-from": [
+		"make"
+	],
+	"@babel-plugin-proposal-export-namespace-from": [
+		"make"
+	],
+	"@babel-plugin-proposal-object-rest-spread": [
+		"make"
+	],
+	"babel-plugin-transform-decorators-legacy": [
+		"mocha",
+		"node"
+	],
+	"babel-plugin-transform-react-remove-prop-types": [
+		"mocha",
+		"eslint"
+	],
+	"@babel-plugin-transform-runtime": [
+		"make"
+	],
+	"@babel-polyfill": [
+		"make"
+	],
+	"@babel-preset-env": [
+		"make"
+	],
+	"babel-preset-env": [
+		"mocha",
+		"flow"
+	],
+	"babel-preset-react-app": [
+		"node"
+	],
+	"@babel-preset-react": [
+		"make"
+	],
+	"@babel-preset-typescript": [
+		"make"
+	],
+	"@babel-register": [
+		"make"
+	],
+	"@babel-runtime-corejs2": [
+		"make"
+	],
+	"@babel-runtime": [
+		"make"
+	],
+	"@babel-traverse": [
+		"make"
+	],
+	"@babel-types": [
+		"make"
+	],
+	"babylon": [
+		"ava",
+		"flow",
+		"eslint"
+	],
+	"backbone": [
+		"karma",
+		"eslint"
+	],
+	"base64-js": [
+		"tap",
+		"tape",
+		"standard"
+	],
+	"base-64": [
+		"mocha"
+	],
+	"basic-auth": [
+		"mocha"
+	],
+	"bcryptjs": [
+		"node"
+	],
+	"bcrypt": [
+		"nodeunit",
+		"node"
+	],
+	"bignumber.js": [
+		"node"
+	],
+	"bindings": [],
+	"bip39": [
+		"tap",
+		"tape",
+		"tslint"
+	],
+	"bizcharts": [
+		"jest"
+	],
+	"blessed": [],
+	"bl": [
+		"standard",
+		"node"
+	],
+	"bluebird": [
+		"node"
+	],
+	"bn.js": [
+		"mocha",
+		"standard"
+	],
+	"body-parser": [
+		"mocha"
+	],
+	"boom": [
+		"lab"
+	],
+	"bootstrap": [],
+	"boxen": [
+		"ava",
+		"tsd",
+		"xo"
+	],
+	"brfs": [
+		"tap"
+	],
+	"broccoli-funnel": [
+		"mocha"
+	],
+	"broccoli-merge-trees": [
+		"mocha"
+	],
+	"browserify": [
+		"tap"
+	],
+	"browserslist": [
+		"jest",
+		"eslint"
+	],
+	"browser-sync": [
+		"lerna"
+	],
+	"bs58": [
+		"tap",
+		"tape",
+		"standard"
+	],
+	"bson": [
+		"mocha",
+		"karma",
+		"node"
+	],
+	"buffer": [
+		"standard",
+		"node"
+	],
+	"bufferutil": [
+		"mocha"
+	],
+	"bulma": [],
+	"bunyan": [
+		"tap"
+	],
+	"busboy": [
+		"node"
+	],
+	"bytebuffer": [
+		"node"
+	],
+	"bytes": [
+		"mocha"
+	],
+	"camelcase": [
+		"ava",
+		"tsd",
+		"xo"
+	],
+	"canvas": [
+		"mocha"
+	],
+	"case-sensitive-paths-webpack-plugin": [
+		"mocha"
+	],
+	"chai-as-promised": [
+		"mocha"
+	],
+	"chai": [
+		"make"
+	],
+	"chalk": [
+		"ava",
+		"tsd",
+		"xo"
+	],
+	"chance": [
+		"ava"
+	],
+	"change-case": [
+		"lerna"
+	],
+	"chart.js": [
+		"karma"
+	],
+	"cheerio": [
+		"jest",
+		"eslint"
+	],
+	"child_process": [],
+	"child-process-promise": [
+		"mocha"
+	],
+	"chokidar": [
+		"mocha",
+		"eslint"
+	],
+	"classnames": [
+		"mocha"
+	],
+	"clean-css": [
+		"vows"
+	],
+	"clean-webpack-plugin": [
+		"jest"
+	],
+	"clear": [],
+	"cli-color": [
+		"node"
+	],
+	"cli": [],
+	"clipboard": [
+		"karma"
+	],
+	"clipboardy": [
+		"ava",
+		"tsd",
+		"xo"
+	],
+	"cli-spinner": [],
+	"cli-table2": [
+		"gulp"
+	],
+	"cli-table": [
+		"make"
+	],
+	"cli-ux": [
+		"mocha"
+	],
+	"clone": [
+		"nodeunit",
+		"node"
+	],
+	"clui": [],
+	"codemirror": [
+		"node"
+	],
+	"coffee-script": [
+		"node"
+	],
+	"color": [
+		"mocha",
+		"xo"
+	],
+	"colors": [
+		"node"
+	],
+	"columnify": [
+		"tap",
+		"tape",
+		"make"
+	],
+	"commander": [
+		"tsd",
+		"jest"
+	],
+	"command-exists": [
+		"mocha"
+	],
+	"command-line-args": [],
+	"command-line-usage": [],
+	"common-tags": [
+		"jest",
+		"eslint"
+	],
+	"component-emitter": [
+		"make"
+	],
+	"compression": [
+		"mocha"
+	],
+	"concat-stream": [
+		"tap",
+		"tape"
+	],
+	"config": [
+		"vows",
+		"node"
+	],
+	"configstore": [
+		"ava",
+		"xo"
+	],
+	"connect-flash": [
+		"vows",
+		"node"
+	],
+	"connect-history-api-fallback": [
+		"jest",
+		"eslint"
+	],
+	"connect-mongo": [],
+	"connect": [
+		"mocha"
+	],
+	"connect-redis": [
+		"tap",
+		"tape"
+	],
+	"consolidate": [
+		"mocha",
+		"eslint"
+	],
+	"content-type": [
+		"mocha"
+	],
+	"convert-source-map": [
+		"tap"
+	],
+	"cookie": [
+		"mocha"
+	],
+	"cookie-parser": [
+		"mocha"
+	],
+	"co": [
+		"mocha"
+	],
+	"copy-webpack-plugin": [
+		"jest"
+	],
+	"core-js": [],
+	"cors": [
+		"mocha",
+		"eslint"
+	],
+	"cosmiconfig": [
+		"jest"
+	],
+	"coveralls": [
+		"mocha",
+		"xo"
+	],
+	"crc": [
+		"mocha",
+		"eslint"
+	],
+	"create-hash": [
+		"standard"
+	],
+	"create-react-class": [
+		"jest",
+		"node"
+	],
+	"cron": [
+		"jest"
+	],
+	"cross-env": [],
+	"cross-fetch": [],
+	"cross-spawn": [
+		"jest",
+		"node"
+	],
+	"crypto-js": [],
+	"crypto": [],
+	"css-loader": [
+		"jest"
+	],
+	"cssnano": [],
+	"css": [
+		"mocha"
+	],
+	"csv": [
+		"mocha"
+	],
+	"csv-parse": [
+		"mocha",
+		"eslint"
+	],
+	"cuid": [],
+	"d3-array": [
+		"mocha",
+		"eslint"
+	],
+	"d3": [
+		"mocha",
+		"eslint"
+	],
+	"d3-scale": [
+		"mocha",
+		"eslint"
+	],
+	"d3-selection": [
+		"mocha",
+		"eslint"
+	],
+	"d3-shape": [
+		"mocha",
+		"eslint"
+	],
+	"date-fns": [
+		"karma"
+	],
+	"dateformat": [
+		"mocha",
+		"node"
+	],
+	"dayjs": [
+		"jest"
+	],
+	"deasync": [
+		"node"
+	],
+	"debounce": [
+		"jasmine",
+		"node"
+	],
+	"debug": [
+		"mocha",
+		"karma",
+		"xo"
+	],
+	"decamelize": [
+		"ava",
+		"tsd",
+		"xo"
+	],
+	"decompress": [
+		"ava",
+		"xo"
+	],
+	"deep-assign": [
+		"ava",
+		"xo"
+	],
+	"deep-diff": [
+		"mocha",
+		"eslint"
+	],
+	"deep-equal": [
+		"tap",
+		"tape",
+		"eslint"
+	],
+	"deep-extend": [
+		"mocha",
+		"node"
+	],
+	"deepmerge": [
+		"tap",
+		"tape",
+		"node"
+	],
+	"del": [
+		"ava",
+		"tsd",
+		"xo"
+	],
+	"depd": [
+		"mocha"
+	],
+	"detect-port": [],
+	"diff": [
+		"grunt"
+	],
+	"discord.js": [
+		"eslint",
+		"tslint"
+	],
+	"dockerode": [
+		"mocha",
+		"node"
+	],
+	"dom-helpers": [
+		"karma"
+	],
+	"dotenv": [
+		"tap",
+		"tslint",
+		"dtslint",
+		"standard"
+	],
+	"dot": [
+		"eslint",
+		"node"
+	],
+	"download": [
+		"ava",
+		"xo"
+	],
+	"draft-js": [
+		"jest",
+		"node"
+	],
+	"echarts": [
+		"jest"
+	],
+	"ejs": [
+		"mocha"
+	],
+	"elasticsearch": [
+		"grunt"
+	],
+	"electron": [
+		"node"
+	],
+	"element-resize-detector": [
+		"grunt"
+	],
+	"element-ui": [
+		"karma",
+		"eslint",
+		"gulp",
+		"node"
+	],
+	"elliptic": [
+		"mocha",
+		"eslint"
+	],
+	"ember-cli-babel": [
+		"mocha",
+		"ember",
+		"node"
+	],
+	"ember-cli-htmlbars": [
+		"mocha",
+		"ember",
+		"node"
+	],
+	"envify": [
+		"tap",
+		"node"
+	],
+	"enzyme-adapter-react-16": [
+		"mocha",
+		"lerna"
+	],
+	"enzyme": [
+		"mocha",
+		"lerna"
+	],
+	"errorhandler": [
+		"mocha"
+	],
+	"es6-error": [
+		"mocha"
+	],
+	"es6-promise": [
+		"ember"
+	],
+	"es6-promisify": [
+		"tap",
+		"tape"
+	],
+	"es6-shim": [
+		"eslint"
+	],
+	"escape-html": [
+		"mocha"
+	],
+	"escape-string-regexp": [
+		"ava",
+		"tsd",
+		"xo"
+	],
+	"escodegen": [
+		"gulp"
+	],
+	"eslint-config-airbnb-base": [],
+	"eslint-config-airbnb": [],
+	"eslint-config-prettier": [
+		"jest",
+		"eslint",
+		"node"
+	],
+	"eslint-config-react-app": [
+		"node"
+	],
+	"eslint-config-standard": [
+		"tap",
+		"tape",
+		"eslint"
+	],
+	"eslint-loader": [
+		"jest"
+	],
+	"eslint": [
+		"node"
+	],
+	"eslint-plugin-babel": [
+		"mocha"
+	],
+	"eslint-plugin-flowtype": [
+		"mocha"
+	],
+	"eslint-plugin-import": [
+		"mocha",
+		"eslint"
+	],
+	"eslint-plugin-jest": [
+		"jest"
+	],
+	"eslint-plugin-jsx-a11y": [
+		"jest",
+		"flow",
+		"eslint"
+	],
+	"eslint-plugin-node": [],
+	"eslint-plugin-prettier": [
+		"mocha",
+		"eslint"
+	],
+	"eslint-plugin-promise": [
+		"jest"
+	],
+	"eslint-plugin-react-hooks": [
+		"jest",
+		"node"
+	],
+	"eslint-plugin-react": [
+		"mocha",
+		"eslint",
+		"node"
+	],
+	"eslint-plugin-standard": [
+		"mocha",
+		"standard"
+	],
+	"eslint-plugin-vue": [],
+	"esm": [
+		"node"
+	],
+	"esprima": [
+		"mocha",
+		"eslint",
+		"node"
+	],
+	"estraverse": [],
+	"etag": [
+		"mocha"
+	],
+	"ethereumjs-tx": [
+		"tap",
+		"tape",
+		"node"
+	],
+	"ethereumjs-util": [
+		"tap",
+		"tape",
+		"karma",
+		"node"
+	],
+	"eventemitter2": [
+		"mocha"
+	],
+	"eventemitter3": [
+		"mocha",
+		"c8"
+	],
+	"events": [
+		"node"
+	],
+	"event-stream": [],
+	"execa": [
+		"ava",
+		"tsd",
+		"xo"
+	],
+	"express": [
+		"mocha"
+	],
+	"express-session": [
+		"mocha"
+	],
+	"extend": [
+		"eslint"
+	],
+	"extend-shallow": [
+		"mocha"
+	],
+	"extract-text-webpack-plugin": [
+		"jest"
+	],
+	"extract-zip": [
+		"ava"
+	],
+	"faker": [
+		"mocha",
+		"node"
+	],
+	"fancy-log": [
+		"mocha",
+		"eslint"
+	],
+	"fastclick": [],
+	"fast-glob": [
+		"mocha"
+	],
+	"fbjs": [],
+	"figlet": [
+		"grunt"
+	],
+	"figures": [
+		"ava",
+		"tsd",
+		"xo"
+	],
+	"file-loader": [
+		"jest"
+	],
+	"file-saver": [],
+	"filesize": [
+		"nodeunit",
+		"eslint",
+		"node"
+	],
+	"file-type": [
+		"ava",
+		"tsd",
+		"xo"
+	],
+	"finalhandler": [
+		"mocha"
+	],
+	"find-up": [
+		"ava",
+		"tsd",
+		"xo"
+	],
+	"findup-sync": [
+		"mocha",
+		"eslint"
+	],
+	"firebase-admin": [],
+	"firebase": [
+		"lerna",
+		"node"
+	],
+	"flat": [
+		"mocha",
+		"standard"
+	],
+	"fluent-ffmpeg": [
+		"make"
+	],
+	"flux": [
+		"jest"
+	],
+	"follow-redirects": [
+		"mocha",
+		"eslint"
+	],
+	"fork-ts-checker-webpack-plugin-alt": [
+		"mocha"
+	],
+	"fork-ts-checker-webpack-plugin": [],
+	"form-data": [],
+	"formidable": [
+		"jest",
+		"make"
+	],
+	"@fortawesome-react-fontawesome": [
+		"jest"
+	],
+	"friendly-errors-webpack-plugin": [
+		"jest",
+		"eslint"
+	],
+	"front-matter": [
+		"make"
+	],
+	"fsevents": [],
+	"fs-extra": [
+		"standard",
+		"node"
+	],
+	"fs": [],
+	"fs-promise": [
+		"mocha"
+	],
+	"fstream": [
+		"tap",
+		"standard"
+	],
+	"fuse.js": [
+		"jest"
+	],
+	"fuzzy": [
+		"mocha",
+		"node"
+	],
+	"gaze": [
+		"nodeunit",
+		"standard",
+		"semistandard",
+		"grunt",
+		"node"
+	],
+	"generic-pool": [
+		"tap"
+	],
+	"get-port": [
+		"ava",
+		"tsd",
+		"xo"
+	],
+	"get-stdin": [
+		"ava",
+		"tsd",
+		"xo",
+		"node"
+	],
+	"gh-pages": [
+		"mocha",
+		"eslint"
+	],
+	"github": [],
+	"global": [
+		"node"
+	],
+	"globby": [
+		"ava",
+		"tsd",
+		"xo"
+	],
+	"glob": [
+		"tap"
+	],
+	"gm": [
+		"make"
+	],
+	"googleapis": [
+		"mocha",
+		"c8"
+	],
+	"got": [
+		"ava",
+		"xo"
+	],
+	"graceful-fs": [
+		"tap",
+		"node"
+	],
+	"graphql": [
+		"mocha",
+		"eslint",
+		"node"
+	],
+	"graphql-tag": [
+		"mocha"
+	],
+	"graphql-tools": [
+		"jest"
+	],
+	"gray-matter": [
+		"mocha"
+	],
+	"grpc": [
+		"gulp"
+	],
+	"grunt-cli": [
+		"grunt",
+		"node"
+	],
+	"grunt-contrib-clean": [
+		"grunt"
+	],
+	"grunt-contrib-concat": [
+		"grunt"
+	],
+	"grunt-contrib-copy": [
+		"grunt"
+	],
+	"grunt-contrib-jshint": [
+		"grunt"
+	],
+	"grunt-contrib-uglify": [
+		"grunt"
+	],
+	"grunt-contrib-watch": [
+		"grunt"
+	],
+	"grunt": [
+		"grunt",
+		"node"
+	],
+	"gulp-autoprefixer": [
+		"ava",
+		"xo"
+	],
+	"gulp-babel": [
+		"mocha",
+		"xo"
+	],
+	"gulp-clean-css": [
+		"mocha",
+		"node"
+	],
+	"gulp-concat": [
+		"mocha"
+	],
+	"gulp-conflict": [
+		"mocha"
+	],
+	"gulp-eslint": [
+		"mocha",
+		"gulp"
+	],
+	"gulp-filter": [
+		"mocha",
+		"xo"
+	],
+	"gulp-if": [
+		"mocha",
+		"jshint"
+	],
+	"gulp-imagemin": [
+		"ava",
+		"xo"
+	],
+	"gulp-install": [
+		"mocha"
+	],
+	"gulp-jshint": [
+		"gulp"
+	],
+	"gulp-less": [
+		"mocha",
+		"jshint",
+		"node"
+	],
+	"gulp-load-plugins": [
+		"mocha",
+		"eslint"
+	],
+	"gulp-notify": [
+		"mocha"
+	],
+	"gulp": [
+		"mocha",
+		"eslint"
+	],
+	"gulp-plumber": [
+		"mocha",
+		"xo"
+	],
+	"gulp-postcss": [
+		"mocha",
+		"eslint"
+	],
+	"gulp-rename": [
+		"mocha"
+	],
+	"gulp-replace": [
+		"mocha"
+	],
+	"gulp-sass": [
+		"mocha",
+		"node"
+	],
+	"gulp-shell": [
+		"gulp"
+	],
+	"gulp-sourcemaps": [
+		"mocha",
+		"eslint"
+	],
+	"gulp-template": [
+		"mocha",
+		"xo"
+	],
+	"gulp-typescript": [
+		"gulp"
+	],
+	"gulp-uglify": [
+		"tap",
+		"tape"
+	],
+	"gulp-util": [
+		"mocha",
+		"jshint"
+	],
+	"gulp-watch": [
+		"mocha",
+		"xo"
+	],
+	"gzip-size": [
+		"ava",
+		"tsd",
+		"xo"
+	],
+	"hammerjs": [
+		"jshint",
+		"phantomjs",
+		"node"
+	],
+	"handlebars": [
+		"grunt"
+	],
+	"hapi": [
+		"lab"
+	],
+	"hash-sum": [
+		"tap",
+		"tape",
+		"jshint"
+	],
+	"helmet": [
+		"jest",
+		"eslint"
+	],
+	"he": [
+		"node"
+	],
+	"hexlet-pairs": [
+		"jest"
+	],
+	"highland": [
+		"nodeunit",
+		"eslint",
+		"node"
+	],
+	"highlight.js": [
+		"mocha"
+	],
+	"hiredis": [
+		"node"
+	],
+	"history": [
+		"node"
+	],
+	"hoek": [
+		"lab"
+	],
+	"hogan.js": [],
+	"hoist-non-react-statics": [
+		"mocha"
+	],
+	"html-entities": [
+		"mocha",
+		"node"
+	],
+	"html-loader": [
+		"jest"
+	],
+	"html-minifier": [
+		"grunt"
+	],
+	"htmlparser2": [
+		"jest"
+	],
+	"html-webpack-plugin": [
+		"jest",
+		"standard",
+		"semistandard"
+	],
+	"http-errors": [
+		"mocha"
+	],
+	"http": [],
+	"http-proxy-middleware": [
+		"jest"
+	],
+	"http-proxy": [
+		"mocha"
+	],
+	"http-server": [
+		"vows"
+	],
+	"https-proxy-agent": [
+		"mocha"
+	],
+	"http-status-codes": [
+		"jest"
+	],
+	"http-status": [
+		"mocha"
+	],
+	"hyperquest": [
+		"tap",
+		"tape"
+	],
+	"i18next": [
+		"karma",
+		"tslint"
+	],
+	"iconv-lite": [
+		"mocha"
+	],
+	"identity-obj-proxy": [
+		"jest",
+		"node"
+	],
+	"imagemin": [
+		"ava",
+		"xo"
+	],
+	"imagemin-pngquant": [
+		"ava",
+		"tsd",
+		"xo"
+	],
+	"image-size": [
+		"mocha",
+		"eslint"
+	],
+	"immer": [
+		"jest",
+		"flow"
+	],
+	"immutability-helper": [
+		"jest",
+		"tslint",
+		"node"
+	],
+	"immutable": [],
+	"inert": [
+		"lab"
+	],
+	"inflection": [
+		"mocha"
+	],
+	"inherits": [
+		"tap"
+	],
+	"ini": [
+		"tap",
+		"eslint"
+	],
+	"iniparser": [],
+	"inquirer-autocomplete-prompt": [
+		"mocha",
+		"flow",
+		"node"
+	],
+	"inquirer": [
+		"jest",
+		"eslint",
+		"lerna"
+	],
+	"install": [
+		"mocha"
+	],
+	"intl": [
+		"lab",
+		"eslint",
+		"node"
+	],
+	"invariant": [
+		"tap"
+	],
+	"inversify": [
+		"mocha",
+		"tslint",
+		"node"
+	],
+	"ioredis": [
+		"mocha"
+	],
+	"i": [
+		"vows",
+		"node"
+	],
+	"ip": [
+		"mocha",
+		"jshint"
+	],
+	"isobject": [
+		"mocha"
+	],
+	"isomorphic-fetch": [
+		"mocha",
+		"jshint"
+	],
+	"is": [],
+	"is-plain-object": [
+		"mocha"
+	],
+	"is-promise": [
+		"node"
+	],
+	"istanbul": [
+		"jshint",
+		"node"
+	],
+	"is-url": [
+		"mocha"
+	],
+	"is-wsl": [
+		"ava",
+		"tsd",
+		"xo"
+	],
+	"iview": [
+		"eslint",
+		"gulp"
+	],
+	"jade": [
+		"jest"
+	],
+	"jest-environment-jsdom-fourteen": [
+		"jest"
+	],
+	"jest": [
+		"jest"
+	],
+	"jest-pnp-resolver": [],
+	"jest-resolve": [
+		"jest"
+	],
+	"jest-watch-typeahead": [
+		"jest"
+	],
+	"jimp": [
+		"mocha",
+		"node"
+	],
+	"joi": [
+		"lab"
+	],
+	"jquery": [
+		"karma",
+		"grunt"
+	],
+	"jquery-ui": [
+		"grunt"
+	],
+	"js-base64": [
+		"make"
+	],
+	"js-beautify": [],
+	"js-cookie": [
+		"grunt"
+	],
+	"jsdoc": [
+		"gulp"
+	],
+	"jsdom": [
+		"mocha"
+	],
+	"jshint": [
+		"nodeunit",
+		"jshint",
+		"node"
+	],
+	"json5": [
+		"tap"
+	],
+	"jsonfile": [
+		"mocha",
+		"standard"
+	],
+	"json-loader": [],
+	"jsonschema": [
+		"mocha",
+		"node"
+	],
+	"json-stable-stringify": [
+		"tap",
+		"tape"
+	],
+	"JSONStream": [
+		"node"
+	],
+	"json-stringify-safe": [
+		"make"
+	],
+	"jsonwebtoken": [
+		"mocha",
+		"eslint"
+	],
+	"js-yaml": [
+		"mocha",
+		"eslint"
+	],
+	"jszip": [
+		"grunt",
+		"node"
+	],
+	"@jupyterlab-application": [
+		"lab",
+		"lerna"
+	],
+	"jwt-decode": [
+		"mocha"
+	],
+	"jwt-simple": [
+		"mocha"
+	],
+	"karma-chrome-launcher": [
+		"standard",
+		"grunt"
+	],
+	"karma-jasmine": [
+		"jasmine",
+		"grunt"
+	],
+	"karma-mocha": [
+		"grunt"
+	],
+	"karma": [
+		"mocha",
+		"karma",
+		"node"
+	],
+	"karma-phantomjs-launcher": [],
+	"keycode": [
+		"mocha"
+	],
+	"keypress": [],
+	"knex": [
+		"tap",
+		"mocha",
+		"tape",
+		"node"
+	],
+	"koa-body": [
+		"mocha"
+	],
+	"koa-bodyparser": [
+		"mocha"
+	],
+	"koa-compose": [
+		"jest"
+	],
+	"koa-logger": [
+		"mocha",
+		"xo"
+	],
+	"koa-mount": [
+		"mocha"
+	],
+	"koa": [],
+	"koa-router": [
+		"mocha"
+	],
+	"koa-static": [
+		"mocha"
+	],
+	"leaflet": [
+		"karma",
+		"eslint"
+	],
+	"left-pad": [
+		"node"
+	],
+	"less-loader": [
+		"jest"
+	],
+	"less": [],
+	"leveldown": [
+		"tap",
+		"tape",
+		"standard"
+	],
+	"level": [
+		"standard",
+		"node"
+	],
+	"levelup": [
+		"standard",
+		"node"
+	],
+	"liftoff": [
+		"mocha",
+		"eslint"
+	],
+	"lint-staged": [
+		"jest",
+		"eslint"
+	],
+	"listr": [
+		"ava",
+		"xo"
+	],
+	"lit-element": [],
+	"loader-utils": [
+		"jest"
+	],
+	"localforage": [
+		"grunt",
+		"node"
+	],
+	"lodash.assign": [
+		"mocha"
+	],
+	"lodash.camelcase": [
+		"mocha"
+	],
+	"lodash.clonedeep": [
+		"mocha"
+	],
+	"lodash.debounce": [
+		"mocha"
+	],
+	"lodash.defaults": [
+		"mocha"
+	],
+	"lodash-es": [
+		"mocha"
+	],
+	"lodash.flatten": [
+		"mocha"
+	],
+	"lodash.foreach": [
+		"mocha"
+	],
+	"lodash.get": [
+		"mocha"
+	],
+	"lodash.isempty": [
+		"mocha"
+	],
+	"lodash.isequal": [
+		"mocha"
+	],
+	"lodash.isfunction": [
+		"mocha"
+	],
+	"lodash.isobject": [
+		"mocha"
+	],
+	"lodash.isplainobject": [
+		"mocha"
+	],
+	"lodash.isstring": [
+		"mocha"
+	],
+	"lodash.map": [
+		"mocha"
+	],
+	"lodash.merge": [
+		"mocha"
+	],
+	"lodash.omit": [
+		"mocha"
+	],
+	"lodash": [
+		"mocha"
+	],
+	"lodash.pick": [
+		"mocha"
+	],
+	"lodash.set": [
+		"mocha"
+	],
+	"lodash.template": [
+		"mocha"
+	],
+	"lodash.throttle": [
+		"mocha"
+	],
+	"lodash.uniq": [
+		"mocha"
+	],
+	"log4js": [
+		"tap",
+		"eslint"
+	],
+	"loglevel": [
+		"grunt"
+	],
+	"log-symbols": [
+		"ava",
+		"tsd",
+		"xo"
+	],
+	"log-update": [
+		"ava",
+		"tsd",
+		"xo"
+	],
+	"long": [
+		"node"
+	],
+	"loose-envify": [
+		"tap"
+	],
+	"lowdb": [],
+	"lru-cache": [
+		"tap"
+	],
+	"make-dir": [
+		"ava",
+		"tsd",
+		"xo"
+	],
+	"map-stream": [],
+	"markdown-it": [
+		"mocha",
+		"eslint",
+		"node"
+	],
+	"markdown": [
+		"grunt"
+	],
+	"marked": [
+		"jasmine"
+	],
+	"@material-ui-core": [],
+	"@material-ui-icons": [],
+	"material-ui": [],
+	"mathjs": [
+		"mocha",
+		"standard"
+	],
+	"md5-file": [
+		"mocha",
+		"standard"
+	],
+	"md5": [
+		"mocha"
+	],
+	"memoize-one": [
+		"jest"
+	],
+	"memory-fs": [
+		"mocha"
+	],
+	"meow": [
+		"ava",
+		"tsd",
+		"xo"
+	],
+	"merge": [
+		"mocha",
+		"node"
+	],
+	"merge-stream": [],
+	"metalsmith": [
+		"mocha"
+	],
+	"method-override": [
+		"mocha"
+	],
+	"methods": [
+		"mocha"
+	],
+	"micromatch": [
+		"mocha"
+	],
+	"mime": [
+		"mocha"
+	],
+	"mime-types": [
+		"mocha"
+	],
+	"mini-css-extract-plugin": [],
+	"minimatch": [
+		"tap"
+	],
+	"minimist": [
+		"tap"
+	],
+	"mkdirp": [
+		"tap"
+	],
+	"mobx": [
+		"jest"
+	],
+	"mobx-react": [
+		"jest"
+	],
+	"mocha": [],
+	"mockjs": [
+		"grunt"
+	],
+	"moment": [
+		"grunt"
+	],
+	"moment-timezone": [
+		"grunt"
+	],
+	"mongodb": [
+		"mocha",
+		"eslint"
+	],
+	"mongoose": [
+		"mocha"
+	],
+	"morgan": [
+		"mocha"
+	],
+	"mqtt": [
+		"mocha",
+		"standard",
+		"node"
+	],
+	"ms": [
+		"mocha"
+	],
+	"mssql": [
+		"mocha",
+		"standard",
+		"node"
+	],
+	"multer": [
+		"mocha",
+		"standard"
+	],
+	"multimatch": [
+		"ava",
+		"tsd",
+		"xo"
+	],
+	"mustache": [
+		"mocha",
+		"eslint"
+	],
+	"mysql2": [
+		"eslint",
+		"node"
+	],
+	"mysql": [
+		"node"
+	],
+	"mz": [
+		"mocha"
+	],
+	"nanoid": [
+		"jest",
+		"eslint"
+	],
+	"nan": [
+		"tap"
+	],
+	"nconf": [
+		"jest"
+	],
+	"ncp": [
+		"mocha"
+	],
+	"nedb": [
+		"mocha",
+		"node"
+	],
+	"needle": [
+		"mocha"
+	],
+	"nib": [
+		"mocha"
+	],
+	"nock": [
+		"mocha"
+	],
+	"node-cache": [
+		"mocha"
+	],
+	"node-dir": [
+		"mocha",
+		"node"
+	],
+	"node-emoji": [
+		"mocha",
+		"node"
+	],
+	"node.extend": [],
+	"node-fetch": [
+		"mocha",
+		"c8",
+		"node"
+	],
+	"node-forge": [
+		"mocha"
+	],
+	"nodegit": [
+		"jshint",
+		"node"
+	],
+	"node-gyp": [
+		"tap",
+		"standard"
+	],
+	"nodemailer": [
+		"grunt"
+	],
+	"nodemon": [
+		"mocha",
+		"eslint"
+	],
+	"node-notifier": [
+		"jest",
+		"eslint"
+	],
+	"node-pre-gyp": [
+		"tap",
+		"tape"
+	],
+	"node-sass": [
+		"mocha"
+	],
+	"node-schedule": [
+		"tap",
+		"tape"
+	],
+	"node-static": [
+		"vows"
+	],
+	"node-uuid": [
+		"mocha"
+	],
+	"node-watch": [
+		"mocha"
+	],
+	"nomnom": [
+		"nodeunit",
+		"node"
+	],
+	"nopt": [
+		"tap"
+	],
+	"normalize.css": [],
+	"normalize-url": [
+		"ava",
+		"tsd",
+		"xo"
+	],
+	"npmlog": [
+		"tap",
+		"standard"
+	],
+	"npm": [
+		"tap",
+		"eslint"
+	],
+	"npm-run-all": [
+		"mocha",
+		"eslint",
+		"make",
+		"node"
+	],
+	"nprogress": [
+		"mocha"
+	],
+	"numeral": [
+		"grunt"
+	],
+	"nunjucks": [
+		"eslint",
+		"node"
+	],
+	"nyc": [
+		"tap",
+		"standard",
+		"node"
+	],
+	"oauth": [
+		"make"
+	],
+	"object-assign": [
+		"ava",
+		"xo"
+	],
+	"object.assign": [
+		"eslint",
+		"node"
+	],
+	"object-hash": [
+		"mocha",
+		"node"
+	],
+	"object-path": [
+		"mocha"
+	],
+	"@oclif-command": [
+		"mocha"
+	],
+	"@oclif-config": [
+		"mocha"
+	],
+	"@oclif-plugin-help": [
+		"mocha"
+	],
+	"@octokit-rest": [],
+	"once": [
+		"tap"
+	],
+	"on-finished": [
+		"mocha"
+	],
+	"opener": [],
+	"open": [
+		"tsd",
+		"xo"
+	],
+	"opn": [
+		"tsd",
+		"xo"
+	],
+	"optimist": [
+		"tap"
+	],
+	"optimize-css-assets-webpack-plugin": [
+		"jest"
+	],
+	"ora": [
+		"ava",
+		"tsd",
+		"xo"
+	],
+	"osenv": [
+		"tap"
+	],
+	"os": [],
+	"pako": [
+		"mocha",
+		"eslint"
+	],
+	"parse5": [
+		"mocha",
+		"eslint"
+	],
+	"parseurl": [
+		"mocha"
+	],
+	"passport-local": [
+		"make"
+	],
+	"passport-oauth2": [
+		"mocha",
+		"node"
+	],
+	"passport-oauth": [
+		"make"
+	],
+	"passport": [
+		"mocha",
+		"node"
+	],
+	"passport-strategy": [
+		"mocha",
+		"node"
+	],
+	"path-exists": [
+		"ava",
+		"tsd",
+		"xo"
+	],
+	"path-is-absolute": [
+		"xo",
+		"node"
+	],
+	"path": [],
+	"path-to-regexp": [
+		"jest",
+		"tslint"
+	],
+	"pg": [
+		"lerna"
+	],
+	"phantomjs": [
+		"nodeunit",
+		"eslint",
+		"node"
+	],
+	"phantomjs-prebuilt": [
+		"nodeunit",
+		"eslint",
+		"node"
+	],
+	"@phosphor-widgets": [
+		"lerna"
+	],
+	"pify": [
+		"ava",
+		"xo"
+	],
+	"pino": [
+		"tap",
+		"eslint"
+	],
+	"pkginfo": [
+		"vows"
+	],
+	"plist": [
+		"make"
+	],
+	"plugin-error": [
+		"mocha",
+		"eslint"
+	],
+	"pluralize": [
+		"mocha",
+		"standard",
+		"semistandard",
+		"node"
+	],
+	"pm2": [],
+	"pngjs": [
+		"tap",
+		"tape",
+		"node"
+	],
+	"pnp-webpack-plugin": [],
+	"polished": [
+		"jest"
+	],
+	"@polymer-polymer": [
+		"gulp",
+		"node"
+	],
+	"popper.js": [],
+	"portfinder": [
+		"vows"
+	],
+	"postcss-cssnext": [
+		"tap",
+		"tape",
+		"eslint"
+	],
+	"postcss-flexbugs-fixes": [
+		"gulp"
+	],
+	"postcss-import": [
+		"ava",
+		"eslint"
+	],
+	"postcss-loader": [
+		"jest"
+	],
+	"postcss-nested": [
+		"jest",
+		"eslint"
+	],
+	"postcss-normalize": [
+		"tap",
+		"tape",
+		"eslint"
+	],
+	"postcss": [
+		"jest",
+		"eslint"
+	],
+	"postcss-preset-env": [
+		"tap",
+		"tape",
+		"eslint"
+	],
+	"postcss-safe-parser": [
+		"jest",
+		"eslint"
+	],
+	"pouchdb": [
+		"eslint",
+		"node"
+	],
+	"preact": [],
+	"prettier": [
+		"jest"
+	],
+	"pretty-bytes": [
+		"ava",
+		"tsd",
+		"xo"
+	],
+	"pretty-error": [
+		"mocha"
+	],
+	"prettyjson": [
+		"mocha",
+		"jshint"
+	],
+	"pretty-ms": [
+		"ava",
+		"tsd",
+		"xo"
+	],
+	"prismjs": [],
+	"process": [
+		"mocha"
+	],
+	"progress-bar-webpack-plugin": [],
+	"progress": [],
+	"promise": [
+		"mocha",
+		"node"
+	],
+	"promise-polyfill": [
+		"mocha",
+		"karma",
+		"eslint",
+		"node"
+	],
+	"prompt": [
+		"vows"
+	],
+	"prompts": [
+		"tap",
+		"tape"
+	],
+	"prop-types": [
+		"jest",
+		"eslint"
+	],
+	"protobufjs": [
+		"tap",
+		"tape",
+		"node"
+	],
+	"pull-stream": [
+		"tap",
+		"tape"
+	],
+	"pump": [
+		"node"
+	],
+	"puppeteer": [
+		"eslint",
+		"node"
+	],
+	"q": [],
+	"qs": [],
+	"query-string": [
+		"ava",
+		"tsd",
+		"xo"
+	],
+	"querystring": [
+		"tap",
+		"node"
+	],
+	"quill": [],
+	"raf": [
+		"node"
+	],
+	"ramda": [
+		"mocha",
+		"eslint"
+	],
+	"randombytes": [
+		"standard",
+		"node"
+	],
+	"randomstring": [
+		"mocha"
+	],
+	"raven": [
+		"lerna"
+	],
+	"raw-body": [
+		"mocha"
+	],
+	"raw-loader": [
+		"jest"
+	],
+	"rc": [
+		"node"
+	],
+	"rc-slider": [],
+	"rc-util": [],
+	"react-addons-css-transition-group": [
+		"jest",
+		"node"
+	],
+	"react-addons-shallow-compare": [
+		"jest",
+		"node"
+	],
+	"react-apollo": [],
+	"react-app-polyfill": [
+		"node"
+	],
+	"react-bootstrap": [
+		"mocha",
+		"karma",
+		"eslint"
+	],
+	"react-color": [
+		"jest",
+		"eslint"
+	],
+	"react-datepicker": [
+		"karma"
+	],
+	"react-dev-utils": [
+		"node"
+	],
+	"react-dnd-html5-backend": [],
+	"react-dnd": [],
+	"react-dom": [
+		"jest",
+		"node"
+	],
+	"react-dropzone": [
+		"jest",
+		"eslint"
+	],
+	"react-error-overlay": [
+		"node"
+	],
+	"react-helmet": [
+		"karma",
+		"eslint"
+	],
+	"react-hot-loader": [],
+	"react-icons": [],
+	"react-intl": [],
+	"react-lifecycles-compat": [
+		"jest",
+		"node"
+	],
+	"react-markdown": [],
+	"react-modal": [
+		"karma"
+	],
+	"react-motion": [
+		"karma"
+	],
+	"react-native": [
+		"jest"
+	],
+	"react-native-vector-icons": [
+		"eslint"
+	],
+	"react-onclickoutside": [],
+	"react": [
+		"jest",
+		"node"
+	],
+	"react-redux": [
+		"jest",
+		"eslint"
+	],
+	"react-router-dom": [
+		"jest"
+	],
+	"react-router": [
+		"jest"
+	],
+	"react-router-redux": [
+		"mocha",
+		"karma",
+		"eslint"
+	],
+	"react-scripts": [
+		"node"
+	],
+	"react-slick": [
+		"jest",
+		"eslint"
+	],
+	"reactstrap": [],
+	"react-tap-event-plugin": [],
+	"react-test-renderer": [
+		"jest",
+		"node"
+	],
+	"react-transition-group": [
+		"jest"
+	],
+	"react-virtualized": [
+		"jest"
+	],
+	"readable-stream": [
+		"tap"
+	],
+	"readline-sync": [],
+	"read": [
+		"tap"
+	],
+	"read-pkg": [
+		"ava",
+		"tsd",
+		"xo"
+	],
+	"read-pkg-up": [
+		"ava",
+		"tsd",
+		"xo"
+	],
+	"recast": [
+		"eslint"
+	],
+	"recompose": [
+		"jest",
+		"flow"
+	],
+	"recursive-readdir": [
+		"mocha"
+	],
+	"redis": [
+		"mocha"
+	],
+	"redux-actions": [
+		"jest"
+	],
+	"redux-form": [
+		"jest"
+	],
+	"redux-logger": [
+		"mocha",
+		"eslint"
+	],
+	"redux": [
+		"jest"
+	],
+	"redux-thunk": [
+		"mocha"
+	],
+	"reflect-metadata": [
+		"gulp"
+	],
+	"request": [
+		"tap",
+		"tape",
+		"standard",
+		"node"
+	],
+	"request-promise-native": [
+		"gulp",
+		"node"
+	],
+	"request-promise": [
+		"gulp",
+		"node"
+	],
+	"require-all": [
+		"node"
+	],
+	"require-dir": [
+		"node"
+	],
+	"requireindex": [
+		"node"
+	],
+	"requirejs": [],
+	"reselect": [],
+	"resize-observer-polyfill": [
+		"karma",
+		"flow",
+		"eslint",
+		"node"
+	],
+	"resolve-from": [
+		"ava",
+		"tsd",
+		"xo"
+	],
+	"resolve": [],
+	"restify": [
+		"make"
+	],
+	"restler": [
+		"node"
+	],
+	"rimraf": [
+		"tap"
+	],
+	"rollup": [
+		"mocha",
+		"node"
+	],
+	"rollup-plugin-babel": [
+		"mocha"
+	],
+	"rollup-plugin-commonjs": [
+		"mocha"
+	],
+	"rollup-plugin-node-resolve": [
+		"mocha",
+		"eslint"
+	],
+	"rollup-pluginutils": [
+		"jest"
+	],
+	"rsvp": [
+		"ember"
+	],
+	"run-sequence": [
+		"mocha"
+	],
+	"rxjs": [
+		"mocha"
+	],
+	"rx": [
+		"grunt"
+	],
+	"safe-buffer": [
+		"tap",
+		"tape",
+		"standard"
+	],
+	"sanitize-filename": [
+		"tap",
+		"tape"
+	],
+	"sanitize-html": [
+		"mocha",
+		"eslint"
+	],
+	"sass-loader": [
+		"jest"
+	],
+	"sax": [
+		"tap",
+		"standard"
+	],
+	"secp256k1": [],
+	"selenium-webdriver": [],
+	"semantic-ui-react": [
+		"karma",
+		"gulp",
+		"node"
+	],
+	"semver": [
+		"tap"
+	],
+	"send": [
+		"mocha"
+	],
+	"sequelize": [
+		"mocha",
+		"node"
+	],
+	"serialize-javascript": [
+		"mocha"
+	],
+	"serialport": [
+		"mocha"
+	],
+	"serve-favicon": [
+		"mocha"
+	],
+	"serve-index": [
+		"mocha"
+	],
+	"serve-static": [
+		"mocha"
+	],
+	"sha1": [
+		"mocha"
+	],
+	"shallowequal": [
+		"jest"
+	],
+	"sharp": [
+		"mocha",
+		"standard",
+		"semistandard"
+	],
+	"shelljs": [
+		"ava",
+		"eslint"
+	],
+	"shell-quote": [
+		"tap",
+		"tape"
+	],
+	"shortid": [
+		"grunt"
+	],
+	"should": [
+		"mocha"
+	],
+	"showdown": [
+		"grunt"
+	],
+	"simple-git": [
+		"jest"
+	],
+	"sinon-chai": [
+		"mocha"
+	],
+	"sinon": [
+		"mocha"
+	],
+	"slash": [
+		"ava",
+		"tsd",
+		"xo"
+	],
+	"slugify": [
+		"mocha",
+		"node"
+	],
+	"slug": [
+		"mocha",
+		"karma",
+		"standard"
+	],
+	"soap": [
+		"mocha"
+	],
+	"socket.io-client": [
+		"node"
+	],
+	"socket.io": [
+		"mocha",
+		"tsd",
+		"node"
+	],
+	"sockjs-client": [
+		"mocha",
+		"node"
+	],
+	"source-map-loader": [
+		"jest"
+	],
+	"source-map": [
+		"node"
+	],
+	"source-map-support": [
+		"mocha"
+	],
+	"split2": [
+		"tap",
+		"tape",
+		"standard"
+	],
+	"split": [],
+	"sprintf-js": [
+		"mocha",
+		"eslint"
+	],
+	"sprintf": [
+		"nodeunit",
+		"node"
+	],
+	"sqlite3": [
+		"mocha",
+		"node"
+	],
+	"ssh2": [
+		"node"
+	],
+	"stack-trace": [
+		"jest"
+	],
+	"standard": [
+		"tap",
+		"tape"
+	],
+	"string": [
+		"gulp"
+	],
+	"strip-ansi": [
+		"ava",
+		"tsd",
+		"xo"
+	],
+	"strip-json-comments": [
+		"ava",
+		"tsd",
+		"xo"
+	],
+	"styled-components": [
+		"wsrun"
+	],
+	"stylelint-config-standard": [
+		"jest"
+	],
+	"stylelint-order": [
+		"jest",
+		"eslint"
+	],
+	"stylelint": [
+		"jest"
+	],
+	"stylelint-scss": [
+		"jest",
+		"eslint"
+	],
+	"style-loader": [
+		"jest"
+	],
+	"stylus-loader": [
+		"jest"
+	],
+	"stylus": [
+		"mocha"
+	],
+	"superagent": [
+		"eslint",
+		"xo",
+		"make",
+		"node"
+	],
+	"supertest": [
+		"mocha",
+		"eslint"
+	],
+	"supports-color": [
+		"xo"
+	],
+	"svgo": [
+		"mocha",
+		"c8",
+		"node"
+	],
+	"swig": [
+		"make"
+	],
+	"sw-precache-webpack-plugin": [
+		"make"
+	],
+	"sync-request": [
+		"jest",
+		"flow",
+		"node"
+	],
+	"systemjs": [],
+	"tape": [
+		"tap",
+		"eslint"
+	],
+	"tar-fs": [
+		"tap",
+		"tape",
+		"standard"
+	],
+	"tar": [
+		"tap",
+		"eslint"
+	],
+	"temp": [
+		"mocha"
+	],
+	"terser-webpack-plugin": [
+		"jest"
+	],
+	"text-table": [
+		"tap"
+	],
+	"three": [],
+	"throttle-debounce": [
+		"karma",
+		"eslint"
+	],
+	"through2": [
+		"mocha",
+		"standard",
+		"node"
+	],
+	"through": [
+		"node"
+	],
+	"tildify": [
+		"ava",
+		"tsd",
+		"xo"
+	],
+	"tinycolor2": [],
+	"tmp": [
+		"mocha",
+		"node"
+	],
+	"touch": [
+		"tap"
+	],
+	"tough-cookie": [
+		"vows"
+	],
+	"tracer": [
+		"mocha",
+		"eslint"
+	],
+	"traverse": [
+		"tap",
+		"tape"
+	],
+	"ts-jest": [],
+	"tslib": [],
+	"tslint-config-prettier": [
+		"jest"
+	],
+	"tslint": [
+		"mocha"
+	],
+	"tslint-react": [],
+	"ts-loader": [
+		"node"
+	],
+	"ts-node": [
+		"ava",
+		"node"
+	],
+	"ts-pnp": [],
+	"tv4": [
+		"grunt"
+	],
+	"tweetnacl": [
+		"tap",
+		"tape",
+		"make"
+	],
+	"type-is": [
+		"mocha"
+	],
+	"typeorm": [
+		"mocha"
+	],
+	"@types-bluebird": [
+		"tslint",
+		"dtslint"
+	],
+	"@types-cordova": [
+		"tslint",
+		"dtslint"
+	],
+	"@typescript-eslint-eslint-plugin": [],
+	"@typescript-eslint-parser": [],
+	"typescript": [
+		"gulp"
+	],
+	"@types-express": [
+		"tslint",
+		"dtslint"
+	],
+	"@types-fs-extra": [
+		"tslint",
+		"dtslint"
+	],
+	"@types-jasmine": [
+		"tslint",
+		"dtslint"
+	],
+	"@types-jest": [
+		"tslint",
+		"dtslint"
+	],
+	"@types-jquery": [
+		"tslint",
+		"dtslint"
+	],
+	"@types-lodash": [
+		"tslint",
+		"dtslint"
+	],
+	"@types-mocha": [
+		"tslint",
+		"dtslint"
+	],
+	"@types-node": [
+		"tslint",
+		"dtslint"
+	],
+	"@types-react-dom": [
+		"tslint",
+		"dtslint"
+	],
+	"@types-react": [
+		"tslint",
+		"dtslint"
+	],
+	"@types-request": [
+		"tslint",
+		"dtslint"
+	],
+	"@types-uuid": [
+		"tslint",
+		"dtslint"
+	],
+	"uglify-js": [
+		"mocha",
+		"node"
+	],
+	"uglifyjs-webpack-plugin": [],
+	"underscore": [
+		"eslint"
+	],
+	"underscore.string": [
+		"mocha",
+		"eslint",
+		"node"
+	],
+	"unique-random-array": [
+		"ava",
+		"tsd",
+		"xo"
+	],
+	"unist-util-visit": [
+		"tsd",
+		"xo",
+		"c8",
+		"node"
+	],
+	"unzip": [
+		"tap"
+	],
+	"update-notifier": [
+		"ava",
+		"xo"
+	],
+	"urijs": [],
+	"url-join": [
+		"mocha"
+	],
+	"urllib": [
+		"mocha",
+		"jshint"
+	],
+	"url-loader": [
+		"jest"
+	],
+	"url": [
+		"mocha",
+		"zuul",
+		"eslint"
+	],
+	"url-parse": [
+		"mocha",
+		"c8"
+	],
+	"user-home": [
+		"ava"
+	],
+	"utf8": [
+		"node"
+	],
+	"util": [
+		"node"
+	],
+	"utils-merge": [
+		"mocha",
+		"node"
+	],
+	"uuid": [
+		"jest",
+		"node"
+	],
+	"validate-npm-package-name": [
+		"tap",
+		"standard"
+	],
+	"validator": [
+		"mocha",
+		"eslint",
+		"node"
+	],
+	"valid-url": [
+		"make"
+	],
+	"verror": [
+		"make"
+	],
+	"vinyl-buffer": [
+		"node"
+	],
+	"vinyl-fs": [
+		"mocha",
+		"eslint"
+	],
+	"vinyl": [
+		"mocha",
+		"eslint"
+	],
+	"vinyl-source-stream": [
+		"node"
+	],
+	"vorpal": [
+		"mocha",
+		"gulp"
+	],
+	"vue-class-component": [
+		"mocha",
+		"node"
+	],
+	"vue-hot-reload-api": [
+		"jest"
+	],
+	"vue-i18n": [
+		"karma",
+		"flow",
+		"eslint",
+		"node"
+	],
+	"vue-loader": [
+		"jest",
+		"node"
+	],
+	"vue": [
+		"jasmine",
+		"karma",
+		"flow",
+		"eslint",
+		"phantomjs",
+		"node"
+	],
+	"vue-property-decorator": [
+		"jest"
+	],
+	"vue-router": [
+		"karma",
+		"eslint",
+		"node"
+	],
+	"vue-style-loader": [
+		"jest"
+	],
+	"vue-template-compiler": [
+		"jasmine",
+		"karma",
+		"flow",
+		"eslint",
+		"phantomjs",
+		"node"
+	],
+	"vuex": [
+		"mocha",
+		"eslint"
+	],
+	"warning": [
+		"jest"
+	],
+	"watchify": [
+		"tap",
+		"tape"
+	],
+	"watch": [],
+	"web3": [
+		"mocha",
+		"node"
+	],
+	"webpack-bundle-analyzer": [
+		"mocha"
+	],
+	"webpack-cli": [
+		"jest"
+	],
+	"webpack-dev-middleware": [
+		"jest"
+	],
+	"webpack-dev-server": [
+		"jest"
+	],
+	"webpack-hot-middleware": [
+		"mocha"
+	],
+	"webpack-manifest-plugin": [
+		"ava",
+		"node"
+	],
+	"webpack-merge": [
+		"tsd"
+	],
+	"webpack-node-externals": [
+		"mocha"
+	],
+	"webpack": [
+		"jest",
+		"node"
+	],
+	"webpack-sources": [
+		"jest"
+	],
+	"websocket": [
+		"tap",
+		"tape"
+	],
+	"whatwg-fetch": [
+		"karma",
+		"make"
+	],
+	"when": [
+		"jshint",
+		"node"
+	],
+	"which": [
+		"tap"
+	],
+	"winston-daily-rotate-file": [
+		"mocha",
+		"eslint"
+	],
+	"winston": [
+		"mocha"
+	],
+	"word-wrap": [
+		"mocha"
+	],
+	"workbox-webpack-plugin": [
+		"mocha"
+	],
+	"wrench": [
+		"nodeunit",
+		"node"
+	],
+	"ws": [
+		"mocha"
+	],
+	"xhr": [
+		"tap"
+	],
+	"xlsx": [
+		"make"
+	],
+	"xml2json": [
+		"lab"
+	],
+	"xml2js": [
+		"zap"
+	],
+	"xmlbuilder": [
+		"mocha"
+	],
+	"xmldom": [],
+	"xmlhttprequest": [],
+	"xml-js": [
+		"jasmine",
+		"jest"
+	],
+	"xpath": [
+		"mocha"
+	],
+	"xregexp": [
+		"jasmine"
+	],
+	"xtend": [
+		"node"
+	],
+	"yamljs": [],
+	"yaml": [
+		"jest"
+	],
+	"yargs": [
+		"mocha",
+		"eslint",
+		"c8"
+	],
+	"yargs-parser": [
+		"mocha",
+		"c8"
+	],
+	"yeoman-environment": [
+		"mocha",
+		"xo"
+	],
+	"yeoman-generator": [
+		"mocha",
+		"xo"
+	],
+	"yosay": [
+		"mocha",
+		"xo"
+	],
+	"zone.js": []
+}
