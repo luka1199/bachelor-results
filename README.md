@@ -176,6 +176,13 @@ Format: `moduleName - logCode`
 
 Amount of successful instrumentations: 4530
 
+### `modulesToInstall.csv`
+Module names of modules that have a non-empty non-default test script and a successful instrumentation.
+
+Format: `moduleName`
+
+Amount: 4359
+
 ## 6_installation
 
 ### `install.log`
@@ -192,6 +199,13 @@ Format: `moduleName - logCode`
 Amount of successful installations: 2577
 
 Amount of modules with non-empty non-default test script and successful installation: 1922
+
+### `modulesToTest.csv`
+Module names of modules that have a non-empty non-default test script and a successful installation (and are not blacklisted).
+
+Format: `moduleName`
+
+Amount: 1922
 
 ## 7_test+generate-run-time-info
 
